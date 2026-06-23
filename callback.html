@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Autorização TikTok — Promoções</title>
+<style>
+  body { font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:#0e1116; color:#e8eaed; line-height:1.6; }
+  .wrap { max-width:620px; margin:0 auto; padding:56px 24px; text-align:center; }
+  h1 { font-size:26px; margin-bottom:12px; }
+  .ok { color:#1abc9c; }
+  .err { color:#e74c3c; }
+  .box { background:#171c26; border-radius:12px; padding:20px; margin:24px 0; text-align:left; }
+  .label { color:#9aa0a6; font-size:13px; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; }
+  code { display:block; background:#0b0e13; padding:14px; border-radius:8px; word-break:break-all;
+         font-family:Consolas,Monaco,monospace; font-size:15px; color:#ff6b00; }
+  button { background:#ff6b00; color:#fff; border:0; border-radius:8px; padding:12px 20px;
+           font-size:15px; font-weight:700; cursor:pointer; margin-top:12px; }
+  p { color:#c8ccd2; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 id="title">A processar…</h1>
+    <p id="msg"></p>
+    <div class="box" id="codebox" style="display:none">
+      <div class="label">Código de autorização (copia isto)</div>
+      <code id="code"></code>
+      <button onclick="copyCode()">Copiar código</button>
+    </div>
+    <p id="hint" style="display:none">Volta ao terminal e cola este código quando o script pedir.</p>
+  </div>
+<script>
+  const p = new URLSearchParams(location.search);
+  const code = p.get('code');
+  const err  = p.get('error');
+  const title = document.getElementById('title');
+  const msg   = document.getElementById('msg');
+  if (err) {
+    title.textContent = '❌ Autorização recusada';
+    title.className = 'err';
+    msg.textContent = err + ' — ' + (p.get('error_description') || '');
+  } else if (code) {
+    title.textContent = '✅ Autorizado!';
+    title.className = 'ok';
+    document.getElementById('code').textContent = code;
+    document.getElementById('codebox').style.display = 'block';
+    document.getElementById('hint').style.display = 'block';
+  } else {
+    title.textContent = 'Sem código';
+    msg.textContent = 'Esta página deve ser aberta pelo redirect do TikTok.';
+  }
+  function copyCode() { navigator.clipboard.writeText(code); }
+</script>
+</body>
+</html>
