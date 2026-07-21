@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://descontos-pt.github.io/sitemap.xml
