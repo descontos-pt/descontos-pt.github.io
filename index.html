@@ -89,6 +89,10 @@
   footer{text-align:center;color:var(--muted);font-size:13px;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);}
   footer a{color:var(--accent);text-decoration:none;}
   .count{color:var(--muted);font-size:13px;margin:6px 2px 10px;font-weight:600;}
+  /* Floating Telegram Conversion Widget */
+  .tg-float{position:fixed;bottom:20px;right:20px;z-index:999;background:linear-gradient(135deg,#0088cc 0%,#0077b5 100%);color:#fff;padding:12px 20px;border-radius:50px;box-shadow:0 8px 24px rgba(0,136,204,.4);display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:14px;transition:transform .2s,box-shadow .2s;animation:tgPulse 3s infinite;}
+  .tg-float:hover{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,136,204,.6);color:#fff;}
+  @keyframes tgPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.03);}}
 </style>
 </head>
 <body>
@@ -245,5 +249,9 @@
   function escapeHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
   render();
 </script>
+<a href="https://t.me/+2GxPnUedDnU4Yzg0" target="_blank" rel="noopener" class="tg-float" title="Recebe promoções relâmpago no Telegram">
+  <span style="font-size:18px;">⚡</span>
+  <span>Entra no Telegram (+210 membros)</span>
+</a>
 </body>
 </html>
