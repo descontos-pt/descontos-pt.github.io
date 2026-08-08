@@ -20,8 +20,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   /* ── Google AdSense ad containers ── */
-  .ad-unit{width:100%;max-width:1180px;margin:0 auto;padding:8px 16px;text-align:center;}
+  /* Sem anúncio servido, o bloco não deve ocupar espaço: era isto que deixava
+     duas faixas brancas enormes no topo e fazia o site parecer partido. */
+  .ad-unit{width:100%;max-width:1180px;margin:0 auto;padding:0;text-align:center;}
+  .ad-unit:has(ins[data-ad-status="filled"]){padding:8px 16px;}
   .ad-unit ins{display:block;}
+  .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
   :root{--bg:#f4f6f9;--card:#ffffff;--accent:#ff6b00;--accent2:#e85d04;--text:#1b1f27;--muted:#6b7280;--green:#16a34a;--line:#e7eaf0;--imgbg:#ffffff;--shadow:0 2px 10px rgba(20,30,55,.06);--shadow-hover:0 10px 28px rgba(20,30,55,.13);}
   html.dark{--bg:#111318;--card:#1b1f27;--text:#eef1f6;--muted:#9aa3b2;--line:#2a2f3a;--imgbg:#f5f5f5;--shadow:0 2px 10px rgba(0,0,0,.35);--shadow-hover:0 10px 28px rgba(0,0,0,.5);}
   *{box-sizing:border-box;margin:0;padding:0;}
@@ -162,7 +166,7 @@
     <span class="disc">-54%</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71+r4Vsq8SL._SL500_.jpg" alt="BaByliss Ferro de cabelo super smooth - tecnologia iónica anti-frizz, tapete tér"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1yh9ifs.html"><div class="title">BaByliss Ferro de cabelo super smooth - tecnologia iónica anti-frizz, tapete térmico, placas de cerâmica para penteados ultrasuaves, aquecimento rápido, 6 configurações de 140 &amp;deg;C a 235 &amp;deg;C, ST393E : Amazon.es: Beleza</div></a>
+    <a class="titlelink" href="./1yh9ifs.html"><div class="title">BaByliss Ferro de cabelo super smooth - tecnologia iónica anti-frizz, tapete térmico, placas de cerâmica para penteados ultrasuaves, aquecimento rápido, 6 configurações de 140 °C a 235 °C, ST393E : Amazon.es: Beleza</div></a>
     <div class="prices"><span class="new">32,30€</span><span class="old">69,90€</span></div>
     <a class="btn" href="https://www.amazon.es/dp/B07W864798?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./yqmg5g.html"><div class="imgwrap">
     <span class="disc">-54%</span>
@@ -190,9 +194,9 @@
     <div class="prices"><span class="new">14,22€</span><span class="old">23,71€</span></div>
     <a class="btn" href="https://www.amazon.es/dp/B06Y2D2XVW?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./u5d6eq.html"><div class="imgwrap">
     <span class="disc">-60%</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/81QcloXqh6L._SL500_.jpg" alt="L&amp;apos;Oréal Paris Hyaluron Serum, Revitalift Filler, anti-envelhecimento cu"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/81QcloXqh6L._SL500_.jpg" alt="L'Oréal Paris Hyaluron Serum, Revitalift Filler, anti-envelhecimento cuidado fac"></div></a>
     <div class="body">
-    <a class="titlelink" href="./u5d6eq.html"><div class="title">L&amp;apos;Oréal Paris Hyaluron Serum, Revitalift Filler, anti-envelhecimento cuidado facial anti-rugas, com 1,5% de ácido hialurónico puro e vitamina C, 30 ml : Amazon.es: Beleza</div></a>
+    <a class="titlelink" href="./u5d6eq.html"><div class="title">L'Oréal Paris Hyaluron Serum, Revitalift Filler, anti-envelhecimento cuidado facial anti-rugas, com 1,5% de ácido hialurónico puro e vitamina C, 30 ml : Amazon.es: Beleza</div></a>
     <div class="prices"><span class="new">8,60€</span><span class="old">10,62€</span></div>
     <a class="btn" href="https://www.amazon.es/dp/B083KC2XWX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1i77iyy.html"><div class="imgwrap">
     <span class="disc">-49%</span>
