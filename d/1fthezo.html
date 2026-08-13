@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>📉 Precio MÍNIMO histórico‼️
       Anterior: 10,99 € (07-08-2026)
-#Amazon #publi por 10,99€ (-49%) | Descontos PT</title>
+#Amazon #publi por 10,99€ (-49%) | Promoções PT</title>
 <meta name="description" content="📉 Precio MÍNIMO histórico‼️
       Anterior: 10,99 € (07-08-2026)
 #Amazon #publi em promoção por 10,99€ (antes 21,40€) — desconto de 49%, com histórico de preço."/>
@@ -218,6 +218,9 @@
         <span class="bigsave">Poupas 10,41€ (-49%)</span>
         
         <a class="btn" href="https://www.amazon.es/dp/B0G1N9Z5KK?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">🛒 Ver oferta na Amazon →</a>
+        <button class="sharebtn" data-t="📉 Precio MÍNIMO histórico‼️
+      Anterior: 10,99 € (07-08-2026)
+#Amazon #publi" data-d="10,99€ (era 21,40€, -49%)" data-u="https://www.amazon.es/dp/B0G1N9Z5KK?tag=descontoseopo-21" data-i="https://m.media-amazon.com/images/I/610GN1X4ljL._SL500_.jpg">🔗 Partilhar esta oferta</button>
         <span class="meta">Preço verificado quando publicámos a oferta — pode mudar a qualquer momento.</span>
       </div>
     </div>
@@ -294,6 +297,51 @@
   setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
   darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 
+</script>
+<script>
+(function(){
+  function legenda(t,d,u){ return t + (d? '\n\n'+d : '') + '\n\n👉 ' + u; }
+  function menu(t,d,u,i){
+    var texto = legenda(t,d,u);
+    var enc = encodeURIComponent, encT = enc(texto), encU = enc(u), encTt = enc(t);
+    var ov = document.createElement('div'); ov.className='shovl';
+    ov.innerHTML =
+      '<div class="shbox" role="dialog">' +
+        '<h3>Partilhar</h3>' +
+        '<p class="shsub">'+t.replace(/</g,'&lt;')+'</p>' +
+        '<div class="shgrid">' +
+          '<a href="https://www.facebook.com/sharer/sharer.php?u='+encU+'&quote='+encT+'" target="_blank" rel="noopener">📘 Facebook</a>' +
+          '<a href="https://wa.me/?text='+enc(texto)+'" target="_blank" rel="noopener">💬 WhatsApp</a>' +
+          '<a href="https://t.me/share/url?url='+encU+'&text='+encTt+'" target="_blank" rel="noopener">📢 Telegram</a>' +
+          '<a href="https://twitter.com/intent/tweet?text='+encTt+'&url='+encU+'" target="_blank" rel="noopener">✖️ X / Twitter</a>' +
+          '<button type="button" data-copy="1">📋 Copiar legenda</button>' +
+          (i? '<a href="'+i+'" target="_blank" rel="noopener">🖼️ Abrir imagem</a>' : '') +
+        '</div>' +
+        '<p class="shhint">Para TikTok, YouTube ou Instagram: copia a legenda e guarda a imagem, depois publica na app. Estas não permitem pré-preencher o post por link.</p>' +
+        '<button class="shclose" type="button">Fechar</button>' +
+      '</div>';
+    document.body.appendChild(ov);
+    ov.addEventListener('click', function(e){ if(e.target===ov) ov.remove(); });
+    ov.querySelector('.shclose').onclick = function(){ ov.remove(); };
+    var cp = ov.querySelector('[data-copy]');
+    if(cp) cp.onclick = function(){
+      navigator.clipboard.writeText(texto).then(function(){ cp.textContent='✅ Copiado!'; }, function(){ cp.textContent='Copia manualmente'; });
+    };
+  }
+  // Delegação: apanha cliques em .sharebtn mesmo nos cartões criados dinamicamente.
+  document.addEventListener('click', function(e){
+    var b = e.target.closest && e.target.closest('.sharebtn');
+    if(!b) return;
+    e.preventDefault();
+    var t=b.dataset.t, d=b.dataset.d||'', u=b.dataset.u, i=b.dataset.i||'';
+    if(navigator.share){
+      // url separado do texto para o link não aparecer duplicado no menu nativo.
+      navigator.share({ title: t, text: t + (d? '\n\n'+d : ''), url: u }).catch(function(){});
+    } else {
+      menu(t,d,u,i);
+    }
+  });
+})();
 </script>
 </body>
 </html>

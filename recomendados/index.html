@@ -226,16 +226,18 @@
       navigator.clipboard.writeText(texto).then(function(){ cp.textContent='✅ Copiado!'; }, function(){ cp.textContent='Copia manualmente'; });
     };
   }
-  document.querySelectorAll('.sharebtn').forEach(function(b){
-    b.addEventListener('click', function(){
-      var t=b.dataset.t, d=b.dataset.d, u=b.dataset.u, i=b.dataset.i;
-      if(navigator.share){
-        // url separado do texto para o link não aparecer duplicado no menu nativo.
-        navigator.share({ title: t, text: t + (d? '\n\n'+d : ''), url: u }).catch(function(){});
-      } else {
-        menu(t,d,u,i);
-      }
-    });
+  // Delegação: apanha cliques em .sharebtn mesmo nos cartões criados dinamicamente.
+  document.addEventListener('click', function(e){
+    var b = e.target.closest && e.target.closest('.sharebtn');
+    if(!b) return;
+    e.preventDefault();
+    var t=b.dataset.t, d=b.dataset.d||'', u=b.dataset.u, i=b.dataset.i||'';
+    if(navigator.share){
+      // url separado do texto para o link não aparecer duplicado no menu nativo.
+      navigator.share({ title: t, text: t + (d? '\n\n'+d : ''), url: u }).catch(function(){});
+    } else {
+      menu(t,d,u,i);
+    }
   });
 })();
 </script>
