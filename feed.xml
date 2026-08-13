@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Thu, 13 Aug 2026 21:31:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 21:34:11 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Columbia Crestwood, Zapatos para senderismo, Hombre, Shark Columbia Grey, 42 EU — 52,07€</title>
+      <link>https://descontos-pt.github.io/d/h1sq4d.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/h1sq4d.html</guid>
+      <pubDate>Thu, 13 Aug 2026 21:33:32 GMT</pubDate>
+      <description>Columbia Crestwood, Zapatos para senderismo, Hombre, Shark Columbia Grey, 42 EU por 52,07€ (antes 83,98€, -38%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/71G+Bn8KLSL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>SAGUARO Zapatillas Barefoot Hombre Mujer Zapatillas Minimalistas Zapatos Barefoot Calzado Minimalistas Zapatil — 39,99€</title>
       <link>https://descontos-pt.github.io/d/bhmfdw.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Thu, 13 Aug 2026 13:20:25 GMT</pubDate>
       <description>DUJEQM Ímanes frigorífico - 30 peças ímans poderosos quadro magnético, ímãs pequenos de cores coração - mini íman frigorífico Magnets para calendário, fotos, notas, escritório, cozinha escola e casa : Amazon.es: Produtos para Escritório por 4,09€ (antes 11,98€, -66%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/61qQvYTckDL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Lee Straight Fit Xm Calças de ganga para homem, maddox, 40W/30L : Amazon.es: Moda — 36,30€</title>
-      <link>https://descontos-pt.github.io/d/wen45s.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/wen45s.html</guid>
-      <pubDate>Thu, 13 Aug 2026 13:10:01 GMT</pubDate>
-      <description>Lee Straight Fit Xm Calças de ganga para homem, maddox, 40W/30L : Amazon.es: Moda por 36,30€ (antes 75,00€, -52%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/51Y0trYnD1L._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
