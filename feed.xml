@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos Portugal</title>
+    <title>Descontos PT</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Fri, 14 Aug 2026 08:30:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 08:33:07 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ring Cámara interior (Indoor Camera 2.ª gen.) | Cámara de vigilancia wifi con enchufe para mascotas | Vídeo 10 — 0,99€</title>
+      <link>https://descontos-pt.github.io/d/1nx6m11.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/1nx6m11.html</guid>
+      <pubDate>Fri, 14 Aug 2026 08:32:58 GMT</pubDate>
+      <description>Ring Cámara interior (Indoor Camera 2.ª gen.) | Cámara de vigilancia wifi con enchufe para mascotas | Vídeo 1080p HD, comunicación bidireccional, cubierta de privacidad | 30 días gratis de Ring Home por 0,99€ (antes 2,47€, -60%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/61tIP8A7sHL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>JACK &amp; JONES Jjiglenn Jjoriginal Am 812 Noos - Calças de ganga para homem, Azul e rosa: Amazon.es: Moda — 25,99€</title>
       <link>https://descontos-pt.github.io/d/1wljuk8.html</link>
@@ -406,14 +414,6 @@
       <pubDate>Thu, 13 Aug 2026 22:19:26 GMT</pubDate>
       <description>Fairy Platinum Cápsulas De Lavavajillas, Limón, 34 Cápsulas, Potente Incluso Con Los Restos De Comida Más Difíciles, Platos Limpios, Lavavajillas Brillante, Filtro Limpio Sinasa (Paquete de 2) por 13,20€ (antes 20,31€, -35%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/81yfkZjAvxL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>CMF by Nothing Watch 3 Pro – Reloj Inteligente con Pantalla AMOLED 1,43", 13 Días de Batería, GPS de Doble Ban — 43,71€</title>
-      <link>https://descontos-pt.github.io/d/1j20qkk.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/1j20qkk.html</guid>
-      <pubDate>Thu, 13 Aug 2026 22:08:01 GMT</pubDate>
-      <description>CMF by Nothing Watch 3 Pro – Reloj Inteligente con Pantalla AMOLED 1,43", 13 Días de Batería, GPS de Doble Banda, Llamadas Bluetooth con IA, Control de Ritmo Cardíaco y Sueño – Gris Claro por 43,71€ (antes 78,05€, -44%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/51nKhB-VZUL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
