@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Fri, 14 Aug 2026 15:51:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 15:56:02 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ring cámara Plus con luces solar (Spotlight Cam Plus) | Cámara de vigilancia exterior wifi con vídeo HD 1080p, — 109,99€</title>
+      <link>https://descontos-pt.github.io/d/k2cy7p.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/k2cy7p.html</guid>
+      <pubDate>Fri, 14 Aug 2026 15:55:00 GMT</pubDate>
+      <description>Ring cámara Plus con luces solar (Spotlight Cam Plus) | Cámara de vigilancia exterior wifi con vídeo HD 1080p, comunicación bidireccional, visión nocturna y focos LED | 30 días gratis de Ring Home : Amazon.es: Eletrónica por 109,99€ (antes 209,98€, -48%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/51zMZYGPfUL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>XIAOMI 17T Pro Smartphone de 12 + 512 GB preto teleobjetiva Leica 5X | Ecrã de 144 Hz, 7000 mAh (típico). Bate — 799,00€</title>
       <link>https://descontos-pt.github.io/d/1mbz74o.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Fri, 14 Aug 2026 08:21:31 GMT</pubDate>
       <description>JACK &amp; JONES Jjiglenn Jjoriginal Am 812 Noos - Calças de ganga para homem, Azul e rosa: Amazon.es: Moda por 25,99€ (antes 49,99€, -48%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/718NRZAtNSL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>L'OR Espresso Café Onyx | 50 Cápsulas | Intensidad 12, Compatible con máquinas Nespresso — 16,95€</title>
-      <link>https://descontos-pt.github.io/d/d3bjra.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/d3bjra.html</guid>
-      <pubDate>Fri, 14 Aug 2026 08:11:51 GMT</pubDate>
-      <description>L'OR Espresso Café Onyx | 50 Cápsulas | Intensidad 12, Compatible con máquinas Nespresso por 16,95€ (antes 17,99€, -50%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/61+UEs4xmML._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
