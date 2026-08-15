@@ -128,11 +128,20 @@
   .hero-old-price{font-size:18px;color:var(--muted);text-decoration:line-through;}
   .hero-savings-pill{background:var(--green-light);color:var(--green);font-size:13.5px;font-weight:800;padding:4px 10px;border-radius:8px;}
   .hero-meta{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+  /* Event Banner */
+  .event-banner{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:1px solid rgba(255,94,0,.3);border-radius:20px;padding:24px 28px;margin:18px 0;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.15);position:relative;overflow:hidden;}
+  .event-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,94,0,.25) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+  .event-badge{display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;font-weight:900;padding:4px 12px;border-radius:999px;letter-spacing:0.5px;margin-bottom:10px;}
+  .event-banner h2{font-size:22px;font-weight:900;margin-bottom:6px;color:#fff;}
+  .event-banner p{font-size:14.5px;color:#cbd5e1;max-width:750px;margin-bottom:14px;line-height:1.5;}
+  .event-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 20px;border-radius:12px;box-shadow:0 4px 15px rgba(255,94,0,.4);transition:all .15s ease;}
+  .event-btn:hover{background:var(--accent2);transform:translateY(-2px);}
+
   .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
-  .hero-btn{flex:1;min-width:180px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:13px 20px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 20px rgba(255,94,0,.35);transition:all .18s;}
+  .hero-btn{flex:1;min-width:180px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:15px;padding:13px 20px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 20px rgba(255,94,0,.35);transition:all .18s;}
   .hero-btn:hover{background:var(--accent2);transform:translateY(-1px);}
-  .hero-share{background:var(--bg);color:var(--text);border:1px solid var(--line);font-weight:800;font-size:14px;padding:13px 18px;border-radius:14px;cursor:pointer;transition:all .15s;}
-  .hero-share:hover{border-color:var(--accent);color:var(--accent);}
+  .hero-share{background:var(--bg);color:var(--text)!important;border:1px solid var(--line);font-weight:800;font-size:14px;padding:13px 18px;border-radius:14px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px;}
+  .hero-share:hover{border-color:var(--accent);color:var(--accent)!important;}
 
   /* Secções */
   .sectionh{font-size:20px;font-weight:900;margin:28px 2px 14px;display:flex;align-items:center;gap:10px;letter-spacing:-0.4px;}
@@ -242,6 +251,29 @@
   .shclose{margin-top:14px;width:100%;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;font-size:14px;cursor:pointer;transition:all .15s;}
   .shclose:hover{background:var(--accent2);}
   .shhint{color:var(--muted);font-size:11.5px;margin-top:12px;line-height:1.4;text-align:center;}
+  /* Artigos Ricos & Showcases */
+  .article-hero-img{width:100%;max-height:420px;object-fit:cover;border-radius:16px;margin:12px 0 20px;box-shadow:var(--shadow);}
+  .article-figure{margin:18px 0;text-align:center;}
+  .article-figure img{width:100%;max-width:680px;border-radius:14px;box-shadow:var(--shadow);}
+  .article-figure figcaption{color:var(--muted);font-size:12.5px;margin-top:6px;font-style:italic;}
+  .tip-box{background:linear-gradient(135deg,rgba(255,107,0,.08) 0%,rgba(255,107,0,.02) 100%);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:14px 18px;margin:18px 0;}
+  .tip-box h4{margin:0 0 6px;color:var(--accent2);font-size:15px;font-weight:800;}
+  .tip-box p{margin:0;font-size:14px;line-height:1.55;}
+  .product-showcase{display:grid;grid-template-columns:180px 1fr;gap:20px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px;margin:20px 0;box-shadow:var(--shadow);align-items:center;}
+  @media(max-width:640px){.product-showcase{grid-template-columns:1fr;text-align:center;}}
+  .product-showcase img{width:100%;max-height:180px;object-fit:contain;border-radius:12px;}
+  .product-showcase .ps-info h3{font-size:17px;font-weight:800;margin:0 0 6px;}
+  .product-showcase .ps-price{display:flex;align-items:baseline;gap:10px;margin:8px 0;}
+  @media(max-width:640px){.product-showcase .ps-price{justify-content:center;}}
+  .product-showcase .ps-curr{font-size:22px;font-weight:900;color:var(--accent2);}
+  .product-showcase .ps-old{font-size:14px;color:var(--muted);text-decoration:line-through;}
+  .product-showcase .ps-disc{background:#16a34a;color:#fff;font-size:12px;font-weight:800;padding:3px 8px;border-radius:6px;}
+  .product-showcase .ps-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 18px;border-radius:10px;transition:.15s;margin-top:6px;}
+  .product-showcase .ps-btn:hover{background:var(--accent2);transform:translateY(-1px);}
+  .coupon-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;}
+  .coupon-table th{background:var(--bg);padding:10px 14px;text-align:left;border-bottom:2px solid var(--line);font-weight:800;}
+  .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
+  .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
 </style>
 </head>
 <body>
@@ -253,16 +285,16 @@
       
       <nav class="topnav">
         <a href="../../">🔥 Melhores Ofertas</a>
-        <a href="../../recomendados/">🎁 Recomendados</a>
+        <a href="../../artigos/">📰 Notícias &amp; Artigos</a>
         <a href="../../guias/">📚 Guias de Poupança</a>
-        <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
+        <a href="../../recomendados/">🎁 Recomendados</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
       </nav>
     </header>
 
     
-    <div class="bread"><a href="../">← Todos os artigos</a></div>
+    <div class="bread"><a href="../">← Todas as notícias e artigos</a></div>
     <article class="article">
       <h1>🔐 Passwords e autenticação em dois passos: o básico que te protege</h1>
       <p class="updated">Atualizado em agosto de 2026</p>
@@ -285,8 +317,13 @@
 <p>Existem serviços gratuitos onde escreves o teu email e vês se ele apareceu em fugas de dados conhecidas. Se apareceu, muda as passwords dessas contas. É um bom hábito fazê-lo de vez em quando.</p>
 
     </article>
-    <div class="sectionh">🛡️ Outros artigos</div>
+    <div class="sectionh">📰 Outros artigos e notícias</div>
     <div class="guidegrid relguides">
+    <a class="guidecard" href="../guia-regresso-aulas-gadgets-aliexpress-local-amazon/">
+      <span class="gemoji">🎒</span>
+      <h3>Guia Regresso às Aulas 2026: Melhores Gadgets e Como Comprar no AliExpress sem Alfândega</h3>
+      <p>Descobre os 5 gadgets essenciais para estudar e trabalhar, como funciona o AliExpress Local+ com envio de Espanha e a lista de cupões de desconto exclusivos para Portugal.</p>
+    </a>
     <a class="guidecard" href="../reconhecer-loja-online-falsa/">
       <span class="gemoji">🚩</span>
       <h3>Como reconhecer uma loja online falsa antes de pagar</h3>
@@ -296,11 +333,6 @@
       <span class="gemoji">📵</span>
       <h3>Golpes bancários por SMS e telefone: como reconhecer e o que fazer</h3>
       <p>O &quot;smishing&quot; e as chamadas de falso apoio ao cliente são a fraude que mais cresce. Aprende a travá-la antes de perderes dinheiro.</p>
-    </a>
-    <a class="guidecard" href="../mbway-pagamentos-seguranca/">
-      <span class="gemoji">📲</span>
-      <h3>MB Way e pagamentos instantâneos: como usar em segurança</h3>
-      <p>O MB Way é prático, mas há golpes desenhados à volta dele. As regras simples que te protegem de perder dinheiro num instante.</p>
     </a></div>
 
     <footer>
