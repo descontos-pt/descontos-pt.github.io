@@ -274,6 +274,33 @@
   .coupon-table th{background:var(--bg);padding:10px 14px;text-align:left;border-bottom:2px solid var(--line);font-weight:800;}
   .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
   .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
+
+  /* 4gnews Magazine Style for /noticias/ */
+  .news-hero-card{display:grid;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0 28px;box-shadow:var(--shadow);transition:all .2s ease;text-decoration:none;color:var(--text);}
+  @media(min-width:768px){.news-hero-card{grid-template-columns:1.2fr 1fr;}}
+  .news-hero-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+  .news-hero-img-wrap{position:relative;height:260px;background:var(--imgbg);overflow:hidden;}
+  @media(min-width:768px){.news-hero-img-wrap{height:100%;min-height:300px;}}
+  .news-hero-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
+  .news-hero-card:hover .news-hero-img-wrap img{transform:scale(1.04);}
+  .news-hero-content{padding:26px 24px;display:flex;flex-direction:column;justify-content:center;}
+  .news-badge{align-self:flex-start;background:var(--accent);color:#fff;font-size:11.5px;font-weight:900;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px;}
+  .news-hero-title{font-size:22px;font-weight:900;line-height:1.3;margin-bottom:10px;color:var(--text);}
+  .news-hero-desc{color:var(--muted);font-size:14px;line-height:1.6;margin-bottom:16px;}
+  .news-meta{font-size:12px;color:var(--muted);font-weight:600;}
+  
+  .news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px;}
+  .news-card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:all .2s ease;}
+  .news-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+  .news-card-img{position:relative;height:180px;overflow:hidden;background:var(--imgbg);}
+  .news-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
+  .news-card:hover .news-card-img img{transform:scale(1.05);}
+  .news-card-badge{position:absolute;top:10px;left:10px;background:rgba(15,23,42,0.85);backdrop-filter:blur(4px);color:#fff;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;}
+  .news-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1;}
+  .news-card-title{font-size:16px;font-weight:800;line-height:1.35;margin-bottom:8px;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .news-card-desc{color:var(--muted);font-size:13.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:14px;flex:1;}
+  .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
+  .news-card-more{color:var(--accent);font-weight:800;}
 </style>
 </head>
 <body>
@@ -285,8 +312,9 @@
       
       <nav class="topnav">
         <a href="../../">🔥 Melhores Ofertas</a>
-        <a href="../../artigos/">📰 Notícias &amp; Artigos</a>
+        <a href="../../noticias/">📰 Notícias Tech</a>
         <a href="../../guias/">📚 Guias de Poupança</a>
+        <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
         <a href="../../recomendados/">🎁 Recomendados</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
@@ -294,7 +322,7 @@
     </header>
 
     
-    <div class="bread"><a href="../">← Todas as notícias e artigos</a></div>
+    <div class="bread"><a href="../">← Todos os artigos de segurança</a></div>
     <article class="article">
       <h1>📶 Wi-Fi público: os riscos e como usá-lo em segurança</h1>
       <p class="updated">Atualizado em agosto de 2026</p>
@@ -316,7 +344,7 @@
 </ul>
 <p>Em conclusão, o Wi-Fi público pode ser uma comodidade útil, mas é importante estar ciente dos riscos associados ao seu uso. Ao seguir algumas boas práticas simples e usar os teus dados móveis ou uma VPN, podes minimizar os riscos e usar o Wi-Fi público de forma mais segura. Lembra-te de sempre ter atenção e proteger-te quando estás a usar a internet em público.</p>
     </article>
-    <div class="sectionh">📰 Outros artigos e notícias</div>
+    <div class="sectionh">🛡️ Outros artigos de segurança</div>
     <div class="guidegrid relguides">
     <a class="guidecard" href="../guia-regresso-aulas-gadgets-aliexpress-local-amazon/">
       <span class="gemoji">🎒</span>
