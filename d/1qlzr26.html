@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>30 tiras nasais anti-ressonar, design triplo crista com adesivo de grau profissi por 9,99€ (-67%) | Descontos PT</title>
+<title>30 tiras nasais anti-ressonar, design triplo crista com adesivo de grau profissi por 9,99€ (-67%) | Promoções PT</title>
 <meta name="description" content="30 tiras nasais anti-ressonar, design triplo crista com adesivo de grau profissional, tiras de nariz respiráve em promoção por 9,99€ (antes 29,99€) — desconto de 67%, com histórico de preço."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://descontos-pt.github.io/d/1qlzr26.html"/>
@@ -135,14 +135,19 @@
   .hero-old-price{font-size:18px;color:var(--muted);text-decoration:line-through;}
   .hero-savings-pill{background:var(--green-light);color:var(--green);font-size:13.5px;font-weight:800;padding:4px 10px;border-radius:8px;}
   .hero-meta{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
-  /* Event Banner */
-  .event-banner{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:1px solid rgba(255,94,0,.3);border-radius:20px;padding:24px 28px;margin:18px 0;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.15);position:relative;overflow:hidden;}
-  .event-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,94,0,.25) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+  /* Event Banner (Light Mode por defeito + Dark Mode) */
+  .event-banner{background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);border:1px solid rgba(255,94,0,.25);border-radius:20px;padding:24px 28px;margin:18px 0;color:var(--text);box-shadow:var(--shadow);position:relative;overflow:hidden;}
+  .event-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,94,0,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
   .event-badge{display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;font-weight:900;padding:4px 12px;border-radius:999px;letter-spacing:0.5px;margin-bottom:10px;}
-  .event-banner h2{font-size:22px;font-weight:900;margin-bottom:6px;color:#fff;}
-  .event-banner p{font-size:14.5px;color:#cbd5e1;max-width:750px;margin-bottom:14px;line-height:1.5;}
-  .event-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 20px;border-radius:12px;box-shadow:0 4px 15px rgba(255,94,0,.4);transition:all .15s ease;}
+  .event-banner h2{font-size:22px;font-weight:900;margin-bottom:6px;color:var(--text);}
+  .event-banner p{font-size:14.5px;color:var(--muted);max-width:750px;margin-bottom:14px;line-height:1.5;}
+  .event-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 20px;border-radius:12px;box-shadow:0 4px 15px rgba(255,94,0,.3);transition:all .15s ease;}
   .event-btn:hover{background:var(--accent2);transform:translateY(-2px);}
+  
+  html.dark .event-banner{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-color:rgba(255,107,0,.3);color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.35);}
+  html.dark .event-banner::before{background:radial-gradient(circle,rgba(255,107,0,.22) 0%,transparent 70%);}
+  html.dark .event-banner h2{color:#fff;}
+  html.dark .event-banner p{color:#cbd5e1;}
 
   .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
   .hero-btn{flex:1;min-width:180px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:15px;padding:13px 20px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 20px rgba(255,94,0,.35);transition:all .18s;}
