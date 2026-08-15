@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Crocs Handle It Rain Boot T botas de chuva unissexo crianças, Verde Exército : A por 11,10€ (-72%) | Descontos PT</title>
+<title>Crocs Handle It Rain Boot T botas de chuva unissexo crianças, Verde Exército : A por 11,10€ (-72%) | Promoções PT</title>
 <meta name="description" content="Crocs Handle It Rain Boot T botas de chuva unissexo crianças, Verde Exército : Amazon.es: Moda em promoção por 11,10€ (antes 39,99€) — desconto de 72%, com histórico de preço."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://descontos-pt.github.io/d/rpm8bq.html"/>
@@ -212,6 +212,23 @@
   .tg-float{position:fixed;bottom:20px;right:20px;z-index:999;background:linear-gradient(135deg,#0088cc 0%,#0077b5 100%);color:#fff;padding:12px 22px;border-radius:50px;box-shadow:0 8px 24px rgba(0,136,204,.4);display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:14px;transition:all .2s;animation:tgPulse 3s infinite;}
   .tg-float:hover{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,136,204,.6);color:#fff;}
   @keyframes tgPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.03);}}
+
+  /* Cookie Consent Banner (RGPD & Google AdSense Compliance) */
+  .cookie-consent{
+    position:fixed;bottom:20px;left:20px;right:20px;max-width:860px;margin:0 auto;z-index:10000;
+    background:var(--card);border:2px solid var(--accent);border-radius:20px;padding:20px 24px;
+    box-shadow:0 14px 45px rgba(0,0,0,.35);display:none;align-items:center;justify-content:space-between;
+    gap:20px;flex-wrap:wrap;animation:slideUp .35s ease;
+  }
+  @keyframes slideUp{from{transform:translateY(35px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  .cookie-text{flex:1;min-width:280px;font-size:13.5px;line-height:1.5;color:var(--text);}
+  .cookie-text a{color:var(--accent);text-decoration:none;font-weight:700;}
+  .cookie-text a:hover{text-decoration:underline;}
+  .cookie-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .cookie-btn-accept{background:linear-gradient(135deg,#ff5e00 0%,#ea580c 100%);color:#fff;border:none;border-radius:12px;padding:10px 20px;font-size:13.5px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(255,94,0,.35);transition:all .15s;}
+  .cookie-btn-accept:hover{transform:translateY(-1px);background:linear-gradient(135deg,#ff6e1a 0%,#f97316 100%);box-shadow:0 6px 18px rgba(255,94,0,.5);}
+  .cookie-btn-essential{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 18px;font-size:13.5px;font-weight:700;cursor:pointer;transition:all .15s;}
+  .cookie-btn-essential:hover{border-color:var(--accent);color:var(--accent);}
 
   .topnav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
   .topnav a{color:var(--text);text-decoration:none;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);transition:all .18s ease;}
@@ -488,6 +505,36 @@
         <p>© 2026 Descontos PT · Todos os direitos reservados · Os preços e promoções apresentados podem sofrer alterações pelas lojas parceiras.</p>
       </div>
     </footer>
+
+    <!-- Banner de Consentimento de Cookies e Privacidade (RGPD / Google AdSense) -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Aviso de Cookies e Privacidade">
+      <div class="cookie-text">
+        🍪 <strong>A tua privacidade é prioridade:</strong> Utilizamos cookies essenciais, analíticos e de publicidade (incluindo <strong>Google AdSense</strong>) para personalizar anúncios e garantir a melhor experiência de poupança em conformidade com o RGPD. Consulta a nossa <a href="../privacy.html">Política de Privacidade</a>.
+      </div>
+      <div class="cookie-actions">
+        <button id="cookie-accept" class="cookie-btn-accept">Aceitar Todos</button>
+        <button id="cookie-essential" class="cookie-btn-essential">Apenas Essenciais</button>
+      </div>
+    </div>
+    <script>
+      (function(){
+        try {
+          var consent = localStorage.getItem('descontos_cookie_consent');
+          var el = document.getElementById('cookie-consent');
+          if (!consent && el) {
+            el.style.display = 'flex';
+            document.getElementById('cookie-accept').onclick = function() {
+              localStorage.setItem('descontos_cookie_consent', 'all');
+              el.style.display = 'none';
+            };
+            document.getElementById('cookie-essential').onclick = function() {
+              localStorage.setItem('descontos_cookie_consent', 'essential');
+              el.style.display = 'none';
+            };
+          }
+        } catch(e) {}
+      })();
+    </script>
   </div>
 <script>
   var darkbtn=document.getElementById('darkbtn');
