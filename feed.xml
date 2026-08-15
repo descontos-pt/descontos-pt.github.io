@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Sat, 15 Aug 2026 21:39:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 21:40:34 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>G-Star A Line Loose R T T-shirt para homem, Beige Elephant Skin D26816-c506-g106, Médio : Amazon.es: Moda — 12,74€</title>
+      <link>https://descontos-pt.github.io/d/5g2u78.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/5g2u78.html</guid>
+      <pubDate>Sat, 15 Aug 2026 21:40:32 GMT</pubDate>
+      <description>G-Star A Line Loose R T T-shirt para homem, Beige Elephant Skin D26816-c506-g106, Médio : Amazon.es: Moda por 12,74€ (antes 45,00€, -72%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/51UoCii9v3L._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Tommy Hilfiger Outras blusas para crianças, Cinza (Mid Grey Heather), 8 anos : Amazon.es: Moda — 22,00€</title>
       <link>https://descontos-pt.github.io/d/uhcj8l.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Sat, 15 Aug 2026 12:31:01 GMT</pubDate>
       <description>Panela de ferro fundido, Topbooc 26 cm, 5 l, caçarola de esmalte, vermelha | Para Indução, forno, gás, frigideira redonda Dutch Oven para assar pão, guisar, cozinhar, dois ganchos resistentes ao calor : Amazon.es: Casa e Cozinha por 47,49€ (antes 169,00€, -72%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/71Ci7YoSwsL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Geox Uomo Strada B Sandal, Sandalias Deportivas, Negro, 40 EU — 43,92€</title>
-      <link>https://descontos-pt.github.io/d/1xzvu0o.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/1xzvu0o.html</guid>
-      <pubDate>Sat, 15 Aug 2026 12:19:13 GMT</pubDate>
-      <description>Geox Uomo Strada B Sandal, Sandalias Deportivas, Negro, 40 EU por 43,92€ (antes 73,20€, -40%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/51UQwKeQtXL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
