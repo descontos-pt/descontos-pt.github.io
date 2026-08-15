@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Sat, 15 Aug 2026 21:42:06 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 21:43:03 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tommy Hilfiger T-shirt S para homem, Azul (azul presente), XL : Amazon.es: Moda — 17,95€</title>
+      <link>https://descontos-pt.github.io/d/x0awsx.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/x0awsx.html</guid>
+      <pubDate>Sat, 15 Aug 2026 21:43:00 GMT</pubDate>
+      <description>Tommy Hilfiger T-shirt S para homem, Azul (azul presente), XL : Amazon.es: Moda por 17,95€ (antes 39,90€, -55%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/71PFGlM8WHL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>G-Star A Line Loose R T T-shirt para homem, Beige Elephant Skin D26816-c506-g106, Médio : Amazon.es: Moda — 12,74€</title>
       <link>https://descontos-pt.github.io/d/5g2u78.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Sat, 15 Aug 2026 12:44:52 GMT</pubDate>
       <description>Finish Gel Abrillantador Lavavajillas, vajilla seca, brillante y sin marcas - 200 lavados, El embalaje puede variar por 7,36€ (antes 7,84€, -58%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/71lOAuJiSFL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Panela de ferro fundido, Topbooc 26 cm, 5 l, caçarola de esmalte, vermelha | Para Indução, forno, gás, frigide — 47,49€</title>
-      <link>https://descontos-pt.github.io/d/aukfr6.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/aukfr6.html</guid>
-      <pubDate>Sat, 15 Aug 2026 12:31:01 GMT</pubDate>
-      <description>Panela de ferro fundido, Topbooc 26 cm, 5 l, caçarola de esmalte, vermelha | Para Indução, forno, gás, frigideira redonda Dutch Oven para assar pão, guisar, cozinhar, dois ganchos resistentes ao calor : Amazon.es: Casa e Cozinha por 47,49€ (antes 169,00€, -72%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/71Ci7YoSwsL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
