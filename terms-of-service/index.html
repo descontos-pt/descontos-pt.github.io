@@ -3,55 +3,378 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Descontos PT</title>
+<title>Termos e Condições de Serviço | Descontos PT</title>
+<meta name="description" content="Condições de utilização do portal Descontos PT, isenções de responsabilidade sobre preços e direitos do consumidor."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://descontos-pt.github.io/terms-of-service/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="pt_PT"/>
+<meta property="og:title" content="Termos e Condições de Serviço"/>
+<meta property="og:description" content="Condições de utilização do portal Descontos PT, isenções de responsabilidade sobre preços e direitos do consumidor."/>
+<meta property="og:url" content="https://descontos-pt.github.io/terms-of-service/"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5696036221694738"
+     crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  body { font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:#0e1116; color:#e8eaed; line-height:1.7; }
-  .wrap { max-width:760px; margin:0 auto; padding:48px 24px; }
-  h1 { font-size:28px; margin-bottom:8px; }
-  h2 { font-size:19px; margin:28px 0 8px; color:#ff6b00; }
-  p, li { color:#c8ccd2; margin-bottom:8px; }
-  ul { margin-left:20px; }
-  a { color:#ff6b00; text-decoration:none; }
-  .muted { color:#9aa0a6; font-size:14px; }
+  /* ── Google AdSense ad containers ── */
+  .ad-unit{width:100%;max-width:1180px;margin:16px auto;padding:0;text-align:center;min-height:0;}
+  .ad-unit:has(ins[data-ad-status="filled"]){padding:12px 16px;background:var(--card);border:1px dashed var(--line);border-radius:14px;}
+  .ad-unit ins{display:block;}
+  .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
+
+  :root{
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --card-sub:#f8fafc;
+    --accent:#ff5e00;
+    --accent2:#e04800;
+    --accent-light:rgba(255,94,0,.08);
+    --text:#131720;
+    --muted:#64748b;
+    --green:#10b981;
+    --green-light:rgba(16,185,129,.1);
+    --line:#e2e8f0;
+    --imgbg:#ffffff;
+    --shadow:0 4px 16px rgba(15,23,42,.05);
+    --shadow-hover:0 12px 32px rgba(15,23,42,.12);
+  }
+  html.dark{
+    --bg:#0b0e14;
+    --card:#141923;
+    --card-sub:#1c2331;
+    --accent:#ff6b00;
+    --accent2:#ff5500;
+    --accent-light:rgba(255,107,0,.14);
+    --text:#f1f5f9;
+    --muted:#94a3b8;
+    --green:#22c55e;
+    --green-light:rgba(34,197,94,.15);
+    --line:#222a3a;
+    --imgbg:#1a202c;
+    --shadow:0 4px 20px rgba(0,0,0,.4);
+    --shadow-hover:0 14px 36px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;line-height:1.5;}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 16px 80px;}
+
+  /* Header Estilo Portal */
+  header{
+    text-align:center;padding:28px 24px;margin:18px 0 12px;border-radius:24px;
+    background:linear-gradient(135deg,#ffffff 0%,#fff5ed 100%);
+    border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
+  }
+  html.dark header{
+    background:linear-gradient(135deg,#161d2a 0%,#241b14 100%);
+    border-color:#3b2a1a;
+  }
+  .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
+  .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
+  .live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.2);}}
+  .wa-channel-pill{display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#ffffff !important;font-size:12px;font-weight:800;padding:5px 14px;border-radius:999px;text-decoration:none;box-shadow:0 3px 10px rgba(37,211,102,.3);transition:all .18s ease;}
+  .wa-channel-pill:hover{background:#1ebe57;transform:translateY(-1px);box-shadow:0 6px 16px rgba(37,211,102,.4);}
+
+  .marca{display:inline-flex;align-items:center;gap:12px;}
+  .marca svg{flex:0 0 auto;color:var(--accent);}
+  .logo{font-size:34px;font-weight:900;letter-spacing:-1px;}
+  .logo a{color:inherit;text-decoration:none;}
+  .logo span{color:var(--accent);}
+  .tag{color:var(--muted);font-size:14.5px;margin-top:4px;font-weight:600;}
+  
+  .darkbtn{background:var(--card);border:1px solid var(--line);border-radius:999px;width:38px;height:38px;font-size:17px;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:transform .15s;}
+  .darkbtn:hover{transform:scale(1.08);}
+
+  .socials{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;}
+  .socials a{background:var(--card);color:var(--text);text-decoration:none;font-weight:700;font-size:12.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow);transition:all .15s ease;}
+  .socials a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);}
+
+  /* Toolbar de Pesquisa e Filtros */
+  .toolbar{position:sticky;top:8px;z-index:90;background:var(--bg);padding:8px 0;margin:12px 0 6px;}
+  .searchrow{display:flex;gap:10px;margin-bottom:12px;}
+  .search{flex:1;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;box-shadow:var(--shadow);transition:border-color .15s;}
+  .search:focus-within{border-color:var(--accent);}
+  .search input{flex:1;border:none;outline:none;background:transparent;color:var(--text);font-family:inherit;font-size:15px;}
+  .sort{background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--text);font-family:inherit;font-weight:700;font-size:13px;padding:0 16px;cursor:pointer;box-shadow:var(--shadow);outline:none;}
+  .sort:focus{border-color:var(--accent);}
+
+  .cats{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;-webkit-overflow-scrolling:touch;}
+  .cats::-webkit-scrollbar{height:4px;}
+  .cats::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+  .chip{flex:0 0 auto;background:var(--card);border:1px solid var(--line);color:var(--text);font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:all .18s ease;box-shadow:var(--shadow);}
+  .chip:hover{border-color:var(--accent);transform:translateY(-1px);}
+  .chip.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(255,94,0,.35);}
+
+  /* Hero Featured Deal (Destaque Maior do Dia) */
+  .hero-deal-container{margin:24px 0 16px;}
+  .hero-deal{
+    display:grid;grid-template-columns:1fr;gap:20px;
+    background:var(--card);border:2px solid var(--accent);border-radius:24px;
+    padding:24px;box-shadow:0 12px 36px rgba(255,94,0,.15);position:relative;overflow:hidden;
+  }
+  @media(min-width:768px){.hero-deal{grid-template-columns:320px 1fr;padding:28px;gap:28px;}}
+  .hero-badge-top{position:absolute;top:16px;left:16px;z-index:2;background:linear-gradient(135deg,#ff5e00,#e04800);color:#fff;font-weight:900;font-size:12px;padding:5px 12px;border-radius:8px;letter-spacing:0.4px;box-shadow:0 3px 10px rgba(255,94,0,.4);}
+  .hero-img-wrap{background:var(--imgbg);border-radius:18px;height:240px;display:flex;align-items:center;justify-content:center;padding:16px;position:relative;}
+  @media(min-width:768px){.hero-img-wrap{height:100%;min-height:240px;}}
+  .hero-img-wrap img{max-width:100%;max-height:220px;object-fit:contain;}
+  .hero-info{display:flex;flex-direction:column;justify-content:center;}
+  .hero-cat{font-size:12.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;}
+  .hero-title{font-size:20px;font-weight:900;line-height:1.35;margin-bottom:12px;color:var(--text);}
+  .hero-title a{color:inherit;text-decoration:none;}
+  .hero-title a:hover{color:var(--accent);}
+  .hero-price-row{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
+  .hero-new-price{font-size:32px;font-weight:900;color:var(--accent2);line-height:1;}
+  .hero-old-price{font-size:18px;color:var(--muted);text-decoration:line-through;}
+  .hero-savings-pill{background:var(--green-light);color:var(--green);font-size:13.5px;font-weight:800;padding:4px 10px;border-radius:8px;}
+  .hero-meta{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+  /* Event Banner (Light Mode por defeito + Dark Mode) */
+  .event-banner{background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);border:1px solid rgba(255,94,0,.25);border-radius:20px;padding:24px 28px;margin:18px 0;color:var(--text);box-shadow:var(--shadow);position:relative;overflow:hidden;}
+  .event-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,94,0,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+  .event-badge{display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;font-weight:900;padding:4px 12px;border-radius:999px;letter-spacing:0.5px;margin-bottom:10px;}
+  .event-banner h2{font-size:22px;font-weight:900;margin-bottom:6px;color:var(--text);}
+  .event-banner p{font-size:14.5px;color:var(--muted);max-width:750px;margin-bottom:14px;line-height:1.5;}
+  .event-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 20px;border-radius:12px;box-shadow:0 4px 15px rgba(255,94,0,.3);transition:all .15s ease;}
+  .event-btn:hover{background:var(--accent2);transform:translateY(-2px);}
+  
+  html.dark .event-banner{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-color:rgba(255,107,0,.3);color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.35);}
+  html.dark .event-banner::before{background:radial-gradient(circle,rgba(255,107,0,.22) 0%,transparent 70%);}
+  html.dark .event-banner h2{color:#fff;}
+  html.dark .event-banner p{color:#cbd5e1;}
+
+  .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
+  .hero-btn{flex:1;min-width:180px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:15px;padding:13px 20px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 20px rgba(255,94,0,.35);transition:all .18s;}
+  .hero-btn:hover{background:var(--accent2);transform:translateY(-1px);}
+  .hero-share{background:var(--bg);color:var(--text)!important;border:1px solid var(--line);font-weight:800;font-size:14px;padding:13px 18px;border-radius:14px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px;}
+  .hero-share:hover{border-color:var(--accent);color:var(--accent)!important;}
+
+  /* Secções */
+  .sectionh{font-size:20px;font-weight:900;margin:28px 2px 14px;display:flex;align-items:center;gap:10px;letter-spacing:-0.4px;}
+  .hot{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 16px;-webkit-overflow-scrolling:touch;}
+  .hot::-webkit-scrollbar{height:4px;}
+  .hot::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+  .hot .card{flex:0 0 240px;}
+
+  /* Grid Geral */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;}
+  .card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:all .22s cubic-bezier(0.16,1,0.3,1);box-shadow:var(--shadow);}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:rgba(255,94,0,.4);}
+  html.dark .card:hover{border-color:rgba(255,107,0,.5);box-shadow:0 14px 36px rgba(0,0,0,.65);}
+  .card a.imglink{color:inherit;text-decoration:none;}
+  .imgwrap{position:relative;background:var(--imgbg);height:185px;display:flex;align-items:center;justify-content:center;padding:14px;transition:transform .2s;}
+  .card:hover .imgwrap img{transform:scale(1.04);}
+  .imgwrap img{max-width:100%;max-height:155px;object-fit:contain;transition:transform .25s ease;}
+  .disc{position:absolute;top:10px;left:10px;background:linear-gradient(135deg,#ff5e00 0%,#e04800 100%);color:#fff;font-weight:900;font-size:12.5px;padding:4px 10px;border-radius:8px;box-shadow:0 3px 10px rgba(255,94,0,.4);letter-spacing:0.3px;}
+  .store{position:absolute;bottom:10px;left:10px;background:#fff;color:#334155;font-weight:800;font-size:10.5px;padding:3px 9px;border-radius:6px;border:1px solid #e2e8f0;box-shadow:0 2px 5px rgba(0,0,0,.06);}
+  html.dark .store{background:#1e293b;color:#cbd5e1;border-color:#334155;}
+  .topbadge{position:absolute;top:10px;right:10px;background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;font-weight:800;font-size:10.5px;padding:4px 10px;border-radius:7px;box-shadow:0 3px 8px rgba(16,185,129,.35);}
+  .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1;}
+  .cat{color:var(--muted);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;}
+  .title{font-size:14.5px;line-height:1.4;font-weight:700;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1;}
+  a.titlelink{color:inherit;text-decoration:none;}
+  a.titlelink:hover .title{color:var(--accent);}
+  .prices{display:flex;align-items:baseline;gap:8px;margin-top:4px;flex-wrap:wrap;}
+  .new{color:var(--accent2);font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.4px;}
+  .old{color:var(--muted);text-decoration:line-through;font-size:13.5px;font-weight:500;}
+  .ago{color:var(--muted);font-size:11.5px;font-weight:600;margin-left:auto;}
+  .savings{color:#15803d;background:rgba(22,163,74,.12);padding:3px 8px;border-radius:6px;font-weight:800;font-size:12px;display:inline-block;}
+  html.dark .savings{color:#4ade80;background:rgba(74,222,128,.15);}
+  .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff5e00 0%,#ea580c 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;margin-top:8px;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,94,0,.28);letter-spacing:0.2px;}
+  .btn:hover{background:linear-gradient(135deg,#ff6e1a 0%,#f97316 100%);transform:translateY(-2px);box-shadow:0 7px 20px rgba(255,94,0,.45);}
+  
+  .mais-btn{display:block;margin:32px auto 12px;padding:14px 34px;border:0;border-radius:14px;background:linear-gradient(135deg,#ff5e00 0%,#ea580c 100%);color:#fff;font-size:15.5px;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(255,94,0,.35);transition:all .18s;}
+  .mais-btn:hover{transform:translateY(-2px);background:linear-gradient(135deg,#ff6e1a 0%,#f97316 100%);box-shadow:0 10px 26px rgba(255,94,0,.5);}
+  .empty{text-align:center;color:var(--muted);padding:50px 20px;font-size:16px;}
+  .count{color:var(--muted);font-size:13.5px;margin:8px 2px 14px;font-weight:600;}
+
+  /* Footer Institucional */
+  footer{
+    margin-top:50px;padding:36px 24px 20px;border-top:1px solid var(--line);
+    background:var(--card);border-radius:24px;box-shadow:var(--shadow);
+  }
+  .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-bottom:24px;text-align:left;}
+  .footer-col h4{font-size:15px;font-weight:800;margin-bottom:12px;color:var(--text);}
+  .footer-col p{font-size:13px;line-height:1.6;color:var(--muted);}
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:8px;}
+  .footer-col a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;transition:color .15s;}
+  .footer-col a:hover{color:var(--accent);}
+  .footer-bottom{text-align:center;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.5;}
+
+  /* Floating Telegram Widget */
+  .tg-float{position:fixed;bottom:20px;right:20px;z-index:999;background:linear-gradient(135deg,#0088cc 0%,#0077b5 100%);color:#fff;padding:12px 22px;border-radius:50px;box-shadow:0 8px 24px rgba(0,136,204,.4);display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:14px;transition:all .2s;animation:tgPulse 3s infinite;}
+  .tg-float:hover{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,136,204,.6);color:#fff;}
+  @keyframes tgPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.03);}}
+
+  .topnav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
+  .topnav a{color:var(--text);text-decoration:none;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);transition:all .18s ease;}
+  .topnav a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:var(--shadow-hover);}
+  .intro{background:linear-gradient(135deg,var(--card) 0%,rgba(255,107,0,.03) 100%);border:1px solid var(--line);border-radius:20px;padding:24px 26px;margin:16px 0 10px;box-shadow:var(--shadow);text-align:center;}
+  .intro-badge{display:inline-block;background:rgba(255,107,0,.12);color:var(--accent2);font-size:12px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:10px;}
+  .intro h2{font-size:21px;font-weight:900;margin-bottom:8px;letter-spacing:-0.5px;}
+  .intro p{color:var(--muted);font-size:14.5px;line-height:1.6;max-width:860px;margin:0 auto;}
+  .editorial-hub{margin:36px 0 20px;}
+  .section-title-wrap{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
+  .section-more{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:700;}
+  .section-more:hover{text-decoration:underline;}
+  .section-sub{color:var(--muted);font-size:13.5px;margin-bottom:16px;}
+  .guidegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+  .guidecard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:all .2s ease;}
+  .guidecard:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+  .guidecard .gemoji{font-size:32px;margin-bottom:8px;}
+  .guidecard h3{font-size:16.5px;font-weight:800;margin:4px 0 8px;line-height:1.35;color:var(--text);}
+  .guidecard p{color:var(--muted);font-size:13.5px;line-height:1.55;flex:1;}
+  .guidecard .readmore{margin-top:14px;color:var(--accent);font-weight:800;font-size:13px;}
+  .faq-section{margin:36px 0 20px;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);}
+  .faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:14px;}
+  .faq-card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+  .faq-card h4{font-size:14.5px;font-weight:800;margin-bottom:6px;color:var(--text);}
+  .faq-card p{font-size:13px;line-height:1.55;color:var(--muted);}
+  .article{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 32px;margin:16px 0;box-shadow:var(--shadow);}
+  .article h1{font-size:28px;line-height:1.25;font-weight:900;margin-bottom:8px;}
+  .article .updated{color:var(--muted);font-size:12.5px;font-weight:600;margin-bottom:20px;}
+  .article h2{font-size:20px;font-weight:800;margin:26px 0 10px;}
+  .article p{font-size:15.5px;line-height:1.75;margin-bottom:14px;}
+  .article ul{margin:0 0 16px 22px;}
+  .article li{font-size:15.5px;line-height:1.65;margin-bottom:8px;}
+  .article a{color:var(--accent);text-decoration:none;font-weight:700;}
+  .article a:hover{text-decoration:underline;}
+  .relguides{margin-top:10px;}
+  /* Recomendados (produtos digitais) */
+  .pdesc{color:var(--muted);font-size:13px;line-height:1.5;margin:2px 0 4px;}
+  .imgwrap.phold{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);}
+  .imgwrap.phold span{font-size:60px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));}
+  /* Botão de partilha + menu */
+  .sharebtn{display:flex;align-items:center;justify-content:center;gap:6px;background:var(--card);color:var(--text);border:1px solid var(--line);font-weight:700;font-size:12.5px;padding:8px 12px;border-radius:10px;margin-top:6px;cursor:pointer;transition:.15s;width:100%;}
+  .sharebtn:hover{border-color:var(--accent);color:var(--accent);}
+  .shovl{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:flex;align-items:flex-end;justify-content:center;backdrop-filter:blur(4px);}
+  @media(min-width:600px){.shovl{align-items:center;}}
+  .shbox{background:var(--card);width:100%;max-width:440px;border-radius:20px 20px 0 0;padding:22px;box-shadow:0 -6px 30px rgba(0,0,0,.3);}
+  @media(min-width:600px){.shbox{border-radius:20px;}}
+  .shbox h3{font-size:17px;font-weight:800;margin-bottom:4px;}
+  .shbox .shsub{color:var(--muted);font-size:12.5px;margin-bottom:16px;}
+  .shgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  .shgrid a,.shgrid button{display:flex;align-items:center;gap:8px;justify-content:center;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-weight:700;font-size:13px;text-decoration:none;cursor:pointer;font-family:inherit;transition:all .15s ease;}
+  .shgrid a:hover,.shgrid button:hover{border-color:var(--accent);transform:translateY(-1px);}
+  .shclose{margin-top:14px;width:100%;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;font-size:14px;cursor:pointer;transition:all .15s;}
+  .shclose:hover{background:var(--accent2);}
+  .shhint{color:var(--muted);font-size:11.5px;margin-top:12px;line-height:1.4;text-align:center;}
+  /* Artigos Ricos & Showcases */
+  .article-hero-img{width:100%;max-height:420px;object-fit:cover;border-radius:16px;margin:12px 0 20px;box-shadow:var(--shadow);}
+  .article-figure{margin:18px 0;text-align:center;}
+  .article-figure img{width:100%;max-width:680px;border-radius:14px;box-shadow:var(--shadow);}
+  .article-figure figcaption{color:var(--muted);font-size:12.5px;margin-top:6px;font-style:italic;}
+  .tip-box{background:linear-gradient(135deg,rgba(255,107,0,.08) 0%,rgba(255,107,0,.02) 100%);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:14px 18px;margin:18px 0;}
+  .tip-box h4{margin:0 0 6px;color:var(--accent2);font-size:15px;font-weight:800;}
+  .tip-box p{margin:0;font-size:14px;line-height:1.55;}
+  .product-showcase{display:grid;grid-template-columns:180px 1fr;gap:20px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px;margin:20px 0;box-shadow:var(--shadow);align-items:center;}
+  @media(max-width:640px){.product-showcase{grid-template-columns:1fr;text-align:center;}}
+  .product-showcase img{width:100%;max-height:180px;object-fit:contain;border-radius:12px;}
+  .product-showcase .ps-info h3{font-size:17px;font-weight:800;margin:0 0 6px;}
+  .product-showcase .ps-price{display:flex;align-items:baseline;gap:10px;margin:8px 0;}
+  @media(max-width:640px){.product-showcase .ps-price{justify-content:center;}}
+  .product-showcase .ps-curr{font-size:22px;font-weight:900;color:var(--accent2);}
+  .product-showcase .ps-old{font-size:14px;color:var(--muted);text-decoration:line-through;}
+  .product-showcase .ps-disc{background:#16a34a;color:#fff;font-size:12px;font-weight:800;padding:3px 8px;border-radius:6px;}
+  .product-showcase .ps-btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 18px;border-radius:10px;transition:.15s;margin-top:6px;}
+  .product-showcase .ps-btn:hover{background:var(--accent2);transform:translateY(-1px);}
+  .coupon-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;}
+  .coupon-table th{background:var(--bg);padding:10px 14px;text-align:left;border-bottom:2px solid var(--line);font-weight:800;}
+  .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
+  .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
+
+  /* 4gnews Magazine Style for /noticias/ */
+  .news-hero-card{display:grid;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0 28px;box-shadow:var(--shadow);transition:all .2s ease;text-decoration:none;color:var(--text);}
+  @media(min-width:768px){.news-hero-card{grid-template-columns:1.2fr 1fr;}}
+  .news-hero-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+  .news-hero-img-wrap{position:relative;height:260px;background:var(--imgbg);overflow:hidden;}
+  @media(min-width:768px){.news-hero-img-wrap{height:100%;min-height:300px;}}
+  .news-hero-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
+  .news-hero-card:hover .news-hero-img-wrap img{transform:scale(1.04);}
+  .news-hero-content{padding:26px 24px;display:flex;flex-direction:column;justify-content:center;}
+  .news-badge{align-self:flex-start;background:var(--accent);color:#fff;font-size:11.5px;font-weight:900;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px;}
+  .news-hero-title{font-size:22px;font-weight:900;line-height:1.3;margin-bottom:10px;color:var(--text);}
+  .news-hero-desc{color:var(--muted);font-size:14px;line-height:1.6;margin-bottom:16px;}
+  .news-meta{font-size:12px;color:var(--muted);font-weight:600;}
+  
+  .news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px;}
+  .news-card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:all .2s ease;}
+  .news-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--accent);}
+  .news-card-img{position:relative;height:180px;overflow:hidden;background:var(--imgbg);}
+  .news-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
+  .news-card:hover .news-card-img img{transform:scale(1.05);}
+  .news-card-badge{position:absolute;top:10px;left:10px;background:rgba(15,23,42,0.85);backdrop-filter:blur(4px);color:#fff;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;}
+  .news-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1;}
+  .news-card-title{font-size:16px;font-weight:800;line-height:1.35;margin-bottom:8px;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .news-card-desc{color:var(--muted);font-size:13.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:14px;flex:1;}
+  .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
+  .news-card-more{color:var(--accent);font-weight:800;}
 </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Termos de Serviço</h1>
-    <p class="muted">Última atualização: 17 de junho de 2026</p>
+    <header>
+      <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
+      <div class="logo"><a href="../"><span class="marca"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="currentColor" opacity=".14"/><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="16.8" cy="7.2" r="1.7" fill="currentColor"/></svg><span>Descontos PT</span></span></a></div>
+      <div class="tag">As melhores ofertas da Amazon e AliExpress em Portugal 🔥</div>
+      
+      <nav class="topnav">
+        <a href="../">🔥 Melhores Ofertas</a>
+        <a href="../noticias/">📰 Notícias Tech</a>
+        <a href="../guias/">📚 Guias de Poupança</a>
+        <a href="../artigos/">🛡️ Segurança &amp; Golpes</a>
+        <a href="../recomendados/">🎁 Recomendados</a>
+        <a href="../sobre/">ℹ️ Sobre Nós</a>
+        <a href="../como-funciona/">📈 Como Funciona</a>
+      </nav>
+    </header>
 
-    <p>Ao utilizar o serviço <b>Promoções</b> e ao interagir com o nosso conteúdo,
-    aceitas os seguintes termos.</p>
+    <article class="article"><h1>Termos e Condições de Serviço</h1><p class="updated">Última atualização: agosto de 2026 · Legislação Portuguesa e Comunitária</p>
+<p>Bem-vindo ao <strong>Descontos PT</strong>. Ao aceder e utilizar este website, concordas em cumprir e vincular-te aos seguintes Termos e Condições de Serviço. Se não concordares com qualquer parte destes termos, deves interromper a utilização do website.</p>
 
-    <h2>1. Descrição do serviço</h2>
-    <p>O Promoções partilha ofertas e descontos de produtos de lojas online através de
-    canais sociais (Telegram, Facebook, Instagram e TikTok). O conteúdo é informativo.</p>
+<h2>1. Objeto e Natureza do Serviço</h2>
+<p>O <strong>Descontos PT</strong> é uma plataforma independente de caráter estritamente editorial e informativo. O nosso objetivo é monitorizar o mercado de comércio eletrónico, analisar históricos de preços, divulgar descontos genuínos e publicar artigos e guias de tecnologia de interesse para os consumidores em Portugal.</p>
 
-    <h2>2. Preços e disponibilidade</h2>
-    <p>Os preços e a disponibilidade dos produtos são definidos pelas respetivas lojas e
-    podem mudar a qualquer momento. Não garantimos a exatidão permanente da informação
-    e não somos responsáveis por compras efetuadas em sites de terceiros.</p>
+<h2>2. Isenção de Responsabilidade sobre Preços, Stocks e Transações</h2>
+<div class="tip-box">
+  <h4>⚠️ Informação Importante sobre Ofertas de Lojas Parceiras</h4>
+  <p>• <strong>O Descontos PT não é uma loja online</strong> nem vende diretamente qualquer produto físico ou digital.<br>
+  • Todas as transações, pagamentos, envios, faturas e garantias são celebrados exclusivamente entre o utilizador e a loja parceira (como Amazon, AliExpress, Worten, etc.).<br>
+  • Os preços, códigos de cupão e a disponibilidade de stock apresentados no site são obtidos no momento da verificação e <strong>podem sofrer alterações a qualquer momento pelas respetivas lojas</strong> sem aviso prévio. Recomendamos que confirmes sempre o preço final na página de checkout da loja antes de efetuar o pagamento.</p>
+</div>
 
-    <h2>3. Links de afiliado</h2>
-    <p>Algumas publicações contêm links de afiliado, pelos quais podemos receber uma
-    comissão sem custo adicional para ti.</p>
+<h2>3. Transparência de Afiliados e Publicidade</h2>
+<p>Para financiar a infraestrutura de servidores e a equipa editorial, o website inclui publicidade gerida pelo <strong>Google AdSense</strong> e links de afiliado (como Amazon Associates e AliExpress). As nossas recomendações editoriais baseiam-se em critérios de relevância, histórico de preços e qualidade dos produtos, mantendo a nossa independência editorial.</p>
 
-    <h2>4. Propriedade intelectual</h2>
-    <p>As marcas e imagens de produtos pertencem aos respetivos titulares. São usadas
-    apenas para fins informativos de divulgação de ofertas.</p>
+<h2>4. Propriedade Intelectual e Uso do Conteúdo</h2>
+<p>Os textos originais, análises, marcas do Descontos PT e o design do website estão protegidos pela legislação de direitos de autor e propriedade intelectual. Não é permitida a reprodução ou raspagem não autorizada do nosso conteúdo para fins comerciais sem consentimento prévio por escrito. Os logótipos e imagens de produtos de terceiros pertencem aos respetivos titulares de marca e são utilizados apenas para fins de identificação e contextualização editorial.</p>
 
-    <h2>5. Utilização aceitável</h2>
-    <p>O conteúdo é fornecido "tal como está". Não é permitido reutilizar o nosso conteúdo
-    de forma enganosa ou que viole as regras das plataformas sociais.</p>
+<h2>5. Conduta e Utilização Aceitável</h2>
+<p>Comprometes-te a não utilizar o website para fins ilícitos, a não tentar comprometer a segurança dos nossos servidores e a não utilizar sistemas automatizados para sobrecarregar a infraestrutura do portal.</p>
 
-    <h2>6. Alterações</h2>
-    <p>Podemos atualizar estes termos a qualquer momento. A versão em vigor é a publicada
-    nesta página.</p>
+<h2>6. Lei Aplicável e Jurisdição</h2>
+<p>Os presentes Termos de Serviço regem-se pela <strong>legislação portuguesa e comunitária europeia</strong> em vigor, nomeadamente a legislação de proteção e direitos do consumidor (Lei n.º 24/96 e Decreto-Lei n.º 24/2014). Para a resolução de qualquer litígio emergente da utilização do website, será competente o foro da comarca territorialmente competente em Portugal.</p>
+</article>
 
-    <h2>7. Contacto</h2>
-    <p>Para qualquer questão, contacta-nos através do nosso canal oficial.</p>
-
-    <p style="margin-top:32px"><a href="./index.html">← Voltar ao início</a></p>
+    <footer>
+      <div class="socials" style="margin-bottom:14px;">
+        <a href="https://whatsapp.com/channel/0029VbDZcRs545v4sFUTKh1h" target="_blank" rel="noopener">💬 Canal WhatsApp</a>
+        <a href="https://t.me/+2GxPnUedDnU4Yzg0" target="_blank" rel="noopener">📢 Telegram</a>
+        <a href="https://www.instagram.com/descontospontuais/" target="_blank" rel="noopener">📸 Instagram</a>
+        <a href="https://www.threads.net/@descontospontuais" target="_blank" rel="noopener">🧵 Threads</a>
+        <a href="https://www.tiktok.com/@bestd3al" target="_blank" rel="noopener">🎵 TikTok</a>
+        <a href="https://www.facebook.com/people/Super-Descontos/100094634377628/" target="_blank" rel="noopener">👍 Facebook</a>
+      </div>
+      <p>© 2026 Descontos PT · ofertas com links de afiliado<br>
+      <a href="../sobre/">Sobre</a> · <a href="../guias/">Guias</a> · <a href="../artigos/">Artigos</a> · <a href="../como-funciona/">Como funciona</a> · <a href="../privacy.html">Privacidade</a> · <a href="../terms.html">Termos</a></p>
+    </footer>
   </div>
+<script>
+  var darkbtn=document.getElementById('darkbtn');
+  function setDark(on){document.documentElement.classList.toggle('dark',on);darkbtn.textContent=on?'☀️':'🌙';try{localStorage.setItem('dark',on?'1':'0');}catch(e){}}
+  var pref=null;try{pref=localStorage.getItem('dark');}catch(e){}
+  setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
+  darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
+</script>
 </body>
 </html>
