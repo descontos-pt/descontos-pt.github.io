@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Descontos PT</title>
+<title>Melhores Descontos e Promoções em Portugal 🔥 | Amazon, AliExpress</title>
 <meta name="description" content="As melhores ofertas e descontos do dia em Amazon, AliExpress e Worten — atualizado ao minuto. Poupa em tecnologia, casa, gaming, moda e beleza."/>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5696036221694738"
@@ -14,7 +14,7 @@
 <meta http-equiv="Pragma" content="no-cache"/>
 <meta http-equiv="Expires" content="0"/>
 <meta name="tiktok-developers-site-verification" content="mPHDA6ucs5usXQq3K1sGdLlFmH7vpvwH"/>
-<meta name="p:domain_verify" content="5f304c1ab1c20cd36555c1062111d04b"/>
+
 <link rel="canonical" href="https://descontos-pt.github.io/"/>
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
@@ -201,11 +201,18 @@
   .imgwrap img{max-width:85%;max-height:145px;width:auto;height:auto;object-fit:contain;transition:transform .25s ease;display:block;margin:auto;position:relative;z-index:1;}
   .card:hover .imgwrap img{transform:scale(1.05);}
   
-  /* Badges Psicológicos: Vermelho FOMO + Dourado TOP + Loja Neutra */
-  .disc{position:absolute;top:10px;left:10px;z-index:10;background:linear-gradient(135deg,#ef4444 0%,#dc2626 100%);color:#fff;font-weight:900;font-size:12px;padding:4px 9px;border-radius:8px;box-shadow:0 3px 10px rgba(239,68,68,.38);letter-spacing:0.3px;pointer-events:none;}
+  /* Badges Psicológicos Dinâmicos por Nível de Desconto */
+  .disc{position:absolute;top:10px;left:10px;z-index:10;color:#fff;font-weight:900;font-size:12px;padding:4px 9px;border-radius:8px;letter-spacing:0.3px;pointer-events:none;}
+  .disc-hot{background:linear-gradient(135deg,#ef4444 0%,#b91c1c 100%);box-shadow:0 3px 10px rgba(239,68,68,.45);} /* ≥60%: Vermelho Fogo / Saldos */
+  .disc-med{background:linear-gradient(135deg,#ff5500 0%,#ea580c 100%);box-shadow:0 3px 10px rgba(255,85,0,.38);} /* 40%-59%: Laranja Elétrico */
+  .disc-fair{background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);box-shadow:0 3px 8px rgba(245,158,11,.35);} /* 20%-39%: Âmbar Quente */
+  .disc-low{background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 100%);box-shadow:0 3px 8px rgba(37,99,235,.35);}  /* <20%: Azul Safira */
+  
   .store{position:absolute;bottom:10px;left:10px;z-index:10;background:var(--card);color:var(--muted);font-weight:800;font-size:10.5px;padding:3px 9px;border-radius:6px;border:1px solid var(--line);box-shadow:0 2px 5px rgba(0,0,0,.06);pointer-events:none;}
   html.dark .store{background:#171f33;color:#cbd5e1;border-color:#2a364f;}
-  .topbadge{position:absolute;top:10px;right:10px;z-index:10;background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);color:#fff;font-weight:800;font-size:10.5px;padding:4px 9px;border-radius:7px;box-shadow:0 3px 8px rgba(245,158,11,.35);pointer-events:none;}
+  
+  /* Selo TOP: Verde Esmeralda */
+  .topbadge{position:absolute;top:10px;right:10px;z-index:10;background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;font-weight:900;font-size:10.5px;padding:4px 9px;border-radius:7px;box-shadow:0 3px 8px rgba(16,185,129,.4);letter-spacing:0.3px;pointer-events:none;}
   
   .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1;}
   .cat{color:var(--muted);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;}
@@ -611,13 +618,21 @@
     CATS.forEach(c=>catsEl.appendChild(chip(c.id,c.emoji+' '+c.label)));
   }
 
+  function discCls(disc){
+    const n=Number(disc)||0;
+    if(n>=60) return 'disc disc-hot';
+    if(n>=40) return 'disc disc-med';
+    if(n>=20) return 'disc disc-fair';
+    return 'disc disc-low';
+  }
+
   function card(d){
     const hasOld=d.original_price&&d.original_price>d.price;
     const ago=timeAgo(d.t);
     const durl='d/'+d.id+'.html';
     return '<div class="card">'
       + '<a class="imglink" href="'+durl+'"><div class="imgwrap">'
-      + '<span class="disc">-'+d.discount+'%</span>'
+      + '<span class="'+discCls(d.discount)+'">-'+d.discount+'%</span>'
       + (d.discount>=50?'<span class="topbadge">🔥 TOP</span>':'')
       + (STORE[d.store]?'<span class="store">'+STORE[d.store]+'</span>':'')
       + '<img loading="lazy" src="'+d.image+'" alt="'+escapeHtml(d.title).slice(0,80)+'">'
