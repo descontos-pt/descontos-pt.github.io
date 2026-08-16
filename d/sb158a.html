@@ -206,13 +206,15 @@
   a.titlelink{color:inherit;text-decoration:none;}
   a.titlelink:hover .title{color:var(--accent);}
   
-  /* Preços & Recompensa de Poupança (Verde Esmeralda) */
-  .prices{display:flex;align-items:baseline;gap:8px;margin-top:4px;flex-wrap:wrap;}
-  .new{color:var(--accent);font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.4px;}
-  .old{color:var(--muted);text-decoration:line-through;font-size:13.5px;font-weight:500;}
-  .ago{color:var(--muted);font-size:11.5px;font-weight:600;margin-left:auto;}
-  .savings{color:var(--green-dark);background:var(--green-light);padding:4px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;}
-  html.dark .savings{color:var(--green);}
+  /* Preços & Recompensa de Poupança (Scannability Máxima) */
+  .prices{display:flex;align-items:baseline;gap:8px;margin-top:6px;flex-wrap:wrap;}
+  .new{color:var(--accent);font-weight:900;font-size:23px;line-height:1;letter-spacing:-0.5px;}
+  .old{color:var(--muted);font-size:13px;font-weight:600;display:inline-flex;align-items:baseline;gap:3px;}
+  .old-lbl{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:0.3px;}
+  .old-val{text-decoration:line-through;color:var(--muted);}
+  .ago{color:var(--muted);font-size:11px;font-weight:600;margin-left:auto;}
+  .savings{color:var(--green-dark,#15803d);background:var(--green-light,#dcfce7);padding:5px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;border:1px solid rgba(22,163,74,.22);margin-top:2px;}
+  html.dark .savings{color:#4ade80;background:rgba(22,163,74,.18);border-color:rgba(74,222,128,.35);}
   
   /* Botão CTA Magnético */
   .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;margin-top:8px;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);letter-spacing:0.2px;}
@@ -442,7 +444,7 @@
     <!-- AI Editorial Description (AdSense Compliance) -->
     <div class="panel editorial-panel">
       <div class="editorial-desc">
-        <p style="margin-bottom:10px;"><strong>🔥 Destaque da Oferta:</strong> O upgrade que andavas a adiar há meses. 🖥️</p>
+        <p style="margin-bottom:10px;"><strong>🔥 Destaque da Oferta:</strong> Mais potência, menos lag, zero desculpas para trabalhar ou jogar. 🔥</p>
       <div class="specs-box" style="background:var(--bg,#f8fafc);border:1px solid var(--line,#e2e8f0);border-radius:12px;padding:12px 16px;margin:14px 0;">
         <p style="font-weight:700;font-size:13.5px;color:var(--text,#0f172a);margin-bottom:8px;">📋 <strong>Especificações & Destaques:</strong></p>
         <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.65;color:var(--text,#334155);">
@@ -466,52 +468,92 @@
     <div class="panel"><h2>🛍️ Mais em Tecnologia</h2>
     <div class="grid"><div class="card"><a class="imglink" href="./9j7ry0.html"><div class="imgwrap">
     <span class="disc disc-med">-58%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/41ne-Y+I9FL._SL500_.jpg" alt="Belkin BoostCharge Carregador de parede duplo USB-C PPS 60 W, carregamento rápid"></div></a>
     <div class="body">
     <a class="titlelink" href="./9j7ry0.html"><div class="title">Belkin BoostCharge Carregador de parede duplo USB-C PPS 60 W, carregamento rápido | Tomada USB PPS, Samsung, Pixel e iPhone, 2 portas USB-C 30W, design compacto para viagens, compatibilidade universal : Amazon.es: Eletrónica</div></a>
-    <div class="prices"><span class="new">16,90€</span><span class="old">39,99€</span></div>
+    <div class="prices">
+      <span class="new">16,90€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">39,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 23,09€ (-58%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0C4FYH4YM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1s90n5v.html"><div class="imgwrap">
     <span class="disc disc-hot">-70%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/716F+gGOOeL._SL500_.jpg" alt="Ordenador Portátil 14 Pulgadas Celeron N5095 Upto 2,9 GHz Portatiles 8GB RAM 256"></div></a>
     <div class="body">
     <a class="titlelink" href="./1s90n5v.html"><div class="title">Ordenador Portátil 14 Pulgadas Celeron N5095 Upto 2,9 GHz Portatiles 8GB RAM 256GB SSD TF 1TB LPDDR4 Win11 5G WiFi 1920*1080 FHD mini HDMl Laptop Película Protectora Español - Oro Cuerpo Metálico-85</div></a>
-    <div class="prices"><span class="new">269,99€</span><span class="old">899,99€</span></div>
+    <div class="prices">
+      <span class="new">269,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">899,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 630,00€ (-70%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0FY2DMKJL?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1laewua.html"><div class="imgwrap">
     <span class="disc disc-hot">-63%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61DaP3ryRKL._SL500_.jpg" alt="SanDisk Ultra Flair Memória flash USB 3.0 de 64 GB, com capa de metal durável e "></div></a>
     <div class="body">
     <a class="titlelink" href="./1laewua.html"><div class="title">SanDisk Ultra Flair Memória flash USB 3.0 de 64 GB, com capa de metal durável e elegante e velocidade de leitura de até 150 MB/s, preto/prateado : Amazon.es: Computadores</div></a>
-    <div class="prices"><span class="new">7,44€</span><span class="old">19,99€</span></div>
+    <div class="prices">
+      <span class="new">7,44€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">19,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 12,55€ (-63%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B015CH1NAQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./s0l5r5.html"><div class="imgwrap">
     <span class="disc disc-hot">-68%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71sdBcPAOwL._SL500_.jpg" alt="Ajblg Bluetooth 5.4 Altavoz Bluetooth Potente 80W, Impermeable IPX7 Altavoces Po"></div></a>
     <div class="body">
     <a class="titlelink" href="./s0l5r5.html"><div class="title">Ajblg Bluetooth 5.4 Altavoz Bluetooth Potente 80W, Impermeable IPX7 Altavoces Portátil Potente con 8000mAh Batería, Sonido Estéreo, USB/RGB/TWS/AUX/TF, Speaker con 2EQ para Exterior, Negro Elegante</div></a>
-    <div class="prices"><span class="new">48,00€</span><span class="old">52,99€</span></div>
+    <div class="prices">
+      <span class="new">48,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">52,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 4,99€ (-68%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0GSVPLDNC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./14oqmf4.html"><div class="imgwrap">
     <span class="disc disc-fair">-35%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/618gH2IsDaL._SL500_.jpg" alt="Logitech H340 Auriculares con Cable | Sonido Estéreo con Micrófono con Supresión"></div></a>
     <div class="body">
     <a class="titlelink" href="./14oqmf4.html"><div class="title">Logitech H340 Auriculares con Cable | Sonido Estéreo con Micrófono con Supresión de Ruido, USB, PC/Mac/Portátil/Chromebook - Negro</div></a>
-    <div class="prices"><span class="new">14,23€</span><span class="old">33,29€</span></div>
+    <div class="prices">
+      <span class="new">14,23€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">33,29€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 19,06€ (-35%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B008S1IOCY?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1lbi84f.html"><div class="imgwrap">
     <span class="disc disc-fair">-35%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71oueBN7dDL._SL500_.jpg" alt="P13 Pro Tablet 13.4 Pulgadas 120Hz Android 16, 48GB RAM + 256GB(TF 2TB) Tablet c"></div></a>
     <div class="body">
     <a class="titlelink" href="./1lbi84f.html"><div class="title">P13 Pro Tablet 13.4 Pulgadas 120Hz Android 16, 48GB RAM + 256GB(TF 2TB) Tablet con Teclado y Lapiz, T7280 Octa-Core, 12000mAh/18W, 16MP+8MP, Gemini AI, Widevine L1, Face ID, Dual SIM 4G, Negro</div></a>
-    <div class="prices"><span class="new">299,99€</span><span class="old">461,52€</span></div>
+    <div class="prices">
+      <span class="new">299,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">461,52€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 161,53€ (-35%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0GZZVFBYM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./9o9vj8.html"><div class="imgwrap">
     <span class="disc disc-med">-41%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61qPTmknznL._SL500_.jpg" alt="INIU Cargador de Coche 60W, Carga RÁPIDA Cargador de Automóviles | Adaptador de "></div></a>
     <div class="body">
     <a class="titlelink" href="./9o9vj8.html"><div class="title">INIU Cargador de Coche 60W, Carga RÁPIDA Cargador de Automóviles | Adaptador de Metal USB C 30W + USB A 30W, de Doble Puerto para iPhone 15 14 13 12 Pro MAX Mini Samsung S21 Huawei LG</div></a>
-    <div class="prices"><span class="new">6,78€</span><span class="old">11,49€</span></div>
+    <div class="prices">
+      <span class="new">6,78€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">11,49€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 4,71€ (-41%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B08VJ2VH2J?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./a9hcsb.html"><div class="imgwrap">
     <span class="disc disc-hot">-63%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71gYmfM3yGL._SL500_.jpg" alt="Corsair M55 Rato leve para jogos FPS com cabo, preto | 16.000 PPP, seis botões p"></div></a>
     <div class="body">
     <a class="titlelink" href="./a9hcsb.html"><div class="title">Corsair M55 Rato leve para jogos FPS com cabo, preto | 16.000 PPP, seis botões programáveis, punhos laterais texturizados : Amazon.es: Jogos de Vídeo</div></a>
-    <div class="prices"><span class="new">14,96€</span><span class="old">39,99€</span></div>
+    <div class="prices">
+      <span class="new">14,96€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">39,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 25,03€ (-63%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0D9M51VBS?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     

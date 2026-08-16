@@ -206,13 +206,15 @@
   a.titlelink{color:inherit;text-decoration:none;}
   a.titlelink:hover .title{color:var(--accent);}
   
-  /* Preços & Recompensa de Poupança (Verde Esmeralda) */
-  .prices{display:flex;align-items:baseline;gap:8px;margin-top:4px;flex-wrap:wrap;}
-  .new{color:var(--accent);font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.4px;}
-  .old{color:var(--muted);text-decoration:line-through;font-size:13.5px;font-weight:500;}
-  .ago{color:var(--muted);font-size:11.5px;font-weight:600;margin-left:auto;}
-  .savings{color:var(--green-dark);background:var(--green-light);padding:4px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;}
-  html.dark .savings{color:var(--green);}
+  /* Preços & Recompensa de Poupança (Scannability Máxima) */
+  .prices{display:flex;align-items:baseline;gap:8px;margin-top:6px;flex-wrap:wrap;}
+  .new{color:var(--accent);font-weight:900;font-size:23px;line-height:1;letter-spacing:-0.5px;}
+  .old{color:var(--muted);font-size:13px;font-weight:600;display:inline-flex;align-items:baseline;gap:3px;}
+  .old-lbl{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:0.3px;}
+  .old-val{text-decoration:line-through;color:var(--muted);}
+  .ago{color:var(--muted);font-size:11px;font-weight:600;margin-left:auto;}
+  .savings{color:var(--green-dark,#15803d);background:var(--green-light,#dcfce7);padding:5px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;border:1px solid rgba(22,163,74,.22);margin-top:2px;}
+  html.dark .savings{color:#4ade80;background:rgba(22,163,74,.18);border-color:rgba(74,222,128,.35);}
   
   /* Botão CTA Magnético */
   .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;margin-top:8px;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);letter-spacing:0.2px;}
@@ -442,7 +444,7 @@
     <!-- AI Editorial Description (AdSense Compliance) -->
     <div class="panel editorial-panel">
       <div class="editorial-desc">
-        <p style="margin-bottom:10px;"><strong>🔥 Destaque da Oferta:</strong> Estilo que fala mais alto que a etiqueta do preço. 🔥</p>
+        <p style="margin-bottom:10px;"><strong>🔥 Destaque da Oferta:</strong> Roupa nova, energia nova, desculpa nova para sair. ✨</p>
       <div class="specs-box" style="background:var(--bg,#f8fafc);border:1px solid var(--line,#e2e8f0);border-radius:12px;padding:12px 16px;margin:14px 0;">
         <p style="font-weight:700;font-size:13.5px;color:var(--text,#0f172a);margin-bottom:8px;">📋 <strong>Especificações & Destaques:</strong></p>
         <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.65;color:var(--text,#334155);">
@@ -466,52 +468,92 @@
     <div class="panel"><h2>🛍️ Mais em Moda</h2>
     <div class="grid"><div class="card"><a class="imglink" href="./1580xc7.html"><div class="imgwrap">
     <span class="disc disc-med">-50%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61xjvkInOGL._SL500_.jpg" alt="Levi's Athena Cinto Mulher, Marrom : Amazon.es: Moda"></div></a>
     <div class="body">
     <a class="titlelink" href="./1580xc7.html"><div class="title">Levi's Athena Cinto Mulher, Marrom : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">17,50€</span><span class="old">35,00€</span></div>
+    <div class="prices">
+      <span class="new">17,50€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">35,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 17,50€ (-50%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B07BS2LSSW?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./fg03lu.html"><div class="imgwrap">
     <span class="disc disc-med">-40%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/613Nl+NOklL._SL500_.jpg" alt="adidas Calções unissexo para crianças, 25 (adolescentes) : Amazon.es: Moda"></div></a>
     <div class="body">
     <a class="titlelink" href="./fg03lu.html"><div class="title">adidas Calções unissexo para crianças, 25 (adolescentes) : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">12,00€</span><span class="old">20,00€</span></div>
+    <div class="prices">
+      <span class="new">12,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">20,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 8,00€ (-40%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0CZ9THDHD?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./x0awsx.html"><div class="imgwrap">
     <span class="disc disc-med">-55%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71PFGlM8WHL._SL500_.jpg" alt="Tommy Hilfiger T-shirt S para homem, Azul (azul presente), XL : Amazon.es: Moda"></div></a>
     <div class="body">
     <a class="titlelink" href="./x0awsx.html"><div class="title">Tommy Hilfiger T-shirt S para homem, Azul (azul presente), XL : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">17,95€</span><span class="old">39,90€</span></div>
+    <div class="prices">
+      <span class="new">17,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">39,90€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 21,95€ (-55%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0FDGHCM6R?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./5g2u78.html"><div class="imgwrap">
     <span class="disc disc-hot">-72%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/51UoCii9v3L._SL500_.jpg" alt="G-Star A Line Loose R T T-shirt para homem, Beige Elephant Skin D26816-c506-g106"></div></a>
     <div class="body">
     <a class="titlelink" href="./5g2u78.html"><div class="title">G-Star A Line Loose R T T-shirt para homem, Beige Elephant Skin D26816-c506-g106, Médio : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">12,74€</span><span class="old">45,00€</span></div>
+    <div class="prices">
+      <span class="new">12,74€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">45,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 32,26€ (-72%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0DSWGPBD9?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1u87qgr.html"><div class="imgwrap">
     <span class="disc disc-med">-50%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71VOsaThx6L._SL500_.jpg" alt="Tommy Hilfiger T-shirt S para homem, Azul (Desert Sky) : Amazon.es: Moda"></div></a>
     <div class="body">
     <a class="titlelink" href="./1u87qgr.html"><div class="title">Tommy Hilfiger T-shirt S para homem, Azul (Desert Sky) : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">19,95€</span><span class="old">39,90€</span></div>
+    <div class="prices">
+      <span class="new">19,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">39,90€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 19,95€ (-50%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0FDGDWDRY?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1hwzeri.html"><div class="imgwrap">
     <span class="disc disc-hot">-62%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61CO7qzKNML._SL500_.jpg" alt="Calvin Klein Vestido de camisa curta para mulher mini com decote redondo, Vermel"></div></a>
     <div class="body">
     <a class="titlelink" href="./1hwzeri.html"><div class="title">Calvin Klein Vestido de camisa curta para mulher mini com decote redondo, Vermelho : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">26,55€</span><span class="old">69,90€</span></div>
+    <div class="prices">
+      <span class="new">26,55€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">69,90€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 43,35€ (-62%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F4NWYPDR?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./iql1v7.html"><div class="imgwrap">
     <span class="disc disc-med">-54%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61tSOL2Rv0L._SL500_.jpg" alt="Columbia Powder Lite 2 Casaco acolchoado para homem (Pack de 1) : Amazon.es: Mod"></div></a>
     <div class="body">
     <a class="titlelink" href="./iql1v7.html"><div class="title">Columbia Powder Lite 2 Casaco acolchoado para homem (Pack de 1) : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">54,99€</span><span class="old">120,00€</span></div>
+    <div class="prices">
+      <span class="new">54,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">120,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 65,01€ (-54%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0CN3WVNC1?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1tuzujn.html"><div class="imgwrap">
     <span class="disc disc-med">-55%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61lwS709APL._SL500_.jpg" alt="Tommy Hilfiger Tommy Puff Flower HWK Dress LS Kg0kg08946 Vestido tipo moletom me"></div></a>
     <div class="body">
     <a class="titlelink" href="./1tuzujn.html"><div class="title">Tommy Hilfiger Tommy Puff Flower HWK Dress LS Kg0kg08946 Vestido tipo moletom meninas : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">29,04€</span><span class="old">64,90€</span></div>
+    <div class="prices">
+      <span class="new">29,04€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">64,90€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 35,86€ (-55%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F6QK2JBM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
