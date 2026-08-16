@@ -206,13 +206,15 @@
   a.titlelink{color:inherit;text-decoration:none;}
   a.titlelink:hover .title{color:var(--accent);}
   
-  /* Preços & Recompensa de Poupança (Verde Esmeralda) */
-  .prices{display:flex;align-items:baseline;gap:8px;margin-top:4px;flex-wrap:wrap;}
-  .new{color:var(--accent);font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.4px;}
-  .old{color:var(--muted);text-decoration:line-through;font-size:13.5px;font-weight:500;}
-  .ago{color:var(--muted);font-size:11.5px;font-weight:600;margin-left:auto;}
-  .savings{color:var(--green-dark);background:var(--green-light);padding:4px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;}
-  html.dark .savings{color:var(--green);}
+  /* Preços & Recompensa de Poupança (Scannability Máxima) */
+  .prices{display:flex;align-items:baseline;gap:8px;margin-top:6px;flex-wrap:wrap;}
+  .new{color:var(--accent);font-weight:900;font-size:23px;line-height:1;letter-spacing:-0.5px;}
+  .old{color:var(--muted);font-size:13px;font-weight:600;display:inline-flex;align-items:baseline;gap:3px;}
+  .old-lbl{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:0.3px;}
+  .old-val{text-decoration:line-through;color:var(--muted);}
+  .ago{color:var(--muted);font-size:11px;font-weight:600;margin-left:auto;}
+  .savings{color:var(--green-dark,#15803d);background:var(--green-light,#dcfce7);padding:5px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;border:1px solid rgba(22,163,74,.22);margin-top:2px;}
+  html.dark .savings{color:#4ade80;background:rgba(22,163,74,.18);border-color:rgba(74,222,128,.35);}
   
   /* Botão CTA Magnético */
   .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;margin-top:8px;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);letter-spacing:0.2px;}
@@ -467,52 +469,92 @@
     <div class="panel"><h2>🛍️ Mais em Beleza</h2>
     <div class="grid"><div class="card"><a class="imglink" href="./mhmv5v.html"><div class="imgwrap">
     <span class="disc disc-med">-58%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61g0RhIb5xL._SL500_.jpg" alt="Davidoff Cool Elixir Perfume para Mujer | Fragancia floral ambarina con jazmín, "></div></a>
     <div class="body">
     <a class="titlelink" href="./mhmv5v.html"><div class="title">Davidoff Cool Elixir Perfume para Mujer | Fragancia floral ambarina con jazmín, musgo de roble y vainilla, perfume elixir femenino con una calidez sensual y duradera.</div></a>
-    <div class="prices"><span class="new">12,09€</span><span class="old">28,79€</span></div>
+    <div class="prices">
+      <span class="new">12,09€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">28,79€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 16,70€ (-58%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0DWHL1GC9?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./11xrty.html"><div class="imgwrap">
     <span class="disc disc-med">-46%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61NCg1pDzUL._SL500_.jpg" alt="Ufesa Pro Ionic Silk Secador de Pelo, 110.000 RPM, Secador Profesional Ultrasile"></div></a>
     <div class="body">
     <a class="titlelink" href="./11xrty.html"><div class="title">Ufesa Pro Ionic Silk Secador de Pelo, 110.000 RPM, Secador Profesional Ultrasilencioso, Control Inteligente de Temperatura, Iones Negativos, Sin Encrespamiento, Accesorios Magnéticos</div></a>
-    <div class="prices"><span class="new">37,99€</span><span class="old">41,59€</span></div>
+    <div class="prices">
+      <span class="new">37,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">41,59€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 3,60€ (-46%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0GFPHX1RF?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./173zvkr.html"><div class="imgwrap">
     <span class="disc disc-hot">-61%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61PVtzrJx0L._SL500_.jpg" alt="Mova Fresh Pro 3DClean escova de dentes com aplicação, recarregável para adultos"></div></a>
     <div class="body">
     <a class="titlelink" href="./173zvkr.html"><div class="title">Mova Fresh Pro 3DClean escova de dentes com aplicação, recarregável para adultos, 2 cabeças de escovagem 3 em 1 e estojo de viagem, bateria de 30 dias, prateado : Amazon.es: Saúde e Casa</div></a>
-    <div class="prices"><span class="new">39,00€</span><span class="old">99,00€</span></div>
+    <div class="prices">
+      <span class="new">39,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">99,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 60,00€ (-61%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0DLP9RKP5?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./elecnm.html"><div class="imgwrap">
     <span class="disc disc-hot">-66%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/81rrZhu5z2L._SL500_.jpg" alt="Barbie Signature, Dia dos Mortos 2025, boneco Ken colecionável com camisa de cor"></div></a>
     <div class="body">
     <a class="titlelink" href="./elecnm.html"><div class="title">Barbie Signature, Dia dos Mortos 2025, boneco Ken colecionável com camisa de cor creme, colete preto e calças, chapéu e maquilhagem de caveira, JBJ06 : Amazon.es: Brinquedos e Jogos</div></a>
-    <div class="prices"><span class="new">37,32€</span><span class="old">109,99€</span></div>
+    <div class="prices">
+      <span class="new">37,32€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">109,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 72,67€ (-66%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0DMWDS9PJ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1noa2eq.html"><div class="imgwrap">
     <span class="disc disc-hot">-60%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/81ji3R6cIxL._SL500_.jpg" alt="Vip Pets Hair Academy Alexia - Colecionáveis cachorrinhas com cabelo XXL para pe"></div></a>
     <div class="body">
     <a class="titlelink" href="./1noa2eq.html"><div class="title">Vip Pets Hair Academy Alexia - Colecionáveis cachorrinhas com cabelo XXL para pentear, cortar e fazer extensões de cabelo - presente ideal para meninos e meninas de 4 anos ou mais : Amazon.es: Brinquedos e Jogos</div></a>
-    <div class="prices"><span class="new">9,99€</span><span class="old">24,99€</span></div>
+    <div class="prices">
+      <span class="new">9,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">24,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 15,00€ (-60%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0BZN4ZK69?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./k1dkg6.html"><div class="imgwrap">
     <span class="disc disc-hot">-63%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61fb5ro0MjL._SL500_.jpg" alt="Cleangor Escova de cerdas duras para casa de banho e azulejos (3, preto) | Escov"></div></a>
     <div class="body">
     <a class="titlelink" href="./k1dkg6.html"><div class="title">Cleangor Escova de cerdas duras para casa de banho e azulejos (3, preto) | Escova de limpeza ergonómica com cabeça estreita de 15° para cantos, rachas, WC : Amazon.es: Bricolage e Ferramentas</div></a>
-    <div class="prices"><span class="new">2,99€</span><span class="old">7,99€</span></div>
+    <div class="prices">
+      <span class="new">2,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">7,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 5,00€ (-63%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F12WPS3P?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./cxa3qj.html"><div class="imgwrap">
     <span class="disc disc-med">-54%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61pDmy0jqOL._SL500_.jpg" alt="Wella Professionals ULTIMATE REPAIR Champô profissional leve e cremoso para cabe"></div></a>
     <div class="body">
     <a class="titlelink" href="./cxa3qj.html"><div class="title">Wella Professionals ULTIMATE REPAIR Champô profissional leve e cremoso para cabelo danificado, 250 ml | Champô de limpeza profunda com tecnologia de purificador de metal, champô hidratante reparador : Amazon.es: Beleza</div></a>
-    <div class="prices"><span class="new">12,02€</span><span class="old">26,00€</span></div>
+    <div class="prices">
+      <span class="new">12,02€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">26,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 13,98€ (-54%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0C49XMYH5?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1j09d0i.html"><div class="imgwrap">
     <span class="disc disc-hot">-63%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/41tRqqQjQxL._SL500_.jpg" alt="L'Oréal Paris Accord Parfait Base de maquilhagem com ácido hialurónico 3R/3C coo"></div></a>
     <div class="body">
     <a class="titlelink" href="./1j09d0i.html"><div class="title">L'Oréal Paris Accord Parfait Base de maquilhagem com ácido hialurónico 3R/3C cool rose 30 ml : Amazon.es: Beleza</div></a>
-    <div class="prices"><span class="new">6,48€</span><span class="old">17,68€</span></div>
+    <div class="prices">
+      <span class="new">6,48€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">17,68€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 11,20€ (-63%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B01GG2B7H0?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     

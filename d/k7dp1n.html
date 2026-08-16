@@ -206,13 +206,15 @@
   a.titlelink{color:inherit;text-decoration:none;}
   a.titlelink:hover .title{color:var(--accent);}
   
-  /* Preços & Recompensa de Poupança (Verde Esmeralda) */
-  .prices{display:flex;align-items:baseline;gap:8px;margin-top:4px;flex-wrap:wrap;}
-  .new{color:var(--accent);font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.4px;}
-  .old{color:var(--muted);text-decoration:line-through;font-size:13.5px;font-weight:500;}
-  .ago{color:var(--muted);font-size:11.5px;font-weight:600;margin-left:auto;}
-  .savings{color:var(--green-dark);background:var(--green-light);padding:4px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;}
-  html.dark .savings{color:var(--green);}
+  /* Preços & Recompensa de Poupança (Scannability Máxima) */
+  .prices{display:flex;align-items:baseline;gap:8px;margin-top:6px;flex-wrap:wrap;}
+  .new{color:var(--accent);font-weight:900;font-size:23px;line-height:1;letter-spacing:-0.5px;}
+  .old{color:var(--muted);font-size:13px;font-weight:600;display:inline-flex;align-items:baseline;gap:3px;}
+  .old-lbl{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:0.3px;}
+  .old-val{text-decoration:line-through;color:var(--muted);}
+  .ago{color:var(--muted);font-size:11px;font-weight:600;margin-left:auto;}
+  .savings{color:var(--green-dark,#15803d);background:var(--green-light,#dcfce7);padding:5px 10px;border-radius:8px;font-weight:800;font-size:12px;display:inline-flex;align-items:center;gap:4px;border:1px solid rgba(22,163,74,.22);margin-top:2px;}
+  html.dark .savings{color:#4ade80;background:rgba(22,163,74,.18);border-color:rgba(74,222,128,.35);}
   
   /* Botão CTA Magnético */
   .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;padding:11px 16px;border-radius:12px;margin-top:8px;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);letter-spacing:0.2px;}
@@ -466,52 +468,92 @@
     <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
     <div class="grid"><div class="card"><a class="imglink" href="./1snrylb.html"><div class="imgwrap">
     <span class="disc disc-med">-55%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/51rkJzie53L._SL500_.jpg" alt="Rimmel, Lasting Provocalips, Batom fixo, 400 Grin &amp; bare it, Passo 1: 2,3mL,"></div></a>
     <div class="body">
     <a class="titlelink" href="./1snrylb.html"><div class="title">Rimmel, Lasting Provocalips, Batom fixo, 400 Grin &amp; bare it, Passo 1: 2,3mL, Passo 2: 1,6g : Amazon.es: Beleza</div></a>
-    <div class="prices"><span class="new">5,80€</span><span class="old">12,97€</span></div>
+    <div class="prices">
+      <span class="new">5,80€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">12,97€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 7,17€ (-55%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0B4KLBRSK?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1po2395.html"><div class="imgwrap">
     <span class="disc disc-hot">-65%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/712Dp4EC4BL._SL500_.jpg" alt="Kraftform Kompakt Stubby depósito porta-pontas 2 : Amazon.es: Bricolage e Ferram"></div></a>
     <div class="body">
     <a class="titlelink" href="./1po2395.html"><div class="title">Kraftform Kompakt Stubby depósito porta-pontas 2 : Amazon.es: Bricolage e Ferramentas</div></a>
-    <div class="prices"><span class="new">12,44€</span><span class="old">36,01€</span></div>
+    <div class="prices">
+      <span class="new">12,44€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">36,01€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 23,57€ (-65%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B08XTP1LR6?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./rpzb16.html"><div class="imgwrap">
     <span class="disc disc-fair">-32%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/81EzUFaaOLL._SL500_.jpg" alt="Oral-B iO 5 Cepillo de Dientes Eléctrico con 1 Cabezal, Negro | Cepillo Dental c"></div></a>
     <div class="body">
     <a class="titlelink" href="./rpzb16.html"><div class="title">Oral-B iO 5 Cepillo de Dientes Eléctrico con 1 Cabezal, Negro | Cepillo Dental con Sensor de Presión, 5 Modos de Cepillado con Modo Blanqueante, Estuche de Viaje Y Portarrecambios</div></a>
-    <div class="prices"><span class="new">94,06€</span><span class="old">138,86€</span></div>
+    <div class="prices">
+      <span class="new">94,06€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">138,86€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 44,80€ (-32%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F1G4YTD7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1q20x5i.html"><div class="imgwrap">
     <span class="disc disc-hot">-62%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61Yhy0qeRBL._SL500_.jpg" alt="Levi's 726 High Rise Flare, Jeans para Mujer, Blue Swell, 26W / 32L"></div></a>
     <div class="body">
     <a class="titlelink" href="./1q20x5i.html"><div class="title">Levi's 726 High Rise Flare, Jeans para Mujer, Blue Swell, 26W / 32L</div></a>
-    <div class="prices"><span class="new">43,75€</span><span class="old">115,13€</span></div>
+    <div class="prices">
+      <span class="new">43,75€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">115,13€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 71,38€ (-62%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0B2BKPGQM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./bpp30a.html"><div class="imgwrap">
     <span class="disc disc-fair">-25%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/51CNJniOQwL._SL500_.jpg" alt="Bear Hervidor de agua eléctrico, 1800 W-2200 W, 1,7 L, 45 °C ~ 100 °C, hervidor "></div></a>
     <div class="body">
     <a class="titlelink" href="./bpp30a.html"><div class="title">Bear Hervidor de agua eléctrico, 1800 W-2200 W, 1,7 L, 45 °C ~ 100 °C, hervidor de agua con 6 regulaciones de temperatura, apagado automático y función de mantenimiento en caliente, acero inoxidable</div></a>
-    <div class="prices"><span class="new">32,00€</span><span class="old">42,67€</span></div>
+    <div class="prices">
+      <span class="new">32,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">42,67€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 10,67€ (-25%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F86Z244R?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./11d291l.html"><div class="imgwrap">
     <span class="disc disc-med">-57%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71sm8sQ6+PL._SL500_.jpg" alt="JACK &amp; JONES Jjeparker Softshell Bomber Sn Jjeparker Softshell Bomber Sn hom"></div></a>
     <div class="body">
     <a class="titlelink" href="./11d291l.html"><div class="title">JACK &amp; JONES Jjeparker Softshell Bomber Sn Jjeparker Softshell Bomber Sn homem (pacote de 1), Moonbeam, M : Amazon.es: Moda</div></a>
-    <div class="prices"><span class="new">25,99€</span><span class="old">59,99€</span></div>
+    <div class="prices">
+      <span class="new">25,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">59,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 34,00€ (-57%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0F444YZGM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1fnvrzy.html"><div class="imgwrap">
     <span class="disc disc-med">-40%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/614uTWx+inL._SL500_.jpg" alt="adidas Cloudfoam GO Lounger Shoes, Zapatos Hombre, Core Black/Core Black/Lucid B"></div></a>
     <div class="body">
     <a class="titlelink" href="./1fnvrzy.html"><div class="title">adidas Cloudfoam GO Lounger Shoes, Zapatos Hombre, Core Black/Core Black/Lucid Blue, 42 EU</div></a>
-    <div class="prices"><span class="new">35,99€</span><span class="old">59,98€</span></div>
+    <div class="prices">
+      <span class="new">35,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">59,98€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 23,99€ (-40%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0CKRZWSVD?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./179pt3u.html"><div class="imgwrap">
     <span class="disc disc-med">-40%</span>
+    <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71PWtIeyJvL._SL500_.jpg" alt="Blink Videotimbre cableado 2K+ (últ. generación) | De cuerpo entero con resoluci"></div></a>
     <div class="body">
     <a class="titlelink" href="./179pt3u.html"><div class="title">Blink Videotimbre cableado 2K+ (últ. generación) | De cuerpo entero con resolución 2K | Audio mejorado | Resistente a la intemperie IP65 | Prueba gratuita de 30 días a la suscripción de Blink | Negro : Amazon.es: Tudo o Resto</div></a>
-    <div class="prices"><span class="new">29,99€</span><span class="old">49,99€</span></div>
+    <div class="prices">
+      <span class="new">29,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">49,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 20,00€ (-40%)</div>
     <a class="btn" href="https://www.amazon.es/dp/B0G62D7D84?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
