@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontos-pt.github.io/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Sun, 16 Aug 2026 08:20:55 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 08:27:35 GMT</lastBuildDate>
     <atom:link href="https://descontos-pt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ordenador Portátil 14 Pulgadas Celeron N5095 Upto 2,9 GHz Portatiles 8GB RAM 256GB SSD TF 1TB LPDDR4 Win11 5G  — 269,99€</title>
+      <link>https://descontos-pt.github.io/d/1s90n5v.html</link>
+      <guid isPermaLink="true">https://descontos-pt.github.io/d/1s90n5v.html</guid>
+      <pubDate>Sun, 16 Aug 2026 08:25:53 GMT</pubDate>
+      <description>Ordenador Portátil 14 Pulgadas Celeron N5095 Upto 2,9 GHz Portatiles 8GB RAM 256GB SSD TF 1TB LPDDR4 Win11 5G WiFi 1920*1080 FHD mini HDMl Laptop Película Protectora Español - Oro Cuerpo Metálico-85 por 269,99€ (antes 899,99€, -70%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/716F+gGOOeL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>adidas Cloudfoam GO Lounger Shoes, Zapatos Hombre, Core Black/Core Black/Lucid Blue, 42 EU — 35,99€</title>
       <link>https://descontos-pt.github.io/d/1fnvrzy.html</link>
@@ -406,14 +414,6 @@
       <pubDate>Sat, 15 Aug 2026 21:15:04 GMT</pubDate>
       <description>Tamaris Comfort Sapatilhas Baixas para Mulher, Branco e Azul, 36 UE : Amazon.es: Moda por 40,72€ (antes 89,95€, -55%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/61zgvt7RUJL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Adidas Homem Roxview Sapatos, Core White Collegiate Green Gum, 44 2/3 UE : Amazon.es: Moda — 29,99€</title>
-      <link>https://descontos-pt.github.io/d/3argsj.html</link>
-      <guid isPermaLink="true">https://descontos-pt.github.io/d/3argsj.html</guid>
-      <pubDate>Sat, 15 Aug 2026 21:09:10 GMT</pubDate>
-      <description>Adidas Homem Roxview Sapatos, Core White Collegiate Green Gum, 44 2/3 UE : Amazon.es: Moda por 29,99€ (antes 60,00€, -50%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/61pZwyHaYEL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
