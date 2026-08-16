@@ -398,6 +398,11 @@
   .rangetick{position:absolute;top:-3px;width:2px;height:14px;background:var(--muted);border-radius:2px;transform:translateX(-50%);}
   .rangelbls{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;font-weight:700;margin-top:7px;}
   .disclaimer{color:var(--muted);font-size:12px;margin-top:10px;}</style>
+    <style>
+      .editorial-panel{border-left:3px solid var(--accent,#ff5500);margin-bottom:0;}
+      .editorial-desc{font-size:15px;line-height:1.72;color:var(--text,#0f172a);padding:2px 0;}
+      .editorial-desc strong{color:var(--accent,#ff5500);}
+    </style>
 </head>
 <body>
   <div class="wrap">
@@ -440,6 +445,25 @@
       </div>
     </div>
 
+    
+    <!-- AI_DESC -->
+    <div class="panel editorial-panel">
+      <div class="editorial-desc"><think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Specialized editor for product analysis for Portuguese consumers. Writes neutral, useful, direct texts. Correct and natural European Portuguese.
+   - **Product:** Calvin Klein Sneaker com Sola Cupsole Mulher Low Top, 42 UE
+   - **Current Price:** 33,20€ | Previous Price: 79,90€ | Discount: -58%
+   - **Category:** 🛍️ Outras Ofertas
+   - **Store:** Amazon
+   - **Requirements:**
+     - Write an editorial paragraph of 90 to 130 words in simple HTML.
+     - Start with `<strong>Porque vale a pena:</strong>`
+     - Explain what the product is and who it's ideal for (without inventing specs)
+     - Comment on the discount in context
+     - End with: "Consulta sempre o historico de preco antes de comprar." (Note: I should keep the exact phrasing requested, but adjust to correct PT-PT if needed? The prompt says exactly: "Consulta sempre o historico de preco antes de comprar." I'll use it exactly as requested, but I'll add proper accents if it's part of the fixed phrase? Actually, the prompt says exactly that phrase. I'll keep it exactly as written, or maybe add accents for correctness: "Consulta sempre o histórico de preço antes de comprar." The prompt says "historico de preco" without accents.</div>
+    </div>
     <div class="panel">
       <h2>📈 Histórico de preço</h2>
       <p class="histnote">🕵️ Primeira vez que vemos este produto — o histórico começa a construir-se a partir de agora.</p>
