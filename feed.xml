@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Tue, 18 Aug 2026 23:00:22 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 23:01:49 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Essie, Verniz de unhas clássico, Acabamento Brilhante, Manicure Resistente, Tom 013 Mademoiselle, 13,5 ml : Am — 3,95€</title>
+      <link>https://descontospt.pt/d/1guiyun.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/1guiyun.html</guid>
+      <pubDate>Tue, 18 Aug 2026 23:01:28 GMT</pubDate>
+      <description>Essie, Verniz de unhas clássico, Acabamento Brilhante, Manicure Resistente, Tom 013 Mademoiselle, 13,5 ml : Amazon.es: Beleza por 3,95€ (antes 13,83€, -71%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/61PlHjYnY5L._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Joseph Joseph Escorredor de pratos de plástico ajustável e rebatível, escorredor com bandeja de recolha, cinze — 17,99€</title>
       <link>https://descontospt.pt/d/1w801sc.html</link>
@@ -404,14 +412,6 @@
       <pubDate>Tue, 18 Aug 2026 14:02:32 GMT</pubDate>
       <description>Fischer 537664 Blister Duopower, 8 x 65, multicolorido : Amazon.es: Bricolage e Ferramentas por 5,89€ (antes 15,89€, -63%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/51iQbJH4ATL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Joseph Joseph Pocket Tábua de Passar Dobrável Compacta e Economiza Espaço, 90x33 cm Cinza/Amarelo : Amazon.es: — 55,99€</title>
-      <link>https://descontospt.pt/d/hnsyr7.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/hnsyr7.html</guid>
-      <pubDate>Tue, 18 Aug 2026 13:40:22 GMT</pubDate>
-      <description>Joseph Joseph Pocket Tábua de Passar Dobrável Compacta e Economiza Espaço, 90x33 cm Cinza/Amarelo : Amazon.es: Casa e Cozinha por 55,99€ (antes 119,99€, -53%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/61qiKPhJwSL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
