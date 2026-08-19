@@ -416,6 +416,20 @@
       </nav>
     </header>
 
+    <!-- Barra de Ferramentas e Filtros no Topo (Acesso Imediato) -->
+    <div class="toolbar">
+      <div class="searchrow">
+        <label class="search">🔎<input id="q" type="search" placeholder="Pesquisar ofertas… (ex: smartphone, lego, airfryer, ssd)" autocomplete="off"></label>
+        <select class="sort" id="sort">
+          <option value="recent">🕒 Mais Recentes</option>
+          <option value="discount">🔥 Maior Desconto</option>
+          <option value="price">💶 Preço Mais Baixo</option>
+          <option value="savings">💰 Maior Poupança</option>
+        </select>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+
     
     <section class="intro">
       <div class="intro-badge">🇵🇹 Portal Oficial de Descontos e Poupança</div>
@@ -445,20 +459,6 @@
     <div class="hot" id="hot" style="display:none;"></div>
 
     
-
-    <!-- Barra de Ferramentas e Filtros -->
-    <div class="toolbar">
-      <div class="searchrow">
-        <label class="search">🔎<input id="q" type="search" placeholder="Pesquisar ofertas… (ex: smartphone, lego, airfryer, ssd)" autocomplete="off"></label>
-        <select class="sort" id="sort">
-          <option value="recent">🕒 Mais Recentes</option>
-          <option value="discount">🔥 Maior Desconto</option>
-          <option value="price">💶 Preço Mais Baixo</option>
-          <option value="savings">💰 Maior Poupança</option>
-        </select>
-      </div>
-      <div class="cats" id="cats"></div>
-    </div>
 
     <!-- Grelha Principal de Todas as Ofertas -->
     <div class="sectionh">🛍️ Todas as Ofertas Disponíveis</div>
