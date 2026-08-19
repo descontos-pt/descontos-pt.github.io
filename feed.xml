@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Wed, 19 Aug 2026 23:04:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 23:07:13 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Totatuit Camisola de malha para mulher gola alta sem mangas camisola de cor sólida camisa elegante camisola ca — 6,39€</title>
+      <link>https://descontospt.pt/d/1o0buph.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/1o0buph.html</guid>
+      <pubDate>Wed, 19 Aug 2026 23:05:38 GMT</pubDate>
+      <description>Totatuit Camisola de malha para mulher gola alta sem mangas camisola de cor sólida camisa elegante camisola casual elástica, Vinho tinto, L | Estilo Diario, Uso Casual, Combinación Versátil, Vino Tinto, L : Amazon.es: Moda por 6,39€ (antes 22,99€, -72%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/71AZ52zYI8L._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Tommy Jeans Camiseta de Tirantes Mujer Essential Strap con Tirantes Finos, Blanco (Ecru), S — 13,75€</title>
       <link>https://descontospt.pt/d/ua699c.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Wed, 19 Aug 2026 13:14:51 GMT</pubDate>
       <description>VASAGLE Perchero, Perchero para Abrigos, Perchero para Sombreros y Abrigos, Estilo Industrial, con 2 Estantes, para Ropa, Sombrero, Bolsa, Marrón Rústico y Negro RCR16BXV1 por 18,51€ (antes 40,46€, -49%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/71hiY2t5MLL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>BaByliss Prancha Straight And Curl Brilliance – Alisa e Ondula, Placas de titânio, Tecnologia iónica, Aquecime — 49,90€</title>
-      <link>https://descontospt.pt/d/wkc3bi.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/wkc3bi.html</guid>
-      <pubDate>Wed, 19 Aug 2026 13:03:38 GMT</pubDate>
-      <description>BaByliss Prancha Straight And Curl Brilliance – Alisa e Ondula, Placas de titânio, Tecnologia iónica, Aquecimento Rápido em 15 s, Design curvo, Penteado fácil, 5 temperaturas até 235°C, ST482E : Amazon.es: Beleza por 49,90€ (antes 99,90€, -50%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/71DiQs42I+L._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
