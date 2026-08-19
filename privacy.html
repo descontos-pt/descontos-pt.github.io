@@ -74,10 +74,10 @@
   body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;line-height:1.5;}
   .wrap{max-width:1200px;margin:0 auto;padding:0 16px 80px;}
 
-  /* Header & Navegação */
+  /* Header Estilo Portal */
   header{
-    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
+    text-align:center;padding:28px 24px;margin:18px 0 12px;border-radius:24px;
+    background:linear-gradient(135deg,#ffffff 0%,#fff5ed 100%);
     border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
@@ -85,7 +85,6 @@
     border-color:#382717;
   }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
-  .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
   .live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite;}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.2);}}
@@ -102,30 +101,6 @@
   .darkbtn{background:var(--card);border:1px solid var(--line);border-radius:999px;width:38px;height:38px;font-size:17px;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:transform .15s;}
   .darkbtn:hover{transform:scale(1.08);}
 
-  .menubtn{
-    display:none;
-    background:var(--card);
-    border:1.5px solid var(--line);
-    border-radius:999px;
-    padding:7px 14px;
-    font-family:inherit;
-    font-weight:800;
-    font-size:13px;
-    color:var(--text);
-    cursor:pointer;
-    box-shadow:var(--shadow);
-    transition:all .18s ease;
-    align-items:center;
-    gap:6px;
-    user-select:none;
-    -webkit-tap-highlight-color:transparent;
-    touch-action:manipulation;
-  }
-  .menubtn:hover,.menubtn:active{border-color:var(--accent);color:var(--accent);}
-  .menubtn.active{background:var(--accent) !important;border-color:var(--accent) !important;color:#fff !important;}
-
-  .header-collapsible{display:block;}
-
   .socials{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;}
   .socials a{background:var(--card);color:var(--text);text-decoration:none;font-weight:700;font-size:12.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow);transition:all .18s ease;display:inline-flex;align-items:center;gap:6px;}
   .socials a:hover{transform:translateY(-1px);box-shadow:var(--shadow-hover);}
@@ -135,25 +110,6 @@
   .socials a.soc-th:hover{border-color:var(--text);color:var(--accent);background:rgba(255,85,0,.08);}
   .socials a.soc-tt:hover{border-color:#00f2fe;color:#00f2fe;background:rgba(0,242,254,.08);}
   .socials a.soc-fb:hover{border-color:#1877f2;color:#1877f2;background:rgba(24,119,242,.08);}
-
-  @media(max-width:768px){
-    header{padding:14px 12px;border-radius:18px;margin-bottom:8px;}
-    .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:6px;}
-    .live-pill{font-size:10px;padding:3px 8px;}
-    .wa-channel-pill{font-size:11px;padding:4px 10px;}
-    .logo{font-size:24px;}
-    .marca svg{width:26px;height:26px;}
-    .tag{font-size:12.5px;line-height:1.35;margin-top:2px;}
-    
-    .menubtn{display:inline-flex !important;}
-    .header-collapsible{display:none !important;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);}
-    .header-collapsible.open{display:flex !important;flex-direction:column !important;gap:12px !important;animation:menuFadeIn .2s ease;}
-    .header-collapsible .socials{margin-top:0 !important;display:grid !important;grid-template-columns:repeat(2,1fr) !important;gap:6px !important;}
-    .header-collapsible .socials a{justify-content:center !important;padding:8px 8px !important;font-size:11.5px !important;}
-    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
-    .header-collapsible .topnav a{text-align:center !important;padding:10px 12px !important;font-size:13px !important;display:block !important;}
-  }
-  @keyframes menuFadeIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
 
   /* Toolbar de Pesquisa e Filtros */
   .toolbar{position:sticky;top:8px;z-index:90;background:var(--bg);padding:8px 0;margin:12px 0 6px;}
@@ -308,10 +264,6 @@
   .topnav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
   .topnav a{color:var(--text);text-decoration:none;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);transition:all .18s ease;}
   .topnav a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
-  @media(max-width:768px){
-    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
-    .header-collapsible .topnav a{text-align:center !important;padding:10px 14px !important;font-size:13px !important;}
-  }
   .intro{background:linear-gradient(135deg,var(--card) 0%,var(--card-sub) 100%);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin:16px 0 12px;box-shadow:var(--shadow);text-align:center;}
   .intro-badge{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:10px;}
   .intro h2{font-size:22px;font-weight:900;margin-bottom:8px;letter-spacing:-0.5px;color:var(--text);}
@@ -418,17 +370,10 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="header-topbar">
-        <a class="wa-channel-pill" href="https://whatsapp.com/channel/0029VbDZcRs545v4sFUTKh1h" target="_blank" rel="noopener">🟢 Canal WhatsApp</a>
-        <div class="header-actions">
-          <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
-          <button class="menubtn" id="menubtn" onclick="toggleHeaderMenu(this)" aria-label="Abrir Menu" aria-expanded="false"><span class="menu-icon">☰</span><span class="menu-label">Menu</span></button>
-        </div>
-      </div>
+      <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
       <div class="logo"><a href="./"><span class="marca"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="currentColor" opacity=".14"/><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="16.8" cy="7.2" r="1.7" fill="currentColor"/></svg><span>Descontos PT</span></span></a></div>
       <div class="tag">As melhores ofertas da Amazon e AliExpress em Portugal 🔥</div>
-      <div class="header-collapsible" id="header-menu">
-        
+      
       <nav class="topnav">
         <a href="./">🔥 Melhores Ofertas</a>
         <a href="noticias/">📰 Notícias Tech</a>
@@ -438,7 +383,6 @@
         <a href="sobre/">ℹ️ Sobre Nós</a>
         <a href="como-funciona/">📈 Como Funciona</a>
       </nav>
-      </div>
     </header>
 
     <article class="article"><h1>Política de Privacidade</h1><p class="updated">Última atualização: agosto de 2026 · Conforme RGPD e Google AdSense</p>
@@ -564,24 +508,11 @@
     </script>
   </div>
 <script>
-  function toggleHeaderMenu(btn){
-    var b=btn||document.getElementById('menubtn');
-    var m=document.getElementById('header-menu');
-    if(!b||!m)return;
-    var open=m.classList.toggle('open');
-    b.classList.toggle('active',open);
-    b.setAttribute('aria-expanded',open?'true':'false');
-    var icon=b.querySelector('.menu-icon');
-    var lbl=b.querySelector('.menu-label');
-    if(icon)icon.textContent=open?'✕':'☰';
-    if(lbl)lbl.textContent=open?'Fechar':'Menu';
-  }
-  window.toggleHeaderMenu=toggleHeaderMenu;
   var darkbtn=document.getElementById('darkbtn');
   function setDark(on){document.documentElement.classList.toggle('dark',on);darkbtn.textContent=on?'☀️':'🌙';try{localStorage.setItem('dark',on?'1':'0');}catch(e){}}
   var pref=null;try{pref=localStorage.getItem('dark');}catch(e){}
   setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
-  if(darkbtn)darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
+  darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 </script>
 </body>
 </html>

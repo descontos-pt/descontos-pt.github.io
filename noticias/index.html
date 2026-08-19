@@ -74,10 +74,10 @@
   body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;line-height:1.5;}
   .wrap{max-width:1200px;margin:0 auto;padding:0 16px 80px;}
 
-  /* Header & Navegação */
+  /* Header Estilo Portal */
   header{
-    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
+    text-align:center;padding:28px 24px;margin:18px 0 12px;border-radius:24px;
+    background:linear-gradient(135deg,#ffffff 0%,#fff5ed 100%);
     border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
@@ -85,7 +85,6 @@
     border-color:#382717;
   }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
-  .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
   .live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite;}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.2);}}
@@ -102,30 +101,6 @@
   .darkbtn{background:var(--card);border:1px solid var(--line);border-radius:999px;width:38px;height:38px;font-size:17px;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:transform .15s;}
   .darkbtn:hover{transform:scale(1.08);}
 
-  .menubtn{
-    display:none;
-    background:var(--card);
-    border:1.5px solid var(--line);
-    border-radius:999px;
-    padding:7px 14px;
-    font-family:inherit;
-    font-weight:800;
-    font-size:13px;
-    color:var(--text);
-    cursor:pointer;
-    box-shadow:var(--shadow);
-    transition:all .18s ease;
-    align-items:center;
-    gap:6px;
-    user-select:none;
-    -webkit-tap-highlight-color:transparent;
-    touch-action:manipulation;
-  }
-  .menubtn:hover,.menubtn:active{border-color:var(--accent);color:var(--accent);}
-  .menubtn.active{background:var(--accent) !important;border-color:var(--accent) !important;color:#fff !important;}
-
-  .header-collapsible{display:block;}
-
   .socials{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;}
   .socials a{background:var(--card);color:var(--text);text-decoration:none;font-weight:700;font-size:12.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow);transition:all .18s ease;display:inline-flex;align-items:center;gap:6px;}
   .socials a:hover{transform:translateY(-1px);box-shadow:var(--shadow-hover);}
@@ -135,25 +110,6 @@
   .socials a.soc-th:hover{border-color:var(--text);color:var(--accent);background:rgba(255,85,0,.08);}
   .socials a.soc-tt:hover{border-color:#00f2fe;color:#00f2fe;background:rgba(0,242,254,.08);}
   .socials a.soc-fb:hover{border-color:#1877f2;color:#1877f2;background:rgba(24,119,242,.08);}
-
-  @media(max-width:768px){
-    header{padding:14px 12px;border-radius:18px;margin-bottom:8px;}
-    .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:6px;}
-    .live-pill{font-size:10px;padding:3px 8px;}
-    .wa-channel-pill{font-size:11px;padding:4px 10px;}
-    .logo{font-size:24px;}
-    .marca svg{width:26px;height:26px;}
-    .tag{font-size:12.5px;line-height:1.35;margin-top:2px;}
-    
-    .menubtn{display:inline-flex !important;}
-    .header-collapsible{display:none !important;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);}
-    .header-collapsible.open{display:flex !important;flex-direction:column !important;gap:12px !important;animation:menuFadeIn .2s ease;}
-    .header-collapsible .socials{margin-top:0 !important;display:grid !important;grid-template-columns:repeat(2,1fr) !important;gap:6px !important;}
-    .header-collapsible .socials a{justify-content:center !important;padding:8px 8px !important;font-size:11.5px !important;}
-    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
-    .header-collapsible .topnav a{text-align:center !important;padding:10px 12px !important;font-size:13px !important;display:block !important;}
-  }
-  @keyframes menuFadeIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
 
   /* Toolbar de Pesquisa e Filtros */
   .toolbar{position:sticky;top:8px;z-index:90;background:var(--bg);padding:8px 0;margin:12px 0 6px;}
@@ -308,10 +264,6 @@
   .topnav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
   .topnav a{color:var(--text);text-decoration:none;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);transition:all .18s ease;}
   .topnav a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
-  @media(max-width:768px){
-    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
-    .header-collapsible .topnav a{text-align:center !important;padding:10px 14px !important;font-size:13px !important;}
-  }
   .intro{background:linear-gradient(135deg,var(--card) 0%,var(--card-sub) 100%);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin:16px 0 12px;box-shadow:var(--shadow);text-align:center;}
   .intro-badge{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:10px;}
   .intro h2{font-size:22px;font-weight:900;margin-bottom:8px;letter-spacing:-0.5px;color:var(--text);}
@@ -418,17 +370,10 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="header-topbar">
-        <a class="wa-channel-pill" href="https://whatsapp.com/channel/0029VbDZcRs545v4sFUTKh1h" target="_blank" rel="noopener">🟢 Canal WhatsApp</a>
-        <div class="header-actions">
-          <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
-          <button class="menubtn" id="menubtn" onclick="toggleHeaderMenu(this)" aria-label="Abrir Menu" aria-expanded="false"><span class="menu-icon">☰</span><span class="menu-label">Menu</span></button>
-        </div>
-      </div>
+      <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
       <div class="logo"><a href="../"><span class="marca"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="currentColor" opacity=".14"/><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="16.8" cy="7.2" r="1.7" fill="currentColor"/></svg><span>Descontos PT</span></span></a></div>
       <div class="tag">As melhores ofertas da Amazon e AliExpress em Portugal 🔥</div>
-      <div class="header-collapsible" id="header-menu">
-        
+      
       <nav class="topnav">
         <a href="../">🔥 Melhores Ofertas</a>
         <a href="../noticias/">📰 Notícias Tech</a>
@@ -438,7 +383,6 @@
         <a href="../sobre/">ℹ️ Sobre Nós</a>
         <a href="../como-funciona/">📈 Como Funciona</a>
       </nav>
-      </div>
     </header>
 
     
@@ -556,31 +500,16 @@
       </div>
     </a>
   
-    <a class="news-card" href="./macos-26-7-le-code-d-8217-apple-confirme-ses-futurs-iphone-airpod/">
+    <a class="news-card" href="./xiaomi-este-acessorio-bluetooth-cola-se-ao/">
       <div class="news-card-img">
-        <img src="https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/06/apple-logo.jpg?resize=1200,675&key=7d1c58f3" alt="macOS 26.7 : le code d’Apple confirme ses futurs iPhone, AirPods et HomePod avant les annonces — Tudo o que precisas de saber em Portugal">
-        <span class="news-card-badge">🔋 Mobile &amp; Gadgets</span>
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="Adesivo Bluetooth da Xiaomi que se cola ao telemóvel: som extra para o dia a dia">
+        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
       </div>
       <div class="news-card-body">
-        <h3 class="news-card-title">macOS 26.7 : le code d’Apple confirme ses futurs iPhone, AirPods et HomePod avant les annonces — Tudo o que precisas de saber em Portugal</h3>
-        <p class="news-card-desc">En glissant du code dans ses mises à jour, Apple continue de vendre la mèche toute seule. La dernière version de macOS contient des références à plusieurs appareils encore jamais commercialisés.</p>
+        <h3 class="news-card-title">Adesivo Bluetooth da Xiaomi que se cola ao telemóvel: som extra para o dia a dia</h3>
+        <p class="news-card-desc">Descobre se o pequeno acessório Bluetooth da Xiaomi que se cola ao telemóvel realmente melhora a experiência sonora no dia a dia e se compensa comprar.</p>
         <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./i-ve-tested-more-than-60-bluetooth-speakers-and-this-marshall-mod/">
-      <div class="news-card-img">
-        <img src="https://cdn.mos.cms.futurecdn.net/sdWtb4NKnYayHqA9gRAEgF-1280-80.jpg" alt="I’ve tested more than 60 Bluetooth speakers and this Marshall model may just be the most stylish of them all — but does it sound as good as it looks? Here’s my verdict — Tudo o que precisas de saber em Portugal">
-        <span class="news-card-badge">⚡ Hardware &amp; Análises</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">I’ve tested more than 60 Bluetooth speakers and this Marshall model may just be the most stylish of them all — but does it sound as good as it looks? Here’s my verdict — Tudo o que precisas de saber em Portugal</h3>
-        <p class="news-card-desc">Análise completa e novidades sobre I’ve tested more than 60 Bluetooth speakers and this Marshall model may just be the most stylish of them all — but does it sound as good as it looks? Here’s my verdict para o mercado português.</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
+          <span>📅 19 de agosto de 2026 · ⏱️ 5 min de leitura</span>
           <span class="news-card-more">Ler notícia →</span>
         </div>
       </div>
@@ -588,87 +517,12 @@
   
     <a class="news-card" href="./sony-fabrica-mas-de-la-mitad-de-los-sensores-de-movil-del-mundo-h/">
       <div class="news-card-img">
-        <img src="https://i.blogs.es/565580/sony_building_japan_2006_-_tokyo_-_ginza/1024_2000.jpeg" alt="Sony fabrica más de la mitad de los sensores de móvil del mundo. Ha firmado con TSMC para dejar de hacerlo sola — Tudo o que precisas de saber em Portugal">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Sensores de câmara da Sony: o que a parceria com a TSMC significa para o teu próximo telemóvel">
         <span class="news-card-badge">🚀 Tecnologia Global</span>
       </div>
       <div class="news-card-body">
-        <h3 class="news-card-title">Sony fabrica más de la mitad de los sensores de móvil del mundo. Ha firmado con TSMC para dejar de hacerlo sola — Tudo o que precisas de saber em Portugal</h3>
-        <p class="news-card-desc">Sony es la empresa líder en la creación de sensores para las cámaras de los móviles. Sin embargo, parece ser que se ha cansado de hacerlo sola, y ha creado junto a la taiwanesa TSMC una empresa conjunta para desarrollar y fabricar los sensores de ...</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./qual-e-a-rua-mais-cara-do-seu-distrito-veja-o-top-10-nacional/">
-      <div class="news-card-img">
-        <img src="https://pplware.sapo.pt/wp-content/uploads/2024/12/comprar_casa_portugal00.webp" alt="Qual é a rua mais cara do seu distrito? Veja o top 10 nacional!">
-        <span class="news-card-badge">💻 Informática &amp; Inovação</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">Qual é a rua mais cara do seu distrito? Veja o top 10 nacional!</h3>
-        <p class="news-card-desc">A Rua das Faias, em Cascais, é oficialmente a morada mais cara do país. Os dados indicam que comprar casa ali pode custar 4.350.000 euros, um valor que coloca este concelho no topo absoluto...</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/">
-      <div class="news-card-img">
-        <img src="https://cdn.4gnews.pt/imagens/portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-desempenho-og.jpg" alt="Portátil lento? Faz isto antes do regresso às aulas e recupera desempenho">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">Portátil lento? Faz isto antes do regresso às aulas e recupera desempenho</h3>
-        <p class="news-card-desc">Imagem ilustrativa Crédito@Pexels Tanto no Windows como no macOS, falta de espaço de armazenamento, demasiadas aplicações em segundo plano e software desatualizado podem contribuir para problemas de desempenho. A própria Microsoft recomenda verifi...</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./sms-do-sns-estao-a-enganar-muitos-portugueses-nao-sejas-o-proximo/">
-      <div class="news-card-img">
-        <img src="https://cdn.4gnews.pt/imagens/sms-do-sns-estao-a-enganar-muitos-portugueses-nao-sejas-o-proximo-og.jpg" alt="SMS do SNS estão a enganar muitos portugueses, não sejas o próximo">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">SMS do SNS estão a enganar muitos portugueses, não sejas o próximo</h3>
-        <p class="news-card-desc">Imagem gerada por IA | ChatGPT Se receberes nos próximos dias um SMS aparentemente enviado pelo SNS ou pelo Ministério da Saúde a indicar que tens um valor em dívida, não faças o pagamento sem confirmar primeiro a origem da mensagem. Segundo o SNS...</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-di/">
-      <div class="news-card-img">
-        <img src="https://cdn.4gnews.pt/imagens/melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-digi-em-2026-og.jpg" alt="Melhor Internet fixa para estudar: Preços da MEO, NOS, Vodafone e DIGI em 2026">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">Melhor Internet fixa para estudar: Preços da MEO, NOS, Vodafone e DIGI em 2026</h3>
-        <p class="news-card-desc">Imagem ilustrativa Crédito@Pixabay Com o regresso às aulas a aproximar-se, os estudantes têm de pensar em criar as melhores condições para o próximo ano letivo. A ligação à Internet é, hoje, um dos fatores mais importantes. Para a maioria dos estu...</p>
-        <div class="news-card-footer">
-          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
-    <a class="news-card" href="./regresso-as-aulas-11-equipamentos-e-gadgets-que-dao-jeito-a-qualq/">
-      <div class="news-card-img">
-        <img src="https://cdn.4gnews.pt/imagens/estes-sao-os-equipamentos-ideais-para-a-rotina-de-estudos-og.jpg" alt="Regresso às aulas: 11 equipamentos e gadgets que dão jeito a qualquer estudante">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">Regresso às aulas: 11 equipamentos e gadgets que dão jeito a qualquer estudante</h3>
-        <p class="news-card-desc">(Imagem: Microsoft Copilot/ Unsplash) O regresso às aulas é uma boa altura para preparar os equipamentos que vão acompanhar a rotina de estudos. Um SSD externo, uma power bank ou uns bons auscultadores podem fazer bastante diferença para quem pass...</p>
+        <h3 class="news-card-title">Sensores de câmara da Sony: o que a parceria com a TSMC significa para o teu próximo telemóvel</h3>
+        <p class="news-card-desc">Descobre como a nova aliança entre a Sony e a TSMC pode influenciar a qualidade das câmaras dos smartphones disponíveis em Portugal e o que considerar antes de comprar.</p>
         <div class="news-card-footer">
           <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
           <span class="news-card-more">Ler notícia →</span>
@@ -678,12 +532,57 @@
   
     <a class="news-card" href="./agora-podes-jogar-os-pokemon-classicos-em-3d-no-pc-e-android-ve-c/">
       <div class="news-card-img">
-        <img src="https://cdn.4gnews.pt/imagens/agora-podes-jogar-os-pokemon-classicos-em-3d-no-pc-e-android-ve-como-og.jpg" alt="Agora podes jogar os Pokémon clássicos em 3D no PC e Android: vê como">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="Pokémon clássicos em 3D: como jogar no PC e Android sem gastar fortuna">
         <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
       </div>
       <div class="news-card-body">
-        <h3 class="news-card-title">Agora podes jogar os Pokémon clássicos em 3D no PC e Android: vê como</h3>
-        <p class="news-card-desc">(Imagem: William Schendes/ 4gnews) Os clássicos Pokémon Red, Blue e Yellow ganharam uma forma completamente diferente de serem jogados no PC e Android, graças a dois projetos criados por fãs: o Gen1Recomp e o Dramatic Shape Voxel Mod. Em conjunto,...</p>
+        <h3 class="news-card-title">Pokémon clássicos em 3D: como jogar no PC e Android sem gastar fortuna</h3>
+        <p class="news-card-desc">Descobre como transformar os teus Pokémon favoritos em experiências 3D acessíveis em telemóvel e computador, com dicas de compra inteligente.</p>
+        <div class="news-card-footer">
+          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
+          <span class="news-card-more">Ler notícia →</span>
+        </div>
+      </div>
+    </a>
+  
+    <a class="news-card" href="./melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-di/">
+      <div class="news-card-img">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Internet fixa para estudar em 2026: como escolher o plano certo entre MEO, NOS, Vodafone e DIGI">
+        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+      </div>
+      <div class="news-card-body">
+        <h3 class="news-card-title">Internet fixa para estudar em 2026: como escolher o plano certo entre MEO, NOS, Vodafone e DIGI</h3>
+        <p class="news-card-desc">Guia prático para estudantes portugueses que querem equilibrar velocidade, fiabilidade e preço na escolha da internet fixa em 2026.</p>
+        <div class="news-card-footer">
+          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
+          <span class="news-card-more">Ler notícia →</span>
+        </div>
+      </div>
+    </a>
+  
+    <a class="news-card" href="./portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/">
+      <div class="news-card-img">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop" alt="Como dar nova vida ao teu portátil antes do regresso às aulas sem gastar uma fortuna">
+        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+      </div>
+      <div class="news-card-body">
+        <h3 class="news-card-title">Como dar nova vida ao teu portátil antes do regresso às aulas sem gastar uma fortuna</h3>
+        <p class="news-card-desc">Dicas práticas de manutenção e upgrades acessíveis para melhorar o desempenho do portátil e poupar na compra de um novo equipamento.</p>
+        <div class="news-card-footer">
+          <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
+          <span class="news-card-more">Ler notícia →</span>
+        </div>
+      </div>
+    </a>
+  
+    <a class="news-card" href="./macos-26-7-le-code-d-8217-apple-confirme-ses-futurs-iphone-airpod/">
+      <div class="news-card-img">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="O que o código do macOS 26.7 revela sobre os próximos iPhone, AirPods e HomePod – Guia de compra para Portugal">
+        <span class="news-card-badge">🔋 Mobile &amp; Gadgets</span>
+      </div>
+      <div class="news-card-body">
+        <h3 class="news-card-title">O que o código do macOS 26.7 revela sobre os próximos iPhone, AirPods e HomePod – Guia de compra para Portugal</h3>
+        <p class="news-card-desc">Descubra como as pistas do macOS podem ajudar a escolher o momento certo para atualizar os teus gadgets Apple em Portugal.</p>
         <div class="news-card-footer">
           <span>📅 18 de agosto de 2026 · ⏱️ 5 min de leitura</span>
           <span class="news-card-more">Ler notícia →</span>
@@ -768,24 +667,11 @@
     </script>
   </div>
 <script>
-  function toggleHeaderMenu(btn){
-    var b=btn||document.getElementById('menubtn');
-    var m=document.getElementById('header-menu');
-    if(!b||!m)return;
-    var open=m.classList.toggle('open');
-    b.classList.toggle('active',open);
-    b.setAttribute('aria-expanded',open?'true':'false');
-    var icon=b.querySelector('.menu-icon');
-    var lbl=b.querySelector('.menu-label');
-    if(icon)icon.textContent=open?'✕':'☰';
-    if(lbl)lbl.textContent=open?'Fechar':'Menu';
-  }
-  window.toggleHeaderMenu=toggleHeaderMenu;
   var darkbtn=document.getElementById('darkbtn');
   function setDark(on){document.documentElement.classList.toggle('dark',on);darkbtn.textContent=on?'☀️':'🌙';try{localStorage.setItem('dark',on?'1':'0');}catch(e){}}
   var pref=null;try{pref=localStorage.getItem('dark');}catch(e){}
   setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
-  if(darkbtn)darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
+  darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 </script>
 </body>
 </html>
