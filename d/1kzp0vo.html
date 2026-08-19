@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kipling Alvar Mala de ombro média, Signature Emb por 35,09€ (-61%) | Descontos PT</title>
+<title>Kipling Alvar Mala de ombro média, Signature Emb por 35,09€ (-61%) | Promoções PT</title>
 <meta name="description" content="Kipling Alvar Mala de ombro média, Signature Emb em promoção por 35,09€ (antes 89,90€) — desconto de 61%, com histórico de preço."/>
 <meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
@@ -15,7 +15,7 @@
 <meta property="og:type" content="product"/>
 <meta property="og:locale" content="pt_PT"/>
 <meta property="og:site_name" content="Promoções PT"/>
-<meta property="og:title" content="Kipling Alvar Mala de ombro média, Signature Emb | Descontos PT"/>
+<meta property="og:title" content="Kipling Alvar Mala de ombro média, Signature Emb | Promoções PT"/>
 <meta property="og:description" content="Kipling Alvar Mala de ombro média, Signature Emb em promoção por 35,09€ (antes 89,90€) — poupança com histórico de preço."/>
 <meta property="og:url" content="https://descontospt.pt/d/1kzp0vo.html"/>
 <meta property="og:image" content="https://m.media-amazon.com/images/I/81Q4YhBOdBL._SL500_.jpg"/>
@@ -74,13 +74,14 @@
     --shadow-hover:0 16px 40px rgba(0,0,0,.7);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{overflow-x:hidden;max-width:100%;width:100%;}
   body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;line-height:1.5;}
-  .wrap{max-width:1200px;margin:0 auto;padding:0 16px 80px;}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 16px 80px;overflow-x:hidden;width:100%;}
 
-  /* Header Estilo Portal */
+  /* Header & Navegação */
   header{
-    text-align:center;padding:28px 24px;margin:18px 0 12px;border-radius:24px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff5ed 100%);
+    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
+    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
     border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
@@ -88,6 +89,7 @@
     border-color:#382717;
   }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
+  .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
   .live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite;}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.2);}}
@@ -104,6 +106,30 @@
   .darkbtn{background:var(--card);border:1px solid var(--line);border-radius:999px;width:38px;height:38px;font-size:17px;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:transform .15s;}
   .darkbtn:hover{transform:scale(1.08);}
 
+  .menubtn{
+    display:none;
+    background:var(--card);
+    border:1.5px solid var(--line);
+    border-radius:999px;
+    padding:7px 14px;
+    font-family:inherit;
+    font-weight:800;
+    font-size:13px;
+    color:var(--text);
+    cursor:pointer;
+    box-shadow:var(--shadow);
+    transition:all .18s ease;
+    align-items:center;
+    gap:6px;
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+    touch-action:manipulation;
+  }
+  .menubtn:hover,.menubtn:active{border-color:var(--accent);color:var(--accent);}
+  .menubtn.active{background:var(--accent) !important;border-color:var(--accent) !important;color:#fff !important;}
+
+  .header-collapsible{display:block;}
+
   .socials{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;}
   .socials a{background:var(--card);color:var(--text);text-decoration:none;font-weight:700;font-size:12.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow);transition:all .18s ease;display:inline-flex;align-items:center;gap:6px;}
   .socials a:hover{transform:translateY(-1px);box-shadow:var(--shadow-hover);}
@@ -114,14 +140,41 @@
   .socials a.soc-tt:hover{border-color:#00f2fe;color:#00f2fe;background:rgba(0,242,254,.08);}
   .socials a.soc-fb:hover{border-color:#1877f2;color:#1877f2;background:rgba(24,119,242,.08);}
 
+  @media(max-width:768px){
+    header{padding:14px 12px;border-radius:18px;margin-bottom:8px;}
+    .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:6px;}
+    .live-pill{font-size:10px;padding:3px 8px;}
+    .wa-channel-pill{font-size:11px;padding:4px 10px;}
+    .logo{font-size:24px;}
+    .marca svg{width:26px;height:26px;}
+    .tag{font-size:12.5px;line-height:1.35;margin-top:2px;}
+    
+    .menubtn{display:inline-flex !important;}
+    .header-collapsible{display:none !important;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);}
+    .header-collapsible.open{display:flex !important;flex-direction:column !important;gap:12px !important;animation:menuFadeIn .2s ease;}
+    .header-collapsible .socials{margin-top:0 !important;display:grid !important;grid-template-columns:repeat(2,1fr) !important;gap:6px !important;}
+    .header-collapsible .socials a{justify-content:center !important;padding:8px 8px !important;font-size:11.5px !important;}
+    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
+    .header-collapsible .topnav a{text-align:center !important;padding:10px 12px !important;font-size:13px !important;display:block !important;}
+  }
+  @keyframes menuFadeIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+
   /* Toolbar de Pesquisa e Filtros */
-  .toolbar{position:sticky;top:8px;z-index:90;background:var(--bg);padding:8px 0;margin:12px 0 6px;}
-  .searchrow{display:flex;gap:10px;margin-bottom:12px;}
-  .search{flex:1;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px;box-shadow:var(--shadow);transition:border-color .15s;}
+  .toolbar{position:sticky;top:8px;z-index:90;background:var(--bg);padding:8px 0;margin:12px 0 6px;width:100%;max-width:100%;}
+  .searchrow{display:flex;gap:10px;margin-bottom:12px;width:100%;max-width:100%;}
+  .search{flex:1;min-width:0;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);transition:border-color .15s;}
   .search:focus-within{border-color:var(--accent);}
-  .search input{flex:1;border:none;outline:none;background:transparent;color:var(--text);font-family:inherit;font-size:15px;}
-  .sort{background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--text);font-family:inherit;font-weight:700;font-size:13px;padding:0 16px;cursor:pointer;box-shadow:var(--shadow);outline:none;}
+  .search input{flex:1;min-width:0;width:100%;border:none;outline:none;background:transparent;color:var(--text);font-family:inherit;font-size:14.5px;}
+  .sort{background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--text);font-family:inherit;font-weight:700;font-size:13px;padding:0 14px;cursor:pointer;box-shadow:var(--shadow);outline:none;flex-shrink:0;}
   .sort:focus{border-color:var(--accent);}
+
+  @media(max-width:640px){
+    .wrap{padding:0 12px 60px;}
+    .searchrow{flex-direction:column;gap:8px;}
+    .search{padding:10px 14px;}
+    .search input{font-size:13.5px;}
+    .sort{width:100%;height:42px;padding:0 14px;font-size:13px;}
+  }
 
   .cats{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;-webkit-overflow-scrolling:touch;}
   .cats::-webkit-scrollbar{height:4px;}
@@ -267,6 +320,10 @@
   .topnav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
   .topnav a{color:var(--text);text-decoration:none;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);transition:all .18s ease;}
   .topnav a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
+  @media(max-width:768px){
+    .header-collapsible .topnav{margin-top:0 !important;display:grid !important;grid-template-columns:1fr !important;gap:6px !important;}
+    .header-collapsible .topnav a{text-align:center !important;padding:10px 14px !important;font-size:13px !important;}
+  }
   .intro{background:linear-gradient(135deg,var(--card) 0%,var(--card-sub) 100%);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin:16px 0 12px;box-shadow:var(--shadow);text-align:center;}
   .intro-badge{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:10px;}
   .intro h2{font-size:22px;font-weight:900;margin-bottom:8px;letter-spacing:-0.5px;color:var(--text);}
@@ -416,6 +473,40 @@
   html.dark .cons-box{background:rgba(234,88,12,.15);border-color:rgba(251,146,60,.3);}
   html.dark .cons-box h4{color:#fb923c;}
   
+  .specs-box{background:var(--bg,#f8fafc);border:1px solid var(--line,#e2e8f0);border-radius:14px;padding:16px 20px;margin:18px 0;}
+  .specs-box p.specs-title{font-weight:800;font-size:14.5px;color:var(--text,#0f172a);margin-bottom:12px;display:flex;align-items:center;gap:6px;}
+  .specs-table{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;}
+  .spec-item{background:var(--card,#ffffff);border:1px solid var(--line,#e2e8f0);border-radius:10px;padding:10px 14px;display:flex;flex-direction:column;gap:3px;}
+  .spec-k{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--accent,#ff5500);}
+  .spec-v{font-size:13px;font-weight:600;color:var(--text,#334155);line-height:1.45;}
+  html.dark .spec-item{background:#1a2233;border-color:#2a364f;}
+  html.dark .spec-v{color:#cbd5e1;}
+
+  .profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0;}
+  .target-box{background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.25);border-radius:14px;padding:14px 16px;}
+  .target-box h4{color:#059669;font-size:14px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+  .avoid-box{background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.25);border-radius:14px;padding:14px 16px;}
+  .avoid-box h4{color:#d97706;font-size:14px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+  .target-box p, .avoid-box p{margin:0;font-size:13.5px;line-height:1.55;color:var(--text,#334155);}
+  html.dark .target-box{background:rgba(16,185,129,.12);border-color:rgba(52,211,153,.3);}
+  html.dark .target-box h4{color:#34d399;}
+  html.dark .target-box p{color:#cbd5e1;}
+  html.dark .avoid-box{background:rgba(245,158,11,.12);border-color:rgba(251,191,36,.3);}
+  html.dark .avoid-box h4{color:#fbbf24;}
+  html.dark .avoid-box p{color:#cbd5e1;}
+
+  .review-section-title{font-size:16px;font-weight:800;margin:18px 0 10px;color:var(--text,#0f172a);display:flex;align-items:center;gap:6px;}
+  .pros-cons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0 18px;}
+  .pros-box{background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.25);border-radius:14px;padding:14px 16px;}
+  .pros-box h4{color:#15803d;font-size:14px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+  .cons-box{background:rgba(234,88,12,.08);border:1px solid rgba(234,88,12,.25);border-radius:14px;padding:14px 16px;}
+  .cons-box h4{color:#c2410c;font-size:14px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+  .pros-box ul, .cons-box ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.6;}
+  html.dark .pros-box{background:rgba(22,163,74,.15);border-color:rgba(74,222,128,.3);}
+  html.dark .pros-box h4{color:#4ade80;}
+  html.dark .cons-box{background:rgba(234,88,12,.15);border-color:rgba(251,146,60,.3);}
+  html.dark .cons-box h4{color:#fb923c;}
+  
   .verdict-box{background:linear-gradient(135deg,rgba(255,85,0,.08) 0%,rgba(234,88,12,.04) 100%);border:1px solid rgba(255,85,0,.25);border-radius:14px;padding:16px 18px;margin-top:16px;}
   .verdict-box h4{color:var(--accent,#ff5500);font-size:14.5px;font-weight:800;margin-bottom:6px;}
   .verdict-box p{margin:0;font-size:14px;line-height:1.65;}
@@ -426,10 +517,17 @@
 <body>
   <div class="wrap">
     <header>
-      <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
+      <div class="header-topbar">
+        <a class="wa-channel-pill" href="https://whatsapp.com/channel/0029VbDZcRs545v4sFUTKh1h" target="_blank" rel="noopener">🟢 Canal WhatsApp</a>
+        <div class="header-actions">
+          <button class="darkbtn" id="darkbtn" title="Modo claro/escuro">🌙</button>
+          <button class="menubtn" id="menubtn" onclick="toggleHeaderMenu(this)" aria-label="Abrir Menu" aria-expanded="false"><span class="menu-icon">☰</span><span class="menu-label">Menu</span></button>
+        </div>
+      </div>
       <div class="logo"><a href="../"><span class="marca"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="currentColor" opacity=".14"/><path d="M11.6 2.6 3 11.2a2 2 0 0 0 0 2.8l7 7a2 2 0 0 0 2.8 0l8.6-8.6a2 2 0 0 0 .6-1.4V4a2 2 0 0 0-2-2h-7a2 2 0 0 0-1.4.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="16.8" cy="7.2" r="1.7" fill="currentColor"/></svg><span>Descontos PT</span></span></a></div>
       <div class="tag">As melhores ofertas da Amazon e AliExpress em Portugal 🔥</div>
-      
+      <div class="header-collapsible" id="header-menu">
+        
       <nav class="topnav">
         <a href="../">🔥 Melhores Ofertas</a>
         <a href="../noticias/">📰 Notícias Tech</a>
@@ -439,6 +537,7 @@
         <a href="../sobre/">ℹ️ Sobre Nós</a>
         <a href="../como-funciona/">📈 Como Funciona</a>
       </nav>
+      </div>
     </header>
 
     <div class="bread"><a href="../">← Todas as ofertas</a> · 👕 Moda</div>
@@ -469,40 +568,70 @@
       <div class="editorial-desc">
         
       <div class="review-body">
-        <p><strong>🔍 Visão Geral &amp; Contexto Editorial:</strong> A nossa equipa editorial acompanha continuamente as flutuações de catálogo para sinalizar artigos que se destacam por um rácio excecional entre durabilidade comprovada, utilidade prática e preço competitivo. Este produto responde aos requisitos fundamentais do seu segmento, oferecendo acabamentos sólidos e fiabilidade comprovada para utilizadores que procuram uma solução eficiente e duradoura.</p>
+        <p><strong>🔍 Análise do Especialista &amp; Contexto Editorial:</strong> O avanço dos equipamentos de estética pessoal permite hoje usufruir de tratamentos de nível profissional no conforto e privacidade de casa, sem as mensalidades e marcações exigidas por clínicas tradicionais. Com tecnologia de luz pulsada intensa (IPL) e sistemas de refrigeração cutânea, o equipamento atua diretamente na raiz do folículo capilar, promovendo uma redução progressiva e duradoura da pilosidade com total segurança.</p>
         
-        <div class="specs-box" style="background:var(--bg,#f8fafc);border:1px solid var(--line,#e2e8f0);border-radius:14px;padding:14px 18px;margin:16px 0;">
-          <p style="font-weight:800;font-size:14px;color:var(--text,#0f172a);margin-bottom:8px;">📋 <strong>Ficha Técnica &amp; Destaques de Desempenho:</strong></p>
-          <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.7;color:var(--text,#334155);">
-          <li style="margin-bottom:6px;"><strong>Qualidade Construtiva:</strong> Fabricado com materiais robustos e resistentes a uso diário intensivo</li>
-        <li style="margin-bottom:6px;"><strong>Ergonomia & Praticidade:</strong> Design funcional e intuitivo para uma experiência de utilização simples</li>
-        <li style="margin-bottom:6px;"><strong>Normas & Conformidade:</strong> Cumpre integralmente as normas europeias de segurança e certificação de qualidade</li>
-          </ul>
+        <div class="specs-box">
+          <p class="specs-title">📋 <strong>Ficha Técnica &amp; Especificações Detalhadas:</strong></p>
+          <div class="specs-table">
+            
+      <div class="spec-item">
+        <span class="spec-k">Tecnologia de Ação</span>
+        <span class="spec-v">Luz Pulsada Intensa (IPL) com sistema de refrigeração que previne desconforto térmico</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Capacidade de Disparos</span>
+        <span class="spec-v">Centenas de milhares de pulsos de luz — vida útil suficiente para vários anos de manutenção</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Níveis de Intensidade</span>
+        <span class="spec-v">Múltiplos níveis de energia ajustáveis para diferentes áreas do corpo</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Modos de Tratamento</span>
+        <span class="spec-v">Disparo automático para áreas extensas (pernas) e disparo de precisão (rosto/axilas)</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Certificação de Segurança</span>
+        <span class="spec-v">Filtro UV integrado e sensores de contacto para proteger os olhos e a pele</span>
+      </div>
+          </div>
         </div>
 
-        <div class="review-section-title">⚖️ <strong>Balanço Crítico: Pontos Fortes vs. Aspetos a Notar</strong></div>
+        <div class="review-section-title">👥 <strong>Perfil de Utilização Recomendado</strong></div>
+        <div class="profile-grid">
+          <div class="target-box">
+            <h4>🎯 Para Quem É Ideal</h4>
+            <p>Quem procura uma solução duradoura contra pelos indesejados, pessoas com pele sensível a lâminas de corte e quem quer poupar centenas de euros em tratamentos estéticos.</p>
+          </div>
+          <div class="avoid-box">
+            <h4>⚠️ A Considerar / Menos Indicado</h4>
+            <p>Pessoas com tons de pele extremamente escuros ou pelos completamente brancos/ruivos (limitação técnica comum da tecnologia ótica IPL).</p>
+          </div>
+        </div>
+
+        <div class="review-section-title">⚖️ <strong>Balanço Crítico: Pontos Fortes vs. Cuidados</strong></div>
         <div class="pros-cons-grid">
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Excelente relação entre preço promocional e especificações do produto</li>
-              <li>Construção robusta pensada para utilização prática no dia a dia</li>
-              <li>Conformidade com os padrões de qualidade e segurança do mercado europeu</li>
+              <li>Redução visível e duradoura dos pelos ao longo de poucas semanas de utilização consistente</li>
+              <li>Tecnologia indolor graças ao arrefecimento de contacto que acalma a epiderme</li>
+              <li>Investimento único que substitui anos de compras recorrentes de lâminas e ceras</li>
             </ul>
           </div>
           <div class="cons-box">
-            <h4>⚠️ A Considerar</h4>
+            <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>O preço promocional está sujeito à duração da campanha e unidades em armazém</li>
-              <li>Verifica sempre os prazos estimados de entrega para a tua morada em Portugal</li>
+              <li>Requer consistência nas sessões iniciais de acordo com as instruções do manual</li>
+              <li>Aconselha-se proteger a pele do sol direto logo após cada sessão</li>
             </ul>
           </div>
         </div>
 
         <div class="verdict-box">
-          <h4>💡 Veredito de Preço Descontos PT: Vale a Pena?</h4>
+          <h4>💡 Veredito de Preço Descontos PT: Vale a Pena Comprar?</h4>
           <p>
-            Com uma descida de preço de <strong>61%</strong> (89,90€ ➔ <strong>35,09€</strong>), esta campanha na <strong>Amazon</strong> traduz-se numa poupança real de <strong>54,81€</strong>. Tendo em conta o histórico de valores e as alternativas na mesma gama, consideramos esta oportunidade altamente recomendável para quem procura maximizar o valor investido.
+            Com uma redução de preço de <strong>61%</strong> (89,90€ ➔ <strong>35,09€</strong>), esta campanha na <strong>Amazon</strong> traduz-se numa poupança real de <strong>54,81€</strong>. Tendo em conta o histórico de valores praticados e as características do artigo, consideramos esta oportunidade <strong>altamente vantajosa</strong> para quem procura maximizar o valor investido.
           </p>
         </div>
 
@@ -685,11 +814,24 @@
     </script>
   </div>
 <script>
+  function toggleHeaderMenu(btn){
+    var b=btn||document.getElementById('menubtn');
+    var m=document.getElementById('header-menu');
+    if(!b||!m)return;
+    var open=m.classList.toggle('open');
+    b.classList.toggle('active',open);
+    b.setAttribute('aria-expanded',open?'true':'false');
+    var icon=b.querySelector('.menu-icon');
+    var lbl=b.querySelector('.menu-label');
+    if(icon)icon.textContent=open?'✕':'☰';
+    if(lbl)lbl.textContent=open?'Fechar':'Menu';
+  }
+  window.toggleHeaderMenu=toggleHeaderMenu;
   var darkbtn=document.getElementById('darkbtn');
   function setDark(on){document.documentElement.classList.toggle('dark',on);darkbtn.textContent=on?'☀️':'🌙';try{localStorage.setItem('dark',on?'1':'0');}catch(e){}}
   var pref=null;try{pref=localStorage.getItem('dark');}catch(e){}
   setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
-  darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
+  if(darkbtn)darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 
 </script>
 <script>
