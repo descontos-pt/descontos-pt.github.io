@@ -413,6 +413,13 @@
   .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
   .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
 
+  /* Category Pills for News & Articles */
+  .cats{display:flex;gap:10px;overflow-x:auto;padding:6px 2px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .cats::-webkit-scrollbar{display:none;}
+  .cat{background:var(--card);color:var(--text);border:1px solid var(--line);padding:9px 18px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .18s ease;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:6px;font-family:inherit;}
+  .cat:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
+  .cat.active{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(255,85,0,.35);transform:translateY(-1px);}
+
   /* 4gnews Magazine Style for /noticias/ */
   .news-hero-card{display:grid;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0 28px;box-shadow:var(--shadow);transition:all .2s ease;text-decoration:none;color:var(--text);}
   @media(min-width:768px){.news-hero-card{grid-template-columns:1.2fr 1fr;}}

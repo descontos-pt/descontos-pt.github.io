@@ -396,6 +396,13 @@
   .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
   .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
 
+  /* Category Pills for News & Articles */
+  .cats{display:flex;gap:10px;overflow-x:auto;padding:6px 2px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .cats::-webkit-scrollbar{display:none;}
+  .cat{background:var(--card);color:var(--text);border:1px solid var(--line);padding:9px 18px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .18s ease;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:6px;font-family:inherit;}
+  .cat:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
+  .cat.active{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(255,85,0,.35);transform:translateY(-1px);}
+
   /* 4gnews Magazine Style for /noticias/ */
   .news-hero-card{display:grid;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0 28px;box-shadow:var(--shadow);transition:all .2s ease;text-decoration:none;color:var(--text);}
   @media(min-width:768px){.news-hero-card{grid-template-columns:1.2fr 1fr;}}
@@ -458,12 +465,12 @@
     </div>
 
     
-    <a class="news-hero-card" href="./novo-ipad-air-pro-2026-analise-portugal/" data-category="📱 Análise &amp; Gadgets">
+    <a class="news-hero-card" href="./novo-ipad-air-pro-2026-analise-portugal/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-hero-img-wrap">
         <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=1200&auto=format&fit=crop" alt="Novo iPad Air e Pro em 2026: Vale a Pena o Investimento para Estudantes e Profissionais em Portugal?">
       </div>
       <div class="news-hero-content">
-        <span class="news-badge">📱 Análise &amp; Gadgets</span>
+        <span class="news-badge">📱 Gadgets &amp; Mobile</span>
         <h2 class="news-hero-title">Novo iPad Air e Pro em 2026: Vale a Pena o Investimento para Estudantes e Profissionais em Portugal?</h2>
         <p class="news-hero-desc">Análise detalhada ao desempenho dos novos chips M-Series da Apple, ecrãs OLED, suporte ao Apple Pencil Pro e o comparativo de valor frente às melhores alternativas Android.</p>
         <div class="news-meta">📅 15 de Agosto de 2026 · ⏱️ 6 min de leitura · ✍️ Redação Descontos PT</div>
@@ -474,28 +481,21 @@
       <div class="sectionh">⚡ Todas as Notícias &amp; Artigos por Categoria</div>
     </div>
 
-    <div class="cats" id="news-cats" style="margin-bottom:18px;">
+    <div class="cats" id="news-cats" style="margin-bottom:20px;">
       <button class="cat active" data-filter="all">✨ Todas as Notícias</button>
-      <button class="cat" data-filter="🔋 Mobile &amp; Gadgets">🔋 Mobile &amp; Gadgets</button>
-      <button class="cat" data-filter="⚡ Hardware &amp; Análises">⚡ Hardware &amp; Análises</button>
-      <button class="cat" data-filter="🚀 Tecnologia Global">🚀 Tecnologia Global</button>
-      <button class="cat" data-filter="💻 Informática &amp; Inovação">💻 Informática &amp; Inovação</button>
-      <button class="cat" data-filter="📱 Gadgets &amp; Tech">📱 Gadgets &amp; Tech</button>
-      <button class="cat" data-filter="📱 Análise &amp; Gadgets">📱 Análise &amp; Gadgets</button>
-      <button class="cat" data-filter="📦 Poupança &amp; Serviços">📦 Poupança &amp; Serviços</button>
-      <button class="cat" data-filter="🤖 Inteligência Artificial">🤖 Inteligência Artificial</button>
-      <button class="cat" data-filter="⚖️ Comparativos">⚖️ Comparativos</button>
+      <button class="cat" data-filter="📱 Gadgets &amp; Mobile">📱 Gadgets &amp; Mobile</button>
+      <button class="cat" data-filter="🚀 Tecnologia &amp; Inovação">🚀 Tecnologia &amp; Inovação</button>
+      <button class="cat" data-filter="💻 Informática &amp; PC">💻 Informática &amp; PC</button>
+      <button class="cat" data-filter="⚡ Guias &amp; Poupança">⚡ Guias &amp; Poupança</button>
       <button class="cat" data-filter="🛡️ Segurança &amp; Direitos">🛡️ Segurança &amp; Direitos</button>
-      <button class="cat" data-filter="🎒 Regresso às Aulas">🎒 Regresso às Aulas</button>
-      <button class="cat" data-filter="🎒 Especial Regresso às Aulas">🎒 Especial Regresso às Aulas</button>
     </div>
 
     <div class="news-grid" id="news-grid">
       
-    <a class="news-card" href="./macos-26-7-le-code-d-8217-apple-confirme-ses-futurs-iphone-airpod/" data-category="🔋 Mobile &amp; Gadgets">
+    <a class="news-card" href="./macos-26-7-le-code-d-8217-apple-confirme-ses-futurs-iphone-airpod/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/06/apple-logo.jpg?resize=1200,675&key=7d1c58f3" alt="macOS 26.7 : le code d’Apple confirme ses futurs iPhone, AirPods et HomePod avant les annonces — Tudo o que precisas de saber em Portugal">
-        <span class="news-card-badge">🔋 Mobile &amp; Gadgets</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">macOS 26.7 : le code d’Apple confirme ses futurs iPhone, AirPods et HomePod avant les annonces — Tudo o que precisas de saber em Portugal</h3>
@@ -507,10 +507,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./i-ve-tested-more-than-60-bluetooth-speakers-and-this-marshall-mod/" data-category="⚡ Hardware &amp; Análises">
+    <a class="news-card" href="./i-ve-tested-more-than-60-bluetooth-speakers-and-this-marshall-mod/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.mos.cms.futurecdn.net/sdWtb4NKnYayHqA9gRAEgF-1280-80.jpg" alt="I’ve tested more than 60 Bluetooth speakers and this Marshall model may just be the most stylish of them all — but does it sound as good as it looks? Here’s my verdict — Tudo o que precisas de saber em Portugal">
-        <span class="news-card-badge">⚡ Hardware &amp; Análises</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">I’ve tested more than 60 Bluetooth speakers and this Marshall model may just be the most stylish of them all — but does it sound as good as it looks? Here’s my verdict — Tudo o que precisas de saber em Portugal</h3>
@@ -522,10 +522,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./sony-fabrica-mas-de-la-mitad-de-los-sensores-de-movil-del-mundo-h/" data-category="🚀 Tecnologia Global">
+    <a class="news-card" href="./sony-fabrica-mas-de-la-mitad-de-los-sensores-de-movil-del-mundo-h/" data-category="🚀 Tecnologia &amp; Inovação">
       <div class="news-card-img">
         <img src="https://i.blogs.es/565580/sony_building_japan_2006_-_tokyo_-_ginza/1024_2000.jpeg" alt="Sony fabrica más de la mitad de los sensores de móvil del mundo. Ha firmado con TSMC para dejar de hacerlo sola — Tudo o que precisas de saber em Portugal">
-        <span class="news-card-badge">🚀 Tecnologia Global</span>
+        <span class="news-card-badge">🚀 Tecnologia &amp; Inovação</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Sony fabrica más de la mitad de los sensores de móvil del mundo. Ha firmado con TSMC para dejar de hacerlo sola — Tudo o que precisas de saber em Portugal</h3>
@@ -537,10 +537,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./qual-e-a-rua-mais-cara-do-seu-distrito-veja-o-top-10-nacional/" data-category="💻 Informática &amp; Inovação">
+    <a class="news-card" href="./qual-e-a-rua-mais-cara-do-seu-distrito-veja-o-top-10-nacional/" data-category="💻 Informática &amp; PC">
       <div class="news-card-img">
         <img src="https://pplware.sapo.pt/wp-content/uploads/2024/12/comprar_casa_portugal00.webp" alt="Qual é a rua mais cara do seu distrito? Veja o top 10 nacional!">
-        <span class="news-card-badge">💻 Informática &amp; Inovação</span>
+        <span class="news-card-badge">💻 Informática &amp; PC</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Qual é a rua mais cara do seu distrito? Veja o top 10 nacional!</h3>
@@ -552,10 +552,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/" data-category="📱 Gadgets &amp; Tech">
+    <a class="news-card" href="./portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.4gnews.pt/imagens/portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-desempenho-og.jpg" alt="Portátil lento? Faz isto antes do regresso às aulas e recupera desempenho">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Portátil lento? Faz isto antes do regresso às aulas e recupera desempenho</h3>
@@ -567,10 +567,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./sms-do-sns-estao-a-enganar-muitos-portugueses-nao-sejas-o-proximo/" data-category="📱 Gadgets &amp; Tech">
+    <a class="news-card" href="./sms-do-sns-estao-a-enganar-muitos-portugueses-nao-sejas-o-proximo/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.4gnews.pt/imagens/sms-do-sns-estao-a-enganar-muitos-portugueses-nao-sejas-o-proximo-og.jpg" alt="SMS do SNS estão a enganar muitos portugueses, não sejas o próximo">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">SMS do SNS estão a enganar muitos portugueses, não sejas o próximo</h3>
@@ -582,10 +582,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-di/" data-category="📱 Gadgets &amp; Tech">
+    <a class="news-card" href="./melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-di/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.4gnews.pt/imagens/melhor-internet-fixa-para-estudar-precos-da-meo-nos-vodafone-e-digi-em-2026-og.jpg" alt="Melhor Internet fixa para estudar: Preços da MEO, NOS, Vodafone e DIGI em 2026">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Melhor Internet fixa para estudar: Preços da MEO, NOS, Vodafone e DIGI em 2026</h3>
@@ -597,10 +597,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./regresso-as-aulas-11-equipamentos-e-gadgets-que-dao-jeito-a-qualq/" data-category="📱 Gadgets &amp; Tech">
+    <a class="news-card" href="./regresso-as-aulas-11-equipamentos-e-gadgets-que-dao-jeito-a-qualq/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.4gnews.pt/imagens/estes-sao-os-equipamentos-ideais-para-a-rotina-de-estudos-og.jpg" alt="Regresso às aulas: 11 equipamentos e gadgets que dão jeito a qualquer estudante">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Regresso às aulas: 11 equipamentos e gadgets que dão jeito a qualquer estudante</h3>
@@ -612,10 +612,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./agora-podes-jogar-os-pokemon-classicos-em-3d-no-pc-e-android-ve-c/" data-category="📱 Gadgets &amp; Tech">
+    <a class="news-card" href="./agora-podes-jogar-os-pokemon-classicos-em-3d-no-pc-e-android-ve-c/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="https://cdn.4gnews.pt/imagens/agora-podes-jogar-os-pokemon-classicos-em-3d-no-pc-e-android-ve-como-og.jpg" alt="Agora podes jogar os Pokémon clássicos em 3D no PC e Android: vê como">
-        <span class="news-card-badge">📱 Gadgets &amp; Tech</span>
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Agora podes jogar os Pokémon clássicos em 3D no PC e Android: vê como</h3>
@@ -627,10 +627,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./amazon-prime-portugal-30-dias-gratis-vantagens/" data-category="📦 Poupança &amp; Serviços">
+    <a class="news-card" href="./amazon-prime-portugal-30-dias-gratis-vantagens/" data-category="⚡ Guias &amp; Poupança">
       <div class="news-card-img">
         <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop" alt="Amazon Prime Portugal em 2026: Vantagens, Custos, Entregas Rápidas e Como Testar 30 Dias Grátis">
-        <span class="news-card-badge">📦 Poupança &amp; Serviços</span>
+        <span class="news-card-badge">⚡ Guias &amp; Poupança</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Amazon Prime Portugal em 2026: Vantagens, Custos, Entregas Rápidas e Como Testar 30 Dias Grátis</h3>
@@ -642,10 +642,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./ia-nos-smartphones-galaxy-ai-apple-intelligence-2026/" data-category="🤖 Inteligência Artificial">
+    <a class="news-card" href="./ia-nos-smartphones-galaxy-ai-apple-intelligence-2026/" data-category="🚀 Tecnologia &amp; Inovação">
       <div class="news-card-img">
         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="A Revolução da IA nos Smartphones em 2026: Galaxy AI vs Apple Intelligence e os Melhores Modelos">
-        <span class="news-card-badge">🤖 Inteligência Artificial</span>
+        <span class="news-card-badge">🚀 Tecnologia &amp; Inovação</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">A Revolução da IA nos Smartphones em 2026: Galaxy AI vs Apple Intelligence e os Melhores Modelos</h3>
@@ -657,10 +657,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./xiaomi-vs-samsung-gama-media-portugal-2026/" data-category="⚖️ Comparativos">
+    <a class="news-card" href="./xiaomi-vs-samsung-gama-media-portugal-2026/" data-category="⚡ Guias &amp; Poupança">
       <div class="news-card-img">
         <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=1200&auto=format&fit=crop" alt="Xiaomi vs Samsung em 2026: Qual a Melhor Escolha na Gama Média até 300€ e 400€ em Portugal?">
-        <span class="news-card-badge">⚖️ Comparativos</span>
+        <span class="news-card-badge">⚡ Guias &amp; Poupança</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Xiaomi vs Samsung em 2026: Qual a Melhor Escolha na Gama Média até 300€ e 400€ em Portugal?</h3>
@@ -687,10 +687,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./guia-regresso-aulas-gadgets-aliexpress-local-amazon/" data-category="🎒 Regresso às Aulas">
+    <a class="news-card" href="./guia-regresso-aulas-gadgets-aliexpress-local-amazon/" data-category="⚡ Guias &amp; Poupança">
       <div class="news-card-img">
         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Guia Regresso às Aulas 2026: Os Melhores Gadgets e Cupões de Desconto para Estudantes em Portugal">
-        <span class="news-card-badge">🎒 Regresso às Aulas</span>
+        <span class="news-card-badge">⚡ Guias &amp; Poupança</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Guia Regresso às Aulas 2026: Os Melhores Gadgets e Cupões de Desconto para Estudantes em Portugal</h3>
@@ -702,10 +702,10 @@
       </div>
     </a>
   
-    <a class="news-card" href="./regresso-as-aulas-11-gadgets-indispensaveis-estudantes/" data-category="🎒 Especial Regresso às Aulas">
+    <a class="news-card" href="./regresso-as-aulas-11-gadgets-indispensaveis-estudantes/" data-category="🚀 Tecnologia &amp; Inovação">
       <div class="news-card-img">
         <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1200&auto=format&fit=crop" alt="Regresso às Aulas: 11 Equipamentos e Gadgets que Dão Jeito a Qualquer Estudante em Portugal">
-        <span class="news-card-badge">🎒 Especial Regresso às Aulas</span>
+        <span class="news-card-badge">🚀 Tecnologia &amp; Inovação</span>
       </div>
       <div class="news-card-body">
         <h3 class="news-card-title">Regresso às Aulas: 11 Equipamentos e Gadgets que Dão Jeito a Qualquer Estudante em Portugal</h3>

@@ -396,6 +396,13 @@
   .coupon-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
   .coupon-code{background:rgba(255,107,0,.15);color:var(--accent2);font-family:monospace;font-weight:800;padding:4px 8px;border-radius:6px;}
 
+  /* Category Pills for News & Articles */
+  .cats{display:flex;gap:10px;overflow-x:auto;padding:6px 2px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .cats::-webkit-scrollbar{display:none;}
+  .cat{background:var(--card);color:var(--text);border:1px solid var(--line);padding:9px 18px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .18s ease;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:6px;font-family:inherit;}
+  .cat:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-hover);background:var(--card-sub);}
+  .cat.active{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(255,85,0,.35);transform:translateY(-1px);}
+
   /* 4gnews Magazine Style for /noticias/ */
   .news-hero-card{display:grid;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0 28px;box-shadow:var(--shadow);transition:all .2s ease;text-decoration:none;color:var(--text);}
   @media(min-width:768px){.news-hero-card{grid-template-columns:1.2fr 1fr;}}
@@ -461,67 +468,163 @@
       
 <img class="article-hero-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1200&auto=format&fit=crop" alt="Mesa de estudante com portátil, cadernos e auscultadores">
 
-<p>Com o início do novo ano letivo à porta, ter o equipamento certo faz toda a diferença na produtividade, na organização de apontamentos e no conforto durante longas sessões de estudo. Seja para a faculdade, ensino secundário ou trabalho académico, selecionámos <strong>11 gadgets e periféricos indispensáveis</strong> com excelente relação preço/qualidade para equipar a tua secretária e mochila sem rebentar o orçamento.</p>
+<p>Com o início do novo ano letivo à porta, ter o equipamento certo faz toda a diferença na produtividade, na organização de apontamentos e no conforto durante longas sessões de estudo. Seja para a faculdade, ensino secundário ou trabalho académico, selecionámos <strong>os melhores gadgets e periféricos</strong> com excelente relação preço/qualidade para equipar a tua secretária e mochila sem rebentar o orçamento.</p>
 
-<h2>1. Som & Foco: Auscultadores com Cancelamento de Ruído (ANC)</h2>
-<p>Estudar em bibliotecas movimentadas, transportes públicos ou em casa com distrações exige silêncio. Um bom par de auscultadores com <strong>Cancelamento Ativo de Ruído (ANC)</strong> e autonomia superior a 30 horas permite manter a concentração total. Modelos como os <em>Soundcore Q30</em> ou <em>QCY H3</em> oferecem isolamento surpreendente por uma fração do preço das marcas de luxo.</p>
+<h2>1. Som & Foco: Auscultadores com Cancelamento Ativo de Ruído (ANC)</h2>
+<p>Estudar em bibliotecas movimentadas, transportes públicos ou em casa com distrações exige silêncio. Um bom par de auscultadores com <strong>Cancelamento Ativo de Ruído (ANC)</strong> e autonomia superior a 30 horas permite manter a concentração total.</p>
 
-<h2>2. Armazenamento Seguro: SSDs Externos USB-C</h2>
-<p>Projetos universitários, trabalhos de grupo e backups de trabalhos de fim de curso não podem ficar dependentes de pens USB lentas ou perder-se. Um <strong>SSD portátil NVMe</strong> com velocidades acima de 1.000 MB/s permite transferir gigabytes de ficheiros em escassos segundos e garante segurança total com proteção anti-choque.</p>
-
-<div class="tip-box">
-  <h4>💡 Dica de Poupança para Estudantes</h4>
-  <p>• <strong>Garantia de 3 Anos:</strong> Todos os equipamentos comprados na Amazon ou lojas europeias contam com garantia legal obrigatória de 3 anos.<br>
-  • <strong>Portes Grátis:</strong> Encomendas acima de 35 € na Amazon Espanha têm portes gratuitos para Portugal continental.<br>
-  • <strong>AliExpress Choice:</strong> Entrega rápida em 5 a 7 dias sem taxas alfandegárias adicionais (IVA incluído via IOSS).</p>
+<div class="product-showcase">
+  <img src="https://m.media-amazon.com/images/I/61+RkE1GfAL._AC_SL1500_.jpg" alt="Auscultadores Soundcore Q30 ANC">
+  <div class="ps-info">
+    <h3>🎧 Soundcore by Anker Life Q30 — Auscultadores Bluetooth com ANC Híbrido</h3>
+    <p>Cancelamento de ruído ativo multinível, áudio Hi-Res certificado, 40 horas de bateria com ANC ligado e almofadas ultra-confortáveis para longas horas de estudo.</p>
+    <div class="ps-price">
+      <span class="ps-curr">59,99 €</span>
+      <span class="ps-old">79,99 €</span>
+      <span class="ps-disc">-25%</span>
+    </div>
+    <a class="ps-btn" href="https://www.amazon.es/dp/B08HMWZBXC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver Oferta na Amazon Espanha →</a>
+  </div>
 </div>
 
-<h2>3. Energia Sempre Disponível: Power Banks de 20.000 mAh com Carregamento Rápido</h2>
-<p>Passar o dia inteiro no campus universitário com telemóvel, tablet e portátil consome bateria rapidamente. Um power bank de <strong>20.000 mAh com tecnologia Power Delivery (PD) de 65W ou mais</strong> é capaz de carregar o smartphone até 4 vezes e até fornecer energia de emergência a um portátil via USB-C.</p>
+<div class="product-showcase">
+  <img src="https://cdn.4gnews.pt/imagens/screenshot-2026-08-13-175133.jpg" alt="QCY H3 ANC Auscultadores">
+  <div class="ps-info">
+    <h3>🎧 QCY H3 ANC — A Alternativa Mais Económica para Estudantes</h3>
+    <p>Excelente redução de ruído até 43dB, autonomia de 60 horas e conexão multiponto a dois dispositivos simultâneos (PC e telemóvel).</p>
+    <div class="ps-price">
+      <span class="ps-curr">31,88 €</span>
+      <span class="ps-old">63,81 €</span>
+      <span class="ps-disc">-50%</span>
+    </div>
+    <a class="ps-btn" href="https://pt.aliexpress.com/w/wholesale-qcy-h3.html?aff_trace_key=MelhoresDescontos" target="_blank" rel="noopener sponsored">Ver Oferta no AliExpress Choice →</a>
+  </div>
+</div>
 
-<h2>4. Ergonomia: Rato Sem Fios Silencioso e Suporte de Portátil</h2>
-<p>Usar o touchpad do portátil durante horas causa fadiga muscular no pulso. Um rato sem fios com botões silenciosos (para não incomodar na biblioteca) aliado a um suporte metálico elevatório para colocar o ecrã ao nível dos olhos melhora drasticamente a postura e o rendimento.</p>
+<h2>2. Armazenamento Seguro: SSDs Portáteis NVMe USB-C</h2>
+<p>Projetos universitários, trabalhos de grupo e relatórios não podem ficar dependentes de pens USB lentas. Um <strong>SSD portátil NVMe</strong> com velocidades acima de 1.000 MB/s permite transferir gigabytes de ficheiros em escassos segundos.</p>
+
+<div class="product-showcase">
+  <img src="https://m.media-amazon.com/images/I/61NqK94q0nL._AC_SL1500_.jpg" alt="Kingston XS1000 SSD Externo">
+  <div class="ps-info">
+    <h3>💾 Kingston XS1000 1TB SSD Externo Portátil USB 3.2 Gen 2</h3>
+    <p>Ultra-compacto cabe no bolso, velocidades de leitura até 1.050 MB/s e compatibilidade universal com Windows, Mac, Android e iPad.</p>
+    <div class="ps-price">
+      <span class="ps-curr">69,99 €</span>
+      <span class="ps-old">89,99 €</span>
+      <span class="ps-disc">-22%</span>
+    </div>
+    <a class="ps-btn" href="https://www.amazon.es/dp/B0CD62GDCX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver Oferta na Amazon Espanha →</a>
+  </div>
+</div>
+
+<div class="tip-box">
+  <h4>💡 Dicas Essenciais para Poupar nas Compras de Estudo</h4>
+  <p>• <strong>Garantia Obrigatória de 3 Anos:</strong> Todas as compras efetuadas em lojas com presença na UE contam com proteção legal e garantia de 3 anos.<br>
+  • <strong>Portes Grátis:</strong> Encomendas acima de 35 € na Amazon têm portes grátis para Portugal continental.<br>
+  • <strong>IOSS e Alfândega:</strong> No AliExpress Choice, o IVA já está incluído no preço final, sem taxas aduaneiras extra à chegada.</p>
+</div>
+
+<h2>3. Energia Sem Parar: Power Banks de Alta Potência 65W</h2>
+<p>Passar o dia inteiro no campus com telemóvel, tablet e portátil consome bateria rapidamente. Um power bank de <strong>20.000 mAh com tecnologia Power Delivery 65W</strong> carrega o portátil e o smartphone a toda a velocidade.</p>
+
+<div class="product-showcase">
+  <img src="https://m.media-amazon.com/images/I/61lXjY6jKDL._AC_SL1500_.jpg" alt="Baseus Power Bank 65W 20000mAh">
+  <div class="ps-info">
+    <h3>🔋 Baseus Blade / Adaman Power Bank 65W 20.000 mAh</h3>
+    <p>Carregamento bidirecional ultra-rápido de 65W, ecrã digital com estado da bateria e potência suficiente para carregar MacBooks e portáteis Windows.</p>
+    <div class="ps-price">
+      <span class="ps-curr">39,99 €</span>
+      <span class="ps-old">59,99 €</span>
+      <span class="ps-disc">-33%</span>
+    </div>
+    <a class="ps-btn" href="https://www.amazon.es/dp/B08XQ2LM1T?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver Oferta na Amazon Espanha →</a>
+  </div>
+</div>
+
+<h2>4. Ergonomia e Produtividade: Rato Silencioso & Suporte Metálico</h2>
+<p>Usar o portátil horas a fio na secretária provoca desconforto cervical e nos pulsos. Elevar o ecrã e utilizar um rato sem fios silencioso protege a tua postura.</p>
+
+<div class="product-showcase">
+  <img src="https://m.media-amazon.com/images/I/61nipg3fR0L._AC_SL1500_.jpg" alt="Logitech M220 Rato Silencioso">
+  <div class="ps-info">
+    <h3>🖱️ Logitech M220 Silent — Rato Sem Fios Silencioso</h3>
+    <p>Redução de 90% do ruído de clique (perfeito para bibliotecas e salas de estudo), autonomia de 18 meses com 1 pilha AA e conexão fiável até 10 metros.</p>
+    <div class="ps-price">
+      <span class="ps-curr">14,99 €</span>
+      <span class="ps-old">24,99 €</span>
+      <span class="ps-disc">-40%</span>
+    </div>
+    <a class="ps-btn" href="https://www.amazon.es/dp/B01KV64Y4A?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver Oferta na Amazon Espanha →</a>
+  </div>
+</div>
+
+<div class="product-showcase">
+  <img src="https://cdn.4gnews.pt/imagens/screenshot-2026-08-13-175256.jpg" alt="POCO Pad Tablet">
+  <div class="ps-info">
+    <h3>📱 POCO Pad M1 — Tablet 12.1" 120Hz para Apontamentos e PDFs</h3>
+    <p>Ecrã 2.5K imersivo com certificação de proteção ocular, quatro altifalantes Dolby Atmos e processador Snapdragon rápido para estudo e entretenimento.</p>
+    <div class="ps-price">
+      <span class="ps-curr">205,57 €</span>
+      <span class="ps-old">329,99 €</span>
+      <span class="ps-disc">-38%</span>
+    </div>
+    <a class="ps-btn" href="https://pt.aliexpress.com/w/wholesale-poco-pad.html?aff_trace_key=MelhoresDescontos" target="_blank" rel="noopener sponsored">Ver Oferta no AliExpress Choice →</a>
+  </div>
+</div>
 
 <h2>5. Tabela Resumo dos Essenciais de Estudo</h2>
 
 <table class="coupon-table">
   <thead>
     <tr>
-      <th>Categoria</th>
-      <th>Equipamento Recomendado</th>
-      <th>Vantagem Principal</th>
+      <th>Equipamento</th>
+      <th>Destaque</th>
       <th>Faixa de Preço</th>
+      <th>Onde Comprar</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>🎧 Áudio</td>
-      <td>Auscultadores ANC Bluetooth</td>
-      <td>Foco total sem ruído exterior</td>
-      <td>29 € – 65 €</td>
+      <td>🎧 Soundcore Q30 ANC</td>
+      <td>Isolamento acústico total e 40h de bateria</td>
+      <td>59,99 €</td>
+      <td><a href="https://www.amazon.es/dp/B08HMWZBXC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored"><strong>Ver na Amazon →</strong></a></td>
     </tr>
     <tr>
-      <td>💾 Armazenamento</td>
-      <td>SSD Externo 1TB USB-C</td>
-      <td>Backup veloz de trabalhos e projetos</td>
-      <td>59 € – 89 €</td>
+      <td>🎧 QCY H3 ANC</td>
+      <td>Melhor preço/desempenho para estudantes</td>
+      <td>31,88 €</td>
+      <td><a href="https://pt.aliexpress.com/w/wholesale-qcy-h3.html?aff_trace_key=MelhoresDescontos" target="_blank" rel="noopener sponsored"><strong>Ver no AliExpress →</strong></a></td>
     </tr>
     <tr>
-      <td>🔋 Energia</td>
-      <td>Power Bank 65W 20.000 mAh</td>
-      <td>Carga para portátil e telemóvel</td>
-      <td>25 € – 45 €</td>
+      <td>💾 Kingston XS1000 1TB</td>
+      <td>SSD ultra-rápido 1.050 MB/s para cópias de segurança</td>
+      <td>69,99 €</td>
+      <td><a href="https://www.amazon.es/dp/B0CD62GDCX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored"><strong>Ver na Amazon →</strong></a></td>
     </tr>
     <tr>
-      <td>🖱️ Ergonomia</td>
-      <td>Rato Silencioso + Suporte</td>
-      <td>Conforto cervical e nos pulsos</td>
-      <td>15 € – 25 €</td>
+      <td>🔋 Baseus 65W 20.000mAh</td>
+      <td>Carrega portátil e telemóvel ao mesmo tempo</td>
+      <td>39,99 €</td>
+      <td><a href="https://www.amazon.es/dp/B08XQ2LM1T?tag=descontoseopo-21" target="_blank" rel="noopener sponsored"><strong>Ver na Amazon →</strong></a></td>
+    </tr>
+    <tr>
+      <td>🖱️ Logitech M220 Silent</td>
+      <td>Cliques 90% mais silenciosos para a biblioteca</td>
+      <td>14,99 €</td>
+      <td><a href="https://www.amazon.es/dp/B01KV64Y4A?tag=descontoseopo-21" target="_blank" rel="noopener sponsored"><strong>Ver na Amazon →</strong></a></td>
+    </tr>
+    <tr>
+      <td>📱 POCO Pad M1 Tablet</td>
+      <td>Ecrã 12.1" 120Hz para apontamentos e leitura</td>
+      <td>205,57 €</td>
+      <td><a href="https://pt.aliexpress.com/w/wholesale-poco-pad.html?aff_trace_key=MelhoresDescontos" target="_blank" rel="noopener sponsored"><strong>Ver no AliExpress →</strong></a></td>
     </tr>
   </tbody>
 </table>
 
-<p>Acompanha a nossa secção de promoções diárias para apanhares estes equipamentos com descontos até 60% antes do arranque oficial das aulas!</p>
+<p>Acompanha a nossa secção de promoções diárias em <a href="https://descontospt.pt/">descontospt.pt</a> para apanhares estes e outros equipamentos com os melhores descontos do mercado português!</p>
 
 
       <div class="relguides" style="margin-top:36px;border-top:1px solid var(--line);padding-top:24px;">
