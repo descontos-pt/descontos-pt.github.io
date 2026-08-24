@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de lon por 12,17€ (-51%) | Descontos PT</title>
+<title>3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de lon por 12,17€ (-51%) | Promoções PT</title>
 <meta name="description" content="3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de longa duração - sombras de olhos  em promoção por 12,17€ (antes 24,95€) — desconto de 51%, com histórico de preço."/>
 <meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
@@ -15,7 +15,7 @@
 <meta property="og:type" content="product"/>
 <meta property="og:locale" content="pt_PT"/>
 <meta property="og:site_name" content="Promoções PT"/>
-<meta property="og:title" content="3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de longa duração - sombras de olhos multicoloridas com acabamento fosco acetinado e brilhante - Vegan - Cruelty Free | Paleta sombras de olhos com cores de longa duração - acabamento mate acetinado e brilhante - Vegan - Cruelty Free | Descontos PT"/>
+<meta property="og:title" content="3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de longa duração - sombras de olhos multicoloridas com acabamento fosco acetinado e brilhante - Vegan - Cruelty Free | Paleta sombras de olhos com cores de longa duração - acabamento mate acetinado e brilhante - Vegan - Cruelty Free | Promoções PT"/>
 <meta property="og:description" content="3INA MAKEUP - The Color Palette 500 - paleta de sombra de olhos com cores de longa duração - sombras de olhos multicoloridas com acabamento fosco acet em promoção por 12,17€ (antes 24,95€) — poupança com histórico de preço."/>
 <meta property="og:url" content="https://descontospt.pt/d/uc32sz.html"/>
 <meta property="og:image" content="https://m.media-amazon.com/images/I/61BX9OHPQQL._SL500_.jpg"/>
@@ -183,29 +183,70 @@
   .chip:hover{border-color:var(--accent);transform:translateY(-1px);}
   .chip.active{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);border-color:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(255,85,0,.38);}
 
-  /* Hero Featured Deal (Destaque Maior do Dia) */
-  .hero-deal-container{margin:24px 0 16px;}
-  .hero-deal{
-    display:grid;grid-template-columns:1fr;gap:20px;
-    background:var(--card);border:2px solid var(--accent);border-radius:24px;
-    padding:24px;box-shadow:0 12px 36px rgba(255,85,0,.15);position:relative;overflow:hidden;
+  /* Dual Hero: Super Oferta + Publicação em Destaque */
+  .hero-dual-container{margin:22px 0 18px;}
+  .hero-dual-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:960px){.hero-dual-grid{grid-template-columns:1fr 1fr;gap:20px;}}
+
+  .hero-card{
+    background:var(--card);border-radius:22px;padding:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);position:relative;overflow:hidden;
+    display:flex;flex-direction:column;justify-content:space-between;
+    transition:transform .2s ease, box-shadow .2s ease;
   }
-  @media(min-width:768px){.hero-deal{grid-template-columns:320px 1fr;padding:28px;gap:28px;}}
-  .hero-badge-top{position:absolute;top:16px;left:16px;z-index:10;background:linear-gradient(135deg,#ff5500,#e04800);color:#fff;font-weight:900;font-size:12px;padding:5px 12px;border-radius:8px;letter-spacing:0.4px;box-shadow:0 3px 10px rgba(255,85,0,.4);pointer-events:none;}
-  .hero-img-wrap{background:var(--imgbg);border-radius:18px;height:240px;display:flex;align-items:center;justify-content:center;padding:16px;position:relative;overflow:hidden;}
-  @media(min-width:768px){.hero-img-wrap{height:100%;min-height:240px;}}
-  .hero-img-wrap img{max-width:85%;max-height:210px;width:auto;height:auto;object-fit:contain;display:block;margin:auto;}
+  html.dark .hero-card{box-shadow:0 12px 35px rgba(0,0,0,.35);}
+  .hero-card:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(255,85,0,.14);}
+
+  .hero-deal-card{border:2px solid var(--accent);}
+  .hero-article-card{border:2px solid rgba(59,130,246,.45);background:linear-gradient(135deg,var(--card) 0%,rgba(59,130,246,.04) 100%);}
+  html.dark .hero-article-card{border-color:rgba(59,130,246,.4);background:linear-gradient(135deg,var(--card) 0%,rgba(30,58,138,.16) 100%);}
+
+  .hero-card-badge{
+    display:inline-flex;align-items:center;gap:5px;
+    font-weight:900;font-size:11.5px;padding:5px 12px;border-radius:8px;
+    letter-spacing:0.4px;width:fit-content;margin-bottom:14px;
+  }
+  .badge-deal{background:linear-gradient(135deg,#ff5500,#e04800);color:#fff;box-shadow:0 3px 10px rgba(255,85,0,.35);}
+  .badge-article{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;box-shadow:0 3px 10px rgba(37,99,235,.35);}
+
+  .hero-deal-inner{display:grid;grid-template-columns:1fr;gap:16px;flex:1;}
+  @media(min-width:540px){.hero-deal-inner{grid-template-columns:140px 1fr;gap:18px;}}
+
+  .hero-article-inner{display:grid;grid-template-columns:1fr;gap:16px;flex:1;}
+  @media(min-width:540px){.hero-article-inner{grid-template-columns:150px 1fr;gap:18px;}}
+
+  .hero-img-wrap{background:var(--imgbg);border-radius:16px;height:160px;display:flex;align-items:center;justify-content:center;padding:12px;position:relative;overflow:hidden;}
+  .hero-img-wrap img{max-width:90%;max-height:140px;width:auto;height:auto;object-fit:contain;display:block;margin:auto;}
+
+  .hero-article-img{background:var(--imgbg);border-radius:16px;height:160px;position:relative;overflow:hidden;}
+  .hero-article-img a{display:block;width:100%;height:100%;}
+  .hero-article-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease;}
+  .hero-card:hover .hero-article-img img{transform:scale(1.04);}
+
   .hero-info{display:flex;flex-direction:column;justify-content:center;}
-  .hero-cat{font-size:12.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;}
-  .hero-title{font-size:20px;font-weight:900;line-height:1.35;margin-bottom:12px;color:var(--text);}
+  .hero-cat{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;}
+  .hero-title{font-size:17.5px;font-weight:900;line-height:1.35;margin-bottom:10px;color:var(--text);}
   .hero-title a{color:inherit;text-decoration:none;}
   .hero-title a:hover{color:var(--accent);}
-  .hero-price-row{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
-  .hero-new-price{font-size:32px;font-weight:900;color:var(--accent);line-height:1;letter-spacing:-0.5px;}
-  .hero-old-price{font-size:18px;color:var(--muted);text-decoration:line-through;}
-  .hero-savings-pill{background:var(--green-light);color:var(--green-dark);font-size:13.5px;font-weight:800;padding:4px 12px;border-radius:8px;display:inline-flex;align-items:center;gap:4px;}
+  .hero-article-card .hero-title a:hover{color:#2563eb;}
+
+  .hero-article-desc{font-size:13px;color:var(--muted);line-height:1.45;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+
+  .hero-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
+  .hero-new-price{font-size:26px;font-weight:900;color:var(--accent);line-height:1;letter-spacing:-0.5px;}
+  .hero-old-price{font-size:16px;color:var(--muted);text-decoration:line-through;}
+  .hero-savings-pill{background:var(--green-light);color:var(--green-dark);font-size:12px;font-weight:800;padding:3px 10px;border-radius:6px;display:inline-flex;align-items:center;gap:3px;}
   html.dark .hero-savings-pill{color:var(--green);}
-  .hero-meta{font-size:12.5px;color:var(--blue);margin-bottom:16px;font-weight:600;}
+  .hero-meta{font-size:12px;color:var(--blue);margin-bottom:12px;font-weight:600;}
+
+  .hero-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;}
+  .hero-btn{flex:1;min-width:140px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:11px 16px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:6px;box-shadow:0 4px 16px rgba(255,85,0,.3);transition:all .18s;}
+  .hero-btn:hover{background:linear-gradient(135deg,#ff6600 0%,#ea580c 100%);transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,85,0,.4);}
+  .hero-btn-article{background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 100%);box-shadow:0 4px 16px rgba(37,99,235,.3);}
+  .hero-btn-article:hover{background:linear-gradient(135deg,#3b82f6 0%,#1e40af 100%);box-shadow:0 6px 20px rgba(37,99,235,.4);}
+  .hero-share{background:var(--bg);color:var(--text)!important;border:1px solid var(--line);font-weight:800;font-size:13px;padding:11px 14px;border-radius:12px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:5px;}
+  .hero-share:hover{border-color:var(--accent);color:var(--accent)!important;}
+
   /* Event Banner (Light Mode por defeito + Dark Mode) */
   .event-banner{background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);border:1px solid rgba(255,85,0,.25);border-radius:20px;padding:24px 28px;margin:18px 0;color:var(--text);box-shadow:var(--shadow);position:relative;overflow:hidden;}
   .event-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,85,0,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
@@ -219,12 +260,6 @@
   html.dark .event-banner::before{background:radial-gradient(circle,rgba(255,102,0,.22) 0%,transparent 70%);}
   html.dark .event-banner h2{color:#fff;}
   html.dark .event-banner p{color:#cbd5e1;}
-
-  .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
-  .hero-btn{flex:1;min-width:180px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:15px;padding:13px 20px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 20px rgba(255,85,0,.35);transition:all .18s;}
-  .hero-btn:hover{background:linear-gradient(135deg,#ff6600 0%,#ea580c 100%);transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,85,0,.45);}
-  .hero-share{background:var(--bg);color:var(--text)!important;border:1px solid var(--line);font-weight:800;font-size:14px;padding:13px 18px;border-radius:14px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px;}
-  .hero-share:hover{border-color:var(--accent);color:var(--accent)!important;}
 
   /* Secções */
   .sectionh{font-size:20px;font-weight:900;margin:28px 2px 14px;display:flex;align-items:center;gap:10px;letter-spacing:-0.4px;}
