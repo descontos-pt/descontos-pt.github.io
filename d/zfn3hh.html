@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Roxy Jetty Solid - Técnicas de neve - mulher - preto. por 22,89€ (-58%) | Descontos PT</title>
+<title>Roxy Jetty Solid - Técnicas de neve - mulher - preto. por 22,89€ (-58%) | Promoções PT</title>
 <meta name="description" content="Roxy Jetty Solid - Técnicas de neve - mulher - preto. em promoção por 22,89€ (antes 55,00€) — desconto de 58%, com histórico de preço."/>
 <meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
@@ -15,7 +15,7 @@
 <meta property="og:type" content="product"/>
 <meta property="og:locale" content="pt_PT"/>
 <meta property="og:site_name" content="Promoções PT"/>
-<meta property="og:title" content="Roxy Jetty Solid - Técnicas de neve - mulher - preto. | Descontos PT"/>
+<meta property="og:title" content="Roxy Jetty Solid - Técnicas de neve - mulher - preto. | Promoções PT"/>
 <meta property="og:description" content="Roxy Jetty Solid - Técnicas de neve - mulher - preto. em promoção por 22,89€ (antes 55,00€) — poupança com histórico de preço."/>
 <meta property="og:url" content="https://descontospt.pt/d/zfn3hh.html"/>
 <meta property="og:image" content="https://m.media-amazon.com/images/I/61OcoE6hqtL._SL500_.jpg"/>
@@ -391,10 +391,26 @@
   .article a{color:var(--accent);text-decoration:none;font-weight:700;}
   .article a:hover{text-decoration:underline;}
   .relguides{margin-top:10px;}
-  /* Recomendados (produtos digitais) */
-  .pdesc{color:var(--muted);font-size:13px;line-height:1.5;margin:2px 0 4px;}
+  /* Recomendados (produtos digitais & parcerias) */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:16px;}
+  .card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:all .22s cubic-bezier(0.16,1,0.3,1);box-shadow:var(--shadow);position:relative;}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:rgba(255,85,0,.4);}
+  html.dark .card:hover{border-color:rgba(255,102,0,.5);box-shadow:0 14px 36px rgba(0,0,0,.65);}
+  .card a.imglink{color:inherit;text-decoration:none;display:block;overflow:hidden;border-radius:17px 17px 0 0;}
+  .imgwrap{position:relative;background:var(--imgbg);height:190px;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;border-radius:17px 17px 0 0;}
+  .imgwrap img{max-width:90%;max-height:160px;width:auto;height:auto;object-fit:contain;transition:transform .25s ease;display:block;margin:auto;position:relative;z-index:1;}
+  .card:hover .imgwrap img{transform:scale(1.05);}
+  .card .body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .card .cat{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;}
+  .card .title{font-size:15px;line-height:1.4;font-weight:700;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .card a.titlelink{text-decoration:none;}
+  .card a.titlelink:hover .title{color:var(--accent);}
+  .pdesc{color:var(--muted);font-size:13px;line-height:1.55;margin:4px 0 8px;flex:1;}
+  .card .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 16px;border-radius:12px;margin-top:auto;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);}
+  .card .btn:hover{background:linear-gradient(135deg,#ff6600 0%,#ea580c 100%);transform:translateY(-2px);box-shadow:0 7px 20px rgba(255,85,0,.48);}
   .imgwrap.phold{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);}
   .imgwrap.phold span{font-size:60px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));}
+
   /* Caixa "Descontos PT Recomenda" dentro das notícias */
   .recomenda-box{margin:28px 0;border:2px solid var(--accent);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:var(--card);}
   .recomenda-tag{background:var(--accent);color:#fff;font-weight:800;font-size:13px;padding:8px 16px;letter-spacing:.3px;}
