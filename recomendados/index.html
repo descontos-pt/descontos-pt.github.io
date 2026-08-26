@@ -388,10 +388,26 @@
   .article a{color:var(--accent);text-decoration:none;font-weight:700;}
   .article a:hover{text-decoration:underline;}
   .relguides{margin-top:10px;}
-  /* Recomendados (produtos digitais) */
-  .pdesc{color:var(--muted);font-size:13px;line-height:1.5;margin:2px 0 4px;}
+  /* Recomendados (produtos digitais & parcerias) */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:16px;}
+  .card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:all .22s cubic-bezier(0.16,1,0.3,1);box-shadow:var(--shadow);position:relative;}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:rgba(255,85,0,.4);}
+  html.dark .card:hover{border-color:rgba(255,102,0,.5);box-shadow:0 14px 36px rgba(0,0,0,.65);}
+  .card a.imglink{color:inherit;text-decoration:none;display:block;overflow:hidden;border-radius:17px 17px 0 0;}
+  .imgwrap{position:relative;background:var(--imgbg);height:190px;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;border-radius:17px 17px 0 0;}
+  .imgwrap img{max-width:90%;max-height:160px;width:auto;height:auto;object-fit:contain;transition:transform .25s ease;display:block;margin:auto;position:relative;z-index:1;}
+  .card:hover .imgwrap img{transform:scale(1.05);}
+  .card .body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .card .cat{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;}
+  .card .title{font-size:15px;line-height:1.4;font-weight:700;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .card a.titlelink{text-decoration:none;}
+  .card a.titlelink:hover .title{color:var(--accent);}
+  .pdesc{color:var(--muted);font-size:13px;line-height:1.55;margin:4px 0 8px;flex:1;}
+  .card .btn{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:13.5px;padding:10px 16px;border-radius:12px;margin-top:auto;transition:all .18s ease;box-shadow:0 4px 14px rgba(255,85,0,.32);}
+  .card .btn:hover{background:linear-gradient(135deg,#ff6600 0%,#ea580c 100%);transform:translateY(-2px);box-shadow:0 7px 20px rgba(255,85,0,.48);}
   .imgwrap.phold{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);}
   .imgwrap.phold span{font-size:60px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));}
+
   /* Caixa "Descontos PT Recomenda" dentro das notícias */
   .recomenda-box{margin:28px 0;border:2px solid var(--accent);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:var(--card);}
   .recomenda-tag{background:var(--accent);color:#fff;font-weight:800;font-size:13px;padding:8px 16px;letter-spacing:.3px;}
@@ -514,7 +530,7 @@
       <p>Além das ofertas físicas, escolhemos a dedo alguns produtos digitais úteis: ebooks, ferramentas e recursos com entrega imediata. São <strong>links de afiliado</strong> — se comprares através deles, podemos receber uma comissão, sem qualquer custo extra para ti.</p>
     </article>
     <div class="grid"><div class="card">
-      <a class="imglink" href="https://www.checkout-ds24.com/redir/654589/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" src="https://www.digistore24.com/pb/img/merchant_3483733/image/product/W91Q1P8C.jpg" alt="O Segredo da Longevidade em Cães e Gatos"></div></a>
+      <a class="imglink" href="https://www.checkout-ds24.com/redir/654589/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://www.digistore24.com/pb/img/merchant_3483733/image/product/W91Q1P8C.jpg" alt="O Segredo da Longevidade em Cães e Gatos"></div></a>
       <div class="body">
         <span class="cat">🐾 Animais</span>
         <a class="titlelink" href="https://www.checkout-ds24.com/redir/654589/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="title">O Segredo da Longevidade em Cães e Gatos</div></a>
@@ -523,7 +539,7 @@
         <button class="sharebtn" data-t="O Segredo da Longevidade em Cães e Gatos" data-d="Um ebook que muda a forma como cuidas do teu animal — hábitos simples para uma vida mais longa e saudável para cães e gatos." data-u="https://www.checkout-ds24.com/redir/654589/sergiocarqueijo640d/" data-i="https://www.digistore24.com/pb/img/merchant_3483733/image/product/W91Q1P8C.jpg">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.digistore24.com/redir/456692/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" src="https://photokit.com/images/editor.min.png" alt="PhotoKit — Editor de Fotos com IA"></div></a>
+      <a class="imglink" href="https://www.digistore24.com/redir/456692/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://photokit.com/images/editor.min.png" alt="PhotoKit — Editor de Fotos com IA"></div></a>
       <div class="body">
         <span class="cat">🖼️ Ferramentas</span>
         <a class="titlelink" href="https://www.digistore24.com/redir/456692/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="title">PhotoKit — Editor de Fotos com IA</div></a>
@@ -532,7 +548,7 @@
         <button class="sharebtn" data-t="PhotoKit — Editor de Fotos com IA" data-d="Editor de fotografias online com inteligência artificial: recorta, ajusta, remove fundos e melhora imagens em segundos, sem instalar nada." data-u="https://www.digistore24.com/redir/456692/sergiocarqueijo640d/" data-i="https://photokit.com/images/editor.min.png">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.digistore24.com/redir/572629/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" src="https://static.wixstatic.com/media/b55a71_09bb2c67fc124c188ac0db97aab56646~mv2.jpg" alt="54 Vídeos de Stock em HD"></div></a>
+      <a class="imglink" href="https://www.digistore24.com/redir/572629/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://static.wixstatic.com/media/b55a71_09bb2c67fc124c188ac0db97aab56646~mv2.jpg" alt="54 Vídeos de Stock em HD"></div></a>
       <div class="body">
         <span class="cat">🎬 Criadores</span>
         <a class="titlelink" href="https://www.digistore24.com/redir/572629/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="title">54 Vídeos de Stock em HD</div></a>
@@ -541,7 +557,7 @@
         <button class="sharebtn" data-t="54 Vídeos de Stock em HD" data-d="Pack de 54 vídeos de stock em alta definição, prontos a usar nos teus projetos, anúncios e redes sociais." data-u="https://www.digistore24.com/redir/572629/sergiocarqueijo640d/" data-i="https://static.wixstatic.com/media/b55a71_09bb2c67fc124c188ac0db97aab56646~mv2.jpg">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.digistore24.com/redir/565278/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" src="https://static.wixstatic.com/media/b55a71_0a38cf20d42c4e229f6f26a4d250bd5c~mv2.png" alt="Smartkids — Conteúdos Editáveis para Crianças"></div></a>
+      <a class="imglink" href="https://www.digistore24.com/redir/565278/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://static.wixstatic.com/media/b55a71_0a38cf20d42c4e229f6f26a4d250bd5c~mv2.png" alt="Smartkids — Conteúdos Editáveis para Crianças"></div></a>
       <div class="body">
         <span class="cat">🧒 Crianças</span>
         <a class="titlelink" href="https://www.digistore24.com/redir/565278/sergiocarqueijo640d/" target="_blank" rel="sponsored nofollow noopener"><div class="title">Smartkids — Conteúdos Editáveis para Crianças</div></a>
@@ -556,112 +572,112 @@
       <p>Marcas parceiras que partilham valores de qualidade e sustentabilidade. <strong>Erverte Paris</strong> é uma marca francesa de moda masculina em 100% fibras naturais, feita em França. São <strong>links de afiliado</strong> — sem custo extra para ti.</p>
     </article>
     <div class="grid"><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_hand_in_pocket_62874.webp?v=1770371949" alt="Casaco com capuz cinzento Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="title">Casaco com capuz cinzento Made in France</div></a>
         <p class="pdesc">245,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Casaco com capuz cinzento Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Casaco com capuz cinzento Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-4" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_hand_in_pocket_62874.webp?v=1770371949">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-marine_american_arms_behind_62382.webp?v=1774548079" alt="T-shirt azul-marinho Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" target="_blank" rel="sponsored nofollow noopener"><div class="title">T-shirt azul-marinho Made in France</div></a>
         <p class="pdesc">85,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="T-shirt azul-marinho Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="T-shirt azul-marinho Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-23" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-marine_american_arms_behind_62382.webp?v=1774548079">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-blanc_american_shot_62099.webp?v=1770206230" alt="T-shirt branca Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" target="_blank" rel="sponsored nofollow noopener"><div class="title">T-shirt branca Made in France</div></a>
         <p class="pdesc">85,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="T-shirt branca Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="T-shirt branca Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-18" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-blanc_american_shot_62099.webp?v=1770206230">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/90D71A62-614A-4DF5-BDEC-D6673021D237_american_hand_in_pocket_57265.webp?v=1768227615" alt="Camisola branca Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" target="_blank" rel="sponsored nofollow noopener"><div class="title">Camisola branca Made in France</div></a>
         <p class="pdesc">195,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Camisola branca Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Camisola branca Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-5" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/90D71A62-614A-4DF5-BDEC-D6673021D237_american_hand_in_pocket_57265.webp?v=1768227615">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-noir_american_shot_53892.webp?v=1766006423" alt="T-shirt preta Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" target="_blank" rel="sponsored nofollow noopener"><div class="title">T-shirt preta Made in France</div></a>
         <p class="pdesc">85,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="T-shirt preta Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="T-shirt preta Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-13" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-noir_american_shot_53892.webp?v=1766006423">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-noir_american_shot_54693.webp?v=1766005750" alt="Camisola preta Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" target="_blank" rel="sponsored nofollow noopener"><div class="title">Camisola preta Made in France</div></a>
         <p class="pdesc">195,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Camisola preta Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Camisola preta Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-4" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-noir_american_shot_54693.webp?v=1766005750">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-electrique_american_shot_54710.webp?v=1766004526" alt="T-shirt azul Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" target="_blank" rel="sponsored nofollow noopener"><div class="title">T-shirt azul Made in France</div></a>
         <p class="pdesc">85,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="T-shirt azul Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="T-shirt azul Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Ft-shirt-made-in-france-8" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-electrique_american_shot_54710.webp?v=1766004526">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-bleu-marine_american_shot_53967_95675c87-0eeb-415a-9bac-860f37bca48f.webp?v=1765311465" alt="Camisola azul-marinho fabricada em França"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="title">Camisola azul-marinho fabricada em França</div></a>
         <p class="pdesc">195,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Camisola azul-marinho fabricada em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Camisola azul-marinho fabricada em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcamisola-de-malha-made-in-france-3" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-bleu-marine_american_shot_53967_95675c87-0eeb-415a-9bac-860f37bca48f.webp?v=1765311465">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_shot_53939.webp?v=1765308917" alt="Casaco com capuz preto Made in France"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" target="_blank" rel="sponsored nofollow noopener"><div class="title">Casaco com capuz preto Made in France</div></a>
         <p class="pdesc">245,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Casaco com capuz preto Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Casaco com capuz preto Made in France" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fcasaco-com-capuz-made-in-france-3" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_shot_53939.webp?v=1765308917">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/POLO-MARINE_american_shot_52817.webp?v=1765350425" alt="Polo de algodão orgânico azul-marinho - Fabricado em França"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="title">Polo de algodão orgânico azul-marinho - Fabricado em França</div></a>
         <p class="pdesc">105,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Polo de algodão orgânico azul-marinho - Fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Polo de algodão orgânico azul-marinho - Fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-de-algodao-organico-azul-marinho-fabricado-em-franca" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/POLO-MARINE_american_shot_52817.webp?v=1765350425">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/ERM22O002-A11_1_american_shot_52010.webp?v=1765350634" alt="Polo branco de algodão orgânico - Fabricado em França"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="title">Polo branco de algodão orgânico - Fabricado em França</div></a>
         <p class="pdesc">105,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Polo branco de algodão orgânico - Fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Polo branco de algodão orgânico - Fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fpolo-branco-de-algodao-organico-fabricado-em-franca" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/ERM22O002-A11_1_american_shot_52010.webp?v=1765350634">🔗 Partilhar com o meu link</button>
       </div>
     </div><div class="card">
-      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap phold"><span>👕</span></div></a>
+      <a class="imglink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="imgwrap"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/tryon_98444.webp?v=1778575330" alt="Boné azul-marinho - Algodão orgânico, fabricado em França"></div></a>
       <div class="body">
         <span class="cat">🌿 Moda Sustentável</span>
         <a class="titlelink" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener"><div class="title">Boné azul-marinho - Algodão orgânico, fabricado em França</div></a>
         <p class="pdesc">79,00€ · Erverte Paris — fibras naturais, feito em França</p>
         <a class="btn" href="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" target="_blank" rel="sponsored nofollow noopener">Ver na Erverte →</a>
-        <button class="sharebtn" data-t="Boné azul-marinho - Algodão orgânico, fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" data-i="">🔗 Partilhar com o meu link</button>
+        <button class="sharebtn" data-t="Boné azul-marinho - Algodão orgânico, fabricado em França" data-d="Erverte Paris — moda sustentável, fibras naturais" data-u="https://www.awin1.com/cread.php?awinmid=87255&amp;awinaffid=2888887&amp;ued=https%3A%2F%2Ferverte.com%2Fpt%2Fproducts%2Fbone-azul-marinho-algodao-organico-fabricado-em-franca" data-i="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/tryon_98444.webp?v=1778575330">🔗 Partilhar com o meu link</button>
       </div>
     </div></div>
     <script>

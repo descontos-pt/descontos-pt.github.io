@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Wed, 26 Aug 2026 21:51:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 21:54:17 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Oferta especial: Bed Head by TIGI Resurrection Set champô e condicionador, 2 x 750 ml | Para cabelos secos e d — 16,99€</title>
+      <link>https://descontospt.pt/d/1lc36pn.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/1lc36pn.html</guid>
+      <pubDate>Wed, 26 Aug 2026 21:53:54 GMT</pubDate>
+      <description>Oferta especial: Bed Head by TIGI Resurrection Set champô e condicionador, 2 x 750 ml | Para cabelos secos e danificados, reparação hidratante intensa com proteção de cor, força e brilho por 16,99€ (antes 32,50€, -48%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/81vq+moCBzL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>G-Star Rovic Zip 3D Regular Tapered Calças para homem — 42,90€</title>
       <link>https://descontospt.pt/d/ngsn79.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Wed, 26 Aug 2026 13:18:02 GMT</pubDate>
       <description>Cecotec Ventoinha de teto EnergySilence 5400 Classic White&amp;LightWood | Controlo remoto, 52", motor DC de 40 W, 3 pás, 6 velocidades, temporizador até 8 h, modo Winter/verão por 74,30€ (antes 119,00€, -38%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/31icZgGTAkL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>SALOMON Trailblazer 30 Mochila de caminhada, Versatilidade, Fácil de usar, Conforto e leveza Unissexo adulto ( — 57,00€</title>
-      <link>https://descontospt.pt/d/1uurk8g.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/1uurk8g.html</guid>
-      <pubDate>Wed, 26 Aug 2026 13:07:04 GMT</pubDate>
-      <description>SALOMON Trailblazer 30 Mochila de caminhada, Versatilidade, Fácil de usar, Conforto e leveza Unissexo adulto (1 unidade) por 57,00€ (antes 95,00€, -40%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/81jTTWjnIQL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
