@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos Portugal</title>
+    <title>Descontos PT</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Wed, 26 Aug 2026 21:17:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 21:21:51 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zwilling Quadro Set conjunto de cozinha 5 peças, Aço Inoxidável, 1 cm, 58x35x30 cm — 164,99€</title>
+      <link>https://descontospt.pt/d/12809rl.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/12809rl.html</guid>
+      <pubDate>Wed, 26 Aug 2026 21:20:05 GMT</pubDate>
+      <description>Zwilling Quadro Set conjunto de cozinha 5 peças, Aço Inoxidável, 1 cm, 58x35x30 cm por 164,99€ (antes 299,00€, -45%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/511ZlB8AzcL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Oferta especial: Cera húmida para carro Turtle Wax Hybrid Solutions Ceramic, 500 ml, 1 pacote, aroma frutado,  — 15,19€</title>
       <link>https://descontospt.pt/d/1suvi8g.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Wed, 26 Aug 2026 12:45:04 GMT</pubDate>
       <description>Tesouras elétricas sem escovas, MHPRO tesouras de poder 21 V com baterias 2 x 2000 mAh, ecrã LCD, tesouras de podar bateria para jardinagem, árvores de fruta, vinhas e quinta, vermelho por 51,74€ (antes 109,98€, -53%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/71MAnZI982L._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>TOTTO - Mochila escolar adaptável a carrinho, modelo Acuareles, capacidade 20 L, bolso para PC 14", 2 bolsos p — 32,47€</title>
-      <link>https://descontospt.pt/d/1hu2rl9.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/1hu2rl9.html</guid>
-      <pubDate>Wed, 26 Aug 2026 12:34:03 GMT</pubDate>
-      <description>TOTTO - Mochila escolar adaptável a carrinho, modelo Acuareles, capacidade 20 L, bolso para PC 14", 2 bolsos para garrafa, encosto ergonómico com fluxo de ar, correias confortáveis em S por 32,47€ (antes 49,95€, -35%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/71gSCO2uD7L._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
