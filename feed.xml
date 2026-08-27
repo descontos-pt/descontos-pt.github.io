@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Thu, 27 Aug 2026 22:04:27 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 22:07:38 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Oferta especial: MSI mag 242CA Monitor de jogos FHD 1500R, 1920 x 1080 VA, 180 Hz, 1 ms, compatível com HDR, p — 79,00€</title>
+      <link>https://descontospt.pt/d/1a5s0co.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/1a5s0co.html</guid>
+      <pubDate>Thu, 27 Aug 2026 22:05:40 GMT</pubDate>
+      <description>Oferta especial: MSI mag 242CA Monitor de jogos FHD 1500R, 1920 x 1080 VA, 180 Hz, 1 ms, compatível com HDR, proteção ocular, HDMI 2.0b, DP 1,2 A, sem moldura, inclinação ajustável, montagem Vesa, preto por 79,00€ (antes 131,99€, -40%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/71TQLfCBDlL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Oferta especial: Rowenta XPert 6.60 - Aspiradora de escova versátil sem cabo, com 3 funções em 1 multiespaços, — 94,99€</title>
       <link>https://descontospt.pt/d/1qg0bzc.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Thu, 27 Aug 2026 12:59:45 GMT</pubDate>
       <description>Oferta especial: 6 en 1 Cinta de Correr Plegable, 12% Inclinación Cinta de Correr, 12KM/H Cinta de Andar para Hogar/Oficina, 115 CM Pasamanos Telescópicos (95°&amp;105° Ajustables), Remoto Silencioso, Pantalla LED, App por 199,99€ (antes 370,35€, -46%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/71ONPQPu+nL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Oferta especial: Cámara exterior 2K+ Blink con Blink Videotimbre 2K+ (última generación), Negro, módulo de sin — 49,99€</title>
-      <link>https://descontospt.pt/d/1mlljvc.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/1mlljvc.html</guid>
-      <pubDate>Thu, 27 Aug 2026 12:48:46 GMT</pubDate>
-      <description>Oferta especial: Cámara exterior 2K+ Blink con Blink Videotimbre 2K+ (última generación), Negro, módulo de sincronización básico Incluido por 49,99€ (antes 169,98€, -71%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/61QuGUtm+gL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
