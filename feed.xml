@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Tue, 01 Sep 2026 18:32:51 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 18:34:53 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Oferta especial: Pantene Pro-V Sunkiss Glow Protetor solar, spray desembaraçador de cabelo | Protege contra UV — 7,10€</title>
+      <link>https://descontospt.pt/d/59r0yv.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/59r0yv.html</guid>
+      <pubDate>Tue, 01 Sep 2026 18:34:32 GMT</pubDate>
+      <description>Oferta especial: Pantene Pro-V Sunkiss Glow Protetor solar, spray desembaraçador de cabelo | Protege contra UVA, UVB, sal e cloro, para um cabelo forte e brilhante por 7,10€ (antes 11,99€, -41%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/612lkow47EL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Oferta especial por tempo limitado: Cecotec Secador de cabelo compacto IoniCare Dry&amp;Keratin Cotton Candy. 1200 — 29,90€</title>
       <link>https://descontospt.pt/d/cfp7kx.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Mon, 31 Aug 2026 13:01:39 GMT</pubDate>
       <description>Le Creuset Bandeja retangular Heritage de cerâmica de grés, 32 cm, 4 L, Caraíbas, 7110232170001 por 45,00€ (antes 74,00€, -39%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/51tSu0M33AL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Oferta especial: Sanex Spray todo o corpo Deo Frescor total 150 ml, desodorizante mãos, axilas, corpo e pés, 7 — 2,50€</title>
-      <link>https://descontospt.pt/d/6zwxgb.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/6zwxgb.html</guid>
-      <pubDate>Mon, 31 Aug 2026 12:50:22 GMT</pubDate>
-      <description>Oferta especial: Sanex Spray todo o corpo Deo Frescor total 150 ml, desodorizante mãos, axilas, corpo e pés, 72 H proteção contra odor clinicamente testado, hipoalergénico, delicado com pele, estado dermatologicamente por 2,50€ (antes 4,99€, -50%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/611dCyjZLFL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
