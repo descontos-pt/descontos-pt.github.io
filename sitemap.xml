@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://descontospt.pt/</loc><priority>1.0</priority></url>
   <url><loc>https://descontospt.pt/noticias/</loc><lastmod>2026-09-02</lastmod><priority>0.9</priority></url>
+  <url><loc>https://descontospt.pt/noticias/se-usas-claude-ha-um-novo-risco-que-nem-a/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/o-novo-suv-eletrico-da-polestar-quer-fazer-te/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/anbernic-lanca-sua-primeira-consola-com-chip/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/as-15-melhores-series-para-ver-na-amazon-prime/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
@@ -42,7 +43,6 @@
   <url><loc>https://descontospt.pt/noticias/o-google-perdeu-a-cabeca-pixel-10a-esta-agora-a/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/o-preco-do-xiaomi-watch-s5-cai-a-pique-na/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
-  <url><loc>https://descontospt.pt/noticias/google-resolve-finalmente-o-problema-que-mais/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/colunas-bluetooth-marshall-analise-portugal/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/melhor-internet-fixa-routers-wifi-mesh-portugal/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
@@ -83,6 +83,7 @@
   <url><loc>https://descontospt.pt/como-funciona/</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/privacy-policy/</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://descontospt.pt/terms-of-service/</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://descontospt.pt/d/18maywt.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/r9g18u.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1uk1p0i.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/xt8qfg.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
@@ -282,5 +283,4 @@
   <url><loc>https://descontospt.pt/d/1w1gvjw.html</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1m4eocl.html</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/d8j9ex.html</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
-  <url><loc>https://descontospt.pt/d/9ftndj.html</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
 </urlset>
