@@ -742,9 +742,23 @@
 
     <div class="panel">
       <h2>📈 Histórico de preço</h2>
-      <p class="histnote">🕵️ Primeira vez que vemos este produto — o histórico começa a construir-se a partir de agora.</p>
+      <div class="chartwrap"><svg id="pchart" viewBox="0 0 640 220" width="100%" role="img" aria-label="Histórico de preço">
+  <line x1="52" x2="626" y1="177.2" y2="177.2" stroke="var(--line)" stroke-width="1"/><text x="46" y="180.7" text-anchor="end" font-size="10.5" fill="var(--muted)">25,15€</text><line x1="52" x2="626" y1="103.0" y2="103.0" stroke="var(--line)" stroke-width="1"/><text x="46" y="106.5" text-anchor="end" font-size="10.5" fill="var(--muted)">33,58€</text><line x1="52" x2="626" y1="28.8" y2="28.8" stroke="var(--line)" stroke-width="1"/><text x="46" y="32.3" text-anchor="end" font-size="10.5" fill="var(--muted)">42,00€</text>
+  <path d="M52,177.2 L346.1,28.8 L626,28.8 L626,192 L52,192 Z" fill="var(--accent)" opacity="0.08"/>
+  <path d="M52,177.2 L346.1,28.8 L626,28.8" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="52" cy="177.2" r="3.5" fill="var(--green)"/><text x="52" y="188" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--green)">mín 25,15€</text>
+  <text x="52" y="212" font-size="10.5" fill="var(--muted)">24/08</text>
+  <text x="626" y="212" text-anchor="end" font-size="10.5" fill="var(--muted)">01/09</text>
+  <circle id="hovpt" r="4" fill="var(--accent2)" stroke="var(--card)" stroke-width="2" style="display:none"/>
+</svg><div id="ptip" class="ptip" style="display:none"></div></div>
       
-      <div class="verdict-wrap"><span class="verdict-lbl">🏷️ Veredicto Descontos PT</span><div class="verdict verdict-good">🟢 <strong>Desconto de 24%</strong> face ao preço de referência (54,99€). Ainda não temos histórico próprio deste produto — começamos a acompanhá-lo a partir de agora para confirmar se o desconto é real.</div></div>
+    <div class="tiles">
+      <div class="tile"><span class="tlbl">Mínimo visto</span><span class="tval" style="color:var(--green)">25,15€</span></div>
+      <div class="tile"><span class="tlbl">Preço médio</span><span class="tval">36,38€</span></div>
+      <div class="tile"><span class="tlbl">Máximo visto</span><span class="tval">42,00€</span></div>
+      <div class="tile"><span class="tlbl">Observações</span><span class="tval">3× desde 24/08/2026</span></div>
+    </div>
+      <div class="verdict-wrap"><span class="verdict-lbl">🏷️ Veredicto Descontos PT</span><div class="verdict verdict-bad">🔴 <strong>Acima da média.</strong> Já o registámos por menos (média 36,38€, mínimo 25,15€). Se não for urgente, talvez valha esperar por uma descida.</div></div>
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
@@ -932,6 +946,22 @@
   setDark(pref!==null?pref==='1':matchMedia('(prefers-color-scheme: dark)').matches);
   if(darkbtn)darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 
+  // Tooltip do gráfico: ponto mais próximo do cursor (coordenadas pré-calculadas no build)
+  var PTS=[{"x":52,"y":177.2,"t":1787581579000,"p":25.15},{"x":346.1,"y":28.8,"t":1787942438000,"p":42},{"x":626,"y":28.8,"t":1788285954000,"p":42}];
+  var svg=document.getElementById('pchart'), tip=document.getElementById('ptip'), hov=document.getElementById('hovpt');
+  function fmtE(v){return v.toFixed(2).replace('.',',')+'€';}
+  svg.addEventListener('mousemove',function(e){
+    var r=svg.getBoundingClientRect(), sx=(e.clientX-r.left)*640/r.width;
+    var best=PTS[0],bd=1e9;
+    for(var i=0;i<PTS.length;i++){var dd=Math.abs(PTS[i].x-sx);if(dd<bd){bd=dd;best=PTS[i];}}
+    hov.setAttribute('cx',best.x);hov.setAttribute('cy',best.y);hov.style.display='';
+    var dt=new Date(best.t);
+    tip.textContent=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2)+' · '+fmtE(best.p);
+    tip.style.display='';
+    tip.style.left=Math.min(best.x/640*r.width+10, r.width-90)+'px';
+    tip.style.top=(best.y/220*r.height-34)+'px';
+  });
+  svg.addEventListener('mouseleave',function(){tip.style.display='none';hov.style.display='none';});
 </script>
 <script>
 (function(){
