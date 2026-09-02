@@ -1,0 +1,285 @@
+<!doctype html><html lang="pt"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descontos PT — ofertas com desconto real</title>
+<meta name="description" content="20 ofertas verificadas de várias lojas, com histórico de preços e desconto comparado.">
+<link rel="canonical" href="https://descontospt.pt/ofertas/">
+<meta property="og:title" content="Descontos PT — ofertas com desconto real"><meta property="og:description" content="20 ofertas verificadas de várias lojas, com histórico de preços e desconto comparado.">
+<meta property="og:type" content="website"><meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ground:#F6F8F5;--surface:#fff;--surface-2:#EFF3ED;--ink:#14201C;--muted:#566259;--faint:#8A968D;--accent:#0E7C66;--accent-soft:#DCEDE7;--warm:#D4531F;--line:#E1E7DE;--line-strong:#CBD4C7;--shadow:0 1px 2px rgba(20,32,28,.05),0 8px 24px rgba(20,32,28,.05)}
+@media(prefers-color-scheme:dark){:root{--ground:#0D1310;--surface:#151E1A;--surface-2:#1B2621;--ink:#E9EFEA;--muted:#9DABA2;--faint:#6E7C73;--accent:#43BA9C;--accent-soft:#12352C;--warm:#F0764A;--line:#243029;--line-strong:#33413A;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+a{color:inherit;text-decoration:none}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+.top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.top-in{display:flex;align-items:center;gap:20px;padding:14px 20px}
+.brand{font-family:"Fraunces",serif;font-weight:600;font-size:22px}.brand span{color:var(--accent)}
+.search{display:flex;flex:1;max-width:560px;margin-left:auto}
+.search input{flex:1;padding:10px 14px;border:1px solid var(--line-strong);border-radius:10px;background:var(--ground);color:var(--ink);font:inherit}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.hero-lite{padding:30px 0 8px}.hero-lite h1{font-size:clamp(26px,4vw,38px);margin:0}
+.hero-lite .sub{color:var(--muted);margin:8px 0 0;font-size:15px}
+.filters{margin:18px 0 6px;display:grid;gap:10px}
+.frow{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.flabel{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);min-width:82px}
+.fchips{display:flex;gap:8px;flex-wrap:wrap}
+.fchip{padding:5px 12px;border:1px solid var(--line-strong);border-radius:999px;font-size:13px;color:var(--muted);background:var(--surface);cursor:pointer;font:inherit;line-height:1.4}
+.fchip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sortbar{display:flex;gap:6px;margin:14px 0;flex-wrap:wrap;align-items:center}
+.sortbar .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-right:4px}
+.sopt{padding:5px 12px;border-radius:8px;font-size:13px;color:var(--muted);border:1px solid transparent;background:none;cursor:pointer;font:inherit}
+.sopt.on{background:var(--surface-2);color:var(--ink);border-color:var(--line)}
+.count{color:var(--faint);font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:12px 0 30px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:transform .12s ease,box-shadow .12s ease;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(20,32,28,.12)}
+.card[hidden]{display:none}
+.thumb{position:relative;aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:contain;padding:10px}
+.noimg{color:var(--faint);font-family:"IBM Plex Mono",monospace;font-size:13px}
+.noimg.big{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;width:100%}
+.disc{position:absolute;top:10px;left:10px;background:var(--warm);color:#fff;font-weight:600;font-size:13px;padding:3px 9px;border-radius:8px}
+.disc.big{position:static;display:inline-block;margin-top:10px;font-size:15px}
+.c-body{padding:12px 13px;display:flex;flex-direction:column;gap:6px;flex:1}
+.c-store{font-size:11px;color:var(--faint);font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.05em}
+.c-title{font-size:14px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px}
+.c-price{margin-top:auto;display:flex;align-items:baseline;gap:8px}
+.now{font-weight:600;font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums}
+.now.big{font-size:32px}
+.old{color:var(--faint);text-decoration:line-through;font-size:14px}.old.big{font-size:18px}
+.empty{color:var(--muted);padding:40px 0}
+.crumbs{font-size:13px;color:var(--muted);padding:18px 0 4px}.crumbs a{color:var(--accent)}
+.detail{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;padding:14px 0 40px}
+.d-media{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.d-media img{max-width:100%;max-height:360px;object-fit:contain}
+.d-store{font-family:"IBM Plex Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.d-info h1{font-size:clamp(22px,3vw,30px);margin:8px 0 14px;line-height:1.15}
+.d-price{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+.verified{display:inline-block;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin:6px 0}
+.ctx{color:var(--muted);font-size:14px;margin:6px 0}
+.hist{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.hist svg{display:block}.hist polyline{fill:none;stroke:var(--accent);stroke-width:2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.hist-cap{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.hist-lo-hi{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px;font-variant-numeric:tabular-nums}
+.hist.empty-h,.empty-h{color:var(--faint);font-size:13px;font-family:"IBM Plex Mono",monospace;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.buy{display:inline-block;background:var(--accent);color:#fff;font-weight:600;padding:14px 26px;border-radius:12px;margin:14px 0 8px;font-size:16px}
+.buy:hover{filter:brightness(1.06)}
+.aff{font-size:12.5px;color:var(--muted);margin:6px 0}
+.seen{font-size:12px;color:var(--faint);font-family:"IBM Plex Mono",monospace}
+.foot{border-top:1px solid var(--line);margin-top:20px;background:var(--surface)}
+.foot .wrap{padding:24px 20px}.foot p{color:var(--muted);font-size:13px;margin:0 0 8px}.foot .fine{color:var(--faint);font-size:12px}
+@media(max-width:680px){.detail{grid-template-columns:1fr}.search{order:3;flex-basis:100%;max-width:none;margin:0}.top-in{flex-wrap:wrap}}
+</style><script>
+(function(){
+  var q=document.getElementById('q'), grid=document.getElementById('grid');
+  if(!grid)return;
+  var cards=[].slice.call(grid.querySelectorAll('.card'));
+  var cat='', store='', sort='disc';
+  function setOn(sel,el){[].slice.call(document.querySelectorAll(sel)).forEach(function(x){x.classList.remove('on');});el.classList.add('on');}
+  function apply(){
+    var term=(q&&q.value||'').trim().toLowerCase(), vis=0;
+    cards.forEach(function(c){
+      var ok=true;
+      if(term && c.getAttribute('data-title').indexOf(term)<0)ok=false;
+      if(cat && c.getAttribute('data-cat')!==cat)ok=false;
+      if(store && c.getAttribute('data-store')!==store)ok=false;
+      c.hidden=!ok; if(ok)vis++;
+    });
+    var arr=cards.filter(function(c){return !c.hidden;});
+    arr.sort(function(a,b){
+      if(sort==='price_asc')return a.getAttribute('data-price')-b.getAttribute('data-price');
+      if(sort==='price_desc')return b.getAttribute('data-price')-a.getAttribute('data-price');
+      return b.getAttribute('data-disc')-a.getAttribute('data-disc');
+    });
+    arr.forEach(function(c){grid.appendChild(c);});
+    var cnt=document.getElementById('count'); if(cnt)cnt.textContent=vis+' ofertas';
+  }
+  if(q)q.addEventListener('input',apply);
+  [].slice.call(document.querySelectorAll('[data-fcat]')).forEach(function(el){el.addEventListener('click',function(){cat=el.getAttribute('data-fcat');setOn('[data-fcat]',el);apply();});});
+  [].slice.call(document.querySelectorAll('[data-fstore]')).forEach(function(el){el.addEventListener('click',function(){store=el.getAttribute('data-fstore');setOn('[data-fstore]',el);apply();});});
+  [].slice.call(document.querySelectorAll('[data-sort]')).forEach(function(el){el.addEventListener('click',function(){sort=el.getAttribute('data-sort');setOn('[data-sort]',el);apply();});});
+  apply();
+})();
+</script></head><body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="/ofertas/">Descontos<span>PT</span></a>
+  <div class="search"><input id="q" type="search" placeholder="Procurar produto, marca…" aria-label="Procurar" autocomplete="off"></div>
+</div></header>
+<main class="wrap">
+    <section class="hero-lite"><h1>Ofertas em destaque</h1>
+      <p class="sub">20 ofertas com histórico de preços e desconto comparado.</p></section>
+    <div class="filters">
+    <div class="frow"><span class="flabel">Categorias</span><div class="fchips"><button class="fchip on" data-fcat="">Todas</button><button class="fchip" data-fcat="auto">Auto &amp; Moto (2)</button><button class="fchip" data-fcat="beauty">Beleza (2)</button><button class="fchip" data-fcat="fashion">Moda (2)</button><button class="fchip" data-fcat="tech">Tecnologia (1)</button></div></div>
+    <div class="frow"><span class="flabel">Lojas</span><div class="fchips"><button class="fchip on" data-fstore="">Todas</button><button class="fchip" data-fstore="awin">AWIN (20)</button></div></div>
+  </div>
+    <div class="sortbar"><span class="lbl">Ordenar</span>
+    <button class="sopt on" data-sort="disc">Maior desconto</button><button class="sopt" data-sort="price_asc">Preço ↑</button><button class="sopt" data-sort="price_desc">Preço ↓</button>
+    <span class="count" id="count">20 ofertas</span></div>
+    <div class="grid" id="grid"><a class="card" href="/ofertas/produto/2.html"
+    data-title="rhinowalk sac de moto 100% étanche 18l/28l/48l grande capacité 2 pièces ajustement universel moto sacoche sacs latéraux de selle awin moda" data-store="awin" data-cat="fashion"
+    data-price="110.69" data-disc="70">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se686971f10ea46ef8d21ee8bfb05897bx.jpg" alt="Rhinowalk sac de moto 100% étanche 18L/28L/48L grande capacité 2 pièces ajustement universel moto sacoche sacs latéraux de selle" loading="lazy"><span class="disc">-70%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Moda</div>
+      <div class="c-title">Rhinowalk sac de moto 100% étanche 18L/28L/48L grande capacité 2 pièces ajustement universel moto sacoche sacs latéraux de selle</div>
+      <div class="c-price"><span class="now">110,69 €</span> <span class="old">376,00 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/15.html"
+    data-title="chauffage électrique protège-cheville 3 niveaux compresse chaude massage par vibration masseur de pieds sans fil protection des articulations de la cheville sangle chauffante awin " data-store="awin" data-cat=""
+    data-price="31.19" data-disc="68">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S29e814c633894826842ed126300ee080N.jpg" alt="Chauffage électrique protège-cheville 3 niveaux compresse chaude Massage par Vibration masseur de pieds sans fil Protection des articulations de la cheville sangle chauffante" loading="lazy"><span class="disc">-68%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Chauffage électrique protège-cheville 3 niveaux compresse chaude Massage par Vibration masseur de pieds sans fil Protection des articulations de la cheville sangle chauffante</div>
+      <div class="c-price"><span class="now">31,19 €</span> <span class="old">100,61 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/14.html"
+    data-title="dispositif d'irrigation goutte à goutte de jardin, système de minuterie de contrôleur de double pompe, dispositif d'arrosage automatique intelligent à énergie solaire pour plantes awin " data-store="awin" data-cat=""
+    data-price="34.59" data-disc="68">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S55d988e885fb480d869ef023ea9f365bf.jpg" alt="Dispositif d'irrigation goutte à goutte de jardin, système de minuterie de contrôleur de Double pompe, dispositif d'arrosage automatique Intelligent à énergie solaire pour plantes" loading="lazy"><span class="disc">-68%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Dispositif d'irrigation goutte à goutte de jardin, système de minuterie de contrôleur de Double pompe, dispositif d'arrosage automatique Intelligent à énergie solaire pour plantes</div>
+      <div class="c-price"><span class="now">34,59 €</span> <span class="old">110,81 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/4.html"
+    data-title="perruques bouclées avant de dentelle blond miel cheveux humains vague profonde 13x6 hd perruques frontales de dentelle pour les femmes 30 pouces perruques colorées pas cher en vente awin beleza" data-store="awin" data-cat="beauty"
+    data-price="101.39" data-disc="66">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/A12504d03f1694f6b8d5fb18fc05200ca3.jpg" alt="Perruques bouclées avant de dentelle blond miel cheveux humains vague profonde 13x6 HD perruques frontales de dentelle pour les femmes 30 pouces perruques colorées pas cher en vente" loading="lazy"><span class="disc">-66%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Beleza</div>
+      <div class="c-title">Perruques bouclées avant de dentelle blond miel cheveux humains vague profonde 13x6 HD perruques frontales de dentelle pour les femmes 30 pouces perruques colorées pas cher en vente</div>
+      <div class="c-price"><span class="now">101,39 €</span> <span class="old">298,21 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/20.html"
+    data-title="boîte à outils pour instruments de sécurité, 280x240x130mm, boîte à outils de rangement en plastique pp, mallette à outils pour équipement, valise extérieure avec mousse à l'intérieur, 1 pièce awin " data-store="awin" data-cat=""
+    data-price="25.79" data-disc="65">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S7f0aba2fb056491795ddd1ad17709e21H.jpg" alt="Boîte à outils pour instruments de sécurité, 280x240x130mm, boîte à outils de rangement en plastique PP, mallette à outils pour équipement, valise extérieure avec mousse à l'intérieur, 1 pièce" loading="lazy"><span class="disc">-65%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Boîte à outils pour instruments de sécurité, 280x240x130mm, boîte à outils de rangement en plastique PP, mallette à outils pour équipement, valise extérieure avec mousse à l'intérieur, 1 pièce</div>
+      <div class="c-price"><span class="now">25,79 €</span> <span class="old">73,39 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/9.html"
+    data-title="distributeur d'eau chaude et froide électrique, fontaine à boire de 5 à 18l, chargement par le haut, bureau et maison, 550w awin " data-store="awin" data-cat=""
+    data-price="56.99" data-disc="65">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S22f11eb909024dcdbae3541581492fb8v.jpg" alt="Distributeur d'eau chaude et froide électrique, fontaine à boire de 5 à 18L, chargement par le haut, bureau et maison, 550W" loading="lazy"><span class="disc">-65%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Distributeur d'eau chaude et froide électrique, fontaine à boire de 5 à 18L, chargement par le haut, bureau et maison, 550W</div>
+      <div class="c-price"><span class="now">56,99 €</span> <span class="old">165,40 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/1.html"
+    data-title="led à spectre complet élèvent la lumière 240w 320w 400w smd3030 led pliable élèvent la lumière pour serre fleur semis grandir tente hydroponique awin " data-store="awin" data-cat=""
+    data-price="137.15" data-disc="65">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S0cd0e445f6224b919c61921ec43d2599D.jpg" alt="LED à spectre complet élèvent la lumière 240W 320W 400W SMD3030 LED pliable élèvent la lumière pour serre fleur semis grandir tente hydroponique" loading="lazy"><span class="disc">-65%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">LED à spectre complet élèvent la lumière 240W 320W 400W SMD3030 LED pliable élèvent la lumière pour serre fleur semis grandir tente hydroponique</div>
+      <div class="c-price"><span class="now">137,15 €</span> <span class="old">399,95 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/5.html"
+    data-title="rhinowalk – sac arrière de moto étanche 19l-80l, extensible, grande capacité, moteur de voyage, coffre de bagages arrière, ajustement universel pour moto awin moda" data-store="awin" data-cat="fashion"
+    data-price="87.99" data-disc="60">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S771d77ed0e8e455c8eacd5661236ca26A.jpg" alt="Rhinowalk – sac arrière de Moto étanche 19L-80L, extensible, grande capacité, moteur de voyage, coffre de bagages arrière, ajustement universel pour Moto" loading="lazy"><span class="disc">-60%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Moda</div>
+      <div class="c-title">Rhinowalk – sac arrière de Moto étanche 19L-80L, extensible, grande capacité, moteur de voyage, coffre de bagages arrière, ajustement universel pour Moto</div>
+      <div class="c-price"><span class="now">87,99 €</span> <span class="old">220,50 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/3.html"
+    data-title="skinlike réel hd dentelle frontale fondu peaux droite invisible hd dentelle fermeture seulement vague profonde crépus bouclés vague d'eau cheveux humains awin " data-store="awin" data-cat=""
+    data-price="96.99" data-disc="60">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Sfd0b28e6a17548b6a48b0c9fa8872b34w.png" alt="SKINLIKE réel HD dentelle frontale fondu peaux droite invisible HD dentelle fermeture seulement vague profonde crépus bouclés vague d'eau cheveux humains" loading="lazy"><span class="disc">-60%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">SKINLIKE réel HD dentelle frontale fondu peaux droite invisible HD dentelle fermeture seulement vague profonde crépus bouclés vague d'eau cheveux humains</div>
+      <div class="c-price"><span class="now">96,99 €</span> <span class="old">248,69 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/16.html"
+    data-title="manette de jeu legion g3 filaire pour tablette lenovo y700 série 2026 gen5 gen1/2/3/4, manette de jeu type-c extensible pour appareils android awin tecnologia" data-store="awin" data-cat="tech"
+    data-price="35.99" data-disc="56">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S0218a215d1404b8d848e448f364e03e7j.jpg" alt="Manette de jeu Legion G3 filaire pour tablette Lenovo Y700 série 2026 Gen5 Gen1/2/3/4, manette de jeu Type-C extensible pour appareils Android" loading="lazy"><span class="disc">-56%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Tecnologia</div>
+      <div class="c-title">Manette de jeu Legion G3 filaire pour tablette Lenovo Y700 série 2026 Gen5 Gen1/2/3/4, manette de jeu Type-C extensible pour appareils Android</div>
+      <div class="c-price"><span class="now">35,99 €</span> <span class="old">81,80 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/18.html"
+    data-title="12000mah ventilateurs de plafond portables ventilateur de camping en plein air tente circulateur d'air refroidisseur ventilateur électrique rechargeable télécommande lumière led awin " data-store="awin" data-cat=""
+    data-price="34.59" data-disc="54">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S55566ae80bf5472f8bf83f8a65a94a7cW.png" alt="12000mAh ventilateurs de plafond portables ventilateur de Camping en plein Air tente circulateur d'air refroidisseur ventilateur électrique Rechargeable télécommande lumière LED" loading="lazy"><span class="disc">-54%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">12000mAh ventilateurs de plafond portables ventilateur de Camping en plein Air tente circulateur d'air refroidisseur ventilateur électrique Rechargeable télécommande lumière LED</div>
+      <div class="c-price"><span class="now">34,59 €</span> <span class="old">75,20 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/12.html"
+    data-title="bras flexible aquanic as062 pour boîtier étanche gopro tg7 pt-059 awin " data-store="awin" data-cat=""
+    data-price="42.99" data-disc="54">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Sbbe049d626db4b528e85a2731d40830bv.jpg" alt="Bras flexible Aquanic AS062 pour boîtier étanche GOPRO TG7 PT-059" loading="lazy"><span class="disc">-54%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Bras flexible Aquanic AS062 pour boîtier étanche GOPRO TG7 PT-059</div>
+      <div class="c-price"><span class="now">42,99 €</span> <span class="old">95,53 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/19.html"
+    data-title="diffuseur de pare-chocs arrière pour vw polo mk5 6r 2009 2010 2011 2012 2013 2014 pré-lifting, kit carrosserie tuning noir awin auto &amp; moto" data-store="awin" data-cat="auto"
+    data-price="45.39" data-disc="53">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se2f72be81496406fa5137aea0109bb26u.jpg" alt="Diffuseur de pare-chocs arrière pour VW Polo MK5 6R 2009 2010 2011 2012 2013 2014 pré-lifting, kit carrosserie tuning noir" loading="lazy"><span class="disc">-53%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Auto &amp; Moto</div>
+      <div class="c-title">Diffuseur de pare-chocs arrière pour VW Polo MK5 6R 2009 2010 2011 2012 2013 2014 pré-lifting, kit carrosserie tuning noir</div>
+      <div class="c-price"><span class="now">45,39 €</span> <span class="old">98,37 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/13.html"
+    data-title="robe de mariée en dentelle à manches longues pour femmes, robes de lune de miel pour patients, vestes longues personnalisées awin " data-store="awin" data-cat=""
+    data-price="41.79" data-disc="51">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S9642ba13eea943af88a3db27de578335y.jpg" alt="Robe de mariée en dentelle à manches longues pour femmes, robes de lune de miel pour patients, vestes longues personnalisées" loading="lazy"><span class="disc">-51%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Robe de mariée en dentelle à manches longues pour femmes, robes de lune de miel pour patients, vestes longues personnalisées</div>
+      <div class="c-price"><span class="now">41,79 €</span> <span class="old">85,29 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/11.html"
+    data-title="pince de levage pour pierres de 330 kg, pince à pierres, ouverture 10-24 cm (8 pouces) awin " data-store="awin" data-cat=""
+    data-price="46.19" data-disc="51">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S949ab5437e6746c59f4f54ac1c459743v.png" alt="Pince de levage pour pierres de 330 kg, pince à pierres, ouverture 10-24 cm (8 pouces)" loading="lazy"><span class="disc">-51%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Pince de levage pour pierres de 330 kg, pince à pierres, ouverture 10-24 cm (8 pouces)</div>
+      <div class="c-price"><span class="now">46,19 €</span> <span class="old">95,57 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/10.html"
+    data-title="pour bmw f20 pare-chocs avant lèvre spoiler séparateur diffuseur 1 série 114i 116i 118i 120d 120i 125i 125d 2011-2018 kits de carrosserie réglage awin auto &amp; moto" data-store="awin" data-cat="auto"
+    data-price="50.39" data-disc="50">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S486604d622a54c4192d8e5b58f3a8d05G.jpg" alt="Pour Bmw F20 pare-chocs avant lèvre Spoiler séparateur diffuseur 1 série 114i 116i 118i 120d 120i 125i 125d 2011-2018 kits de carrosserie réglage" loading="lazy"><span class="disc">-50%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Auto &amp; Moto</div>
+      <div class="c-title">Pour Bmw F20 pare-chocs avant lèvre Spoiler séparateur diffuseur 1 série 114i 116i 118i 120d 120i 125i 125d 2011-2018 kits de carrosserie réglage</div>
+      <div class="c-price"><span class="now">50,39 €</span> <span class="old">100,78 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/8.html"
+    data-title="prothèse capillaire pour hommes, toupet mono, perruque en cheveux humains naturels pour hommes, prothèse capillaire durable pour hommes, perruque capillaire masculine awin beleza" data-store="awin" data-cat="beauty"
+    data-price="77.69" data-disc="50">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S6e5c7bf9fc0541c6a4637feb30047da7f.png" alt="Prothèse capillaire pour hommes, toupet mono, perruque en cheveux humains naturels pour hommes, prothèse capillaire durable pour hommes, perruque capillaire masculine" loading="lazy"><span class="disc">-50%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN · Beleza</div>
+      <div class="c-title">Prothèse capillaire pour hommes, toupet mono, perruque en cheveux humains naturels pour hommes, prothèse capillaire durable pour hommes, perruque capillaire masculine</div>
+      <div class="c-price"><span class="now">77,69 €</span> <span class="old">155,38 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/17.html"
+    data-title="cartouche d'encre phezer a level 1/3/5 pièces pour imprimante à jet d'encre portable, séchage rapide, noire, niveau b, 12,7 mm, pièces d'origine, bureau awin " data-store="awin" data-cat=""
+    data-price="39.79" data-disc="45">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S1218628ab3304b09b1877e02702b8433w.jpg" alt="Cartouche d'encre Phezer A Level 1/3/5 pièces pour imprimante à jet d'encre portable, séchage rapide, noire, niveau B, 12,7 mm, pièces d'origine, bureau" loading="lazy"><span class="disc">-45%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Cartouche d'encre Phezer A Level 1/3/5 pièces pour imprimante à jet d'encre portable, séchage rapide, noire, niveau B, 12,7 mm, pièces d'origine, bureau</div>
+      <div class="c-price"><span class="now">39,79 €</span> <span class="old">72,35 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/6.html"
+    data-title="clignotant arrière led pour mercedes-benz, feu stop arrière, accessoires de voiture, classe a, w177, a180, a200, 2018-2021 awin " data-store="awin" data-cat=""
+    data-price="122.69" data-disc="44">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa2f4ec4f8e6042ea96824ee94b1fb80bT.jpg" alt="Clignotant arrière LED pour Mercedes-Benz, feu stop arrière, accessoires de voiture, classe A, W177, A180, A200, 2018-2021" loading="lazy"><span class="disc">-44%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">Clignotant arrière LED pour Mercedes-Benz, feu stop arrière, accessoires de voiture, classe A, W177, A180, A200, 2018-2021</div>
+      <div class="c-price"><span class="now">122,69 €</span> <span class="old">223,07 €</span></div>
+    </div></a><a class="card" href="/ofertas/produto/7.html"
+    data-title="anycubic – imprimante 3d multicolore kobra 3 max fdm, avec vitesse d'impression jusqu'à 600 mm/s, volume de construction, 500x420x420mm, contrôle intelligent par application awin " data-store="awin" data-cat=""
+    data-price="546.99" data-disc="25">
+    <div class="thumb"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc6209bb790a744569c03f80fcdfa962fA.png" alt="ANYCUBIC – imprimante 3D multicolore Kobra 3 Max FDM, avec vitesse d'impression jusqu'à 600 mm/s, Volume de construction, 500x420x420mm, contrôle intelligent par application" loading="lazy"><span class="disc">-25%</span></div>
+    <div class="c-body">
+      <div class="c-store">AWIN</div>
+      <div class="c-title">ANYCUBIC – imprimante 3D multicolore Kobra 3 Max FDM, avec vitesse d'impression jusqu'à 600 mm/s, Volume de construction, 500x420x420mm, contrôle intelligent par application</div>
+      <div class="c-price"><span class="now">546,99 €</span> <span class="old">729,32 €</span></div>
+    </div></a></div></main>
+<footer class="foot"><div class="wrap">
+  <p><strong>Descontos PT</strong> reúne ofertas de várias lojas. Alguns links são de afiliado: se comprares através deles, podemos receber uma comissão, sem custo para ti.</p>
+  <p class="fine">Os preços e a disponibilidade são os da loja no momento e podem mudar. O desconto é comparado com o histórico de preços que registamos. As compras têm o direito de livre resolução de 14 dias previsto na lei.</p>
+</div></footer></body></html>
