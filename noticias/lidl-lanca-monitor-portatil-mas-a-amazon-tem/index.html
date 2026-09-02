@@ -77,14 +77,16 @@
 
   /* Header & Navegação */
   header{
-    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
-    border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
+    text-align:center;padding:20px 20px;border-radius:20px;margin-bottom:12px;
+    background:var(--card);
+    border:1px solid var(--line);position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
-    background:linear-gradient(135deg,#131926 0%,#201711 100%);
-    border-color:#382717;
+    background:var(--card);
+    border-color:var(--line);
   }
+  /* Topo mais leve no desktop: redes sociais ficam no rodapé + no menu ☰ */
+  @media(min-width:769px){ header .socials{display:none !important;} }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
   .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}

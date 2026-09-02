@@ -80,14 +80,16 @@
 
   /* Header & Navegação */
   header{
-    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
-    border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
+    text-align:center;padding:20px 20px;border-radius:20px;margin-bottom:12px;
+    background:var(--card);
+    border:1px solid var(--line);position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
-    background:linear-gradient(135deg,#131926 0%,#201711 100%);
-    border-color:#382717;
+    background:var(--card);
+    border-color:var(--line);
   }
+  /* Topo mais leve no desktop: redes sociais ficam no rodapé + no menu ☰ */
+  @media(min-width:769px){ header .socials{display:none !important;} }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
   .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
@@ -659,10 +661,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Eficiência, praticidade e soluções inteligentes para transformar o conforto do teu lar</h3>
-          <p class="article-lead-p">Manter a casa e o jardim impecáveis não tem de ser uma tarefa demorada ou cansativa. A chave está em contar com equipamentos e produtos bem desenhados, que entregam resultados profissionais com o mínimo de esforço e tempo despendido. Esta solução da <strong>Oferta</strong> foi pensada exatamente para facilitar a manutenção doméstica diária com máxima eficácia.</p>
-          <p class="article-body-p">Seja na frescura contínua de um ambiente perfumado com óleos essenciais, no corte preciso e silencioso de sebes no jardim com tecnologia sem fios, ou no cuidado suave com o pelo dos animais de estimação, a experiência de utilização é fluida, intuitiva e sem complicações técnicas.</p>
-          <p class="article-body-p">A construção sólida e a fiabilidade da <strong>Oferta</strong> garantem que o investimento se traduz em anos de bom funcionamento, poupando trabalho manual e valorizando os espaços da tua casa.</p>
+          <h3 class="article-subtitle">📰 Gel de Água Hydro Boost da Neutrogena – Limpeza Hidratante 200 ml</h3>
+          <p class="article-lead-p">O Gel de Água de Limpeza Hydro Boost da Neutrogena combina ação de limpeza suave com hidratação profunda graças ao ácido hialurónico e à glicerina. Ideal para remover maquilhagem e impurezas sem ressecar a pele.</p>
+          <p class="article-body-p">A textura em gel desliza facilmente sobre a pele, formando uma espuma leve que elimina a suciedade sem deixar sensação de tirante. Depois do enxágue, a pele fica macia e com um leve brilho hidratado.</p>
+          <p class="article-body-p">Formulação sem óleo, não comedogénica e testada dermatologicamente; contém 200 ml de gel aquoso enriquecido com ácido hialurónico e glicerina para reter a humidade. Embalagem em frasco plástico com tampa de rosca.</p>
         </div>
         
         <div class="specs-box">
@@ -670,24 +672,24 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Marca &amp; Eficácia</span>
-        <span class="spec-v">Oferta — Soluções funcionais para o bem-estar no lar</span>
+        <span class="spec-k">Volume</span>
+        <span class="spec-v">200 ml</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Desempenho Prático</span>
-        <span class="spec-v">Rendimento superior com utilização simples e segura</span>
+        <span class="spec-k">Tipo de pele</span>
+        <span class="spec-v">Todo o tipo</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Conveniência &amp; Design</span>
-        <span class="spec-v">Formato ergonómico que facilita o manuseamento diário</span>
+        <span class="spec-k">Ingrediente chave</span>
+        <span class="spec-v">Ácido hialurónico e glicerina</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Durabilidade dos Componentes</span>
-        <span class="spec-v">Materiais resistentes concebidos para utilização frequente</span>
+        <span class="spec-k">Não comedogénico</span>
+        <span class="spec-v">Sim</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Garantia &amp; Fiabilidade</span>
-        <span class="spec-v">Total conformidade com os padrões de segurança e qualidade europeus</span>
+        <span class="spec-k">Uso</span>
+        <span class="spec-v">Diário.</span>
       </div>
           </div>
         </div>
@@ -696,11 +698,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Quem valoriza uma casa cuidada, acolhedora e funcional, apreciadores de jardinagem prática e donos de animais de estimação.</p>
+            <p>Perfeito para quem tem pele normal a mista e procura uma limpeza diária que também hidrate.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem procura ferramentas industriais pesadas para obras de construção civil ou uso profissional intensivo contínuo.</p>
+            <p>Quem tem pele extremamente seca ou sensível a produtos com ácido hialurónico pode preferir um limpador ainda mais suave.</p>
           </div>
         </div>
 
@@ -709,16 +711,16 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Facilita consideravelmente as tarefas diárias de cuidado e manutenção da casa</li>
-              <li>Excelente rendimento e durabilidade comprovada</li>
-              <li>Grande vantagem económica nesta campanha promocional</li>
+              <li>Limpa eficazmente a maquilhagem</li>
+              <li>Hidrata durante a limpeza</li>
+              <li>Não obstrui os poros (não comedogénico)</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Seguir as orientações de segurança e manutenção indicadas no manual</li>
-              <li>No caso de aparelhos a bateria, carregar na totalidade antes do primeiro uso</li>
+              <li>Pode não ser suficiente para remover maquilhagem à prova d'água</li>
+              <li>Frasco de plástico pode não ser reciclável em todas as áreas</li>
             </ul>
           </div>
         </div>

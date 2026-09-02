@@ -80,14 +80,16 @@
 
   /* Header & Navegação */
   header{
-    text-align:center;padding:26px 22px;border-radius:24px;margin-bottom:12px;
-    background:linear-gradient(135deg,#ffffff 0%,#fff7ed 100%);
-    border:1px solid #fed7aa;position:relative;box-shadow:var(--shadow);
+    text-align:center;padding:20px 20px;border-radius:20px;margin-bottom:12px;
+    background:var(--card);
+    border:1px solid var(--line);position:relative;box-shadow:var(--shadow);
   }
   html.dark header{
-    background:linear-gradient(135deg,#131926 0%,#201711 100%);
-    border-color:#382717;
+    background:var(--card);
+    border-color:var(--line);
   }
+  /* Topo mais leve no desktop: redes sociais ficam no rodapé + no menu ☰ */
+  @media(min-width:769px){ header .socials{display:none !important;} }
   .header-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap;}
   .header-actions{display:inline-flex;align-items:center;gap:8px;}
   .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;color:var(--green);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0.5px;text-transform:uppercase;}
@@ -659,10 +661,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Design funcional, segurança anti-RFID e um toque de sofisticação essencial</h3>
-          <p class="article-lead-p">Um acessório pessoal de utilização diária deve combinar elegância discreta com utilidade prática indiscutível. Em particular, a proteção dos nossos cartões bancários contra leituras não autorizadas e a organização eficiente de notas e documentos tornaram-se necessidades incontornáveis nos dias de hoje. Este artigo da <strong>Descontos PT</strong> foi concebido para responder a essas exigências sem comprometer o conforto no bolso.</p>
-          <p class="article-body-p">O formato compacto elimina o volume excessivo e a sensação desconfortável dos modelos antigos. Ao toque, a textura dos materiais transmite robustez e bom acabamento, com divisórias pensadas para um acesso rápido aos cartões mais usados e fecho seguro que mantém tudo no lugar.</p>
-          <p class="article-body-p">A tecnologia de bloqueio de sinal RFID integrada cria uma barreira eletromagnética impenetrável contra tentativas de clonagem de cartões contactless, proporcionando total tranquilidade em transportes públicos, centros comerciais e viagens.</p>
+          <h3 class="article-subtitle">📰 Smartwatch masculino 2,01 com lanterna, bússola e bateria de 900 mAh</h3>
+          <p class="article-lead-p">O Smartwatch 2,01 foi pensado para quem quer combinar estilo e funcionalidades avançadas no pulso. Inclui chamadas Bluetooth, 100 modos desportivos e uma pulseira impermeável que acompanha o teu ritmo.</p>
+          <p class="article-body-p">Ao usar o relógio sentes uma resposta rápida ao toque e podes atender chamadas sem precisar do telemóvel. A lanterna integrada é prática para situações de pouca luz, enquanto a bússola ajuda nas atividades ao ar livre.</p>
+          <p class="article-body-p">O dispositivo tem uma caixa de alumínio leve e uma pulseira de silicone resistente à água, permitindo o uso durante natação ou chuvas. A bateria de 900 mAh promete vários dias de autonomia mesmo com uso intensivo dos sensores.</p>
         </div>
         
         <div class="specs-box">
@@ -670,24 +672,16 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Marca &amp; Design</span>
-        <span class="spec-v">Descontos PT — Estilo contemporâneo e funcional</span>
+        <span class="spec-k">Tamanho da caixa</span>
+        <span class="spec-v">2,01 cm | Bateria :: 900 mAh | Modos desportivos :: 100 | Resistência à água :: Sim (impermeável)</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Segurança Avançada</span>
-        <span class="spec-v">Proteção RFID/NFC integrada contra roubo de dados contactless</span>
+        <span class="spec-k">Lanterna integrada</span>
+        <span class="spec-v">Sim</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Capacidade &amp; Espaço</span>
-        <span class="spec-v">Compartimentos otimizados para cartões essenciais, notas e moedas</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Formato Compacto</span>
-        <span class="spec-v">Dimensões reduzidas que cabem confortavelmente no bolso da frente</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Apresentação &amp; Caixa</span>
-        <span class="spec-v">Inclui embalagem cuidada ideal para oferta</span>
+        <span class="spec-k">Bússola</span>
+        <span class="spec-v">Sim</span>
       </div>
           </div>
         </div>
@@ -696,11 +690,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Pessoas práticas que procuram organização, segurança e elegância num formato compacto para o dia a dia.</p>
+            <p>Ideal para homens ativos que praticam desporto, gostam de tecnologia wearable e precisam de funcionalidades de navegação.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem prefere carteiras volumosas tradicionais com espaço para dezenas de talões e moedas em grande quantidade.</p>
+            <p>Quem procura um relógio com ecrã grande e alta resolução de cores pode preferir outro modelo.</p>
           </div>
         </div>
 
@@ -709,16 +703,16 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Proteção comprovada contra fraudes e pagamentos não autorizados por aproximação</li>
-              <li>Muito leve e elegante, sem deformar os bolsos das calças ou casacos</li>
-              <li>Excelente relação qualidade/preço e acabamento cuidado</li>
+              <li>Chamadas Bluetooth directamente do pulso</li>
+              <li>100 modos desportivos para monitorizar diferentes actividades</li>
+              <li>Bateria de 900 mAh com longa duração</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Capacidade dimensionada para os itens essenciais, evitando acumulação desnecessária</li>
-              <li>Evitar contacto prolongado com humidade excessiva para manter o acabamento impecável</li>
+              <li>Ecrã pequeno pode limitar a leitura de notificações</li>
+              <li>Funções avançadas podem consumir a bateria rapidamente</li>
             </ul>
           </div>
         </div>
