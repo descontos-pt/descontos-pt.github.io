@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Mon, 07 Sep 2026 13:24:07 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 13:27:36 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Corta Setos Solid ™ HS21 | Lâmina de aço endurecido/cabo de plástico de aderência suave ao toque, preto/laranj — 13,93€</title>
+      <link>https://descontospt.pt/d/1agkkwr.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/1agkkwr.html</guid>
+      <pubDate>Mon, 07 Sep 2026 13:25:55 GMT</pubDate>
+      <description>Corta Setos Solid ™ HS21 | Lâmina de aço endurecido/cabo de plástico de aderência suave ao toque, preto/laranja, 1026827 por 13,93€ (antes 28,99€, -52%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/51Y4BQ2ZFjL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Revolution Superdewy SPF30 Skin Tint, tinta facial leve SPF 30 para pele sensível e com tendência amarela, cob — 8,23€</title>
       <link>https://descontospt.pt/d/14g12fu.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Mon, 07 Sep 2026 03:10:29 GMT</pubDate>
       <description>Kérastase Elixir Ultime Aceite Capilar Profesional Recargable 75ml | Icónico aceite capilar protector Térmico. Ideal para Pelo largo. Aporta brillo, suavidad y control Anti-Frizz. por 44,48€ (antes 69,50€, -36%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/41wUGMF-LJL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>H&amp;S Classic Champú Anticaspa, Todo Tipo de Pelo y Cuero Cabelludo, 2x1L | Con Dispensador, Hasta 100% de Prote — 19,90€</title>
-      <link>https://descontospt.pt/d/p9lj3n.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/p9lj3n.html</guid>
-      <pubDate>Mon, 07 Sep 2026 02:59:28 GMT</pubDate>
-      <description>H&amp;S Classic Champú Anticaspa, Todo Tipo de Pelo y Cuero Cabelludo, 2x1L | Con Dispensador, Hasta 100% de Protección contra la Caspa, Sensación de Frescor, Clínicamente Probado, Apto para Uso Diario por 19,90€ (antes 30,62€, -35%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/81INxcUQOVL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
