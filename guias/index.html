@@ -610,6 +610,16 @@
           </ul>
         </div>
         <div class="footer-col">
+          <h4>📩 Newsletter</h4>
+          <p style="font-size:13px;margin-bottom:8px;">As melhores ofertas da semana, direto ao email. Sem spam.</p>
+          <form id="newsletter-form" style="display:flex;gap:6px;flex-wrap:wrap;">
+            <input type="email" id="newsletter-email" required placeholder="o-teu-email@exemplo.com"
+              style="flex:1;min-width:140px;padding:8px 10px;border-radius:6px;border:1px solid var(--border,#444);background:var(--bg-alt,#1a1a1a);color:inherit;font-size:13px;">
+            <button type="submit" style="padding:8px 14px;border-radius:6px;border:none;background:var(--accent,#ff5722);color:#fff;font-size:13px;cursor:pointer;white-space:nowrap;">Subscrever</button>
+          </form>
+          <p id="newsletter-msg" style="font-size:12px;margin-top:6px;"></p>
+        </div>
+        <div class="footer-col">
           <h4>Contacto &amp; Legal</h4>
           <ul>
             <li><a href="mailto:contacto@descontospt.pt">✉️ contacto@descontospt.pt</a></li>
@@ -651,6 +661,31 @@
             };
           }
         } catch(e) {}
+      })();
+      (function(){
+        var form = document.getElementById('newsletter-form');
+        if (!form) return;
+        var msg = document.getElementById('newsletter-msg');
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var email = document.getElementById('newsletter-email').value.trim();
+          if (!email) return;
+          msg.style.color = 'var(--muted)';
+          msg.textContent = 'A subscrever...';
+          fetch('https://go.descontospt.pt/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, source: 'site-footer' }),
+          }).then(function(r){
+            if (!r.ok) throw new Error('falhou');
+            msg.style.color = '#4caf50';
+            msg.textContent = '✅ Subscrito! Já estás na lista.';
+            form.reset();
+          }).catch(function(){
+            msg.style.color = '#e53935';
+            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+          });
+        });
       })();
     </script>
   </div>

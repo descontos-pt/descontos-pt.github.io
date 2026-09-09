@@ -601,11 +601,11 @@
   <div class="recomenda-box">
     <div class="recomenda-tag">🏷️ Descontos PT Recomenda</div>
     <div class="recomenda-inner">
-      <a class="recomenda-img" href="../../d/1j6h9c0.html"><img loading="lazy" src="https://m.media-amazon.com/images/I/61aZ8wDhxzL._SL500_.jpg" alt="Oferta especial: NB Ergonomic Suporte monitor para ecrãs de 17 a 32 polegadas, a"></a>
+      <a class="recomenda-img" href="../../d/8fhm5u.html"><img loading="lazy" src="https://m.media-amazon.com/images/I/61Ec-Z+lkQL._SL500_.jpg" alt="ASICEN 3 em 1 carregamento de carregador retrátil [2 embalagem 1 m], carregament"></a>
       <div class="recomenda-info">
-        <a class="recomenda-title" href="../../d/1j6h9c0.html">Oferta especial: NB Ergonomic Suporte monitor para ecrãs de 17 a 32 polegadas, até 9 kg | Braço de monitor, montagem para monitor, braço de mola mecânico, painel de desmontagem rápida, VESA 75/100</a>
-        <div class="recomenda-prices"><span class="recomenda-new">25,64€</span><span class="recomenda-old">59,99€</span><span class="recomenda-disc">-57%</span></div>
-        <a class="recomenda-btn" href="https://www.amazon.es/dp/B0G523STF2?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta na loja →</a>
+        <a class="recomenda-title" href="../../d/8fhm5u.html">ASICEN 3 em 1 carregamento de carregador retrátil [2 embalagem 1 m], carregamento rápido cabo múltiplo</a>
+        <div class="recomenda-prices"><span class="recomenda-new">5,99€</span><span class="recomenda-old">13,99€</span><span class="recomenda-disc">-57%</span></div>
+        <a class="recomenda-btn" href="https://www.amazon.es/dp/B07TY3RS2D?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta na loja →</a>
       </div>
     </div>
   </div>
@@ -691,6 +691,16 @@
           </ul>
         </div>
         <div class="footer-col">
+          <h4>📩 Newsletter</h4>
+          <p style="font-size:13px;margin-bottom:8px;">As melhores ofertas da semana, direto ao email. Sem spam.</p>
+          <form id="newsletter-form" style="display:flex;gap:6px;flex-wrap:wrap;">
+            <input type="email" id="newsletter-email" required placeholder="o-teu-email@exemplo.com"
+              style="flex:1;min-width:140px;padding:8px 10px;border-radius:6px;border:1px solid var(--border,#444);background:var(--bg-alt,#1a1a1a);color:inherit;font-size:13px;">
+            <button type="submit" style="padding:8px 14px;border-radius:6px;border:none;background:var(--accent,#ff5722);color:#fff;font-size:13px;cursor:pointer;white-space:nowrap;">Subscrever</button>
+          </form>
+          <p id="newsletter-msg" style="font-size:12px;margin-top:6px;"></p>
+        </div>
+        <div class="footer-col">
           <h4>Contacto &amp; Legal</h4>
           <ul>
             <li><a href="mailto:contacto@descontospt.pt">✉️ contacto@descontospt.pt</a></li>
@@ -732,6 +742,31 @@
             };
           }
         } catch(e) {}
+      })();
+      (function(){
+        var form = document.getElementById('newsletter-form');
+        if (!form) return;
+        var msg = document.getElementById('newsletter-msg');
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var email = document.getElementById('newsletter-email').value.trim();
+          if (!email) return;
+          msg.style.color = 'var(--muted)';
+          msg.textContent = 'A subscrever...';
+          fetch('https://go.descontospt.pt/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, source: 'site-footer' }),
+          }).then(function(r){
+            if (!r.ok) throw new Error('falhou');
+            msg.style.color = '#4caf50';
+            msg.textContent = '✅ Subscrito! Já estás na lista.';
+            form.reset();
+          }).catch(function(){
+            msg.style.color = '#e53935';
+            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+          });
+        });
       })();
     </script>
   </div>
