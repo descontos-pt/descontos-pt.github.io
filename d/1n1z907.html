@@ -750,21 +750,21 @@
       <h2>📈 Histórico de preço</h2>
       <div class="chartwrap"><svg id="pchart" viewBox="0 0 640 220" width="100%" role="img" aria-label="Histórico de preço">
   <line x1="52" x2="626" y1="177.2" y2="177.2" stroke="var(--line)" stroke-width="1"/><text x="46" y="180.7" text-anchor="end" font-size="10.5" fill="var(--muted)">125,69€</text><line x1="52" x2="626" y1="103.0" y2="103.0" stroke="var(--line)" stroke-width="1"/><text x="46" y="106.5" text-anchor="end" font-size="10.5" fill="var(--muted)">129,34€</text><line x1="52" x2="626" y1="28.8" y2="28.8" stroke="var(--line)" stroke-width="1"/><text x="46" y="32.3" text-anchor="end" font-size="10.5" fill="var(--muted)">132,99€</text>
-  <path d="M52,28.8 L547.4,164 L573.1,177.2 L598.6,164 L626,177.2 L626,192 L52,192 Z" fill="var(--accent)" opacity="0.08"/>
-  <path d="M52,28.8 L547.4,164 L573.1,177.2 L598.6,164 L626,177.2" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="573.1" cy="177.2" r="3.5" fill="var(--green)"/><text x="573.1" y="188" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--green)">mín 125,69€</text>
+  <path d="M52,28.8 L524.3,164 L548.9,177.2 L573.2,164 L599.3,177.2 L626,164 L626,192 L52,192 Z" fill="var(--accent)" opacity="0.08"/>
+  <path d="M52,28.8 L524.3,164 L548.9,177.2 L573.2,164 L599.3,177.2 L626,164" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="548.9" cy="177.2" r="3.5" fill="var(--green)"/><text x="548.9" y="188" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--green)">mín 125,69€</text>
   <text x="52" y="212" font-size="10.5" fill="var(--muted)">21/08</text>
-  <text x="626" y="212" text-anchor="end" font-size="10.5" fill="var(--muted)">11/09</text>
+  <text x="626" y="212" text-anchor="end" font-size="10.5" fill="var(--muted)">12/09</text>
   <circle id="hovpt" r="4" fill="var(--accent2)" stroke="var(--card)" stroke-width="2" style="display:none"/>
 </svg><div id="ptip" class="ptip" style="display:none"></div></div>
       
     <div class="tiles">
       <div class="tile"><span class="tlbl">Mínimo visto</span><span class="tval" style="color:var(--green)">125,69€</span></div>
-      <div class="tile"><span class="tlbl">Preço médio</span><span class="tval">127,41€</span></div>
+      <div class="tile"><span class="tlbl">Preço médio</span><span class="tval">127,23€</span></div>
       <div class="tile"><span class="tlbl">Máximo visto</span><span class="tval">132,99€</span></div>
-      <div class="tile"><span class="tlbl">Observações</span><span class="tval">5× desde 21/08/2026</span></div>
+      <div class="tile"><span class="tlbl">Observações</span><span class="tval">6× desde 21/08/2026</span></div>
     </div>
-      <div class="verdict-wrap"><span class="verdict-lbl">🏷️ Veredicto Descontos PT</span><div class="verdict verdict-good">🟢 <strong>Excelente altura para comprar.</strong> É o <strong>menor preço</strong> que já registámos para este produto em 5 observações desde 21/08/2026.</div></div>
+      <div class="verdict-wrap"><span class="verdict-lbl">🏷️ Veredicto Descontos PT</span><div class="verdict verdict-good">🟢 <strong>Excelente altura para comprar.</strong> É o <strong>menor preço</strong> que já registámos para este produto em 6 observações desde 21/08/2026.</div></div>
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
@@ -990,7 +990,7 @@
   if(darkbtn)darkbtn.onclick=function(){setDark(!document.documentElement.classList.contains('dark'));};
 
   // Tooltip do gráfico: ponto mais próximo do cursor (coordenadas pré-calculadas no build)
-  var PTS=[{"x":52,"y":28.8,"t":1787299563000,"p":132.99},{"x":547.4,"y":164,"t":1788883098000,"p":126.34},{"x":573.1,"y":177.2,"t":1788965333000,"p":125.69},{"x":598.6,"y":164,"t":1789046774000,"p":126.34},{"x":626,"y":177.2,"t":1789134283000,"p":125.69}];
+  var PTS=[{"x":52,"y":28.8,"t":1787299563000,"p":132.99},{"x":524.3,"y":164,"t":1788883098000,"p":126.34},{"x":548.9,"y":177.2,"t":1788965333000,"p":125.69},{"x":573.2,"y":164,"t":1789046774000,"p":126.34},{"x":599.3,"y":177.2,"t":1789134283000,"p":125.69},{"x":626,"y":164,"t":1789223881000,"p":126.34}];
   var svg=document.getElementById('pchart'), tip=document.getElementById('ptip'), hov=document.getElementById('hovpt');
   function fmtE(v){return v.toFixed(2).replace('.',',')+'€';}
   svg.addEventListener('mousemove',function(e){
