@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transm por 538,00€ (-25%) | Descontos PT</title>
 <meta name="description" content="RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción musical y  em promoção por 538,00€ (antes 719,99€) — desconto de 25%, com histórico de preço."/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="noindex, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -506,199 +506,6 @@
   .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
   .news-card-more{color:var(--accent);font-weight:800;}
 
-  /* ═════════ NOVO ESTILO (set-2026): editorial, fundo claro, cabeçalho azul-escuro ═════════
-     Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
-  :root{
-    --bg:#ffffff; --card:#ffffff; --card-sub:#f1f4f8;
-    --accent:#c2410c; --accent2:#9a3412; --accent-light:rgba(194,65,12,.08);
-    --text:#0a1b33; --muted:#5b6b85; --line:#dde4ee; --imgbg:#ffffff;
-    --navy:#0a1b33; --navy2:#132a4a; --cta:#ff7a3d;
-    --shadow:0 1px 2px rgba(10,27,51,.05); --shadow-hover:0 6px 18px rgba(10,27,51,.10);
-  }
-  html.dark{
-    --bg:#0b1220; --card:#111c30; --card-sub:#16233b;
-    --accent:#ff7a3d; --accent2:#ff6a25; --accent-light:rgba(255,122,61,.14);
-    --text:#eef2f8; --muted:#9fb0c8; --line:#22324d; --imgbg:#ffffff;
-    --navy:#08111f; --navy2:#12203a; --cta:#ff7a3d;
-    --shadow:none; --shadow-hover:0 8px 22px rgba(0,0,0,.5);
-  }
-
-  /* Cabeçalho: faixa azul-escura fina (logótipo, menu, ações) */
-  header{
-    background:var(--navy);border:0;border-radius:6px;padding:0 24px;margin:0;box-shadow:none;text-align:left;
-    display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;column-gap:24px;min-height:64px;
-  }
-  html.dark header{background:var(--navy);}
-  header .header-topbar{display:contents;}
-  header .logo{grid-column:1;grid-row:1;font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-.5px;}
-  header .logo a{color:#ffffff;}
-  header .logo span{color:var(--cta);}
-  header .marca svg{color:var(--cta);}
-  header .tag{display:none;}
-  header .live-pill{display:none;}
-  header .header-collapsible{grid-column:2;grid-row:1;margin:0;padding:0;border:0;display:block;min-width:0;}
-  header .topnav{margin:0;justify-content:flex-start;flex-wrap:nowrap;gap:24px;overflow:hidden;}
-  header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:22px 0;font-size:14.5px;font-weight:500;color:#d5deea;white-space:nowrap;transform:none;}
-  header .topnav a:hover{background:transparent;color:#ffffff;box-shadow:none;transform:none;}
-  header .topnav a:nth-child(n+5){display:none;}
-  header .wa-channel-pill{grid-column:3;grid-row:1;background:transparent;border:1px solid #3a5075;box-shadow:none;color:#ffffff !important;font-size:12.5px;font-weight:600;padding:7px 14px;}
-  header .wa-channel-pill:hover{background:var(--navy2);box-shadow:none;transform:none;}
-  header .header-actions{grid-column:4;grid-row:1;}
-  header .darkbtn,header .menubtn{background:var(--navy2);border-color:var(--navy2);color:#ffffff;box-shadow:none;}
-  header .menubtn.active{background:var(--cta) !important;border-color:var(--cta) !important;color:#0a1b33 !important;}
-
-  @media(max-width:768px){
-    header{grid-template-columns:1fr auto;padding:10px 14px;column-gap:10px;row-gap:8px;min-height:0;}
-    header .logo{font-size:22px;grid-column:1;grid-row:1;}
-    header .header-actions{grid-column:2;grid-row:1;}
-    header .wa-channel-pill{grid-column:1 / -1;grid-row:2;justify-self:start;font-size:11.5px;padding:5px 12px;}
-    header .header-collapsible{grid-column:1 / -1;grid-row:3;}
-    header .topnav a{padding:10px 14px;color:#ffffff;background:var(--navy2);border-radius:6px;white-space:normal;}
-    header .topnav a:nth-child(n+5){display:block;}
-    .header-collapsible{border-top:1px solid #22385a !important;}
-  }
-
-  /* Largura: o site antigo ficava numa coluna estreita ao centro do ecrã (1200px), com
-     muito vazio dos lados em qualquer monitor mais largo. O Pplware/4gnews ocupam o ecrã
-     todo até um teto generoso — aqui fazemos o mesmo. */
-  .wrap{max-width:1560px;}
-
-  /* Faixa de confiança */
-  .trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;padding:10px 12px;background:var(--card-sub);border-radius:6px;margin:10px 0 0;font-size:13px;color:var(--muted);}
-  .trust-strip span{display:inline-flex;align-items:center;gap:7px;}
-  .trust-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;}
-
-  /* Pesquisa, ordenação e categorias — chips achatados (nada de "pílula" gigante) */
-  .toolbar{background:var(--bg);margin:14px 0 6px;}
-  .search{border-radius:8px;box-shadow:none;}
-  .sort{border-radius:8px;}
-  .chip{background:transparent;border:1px solid #c9d3e0;border-radius:7px;font-weight:600;font-size:13.5px;padding:8px 14px;box-shadow:none;}
-  html.dark .chip{border-color:#2b3d5c;}
-  .chip:hover{border-color:var(--text);transform:none;}
-  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg);box-shadow:none;}
-
-  /* ═══ Destaque: oferta do dia (tipografia grande, painel de imagem) + notícia (foto a
-     sangue total, como uma manchete de revista) — são dois géneros diferentes de propósito. ═══ */
-  .hero-dual-container{margin:24px 0 8px;}
-  @media(min-width:960px){.hero-dual-grid{grid-template-columns:1.5fr 1fr;}}
-  .hero-card{border-radius:10px;box-shadow:none;background:var(--card-sub);border:0;padding:0;overflow:hidden;min-height:400px;position:relative;}
-  .hero-card:hover{transform:none;box-shadow:none;}
-
-  /* Oferta do dia: painel de texto + painel de imagem, preço enorme */
-  .hero-deal-card{border:0;padding:30px 32px;}
-  .hero-deal-inner{display:flex;flex-direction:column-reverse;gap:20px;}
-  @media(min-width:540px){.hero-deal-inner{display:grid;grid-template-columns:1fr 230px;align-items:stretch;gap:28px;}}
-  .hero-img-wrap{background:#ffffff;border:1px solid var(--line);border-radius:8px;height:230px;padding:18px;}
-  html.dark .hero-img-wrap{background:#f4f6f9;}
-  .hero-deal-card .hero-info{justify-content:flex-end;}
-  .hero-cat{color:var(--accent);font-weight:800;}
-  /* Títulos da Amazon vêm às vezes com 30+ palavras (o "SEO" deles, não o nosso) — sem
-     limite de linhas, um título assim empurrava o preço e o botão para fora do ecrã. */
-  .hero-title{font-weight:800;font-size:32px;letter-spacing:-.9px;line-height:1.15;margin-bottom:16px;
-    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-  .hero-new-price{color:var(--text);font-size:52px;font-weight:800;letter-spacing:-1.6px;font-variant-numeric:tabular-nums;}
-  .hero-old-price{font-size:18px;}
-  .hero-savings-pill{border-radius:6px;font-size:13px;}
-  .hero-meta{font-size:12.5px;margin:10px 0 18px;}
-  .hero-actions{margin-top:0;}
-  .hero-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;font-size:14.5px;padding:15px 22px;}
-  html.dark .hero-btn{background:var(--cta);color:#0a1b33 !important;}
-  .hero-btn:hover,html.dark .hero-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .hero-share{border-radius:8px;background:transparent;}
-
-  /* Publicação em destaque: foto a preencher o cartão todo, texto sobreposto em baixo
-     (o "hero" de revista — é aqui que a foto real, e não uma imagem de produto, pode
-     preencher o quadro todo sem cortar nada de importante). */
-  .hero-article-card,html.dark .hero-article-card{background:#0a1b33;border:0;}
-  .hero-article-inner{display:block;position:absolute;inset:0;height:100%;gap:0;}
-  .hero-article-img{position:absolute;inset:0;height:100%;border-radius:0;}
-  .hero-article-img::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,14,28,.94) 0%,rgba(6,14,28,.55) 45%,rgba(6,14,28,.05) 75%);}
-  .hero-article-card .hero-info{position:absolute;left:0;right:0;bottom:0;padding:26px 28px;z-index:2;justify-content:flex-end;}
-  .hero-article-card .hero-cat{color:#9fd0ff;}
-  .hero-article-card .hero-title{color:#ffffff;font-size:24px;}
-  .hero-article-card .hero-title a{color:#ffffff;}
-  .hero-article-desc{color:rgba(255,255,255,.8);}
-  .hero-article-card .hero-meta{color:rgba(255,255,255,.65);}
-  .hero-btn-article,html.dark .hero-btn-article{background:#ffffff;color:#0a1b33 !important;border-radius:8px;font-weight:700;}
-  .hero-btn-article:hover{background:var(--cta);color:#ffffff !important;}
-  .hero-card-badge{border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 12px;}
-  .badge-deal{background:var(--navy);color:#ffffff;box-shadow:none;}
-  html.dark .badge-deal{background:var(--cta);color:#0a1b33;}
-  .badge-article{background:rgba(255,255,255,.16);color:#ffffff;backdrop-filter:blur(2px);}
-
-  /* Secções — título grande, traço fino (não a barra grossa de antes) */
-  .sectionh{font-size:30px;font-weight:800;letter-spacing:-.6px;border-bottom:1px solid var(--line);padding-bottom:14px;margin:44px 0 22px;}
-  .count{margin:0 2px 14px;}
-
-  /* Acabou de chegar (ao vivo) */
-  .rec-head{justify-content:flex-start;}
-  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0;}
-  html.dark .live-badge{color:var(--green);}
-  .rec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;}
-  .rec-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
-  .rec-item:hover .rec-title{color:var(--accent);}
-  .rec-img{width:84px;height:84px;flex:0 0 84px;background:#ffffff;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:8px;}
-  .rec-img img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
-  .rec-body{display:flex;flex-direction:column;gap:5px;min-width:0;}
-  .rec-time{font-size:12.5px;font-weight:600;color:var(--green-dark);}
-  html.dark .rec-time{color:var(--green);}
-  .rec-title{font-weight:600;font-size:15.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .rec-price{display:flex;align-items:center;gap:8px;}
-  .rec-price b{font-size:18px;font-weight:800;}
-  .rec-disc{font-style:normal;background:#c2410c;color:#ffffff;border-radius:4px;font-size:12px;font-weight:700;padding:2px 7px;}
-  @media(max-width:960px){.rec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}}
-  @media(max-width:600px){.rec-grid{grid-template-columns:1fr;} .sectionh{font-size:21px;margin:28px 0 14px;}}
-
-  /* Cartões de oferta — sem caixa nem sombra: a foto assenta numa mancha neutra suave, o
-     resto é texto direto na página (o "peso" fica no preço e no título, não em molduras). */
-  .grid{gap:28px 22px;}
-  .card{border-radius:0;box-shadow:none;border:0;background:transparent;}
-  .card:hover,html.dark .card:hover{transform:none;box-shadow:none;border-color:transparent;}
-  .card:hover .imgwrap{border-color:var(--text);}
-  .card a.imglink,.imgwrap{border-radius:10px;}
-  .imgwrap{background:var(--card-sub);border:1px solid var(--line);transition:border-color .15s;}
-  html.dark .imgwrap{background:#141f36;}
-  .disc{border-radius:6px;font-weight:700;font-size:12.5px;box-shadow:none;}
-  .disc-hot,.disc-med{background:#c2410c;box-shadow:none;}
-  .disc-fair{background:#b45309;box-shadow:none;}
-  .disc-low{background:#0b5cad;box-shadow:none;}
-  .topbadge{border-radius:6px;background:#166534;box-shadow:none;}
-  .store{border-radius:6px;}
-  .body{padding:14px 2px 2px;}
-  .cat{font-size:11px;}
-  .title{font-weight:700;font-size:15px;}
-  .new{color:var(--text);font-weight:800;font-size:26px;letter-spacing:-.5px;font-variant-numeric:tabular-nums;}
-  .savings{border-radius:6px;}
-  .btn,.mais-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;}
-  html.dark .btn,html.dark .mais-btn{background:var(--cta);color:#0a1b33 !important;}
-  .btn:hover,.mais-btn:hover,html.dark .btn:hover,html.dark .mais-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .sharebtn{border-radius:8px;}
-
-  /* Parceiros (publicidade de afiliados) */
-  .partners{margin:44px 0 8px;}
-  .partners-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
-  .partners-row a{display:block;max-width:100%;border-radius:4px;overflow:hidden;}
-  .partners-row img{display:block;max-width:100%;height:auto;}
-  .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
-  .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--muted);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
-
-  /* Rodapé azul-escuro */
-  footer{background:var(--navy);border:0;border-radius:6px;box-shadow:none;color:#c4d0e0;}
-  footer .footer-col h4{color:#ffffff;}
-  footer .footer-col p,footer .footer-col li{color:#c4d0e0;}
-  footer .footer-col a{color:#c4d0e0;}
-  footer .footer-col a:hover{color:var(--cta);}
-  footer .footer-bottom{border-color:#1d3558;color:#9fb0c8;}
-
-  /* Blocos editoriais e banners de evento: mesma linguagem (planos, cantos discretos) */
-  .event-banner,html.dark .event-banner{border-radius:6px;background:var(--card-sub);border:0;box-shadow:none;}
-  .event-banner::before{display:none;}
-  .event-badge{border-radius:14px;background:var(--navy);letter-spacing:.6px;font-weight:600;}
-  html.dark .event-badge{background:var(--cta);color:#0a1b33;}
-  .event-btn{background:var(--navy);box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .event-btn{background:var(--cta);color:#0a1b33 !important;}
-  .event-btn:hover,html.dark .event-btn:hover{background:var(--accent);color:#ffffff !important;transform:none;box-shadow:none;}
-
   .bread{margin:14px 2px 10px;font-size:13.5px;font-weight:700;}
   .bread a{color:var(--accent);text-decoration:none;}
   .product{display:grid;grid-template-columns:1fr;gap:16px;margin-top:6px;}
@@ -831,7 +638,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · 💻 Tecnologia</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 🛍️ Outras Ofertas</div>
 
     <div class="product">
       <div class="pimg">
@@ -840,7 +647,7 @@
         <img src="https://m.media-amazon.com/images/I/61qYu09ww9L._SL500_.jpg" alt="RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción ">
       </div>
       <div class="pinfo">
-        <span class="cat">💻 Tecnologia</span>
+        <span class="cat">🛍️ Outras Ofertas</span>
         <h1>RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción musical y creación de contenido (Negro)</h1>
         <div class="bigprices">
           <span class="bignew">538,00€</span>
@@ -860,10 +667,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 RØDECaster Pro II – Estação de gravação tudo‑em‑um para podcasts e streaming</h3>
-          <p class="article-lead-p">O RØDECaster Pro II é a solução completa da RØDE para criar podcasts, transmissões ao vivo e produções musicais. Chega com tudo o que precisas – microfones, mix, efeitos e gravação multitrack – num único equipamento compacto.</p>
-          <p class="article-body-p">Ao ligar‑te, encontrarás um ecrã tátil intuitivo que permite ajustar volumes, aplicar sons de efeito e mudar entre pistas com apenas alguns toques. A qualidade de som é limpa e profissional, graças aos pré‑amplificadores de baixa ruído e ao conversor AD/DA de alta resolução.</p>
-          <p class="article-body-p">A caixa robusta é feita em alumínio escovado, com acabamento preto mate que confere durabilidade e um aspeto elegante. Inclui oito entradas XLR com phantom power, controlos de ganho individuais e saídas de auriculares com amplificação dedicada.</p>
+          <h3 class="article-subtitle">📰 RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción musical y creación de contenido (Negro)</h3>
+          <p class="article-lead-p">A <strong>Descontos PT</strong> é a marca deste artigo, na categoria Outras Ofertas. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
+          <p class="article-body-p"></p>
+          <p class="article-body-p"></p>
         </div>
         
         <div class="specs-box">
@@ -871,24 +678,16 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Entradas XLR</span>
-        <span class="spec-v">8 (com phantom power)</span>
+        <span class="spec-k">Marca</span>
+        <span class="spec-v">Descontos PT</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Saídas de auriculares</span>
-        <span class="spec-v">2 (amplificadas)</span>
+        <span class="spec-k">Categoria</span>
+        <span class="spec-v">Outras Ofertas</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Interface</span>
-        <span class="spec-v">USB‑C 3.1 (até 24 bit/48 kHz)</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Ecrã</span>
-        <span class="spec-v">Touchscreen de 5,5 polegadas</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Dimensões</span>
-        <span class="spec-v">340 mm × 210 mm × 90 mm</span>
+        <span class="spec-k">Loja</span>
+        <span class="spec-v">Amazon</span>
       </div>
           </div>
         </div>
@@ -897,11 +696,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Ideal para criadores de conteúdo que produzem podcasts, streams ou música e querem um equipamento tudo‑em‑um de nível profissional.</p>
+            <p>Quem procura este tipo de produto — Outras Ofertas — ao melhor preço.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem procura apenas um simples microfone de mão pode achar o RØDECaster Pro II demasiado complexo e caro.</p>
+            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
           </div>
         </div>
 
@@ -910,16 +709,13 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Interface tátil fácil de usar</li>
-              <li>Oito entradas XLR com phantom power</li>
-              <li>Gravação multitrack direta para computador</li>
+              <li>Desconto de 25% face ao preço de referência</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Peso relativamente elevado para transportar</li>
-              <li>Requer alimentação via adaptador externo (não funciona só por USB)</li>
+              <li>Ficha detalhada ainda não disponível para este produto</li>
             </ul>
           </div>
         </div>
@@ -953,30 +749,52 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Tecnologia</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./1y196gr.html"><div class="imgwrap">
-    <span class="disc disc-med">-45%</span>
+    <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./688r9m.html"><div class="imgwrap">
+    <span class="disc disc-med">-57%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61-UeUdm67L._SL500_.jpg" alt="SanDisk 2 TB Ultra 3D SSD, SATA 2,5&quot;, com até 560 MB/s, SATA III 6GB/s"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71hqsS0SFOL._SL500_.jpg" alt="FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multicolor | 100% alg"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1y196gr.html"><div class="title">SanDisk 2 TB Ultra 3D SSD, SATA 2,5&quot;, com até 560 MB/s, SATA III 6GB/s</div></a>
+    <a class="titlelink" href="./688r9m.html"><div class="title">FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multicolor | 100% algodón suave y transpirable. Ajuste cómodo, sin etiquetas, soporte firme y diseño ergonómico 3D sin presión.</div></a>
     <div class="prices">
-      <span class="new">324,51€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">593,99€</span></span>
+      <span class="new">19,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">45,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 269,48€ (-45%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0BZMLG2CJ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./15sa296.html"><div class="imgwrap">
-    <span class="disc disc-fair">-22%</span>
+    <div class="savings">💸 Poupas 26,00€ (-57%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0FC6H1THV?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./p7mt26.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/515-UEjtu1L._SL500_.jpg" alt="WD My Passport 1TB SSD Externo Portátil, Disco duro externo SSD con velodidad de"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51L7zzoMSFL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up"></div></a>
     <div class="body">
-    <a class="titlelink" href="./15sa296.html"><div class="title">WD My Passport 1TB SSD Externo Portátil, Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s 1000 MB/s de escritura, Funciona con PC, Xbox y Playstation, Rojo</div></a>
+    <a class="titlelink" href="./p7mt26.html"><div class="title">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up to 10H Playtime, Hands-Free Calling, Music Playback, Voice Control, Blue Light Blocking Lens, Unisex for Daily &amp; Outdoor</div></a>
     <div class="prices">
-      <span class="new">210,38€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">270,99€</span></span>
+      <span class="new">29,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">78,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 60,61€ (-22%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B08F27J5SQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./18s879s.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 49,00€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BZ3J167G?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./q2fekm.html"><div class="imgwrap">
+    <span class="disc disc-med">-56%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71Mb+-9+bkL._SL500_.jpg" alt="Replay Jeans para Mujer"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./q2fekm.html"><div class="title">Replay Jeans para Mujer</div></a>
+    <div class="prices">
+      <span class="new">52,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">119,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 66,05€ (-56%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CNRQHNPL?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uw7jv7.html"><div class="imgwrap">
+    <span class="disc disc-med">-58%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61VK87e76DL._SL500_.jpg" alt="Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1uw7jv7.html"><div class="title">Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio</div></a>
+    <div class="prices">
+      <span class="new">65,45€</span>
+      
+    </div>
+    
+    <a class="btn" href="https://www.amazon.es/dp/B09ZBCMSD7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./18s879s.html"><div class="imgwrap">
     <span class="disc disc-fair">-36%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/81Dl7v7-5sL._SL500_.jpg" alt="Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo De"></div></a>
@@ -987,51 +805,18 @@
       <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">179,95€</span></span>
     </div>
     <div class="savings">💸 Poupas 65,00€ (-36%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0GCMNN2ZQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./4orl5f.html"><div class="imgwrap">
-    <span class="disc disc-fair">-22%</span>
+    <a class="btn" href="https://www.amazon.es/dp/B0GCMNN2ZQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./j35nno.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71pGbe01SQL._SL500_.jpg" alt="Apple AirPods MAX Auriculares sem fios de diadema com cancelamento ativo de ruíd"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51MSWODuufL._SL500_.jpg" alt="SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS"></div></a>
     <div class="body">
-    <a class="titlelink" href="./4orl5f.html"><div class="title">Apple AirPods MAX Auriculares sem fios de diadema com cancelamento ativo de ruído de nível profissional, modo de som ambiental, áudio espacial personalizado, carregamento por USB C, meia-noite</div></a>
+    <a class="titlelink" href="./j35nno.html"><div class="title">SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS</div></a>
     <div class="prices">
-      <span class="new">449,00€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">579,00€</span></span>
+      <span class="new">57,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">152,61€</span></span>
     </div>
-    <div class="savings">💸 Poupas 130,00€ (-22%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DGHXBDQQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uuh388.html"><div class="imgwrap">
-    <span class="disc disc-med">-46%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71hOCf2EtqL._SL500_.jpg" alt="U11 Tablet de 11 polegadas, 16 GB RAM+128 GB ROM/2TB TF Tablet, bateria 8580 mAh"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1uuh388.html"><div class="title">U11 Tablet de 11 polegadas, 16 GB RAM+128 GB ROM/2TB TF Tablet, bateria 8580 mAh, Octa-Core Unisoc T7200, HD 90Hz Tablets Android 16, Widevine L1/Gemini AI/13MP+5MP/Wi-Fi 5 G/Face ID/GPS/OTG/áudio 3,5</div></a>
-    <div class="prices">
-      <span class="new">239,99€</span>
-      
-    </div>
-    
-    <a class="btn" href="https://www.amazon.es/dp/B0GTM57GZC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1boy7gj.html"><div class="imgwrap">
-    <span class="disc disc-fair">-34%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71WOfGLeJeL._SL500_.jpg" alt="EVE Outdoor CAM Lote de 2 – câmara segura com foco, máxima segurança e privacida"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1boy7gj.html"><div class="title">EVE Outdoor CAM Lote de 2 – câmara segura com foco, máxima segurança e privacidade (HomeKit Secure Video), 1080p, visão noturna, Wi-Fi (2,4 GHz), sensor de movimento, comunicação bidirecional</div></a>
-    <div class="prices">
-      <span class="new">329,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">499,90€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 169,91€ (-34%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0H6WR7GH6?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1kj14y8.html"><div class="imgwrap">
-    <span class="disc disc-med">-40%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61ynvTD+CuL._SL500_.jpg" alt="UGREEN Revodok MAX Thunderbolt 5 Docking Station USB C Pantalla Triple | 13 en 1"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1kj14y8.html"><div class="title">UGREEN Revodok MAX Thunderbolt 5 Docking Station USB C Pantalla Triple | 13 en 1, 3 TBT5, Triple 4K60Hz, Doble 6K60Hz, 120Gbps, 4A1C, RJ45 2.5GbE, SD TF 4.0, 140W Max Carga, DC 180 W, Audio 3.5mm</div></a>
-    <div class="prices">
-      <span class="new">257,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">429,99€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 172,00€ (-40%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0G5Z4C8HC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ht2kw0.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 94,62€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B07Z512R8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ht2kw0.html"><div class="imgwrap">
     <span class="disc disc-hot">-78%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61CvD6tYNCL._SL500_.jpg" alt="McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon"></div></a>
@@ -1042,7 +827,18 @@
       <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">99,95€</span></span>
     </div>
     <div class="savings">💸 Poupas 78,46€ (-78%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0BGPLKTVF?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BGPLKTVF?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1tf48i2.html"><div class="imgwrap">
+    <span class="disc disc-fair">-37%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61D7cBLbK7L._SL500_.jpg" alt="Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca, Baño de rodio "></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1tf48i2.html"><div class="title">Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca, Baño de rodio : Swarovski</div></a>
+    <div class="prices">
+      <span class="new">112,90€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">179,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 66,10€ (-37%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B00P9L2NVO?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>

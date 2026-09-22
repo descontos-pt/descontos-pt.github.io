@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Olivia Garden Expert Blowout Shine White &amp; Grey por 11,29€ (-47%) | Descontos PT</title>
 <meta name="description" content="Olivia Garden Expert Blowout Shine White &amp; Grey em promoção por 11,29€ — desconto de 47%, com histórico de preço."/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="noindex, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -506,199 +506,6 @@
   .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
   .news-card-more{color:var(--accent);font-weight:800;}
 
-  /* ═════════ NOVO ESTILO (set-2026): editorial, fundo claro, cabeçalho azul-escuro ═════════
-     Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
-  :root{
-    --bg:#ffffff; --card:#ffffff; --card-sub:#f1f4f8;
-    --accent:#c2410c; --accent2:#9a3412; --accent-light:rgba(194,65,12,.08);
-    --text:#0a1b33; --muted:#5b6b85; --line:#dde4ee; --imgbg:#ffffff;
-    --navy:#0a1b33; --navy2:#132a4a; --cta:#ff7a3d;
-    --shadow:0 1px 2px rgba(10,27,51,.05); --shadow-hover:0 6px 18px rgba(10,27,51,.10);
-  }
-  html.dark{
-    --bg:#0b1220; --card:#111c30; --card-sub:#16233b;
-    --accent:#ff7a3d; --accent2:#ff6a25; --accent-light:rgba(255,122,61,.14);
-    --text:#eef2f8; --muted:#9fb0c8; --line:#22324d; --imgbg:#ffffff;
-    --navy:#08111f; --navy2:#12203a; --cta:#ff7a3d;
-    --shadow:none; --shadow-hover:0 8px 22px rgba(0,0,0,.5);
-  }
-
-  /* Cabeçalho: faixa azul-escura fina (logótipo, menu, ações) */
-  header{
-    background:var(--navy);border:0;border-radius:6px;padding:0 24px;margin:0;box-shadow:none;text-align:left;
-    display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;column-gap:24px;min-height:64px;
-  }
-  html.dark header{background:var(--navy);}
-  header .header-topbar{display:contents;}
-  header .logo{grid-column:1;grid-row:1;font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-.5px;}
-  header .logo a{color:#ffffff;}
-  header .logo span{color:var(--cta);}
-  header .marca svg{color:var(--cta);}
-  header .tag{display:none;}
-  header .live-pill{display:none;}
-  header .header-collapsible{grid-column:2;grid-row:1;margin:0;padding:0;border:0;display:block;min-width:0;}
-  header .topnav{margin:0;justify-content:flex-start;flex-wrap:nowrap;gap:24px;overflow:hidden;}
-  header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:22px 0;font-size:14.5px;font-weight:500;color:#d5deea;white-space:nowrap;transform:none;}
-  header .topnav a:hover{background:transparent;color:#ffffff;box-shadow:none;transform:none;}
-  header .topnav a:nth-child(n+5){display:none;}
-  header .wa-channel-pill{grid-column:3;grid-row:1;background:transparent;border:1px solid #3a5075;box-shadow:none;color:#ffffff !important;font-size:12.5px;font-weight:600;padding:7px 14px;}
-  header .wa-channel-pill:hover{background:var(--navy2);box-shadow:none;transform:none;}
-  header .header-actions{grid-column:4;grid-row:1;}
-  header .darkbtn,header .menubtn{background:var(--navy2);border-color:var(--navy2);color:#ffffff;box-shadow:none;}
-  header .menubtn.active{background:var(--cta) !important;border-color:var(--cta) !important;color:#0a1b33 !important;}
-
-  @media(max-width:768px){
-    header{grid-template-columns:1fr auto;padding:10px 14px;column-gap:10px;row-gap:8px;min-height:0;}
-    header .logo{font-size:22px;grid-column:1;grid-row:1;}
-    header .header-actions{grid-column:2;grid-row:1;}
-    header .wa-channel-pill{grid-column:1 / -1;grid-row:2;justify-self:start;font-size:11.5px;padding:5px 12px;}
-    header .header-collapsible{grid-column:1 / -1;grid-row:3;}
-    header .topnav a{padding:10px 14px;color:#ffffff;background:var(--navy2);border-radius:6px;white-space:normal;}
-    header .topnav a:nth-child(n+5){display:block;}
-    .header-collapsible{border-top:1px solid #22385a !important;}
-  }
-
-  /* Largura: o site antigo ficava numa coluna estreita ao centro do ecrã (1200px), com
-     muito vazio dos lados em qualquer monitor mais largo. O Pplware/4gnews ocupam o ecrã
-     todo até um teto generoso — aqui fazemos o mesmo. */
-  .wrap{max-width:1560px;}
-
-  /* Faixa de confiança */
-  .trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;padding:10px 12px;background:var(--card-sub);border-radius:6px;margin:10px 0 0;font-size:13px;color:var(--muted);}
-  .trust-strip span{display:inline-flex;align-items:center;gap:7px;}
-  .trust-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;}
-
-  /* Pesquisa, ordenação e categorias — chips achatados (nada de "pílula" gigante) */
-  .toolbar{background:var(--bg);margin:14px 0 6px;}
-  .search{border-radius:8px;box-shadow:none;}
-  .sort{border-radius:8px;}
-  .chip{background:transparent;border:1px solid #c9d3e0;border-radius:7px;font-weight:600;font-size:13.5px;padding:8px 14px;box-shadow:none;}
-  html.dark .chip{border-color:#2b3d5c;}
-  .chip:hover{border-color:var(--text);transform:none;}
-  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg);box-shadow:none;}
-
-  /* ═══ Destaque: oferta do dia (tipografia grande, painel de imagem) + notícia (foto a
-     sangue total, como uma manchete de revista) — são dois géneros diferentes de propósito. ═══ */
-  .hero-dual-container{margin:24px 0 8px;}
-  @media(min-width:960px){.hero-dual-grid{grid-template-columns:1.5fr 1fr;}}
-  .hero-card{border-radius:10px;box-shadow:none;background:var(--card-sub);border:0;padding:0;overflow:hidden;min-height:400px;position:relative;}
-  .hero-card:hover{transform:none;box-shadow:none;}
-
-  /* Oferta do dia: painel de texto + painel de imagem, preço enorme */
-  .hero-deal-card{border:0;padding:30px 32px;}
-  .hero-deal-inner{display:flex;flex-direction:column-reverse;gap:20px;}
-  @media(min-width:540px){.hero-deal-inner{display:grid;grid-template-columns:1fr 230px;align-items:stretch;gap:28px;}}
-  .hero-img-wrap{background:#ffffff;border:1px solid var(--line);border-radius:8px;height:230px;padding:18px;}
-  html.dark .hero-img-wrap{background:#f4f6f9;}
-  .hero-deal-card .hero-info{justify-content:flex-end;}
-  .hero-cat{color:var(--accent);font-weight:800;}
-  /* Títulos da Amazon vêm às vezes com 30+ palavras (o "SEO" deles, não o nosso) — sem
-     limite de linhas, um título assim empurrava o preço e o botão para fora do ecrã. */
-  .hero-title{font-weight:800;font-size:32px;letter-spacing:-.9px;line-height:1.15;margin-bottom:16px;
-    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-  .hero-new-price{color:var(--text);font-size:52px;font-weight:800;letter-spacing:-1.6px;font-variant-numeric:tabular-nums;}
-  .hero-old-price{font-size:18px;}
-  .hero-savings-pill{border-radius:6px;font-size:13px;}
-  .hero-meta{font-size:12.5px;margin:10px 0 18px;}
-  .hero-actions{margin-top:0;}
-  .hero-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;font-size:14.5px;padding:15px 22px;}
-  html.dark .hero-btn{background:var(--cta);color:#0a1b33 !important;}
-  .hero-btn:hover,html.dark .hero-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .hero-share{border-radius:8px;background:transparent;}
-
-  /* Publicação em destaque: foto a preencher o cartão todo, texto sobreposto em baixo
-     (o "hero" de revista — é aqui que a foto real, e não uma imagem de produto, pode
-     preencher o quadro todo sem cortar nada de importante). */
-  .hero-article-card,html.dark .hero-article-card{background:#0a1b33;border:0;}
-  .hero-article-inner{display:block;position:absolute;inset:0;height:100%;gap:0;}
-  .hero-article-img{position:absolute;inset:0;height:100%;border-radius:0;}
-  .hero-article-img::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,14,28,.94) 0%,rgba(6,14,28,.55) 45%,rgba(6,14,28,.05) 75%);}
-  .hero-article-card .hero-info{position:absolute;left:0;right:0;bottom:0;padding:26px 28px;z-index:2;justify-content:flex-end;}
-  .hero-article-card .hero-cat{color:#9fd0ff;}
-  .hero-article-card .hero-title{color:#ffffff;font-size:24px;}
-  .hero-article-card .hero-title a{color:#ffffff;}
-  .hero-article-desc{color:rgba(255,255,255,.8);}
-  .hero-article-card .hero-meta{color:rgba(255,255,255,.65);}
-  .hero-btn-article,html.dark .hero-btn-article{background:#ffffff;color:#0a1b33 !important;border-radius:8px;font-weight:700;}
-  .hero-btn-article:hover{background:var(--cta);color:#ffffff !important;}
-  .hero-card-badge{border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 12px;}
-  .badge-deal{background:var(--navy);color:#ffffff;box-shadow:none;}
-  html.dark .badge-deal{background:var(--cta);color:#0a1b33;}
-  .badge-article{background:rgba(255,255,255,.16);color:#ffffff;backdrop-filter:blur(2px);}
-
-  /* Secções — título grande, traço fino (não a barra grossa de antes) */
-  .sectionh{font-size:30px;font-weight:800;letter-spacing:-.6px;border-bottom:1px solid var(--line);padding-bottom:14px;margin:44px 0 22px;}
-  .count{margin:0 2px 14px;}
-
-  /* Acabou de chegar (ao vivo) */
-  .rec-head{justify-content:flex-start;}
-  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0;}
-  html.dark .live-badge{color:var(--green);}
-  .rec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;}
-  .rec-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
-  .rec-item:hover .rec-title{color:var(--accent);}
-  .rec-img{width:84px;height:84px;flex:0 0 84px;background:#ffffff;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:8px;}
-  .rec-img img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
-  .rec-body{display:flex;flex-direction:column;gap:5px;min-width:0;}
-  .rec-time{font-size:12.5px;font-weight:600;color:var(--green-dark);}
-  html.dark .rec-time{color:var(--green);}
-  .rec-title{font-weight:600;font-size:15.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .rec-price{display:flex;align-items:center;gap:8px;}
-  .rec-price b{font-size:18px;font-weight:800;}
-  .rec-disc{font-style:normal;background:#c2410c;color:#ffffff;border-radius:4px;font-size:12px;font-weight:700;padding:2px 7px;}
-  @media(max-width:960px){.rec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}}
-  @media(max-width:600px){.rec-grid{grid-template-columns:1fr;} .sectionh{font-size:21px;margin:28px 0 14px;}}
-
-  /* Cartões de oferta — sem caixa nem sombra: a foto assenta numa mancha neutra suave, o
-     resto é texto direto na página (o "peso" fica no preço e no título, não em molduras). */
-  .grid{gap:28px 22px;}
-  .card{border-radius:0;box-shadow:none;border:0;background:transparent;}
-  .card:hover,html.dark .card:hover{transform:none;box-shadow:none;border-color:transparent;}
-  .card:hover .imgwrap{border-color:var(--text);}
-  .card a.imglink,.imgwrap{border-radius:10px;}
-  .imgwrap{background:var(--card-sub);border:1px solid var(--line);transition:border-color .15s;}
-  html.dark .imgwrap{background:#141f36;}
-  .disc{border-radius:6px;font-weight:700;font-size:12.5px;box-shadow:none;}
-  .disc-hot,.disc-med{background:#c2410c;box-shadow:none;}
-  .disc-fair{background:#b45309;box-shadow:none;}
-  .disc-low{background:#0b5cad;box-shadow:none;}
-  .topbadge{border-radius:6px;background:#166534;box-shadow:none;}
-  .store{border-radius:6px;}
-  .body{padding:14px 2px 2px;}
-  .cat{font-size:11px;}
-  .title{font-weight:700;font-size:15px;}
-  .new{color:var(--text);font-weight:800;font-size:26px;letter-spacing:-.5px;font-variant-numeric:tabular-nums;}
-  .savings{border-radius:6px;}
-  .btn,.mais-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;}
-  html.dark .btn,html.dark .mais-btn{background:var(--cta);color:#0a1b33 !important;}
-  .btn:hover,.mais-btn:hover,html.dark .btn:hover,html.dark .mais-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .sharebtn{border-radius:8px;}
-
-  /* Parceiros (publicidade de afiliados) */
-  .partners{margin:44px 0 8px;}
-  .partners-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
-  .partners-row a{display:block;max-width:100%;border-radius:4px;overflow:hidden;}
-  .partners-row img{display:block;max-width:100%;height:auto;}
-  .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
-  .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--muted);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
-
-  /* Rodapé azul-escuro */
-  footer{background:var(--navy);border:0;border-radius:6px;box-shadow:none;color:#c4d0e0;}
-  footer .footer-col h4{color:#ffffff;}
-  footer .footer-col p,footer .footer-col li{color:#c4d0e0;}
-  footer .footer-col a{color:#c4d0e0;}
-  footer .footer-col a:hover{color:var(--cta);}
-  footer .footer-bottom{border-color:#1d3558;color:#9fb0c8;}
-
-  /* Blocos editoriais e banners de evento: mesma linguagem (planos, cantos discretos) */
-  .event-banner,html.dark .event-banner{border-radius:6px;background:var(--card-sub);border:0;box-shadow:none;}
-  .event-banner::before{display:none;}
-  .event-badge{border-radius:14px;background:var(--navy);letter-spacing:.6px;font-weight:600;}
-  html.dark .event-badge{background:var(--cta);color:#0a1b33;}
-  .event-btn{background:var(--navy);box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .event-btn{background:var(--cta);color:#0a1b33 !important;}
-  .event-btn:hover,html.dark .event-btn:hover{background:var(--accent);color:#ffffff !important;transform:none;box-shadow:none;}
-
   .bread{margin:14px 2px 10px;font-size:13.5px;font-weight:700;}
   .bread a{color:var(--accent);text-decoration:none;}
   .product{display:grid;grid-template-columns:1fr;gap:16px;margin-top:6px;}
@@ -831,7 +638,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · 💄 Beleza</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 🛍️ Outras Ofertas</div>
 
     <div class="product">
       <div class="pimg">
@@ -840,7 +647,7 @@
         <img src="https://m.media-amazon.com/images/I/61--0J4noXL._SL500_.jpg" alt="Olivia Garden Expert Blowout Shine White &amp; Grey">
       </div>
       <div class="pinfo">
-        <span class="cat">💄 Beleza</span>
+        <span class="cat">🛍️ Outras Ofertas</span>
         <h1>Olivia Garden Expert Blowout Shine White &amp; Grey</h1>
         <div class="bigprices">
           <span class="bignew">11,29€</span>
@@ -860,10 +667,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Escova de Secar e Modelar Olivia Garden Expert Blowout Shine – Branca e Cinzenta</h3>
-          <p class="article-lead-p">A Olivia Garden Expert Blowout Shine combina a potência de um secador profissional com a praticidade de uma escova rotativa, permitindo criar cabelos lisos ou com volume em poucos minutos. Disponível nas cores branca e cinzenta, este aparelho destina‑se a quem quer resultados de salão sem sair de casa.</p>
-          <p class="article-body-p">Ao usar a Expert Blowout Shine, sente‑se o fluxo de ar quente e constante enquanto as cerdas giram suavemente, facilitando o alisamento ou a modelação sem puxar o cabelo. O controlo de temperatura permite ajustar o calor ao teu tipo de cabelo, reduzindo o risco de danos.</p>
-          <p class="article-body-p">A escova tem um motor de alta velocidade com potência em torno de 1800 W, cerdas de nylon anti‑estática e um revestimento em plástico ABS resistente. Inclui duas velocidades de ar e três níveis de calor, além de um botão de “cool shot” para fixar o penteado.</p>
+          <h3 class="article-subtitle">📰 Olivia Garden Expert Blowout Shine White & Grey</h3>
+          <p class="article-lead-p">A <strong>Olivia</strong> é a marca deste artigo, na categoria Outras Ofertas. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
+          <p class="article-body-p"></p>
+          <p class="article-body-p"></p>
         </div>
         
         <div class="specs-box">
@@ -871,24 +678,16 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Potência</span>
-        <span class="spec-v">1800 W</span>
+        <span class="spec-k">Marca</span>
+        <span class="spec-v">Olivia</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Cores disponíveis</span>
-        <span class="spec-v">Branco e Cinzento</span>
+        <span class="spec-k">Categoria</span>
+        <span class="spec-v">Outras Ofertas</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Velocidades de ar</span>
-        <span class="spec-v">2</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Níveis de calor</span>
-        <span class="spec-v">3</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Botão “cool shot”</span>
-        <span class="spec-v">Sim</span>
+        <span class="spec-k">Loja</span>
+        <span class="spec-v">Amazon</span>
       </div>
           </div>
         </div>
@@ -897,11 +696,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Ideal para quem deseja secar e modelar o cabelo rapidamente, obtendo um acabamento liso ou com volume de forma prática.</p>
+            <p>Quem procura este tipo de produto — Outras Ofertas — ao melhor preço.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem tem cabelo extremamente fino ou muito danificado pode preferir um secador com opções de calor mais suaves.</p>
+            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
           </div>
         </div>
 
@@ -910,16 +709,13 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Secagem rápida graças ao motor de 1800 W</li>
-              <li>Cerdas anti‑estáticas que evitam embaraçar o cabelo</li>
-              <li>Botão “cool shot” para fixar o penteado por mais tempo</li>
+              
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Pode ser um pouco pesada para mãos pequenas</li>
-              <li>O ruído do motor é mais alto que o de um secador tradicional</li>
+              <li>Ficha detalhada ainda não disponível para este produto</li>
             </ul>
           </div>
         </div>
@@ -953,96 +749,96 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Beleza</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./1quhjoq.html"><div class="imgwrap">
-    <span class="disc disc-hot">-61%</span>
+    <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./688r9m.html"><div class="imgwrap">
+    <span class="disc disc-med">-57%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71r-yhKFC0L._SL500_.jpg" alt="Neutrogena Collagen Bank Crema hidratante facial SPF30 (1 x 50 ml), crema solar "></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71hqsS0SFOL._SL500_.jpg" alt="FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multicolor | 100% alg"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1quhjoq.html"><div class="title">Neutrogena Collagen Bank Crema hidratante facial SPF30 (1 x 50 ml), crema solar anti-edad que preserva el colágeno, para una piel más tersa, apta para rostro y cuello</div></a>
+    <a class="titlelink" href="./688r9m.html"><div class="title">FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multicolor | 100% algodón suave y transpirable. Ajuste cómodo, sin etiquetas, soporte firme y diseño ergonómico 3D sin presión.</div></a>
     <div class="prices">
-      <span class="new">13,08€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">33,90€</span></span>
+      <span class="new">19,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">45,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 20,82€ (-61%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0FPR5S2VR?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./oofecv.html"><div class="imgwrap">
-    <span class="disc disc-med">-43%</span>
+    <div class="savings">💸 Poupas 26,00€ (-57%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0FC6H1THV?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./p7mt26.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/81-I7Plx8sL._SL500_.jpg" alt="Braun Silk·épil 9 Flex SkinSpa Depiladora Eléctrica Mujer, 9-681 3D, Oro | con F"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51L7zzoMSFL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up"></div></a>
     <div class="body">
-    <a class="titlelink" href="./oofecv.html"><div class="title">Braun Silk·épil 9 Flex SkinSpa Depiladora Eléctrica Mujer, 9-681 3D, Oro | con FaceSpa Pro Y Mini Depiladora Facial, Cabezal Flexible, Set Todo-en-Uno, Depila, Rasura Y Recorta, Resistente al Agua</div></a>
+    <a class="titlelink" href="./p7mt26.html"><div class="title">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up to 10H Playtime, Hands-Free Calling, Music Playback, Voice Control, Blue Light Blocking Lens, Unisex for Daily &amp; Outdoor</div></a>
     <div class="prices">
-      <span class="new">199,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">349,99€</span></span>
+      <span class="new">29,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">78,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 150,00€ (-43%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0G4CQ3H3R?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./10mlu3b.html"><div class="imgwrap">
-    <span class="disc disc-med">-51%</span>
+    <div class="savings">💸 Poupas 49,00€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BZ3J167G?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./q2fekm.html"><div class="imgwrap">
+    <span class="disc disc-med">-56%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61xvvJUlxIL._SL500_.jpg" alt="PIZ BUIN Allergy Sun Sensitive Skin Lotion FPS 30 (200 ml), protector solar corp"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71Mb+-9+bkL._SL500_.jpg" alt="Replay Jeans para Mujer"></div></a>
     <div class="body">
-    <a class="titlelink" href="./10mlu3b.html"><div class="title">PIZ BUIN Allergy Sun Sensitive Skin Lotion FPS 30 (200 ml), protector solar corporal con FP30, protección solar alta para pieles sensibles, loción corporal con filtros UVA/UVB</div></a>
+    <a class="titlelink" href="./q2fekm.html"><div class="title">Replay Jeans para Mujer</div></a>
     <div class="prices">
-      <span class="new">8,54€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">17,40€</span></span>
+      <span class="new">52,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">119,00€</span></span>
     </div>
-    <div class="savings">💸 Poupas 8,86€ (-51%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B07NKPKB7S?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1fwuo3s.html"><div class="imgwrap">
-    <span class="disc disc-hot">-63%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71VPNHwPjhL._SL500_.jpg" alt="Neutrogena Ultra Sheer Solar Fluido Invisible Hidratante SPF 50, 50 ml | Crema d"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1fwuo3s.html"><div class="title">Neutrogena Ultra Sheer Solar Fluido Invisible Hidratante SPF 50, 50 ml | Crema de Sol Facial, 24 h Hidratación, Resistente al Agua, Protección 50 UVB/UVA, Ligera, Sin Perfume, Hipoalergénica</div></a>
-    <div class="prices">
-      <span class="new">8,54€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">22,90€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 14,36€ (-63%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0FX37Q44G?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1yxugfv.html"><div class="imgwrap">
-    <span class="disc disc-med">-55%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61iiPEkv1xL._SL500_.jpg" alt="Remington Máquina de Cortar Pelo Hombre cuchillas autoafilables de acero inox, t"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1yxugfv.html"><div class="title">Remington Máquina de Cortar Pelo Hombre cuchillas autoafilables de acero inox, tecnología Curve-cut para usar uno mismo, 0,5-15 mm QuickCut 9 peines, cable/batería, litio, estuche HC4250</div></a>
-    <div class="prices">
-      <span class="new">28,49€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">62,99€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 34,50€ (-55%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B012F8MS9A?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./10exk0u.html"><div class="imgwrap">
-    <span class="disc disc-fair">-39%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/714fKhH5f3L._SL500_.jpg" alt="ghd Max - Plancha de Pelo Profesional de Placas Anchas, Más Brillo y Sin Frizz"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./10exk0u.html"><div class="title">ghd Max - Plancha de Pelo Profesional de Placas Anchas, Más Brillo y Sin Frizz</div></a>
-    <div class="prices">
-      <span class="new">163,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">269,00€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 105,01€ (-39%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CCYQDKK4?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./md2llv.html"><div class="imgwrap">
-    <span class="disc disc-fair">-37%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61ncvhjEIAL._SL500_.jpg" alt="ghd Chronos Max - Plancha de Pelo Profesional, Placas Más Anchas - Blanca | Pein"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./md2llv.html"><div class="title">ghd Chronos Max - Plancha de Pelo Profesional, Placas Más Anchas - Blanca | Peinado 3x veces más rápido, más brillo, sin daño por calor extremo - Para cabello largo, grueso o rizado - (Enchufe Europeo)</div></a>
-    <div class="prices">
-      <span class="new">240,26€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">379,00€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 138,74€ (-37%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DXMNYH65?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uhsqda.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 66,05€ (-56%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CNRQHNPL?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uw7jv7.html"><div class="imgwrap">
     <span class="disc disc-med">-58%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/614co9QXbTL._SL500_.jpg" alt="Remington Cortapelos Nariz y Orejas Nano Series, Recortador Pelos Nariz, Orejas,"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61VK87e76DL._SL500_.jpg" alt="Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1uhsqda.html"><div class="title">Remington Cortapelos Nariz y Orejas Nano Series, Recortador Pelos Nariz, Orejas, Cejas y Vello Facial, Recortador Vertical, 2 Peines, Cortador Precisión con Peine Ajustable, Resistente Agua - NE3870</div></a>
+    <a class="titlelink" href="./1uw7jv7.html"><div class="title">Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio</div></a>
     <div class="prices">
-      <span class="new">12,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">30,99€</span></span>
+      <span class="new">65,45€</span>
+      
     </div>
-    <div class="savings">💸 Poupas 18,00€ (-58%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B073ZDGXJM?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    
+    <a class="btn" href="https://www.amazon.es/dp/B09ZBCMSD7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./18s879s.html"><div class="imgwrap">
+    <span class="disc disc-fair">-36%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/81Dl7v7-5sL._SL500_.jpg" alt="Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo De"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./18s879s.html"><div class="title">Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo Dental con 4 Cabezales, Estuche de Viaje Y Portarrecambios, 3 Modos de Cepillado, Sensor de Presión Y Temporizador</div></a>
+    <div class="prices">
+      <span class="new">114,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">179,95€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 65,00€ (-36%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GCMNN2ZQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./j35nno.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51MSWODuufL._SL500_.jpg" alt="SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./j35nno.html"><div class="title">SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS</div></a>
+    <div class="prices">
+      <span class="new">57,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">152,61€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 94,62€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B07Z512R8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./cyxcat.html"><div class="imgwrap">
+    <span class="disc disc-fair">-25%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61qYu09ww9L._SL500_.jpg" alt="RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transm"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./cyxcat.html"><div class="title">RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción musical y creación de contenido (Negro)</div></a>
+    <div class="prices">
+      <span class="new">538,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">719,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 181,99€ (-25%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0B17V8NGX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ht2kw0.html"><div class="imgwrap">
+    <span class="disc disc-hot">-78%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61CvD6tYNCL._SL500_.jpg" alt="McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1ht2kw0.html"><div class="title">McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon | Antivirus, VPN, software de seguridad | Suscripción con renovación automática | Descargar</div></a>
+    <div class="prices">
+      <span class="new">21,49€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">99,95€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 78,46€ (-78%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BGPLKTVF?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>
