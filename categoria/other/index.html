@@ -502,6 +502,215 @@
   .news-card-desc{color:var(--muted);font-size:13.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:14px;flex:1;}
   .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
   .news-card-more{color:var(--accent);font-weight:800;}
+
+  /* ═════════ NOVO ESTILO (set-2026): editorial, fundo claro, cabeçalho azul-escuro ═════════
+     Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
+  :root{
+    --bg:#ffffff; --card:#ffffff; --card-sub:#f1f4f8;
+    --accent:#c2410c; --accent2:#9a3412; --accent-light:rgba(194,65,12,.08);
+    --text:#0a1b33; --muted:#5b6b85; --line:#dde4ee; --imgbg:#ffffff;
+    --navy:#0a1b33; --navy2:#132a4a; --cta:#ff7a3d;
+    --shadow:0 1px 2px rgba(10,27,51,.05); --shadow-hover:0 6px 18px rgba(10,27,51,.10);
+  }
+  html.dark{
+    --bg:#0b1220; --card:#111c30; --card-sub:#16233b;
+    --accent:#ff7a3d; --accent2:#ff6a25; --accent-light:rgba(255,122,61,.14);
+    --text:#eef2f8; --muted:#9fb0c8; --line:#22324d; --imgbg:#ffffff;
+    --navy:#08111f; --navy2:#12203a; --cta:#ff7a3d;
+    --shadow:none; --shadow-hover:0 8px 22px rgba(0,0,0,.5);
+  }
+
+  /* Cabeçalho: faixa azul-escura fina (logótipo, menu, ações) */
+  header{
+    background:var(--navy);border:0;border-radius:6px;padding:0 24px;margin:0;box-shadow:none;text-align:left;
+    display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;column-gap:24px;min-height:64px;
+  }
+  html.dark header{background:var(--navy);}
+  header .header-topbar{display:contents;}
+  header .logo{grid-column:1;grid-row:1;font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-.5px;}
+  header .logo a{color:#ffffff;}
+  header .logo span{color:var(--cta);}
+  header .marca svg{color:var(--cta);}
+  header .tag{display:none;}
+  header .live-pill{display:none;}
+  header .header-collapsible{grid-column:2;grid-row:1;margin:0;padding:0;border:0;display:block;min-width:0;}
+  header .topnav{margin:0;justify-content:flex-start;flex-wrap:nowrap;gap:24px;overflow:hidden;}
+  header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:22px 0;font-size:14.5px;font-weight:500;color:#d5deea;white-space:nowrap;transform:none;}
+  header .topnav a:hover{background:transparent;color:#ffffff;box-shadow:none;transform:none;}
+  header .topnav a:nth-child(n+5){display:none;}
+  header .wa-channel-pill{grid-column:3;grid-row:1;background:transparent;border:1px solid #3a5075;box-shadow:none;color:#ffffff !important;font-size:12.5px;font-weight:600;padding:7px 14px;}
+  header .wa-channel-pill:hover{background:var(--navy2);box-shadow:none;transform:none;}
+  header .header-actions{grid-column:4;grid-row:1;}
+  header .darkbtn,header .menubtn{background:var(--navy2);border-color:var(--navy2);color:#ffffff;box-shadow:none;}
+  header .menubtn.active{background:var(--cta) !important;border-color:var(--cta) !important;color:#0a1b33 !important;}
+
+  @media(max-width:768px){
+    header{grid-template-columns:1fr auto;padding:10px 14px;column-gap:10px;row-gap:8px;min-height:0;}
+    header .logo{font-size:22px;grid-column:1;grid-row:1;}
+    header .header-actions{grid-column:2;grid-row:1;}
+    header .wa-channel-pill{grid-column:1 / -1;grid-row:2;justify-self:start;font-size:11.5px;padding:5px 12px;}
+    header .header-collapsible{grid-column:1 / -1;grid-row:3;}
+    header .topnav a{padding:10px 14px;color:#ffffff;background:var(--navy2);border-radius:6px;white-space:normal;}
+    header .topnav a:nth-child(n+5){display:block;}
+    .header-collapsible{border-top:1px solid #22385a !important;}
+  }
+
+  /* Largura: o site antigo ficava numa coluna estreita ao centro do ecrã (1200px), com
+     muito vazio dos lados em qualquer monitor mais largo. O Pplware/4gnews ocupam o ecrã
+     todo até um teto generoso — aqui fazemos o mesmo. */
+  .wrap{max-width:1560px;}
+
+  /* Faixa de confiança */
+  .trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;padding:10px 12px;background:var(--card-sub);border-radius:6px;margin:10px 0 0;font-size:13px;color:var(--muted);}
+  .trust-strip span{display:inline-flex;align-items:center;gap:7px;}
+  .trust-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;}
+
+  /* Pesquisa, ordenação e categorias — chips achatados (nada de "pílula" gigante) */
+  .toolbar{background:var(--bg);margin:14px 0 6px;}
+  .search{border-radius:8px;box-shadow:none;}
+  .sort{border-radius:8px;}
+  .chip{background:transparent;border:1px solid #c9d3e0;border-radius:7px;font-weight:600;font-size:13.5px;padding:8px 14px;box-shadow:none;}
+  html.dark .chip{border-color:#2b3d5c;}
+  .chip:hover{border-color:var(--text);transform:none;}
+  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg);box-shadow:none;}
+
+  /* ═══ Destaque: oferta do dia (tipografia grande, painel de imagem) + notícia (foto a
+     sangue total, como uma manchete de revista) — são dois géneros diferentes de propósito. ═══ */
+  .hero-dual-container{margin:24px 0 8px;}
+  @media(min-width:960px){.hero-dual-grid{grid-template-columns:1.5fr 1fr;}}
+  .hero-card{border-radius:10px;box-shadow:none;background:var(--card-sub);border:0;padding:0;overflow:hidden;min-height:400px;position:relative;}
+  .hero-card:hover{transform:none;box-shadow:none;}
+
+  /* Oferta do dia: painel de texto + painel de imagem, preço enorme */
+  .hero-deal-card{border:0;padding:30px 32px;}
+  .hero-deal-inner{display:flex;flex-direction:column-reverse;gap:20px;}
+  @media(min-width:540px){.hero-deal-inner{display:grid;grid-template-columns:1fr 230px;align-items:stretch;gap:28px;}}
+  .hero-img-wrap{background:#ffffff;border:1px solid var(--line);border-radius:8px;height:230px;padding:18px;}
+  html.dark .hero-img-wrap{background:#f4f6f9;}
+  .hero-deal-card .hero-info{justify-content:flex-end;}
+  .hero-cat{color:var(--accent);font-weight:800;}
+  /* Títulos da Amazon vêm às vezes com 30+ palavras (o "SEO" deles, não o nosso) — sem
+     limite de linhas, um título assim empurrava o preço e o botão para fora do ecrã. */
+  .hero-title{font-weight:800;font-size:32px;letter-spacing:-.9px;line-height:1.15;margin-bottom:16px;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+  .hero-new-price{color:var(--text);font-size:52px;font-weight:800;letter-spacing:-1.6px;font-variant-numeric:tabular-nums;}
+  .hero-old-price{font-size:18px;}
+  .hero-savings-pill{border-radius:6px;font-size:13px;}
+  .hero-meta{font-size:12.5px;margin:10px 0 18px;}
+  .hero-actions{margin-top:0;}
+  .hero-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;font-size:14.5px;padding:15px 22px;}
+  html.dark .hero-btn{background:var(--cta);color:#0a1b33 !important;}
+  .hero-btn:hover,html.dark .hero-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
+  .hero-actions{flex-wrap:nowrap;}
+  .hero-share{border-radius:8px;background:transparent;flex:0 0 auto;width:44px;padding:0;font-size:16px;}
+
+  /* Publicação em destaque: foto a preencher o cartão todo, texto sobreposto em baixo
+     (o "hero" de revista — é aqui que a foto real, e não uma imagem de produto, pode
+     preencher o quadro todo sem cortar nada de importante). */
+  .hero-article-card,html.dark .hero-article-card{background:#0a1b33;border:0;}
+  .hero-article-inner{display:block;position:absolute;inset:0;height:100%;gap:0;}
+  .hero-article-img{position:absolute;inset:0;height:100%;border-radius:0;}
+  .hero-article-img::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,14,28,.94) 0%,rgba(6,14,28,.55) 45%,rgba(6,14,28,.05) 75%);}
+  .hero-article-card .hero-info{position:absolute;left:0;right:0;bottom:0;padding:26px 28px;z-index:2;justify-content:flex-end;}
+  .hero-article-card .hero-cat{color:#9fd0ff;}
+  .hero-article-card .hero-title{color:#ffffff;font-size:24px;}
+  .hero-article-card .hero-title a{color:#ffffff;}
+  .hero-article-desc{color:rgba(255,255,255,.8);}
+  .hero-article-card .hero-meta{color:rgba(255,255,255,.65);}
+  .hero-btn-article,html.dark .hero-btn-article{background:#ffffff;color:#0a1b33 !important;border-radius:8px;font-weight:700;}
+  .hero-btn-article:hover{background:var(--cta);color:#ffffff !important;}
+  .hero-card-badge{border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 12px;}
+  .badge-deal{background:var(--navy);color:#ffffff;box-shadow:none;}
+  html.dark .badge-deal{background:var(--cta);color:#0a1b33;}
+  .badge-article{background:rgba(255,255,255,.16);color:#ffffff;backdrop-filter:blur(2px);}
+
+  /* Secções — título grande, traço fino (não a barra grossa de antes) */
+  .sectionh{font-size:30px;font-weight:800;letter-spacing:-.6px;border-bottom:1px solid var(--line);padding-bottom:14px;margin:44px 0 22px;}
+  .count{margin:0 2px 14px;}
+
+  /* Acabou de chegar (ao vivo) */
+  .rec-head{justify-content:flex-start;}
+  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0;}
+  html.dark .live-badge{color:var(--green);}
+  .rec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;}
+  .rec-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
+  .rec-item:hover .rec-title{color:var(--accent);}
+  .rec-img{width:84px;height:84px;flex:0 0 84px;background:#ffffff;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:8px;}
+  .rec-img img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
+  .rec-body{display:flex;flex-direction:column;gap:5px;min-width:0;}
+  .rec-time{font-size:12.5px;font-weight:600;color:var(--green-dark);}
+  html.dark .rec-time{color:var(--green);}
+  .rec-title{font-weight:600;font-size:15.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .rec-price{display:flex;align-items:center;gap:8px;}
+  .rec-price b{font-size:18px;font-weight:800;}
+  .rec-disc{font-style:normal;background:#c2410c;color:#ffffff;border-radius:4px;font-size:12px;font-weight:700;padding:2px 7px;}
+  @media(max-width:960px){.rec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}}
+  @media(max-width:600px){.rec-grid{grid-template-columns:1fr;} .sectionh{font-size:21px;margin:28px 0 14px;}}
+
+  /* Cartões de oferta — como o 4gnews/Pplware: só a foto, sem fitas coladas em cima; o
+     desconto e a loja passam a texto simples junto do preço, e o botão de compra vira um
+     link direto (não uma caixa cheia). Um só "Ver oferta", sem segundo botão por baixo. */
+  .grid{gap:32px 22px;}
+  .card{border-radius:0;box-shadow:none;border:0;background:transparent;}
+  .card:hover,html.dark .card:hover{transform:none;box-shadow:none;border-color:transparent;}
+  .card:hover .imgwrap{border-color:var(--text);}
+  .card a.imglink,.imgwrap{border-radius:10px;}
+  .imgwrap{background:var(--card-sub);border:1px solid var(--line);transition:border-color .15s;position:static;}
+  html.dark .imgwrap{background:#141f36;}
+  /* .card .xxx: a mesma especificidade dos cartões de "Recomendados" (site-content.js),
+     senão aquela regra ganha à nossa só por ter mais classes, mesmo vindo depois. */
+  .card .body{padding:12px 2px 2px;}
+  .card .cat{font-size:11px;}
+  .card .title{font-weight:700;font-size:15px;}
+  .prices{align-items:baseline;}
+  .new{color:var(--text);font-weight:800;font-size:24px;letter-spacing:-.5px;font-variant-numeric:tabular-nums;}
+  .old-val{font-size:13px;}
+  /* Desconto: já não é uma fita sobre a foto — é um selo pequeno de texto junto do preço. */
+  .disc{position:static;display:inline-flex;border-radius:5px;font-weight:700;font-size:11.5px;box-shadow:none;padding:2px 6px;}
+  .disc-hot,.disc-med{background:var(--urgency-bg);color:var(--urgency);}
+  .disc-fair{background:var(--accent-light);color:var(--accent2);}
+  .disc-low{background:var(--blue-light);color:var(--blue);}
+  .meta-row{display:flex;gap:4px;font-size:12px;color:var(--muted);margin-top:4px;}
+  .meta-row span:not(:last-child)::after{content:'·';margin-left:4px;}
+  .cta-row{display:flex;align-items:center;gap:10px;margin-top:10px;}
+  /* Seletor tão específico como ".card .btn" (definido para os cartões de Recomendados em
+     site-content.js) — senão essa regra ganha à nossa só por ter mais classes, ainda que a
+     nossa venha depois no ficheiro. */
+  .card .btn{flex:1;background:transparent;color:var(--accent) !important;box-shadow:none;border-radius:0;font-weight:700;font-size:14px;padding:0;justify-content:flex-start;gap:6px;margin-top:0;}
+  html.dark .card .btn{color:var(--cta) !important;}
+  .card .btn:hover,html.dark .card .btn:hover{background:transparent;color:var(--text) !important;box-shadow:none;transform:none;}
+  .btn .arrow{transition:transform .15s;}
+  .btn:hover .arrow{transform:translateX(3px);}
+  .mais-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:8px;font-weight:700;}
+  html.dark .mais-btn{background:var(--cta);color:#0a1b33 !important;}
+  .mais-btn:hover,html.dark .mais-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
+  .sharebtn{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:transparent;border:1px solid var(--line);color:var(--muted);font-size:13px;padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+  .sharebtn:hover{border-color:var(--text);color:var(--text);}
+
+  /* Parceiros (publicidade de afiliados) */
+  .partners{margin:44px 0 8px;}
+  .partners-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
+  .partners-row a{display:block;max-width:100%;border-radius:4px;overflow:hidden;}
+  .partners-row img{display:block;max-width:100%;height:auto;}
+  .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
+  .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--muted);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
+
+  /* Rodapé azul-escuro */
+  footer{background:var(--navy);border:0;border-radius:6px;box-shadow:none;color:#c4d0e0;}
+  footer .footer-col h4{color:#ffffff;}
+  footer .footer-col p,footer .footer-col li{color:#c4d0e0;}
+  footer .footer-col a{color:#c4d0e0;}
+  footer .footer-col a:hover{color:var(--cta);}
+  footer .footer-bottom{border-color:#1d3558;color:#9fb0c8;}
+
+  /* Blocos editoriais e banners de evento: mesma linguagem (planos, cantos discretos) */
+  .event-banner,html.dark .event-banner{border-radius:6px;background:var(--card-sub);border:0;box-shadow:none;}
+  .event-banner::before{display:none;}
+  .event-badge{border-radius:14px;background:var(--navy);letter-spacing:.6px;font-weight:600;}
+  html.dark .event-badge{background:var(--cta);color:#0a1b33;}
+  .event-btn{background:var(--navy);box-shadow:none;border-radius:26px;font-weight:600;}
+  html.dark .event-btn{background:var(--cta);color:#0a1b33 !important;}
+  .event-btn:hover,html.dark .event-btn:hover{background:var(--accent);color:#ffffff !important;transform:none;box-shadow:none;}
 </style>
 </head>
 <body>
@@ -535,233 +744,25 @@
     <div class="bread"><a href="../">← Todas as categorias</a></div>
     <article class="article">
       <h1>🛍️ Ofertas de Outras Ofertas</h1>
-      <p class="updated">54 ofertas ativas · atualizado hoje</p>
+      <p class="updated">3 ofertas ativas · atualizado hoje</p>
       <p>As melhores promoções de produtos de várias áreas em Portugal, verificadas e com histórico de preço para não caíres em descontos fictícios. Os links levam à loja (Amazon, AliExpress e parceiros) e ajudam a manter o projeto, sem custo extra para ti.</p>
-      <div class="article-deals"><a class="adeal" href="../../d/688r9m.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71hqsS0SFOL._SL500_.jpg" alt="FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multicolor | 100% alg"><span class="adeal-disc">-57%</span></div>
-    <div class="adeal-t">FALARY Calzoncillos Hombre Algodón Pack de 6 Ropa Interior Multi</div>
-    <div class="adeal-p"><span class="adeal-new">19,99€</span><span class="adeal-old">45,99€</span></div>
-  </a><a class="adeal" href="../../d/p7mt26.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51L7zzoMSFL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up"><span class="adeal-disc">-62%</span></div>
-    <div class="adeal-t">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Blueto</div>
-    <div class="adeal-p"><span class="adeal-new">29,99€</span><span class="adeal-old">78,99€</span></div>
-  </a><a class="adeal" href="../../d/q2fekm.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71Mb+-9+bkL._SL500_.jpg" alt="Replay Jeans para Mujer"><span class="adeal-disc">-56%</span></div>
-    <div class="adeal-t">Replay Jeans para Mujer</div>
-    <div class="adeal-p"><span class="adeal-new">52,95€</span><span class="adeal-old">119,00€</span></div>
-  </a><a class="adeal" href="../../d/1uw7jv7.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61VK87e76DL._SL500_.jpg" alt="Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio"><span class="adeal-disc">-58%</span></div>
-    <div class="adeal-t">Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Bañ</div>
-    <div class="adeal-p"><span class="adeal-new">65,45€</span></div>
-  </a><a class="adeal" href="../../d/18s879s.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81Dl7v7-5sL._SL500_.jpg" alt="Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo De"><span class="adeal-disc">-36%</span></div>
-    <div class="adeal-t">Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack d</div>
-    <div class="adeal-p"><span class="adeal-new">114,95€</span><span class="adeal-old">179,95€</span></div>
-  </a><a class="adeal" href="../../d/j35nno.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51MSWODuufL._SL500_.jpg" alt="SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS"><span class="adeal-disc">-62%</span></div>
-    <div class="adeal-t">SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco,</div>
-    <div class="adeal-p"><span class="adeal-new">57,99€</span><span class="adeal-old">152,61€</span></div>
-  </a><a class="adeal" href="../../d/cyxcat.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61qYu09ww9L._SL500_.jpg" alt="RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transm"><span class="adeal-disc">-25%</span></div>
-    <div class="adeal-t">RØDE RØDECaster Pro II, solución de producción todo en uno para </div>
-    <div class="adeal-p"><span class="adeal-new">538,00€</span><span class="adeal-old">719,99€</span></div>
-  </a><a class="adeal" href="../../d/1ht2kw0.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61CvD6tYNCL._SL500_.jpg" alt="McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon"><span class="adeal-disc">-78%</span></div>
-    <div class="adeal-t">McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Excl</div>
-    <div class="adeal-p"><span class="adeal-new">21,49€</span><span class="adeal-old">99,95€</span></div>
-  </a><a class="adeal" href="../../d/1tf48i2.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61D7cBLbK7L._SL500_.jpg" alt="Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca, Baño de rodio "><span class="adeal-disc">-37%</span></div>
-    <div class="adeal-t">Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca</div>
-    <div class="adeal-p"><span class="adeal-new">112,90€</span><span class="adeal-old">179,00€</span></div>
-  </a><a class="adeal" href="../../d/opb6e1.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71cmfaTnkqL._SL500_.jpg" alt="Braun Series 5 Afeitadora Eléctrica Hombre, 52-B1600S, Azul | Máquina de Afeitar"><span class="adeal-disc">-48%</span></div>
-    <div class="adeal-t">Braun Series 5 Afeitadora Eléctrica Hombre, 52-B1600S, Azul | Má</div>
-    <div class="adeal-p"><span class="adeal-new">69,99€</span><span class="adeal-old">134,99€</span></div>
-  </a><a class="adeal" href="../../d/1ytyet6.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61mcH9u0zBL._SL500_.jpg" alt="Levi's Pantalones ajustados 511 para hombre (paquete de 1)"><span class="adeal-disc">-45%</span></div>
-    <div class="adeal-t">Levi's Pantalones ajustados 511 para hombre (paquete de 1)</div>
-    <div class="adeal-p"><span class="adeal-new">65,95€</span><span class="adeal-old">120,00€</span></div>
-  </a><a class="adeal" href="../../d/y99e4.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81qF2gclpEL._SL500_.jpg" alt="Oral-B iO 2 Cepillos de Dientes Eléctricos, Negro Y Rosa, Pack de 2 | Cepillo De"><span class="adeal-disc">-52%</span></div>
-    <div class="adeal-t">Oral-B iO 2 Cepillos de Dientes Eléctricos, Negro Y Rosa, Pack d</div>
-    <div class="adeal-p"><span class="adeal-new">69,95€</span><span class="adeal-old">144,95€</span></div>
-  </a><a class="adeal" href="../../d/1squ032.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41RWNRMhniL._SL500_.jpg" alt="Levi's Pantalones Slim 511 para hombre (1 unidad)"><span class="adeal-disc">-45%</span></div>
-    <div class="adeal-t">Levi's Pantalones Slim 511 para hombre (1 unidad)</div>
-    <div class="adeal-p"><span class="adeal-new">65,95€</span><span class="adeal-old">120,00€</span></div>
-  </a><a class="adeal" href="../../d/pcw6wv.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61bIroODIEL._SL500_.jpg" alt="Skechers Mujer Uno Golden Air Trainers, White Durabuck/Mesh Trim, 37 EU : Skeche"><span class="adeal-disc">-41%</span></div>
-    <div class="adeal-t">Skechers Mujer Uno Golden Air Trainers, White Durabuck/Mesh Trim</div>
-    <div class="adeal-p"><span class="adeal-new">52,95€</span><span class="adeal-old">89,95€</span></div>
-  </a><a class="adeal" href="../../d/d561m3.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61--0J4noXL._SL500_.jpg" alt="Olivia Garden Expert Blowout Shine White &amp; Grey"><span class="adeal-disc">-47%</span></div>
-    <div class="adeal-t">Olivia Garden Expert Blowout Shine White &amp; Grey</div>
-    <div class="adeal-p"><span class="adeal-new">11,29€</span></div>
-  </a><a class="adeal" href="../../d/c4jkqr.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71ndesx0P7L._SL500_.jpg" alt="Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Low Rise Trunks Ropa Interior, "><span class="adeal-disc">-38%</span></div>
-    <div class="adeal-t">Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Low Rise Trunks</div>
-    <div class="adeal-p"><span class="adeal-new">28,05€</span><span class="adeal-old">44,90€</span></div>
-  </a><a class="adeal" href="../../d/1g1uy4r.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71NPaJkcoKL._SL500_.jpg" alt="Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Trunks Ropa Interior, Negro (Bl"><span class="adeal-disc">-38%</span></div>
-    <div class="adeal-t">Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Trunks Ropa Int</div>
-    <div class="adeal-p"><span class="adeal-new">28,05€</span><span class="adeal-old">44,90€</span></div>
-  </a><a class="adeal" href="../../d/1ol4wz.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71j0MP8pDIL._SL500_.jpg" alt="Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Low Rise Trunks Ropa Interior, "><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Low Rise Trunks</div>
-    <div class="adeal-p"><span class="adeal-new">25,95€</span><span class="adeal-old">44,90€</span></div>
-  </a><a class="adeal" href="../../d/1k23jau.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71OmNgL+1QL._SL500_.jpg" alt="Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Trunks Ropa Interior, Multicolo"><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">Calvin Klein Calzoncillos bóxer Hombre Pack de 3 Trunks Ropa Int</div>
-    <div class="adeal-p"><span class="adeal-new">25,95€</span><span class="adeal-old">44,90€</span></div>
-  </a><a class="adeal" href="../../d/1l7oddg.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51v5mr4IEWL._SL500_.jpg" alt="Skechers Hombre Garza Gervin Slip-On, Dark Brown Leather, 44 EU"><span class="adeal-disc">-44%</span></div>
-    <div class="adeal-t">Skechers Hombre Garza Gervin Slip-On, Dark Brown Leather, 44 EU</div>
-    <div class="adeal-p"><span class="adeal-new">52,95€</span><span class="adeal-old">94,95€</span></div>
-  </a><a class="adeal" href="../../d/af0sfd.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71fiP+CGCLL._SL500_.jpg" alt="DANISH ENDURANCE Calzoncillos Hombre Boxer de Bambú, con o Sin Bragueta, Suaves "><span class="adeal-disc">-49%</span></div>
-    <div class="adeal-t">DANISH ENDURANCE Calzoncillos Hombre Boxer de Bambú, con o Sin B</div>
-    <div class="adeal-p"><span class="adeal-new">40,95€</span><span class="adeal-old">79,95€</span></div>
-  </a><a class="adeal" href="../../d/qx2ffl.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71XJm1OfUjL._SL500_.jpg" alt="myCartridge 117A Toner (con Chip) Sostituzione di Tóner HP 117A Compatible de HP"><span class="adeal-disc">-30%</span></div>
-    <div class="adeal-t">myCartridge 117A Toner (con Chip) Sostituzione di Tóner HP 117A </div>
-    <div class="adeal-p"><span class="adeal-new">41,86€</span><span class="adeal-old">59,99€</span></div>
-  </a><a class="adeal" href="../../d/zb99i8.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/619-lkmPqtL._SL500_.jpg" alt="NUOZA Cuecas mulher cintura alta de algodão pack de 5 cuecas mulher culotte cint"><span class="adeal-disc">-60%</span></div>
-    <div class="adeal-t">NUOZA Cuecas mulher cintura alta de algodão pack de 5 cuecas mul</div>
-    <div class="adeal-p"><span class="adeal-new">14,24€</span><span class="adeal-old">35,99€</span></div>
-  </a><a class="adeal" href="../../d/1s7srhx.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51UO3O1l57L._SL500_.jpg" alt="Levi'S Hernandez S ZapatillasMujer"><span class="adeal-disc">-46%</span></div>
-    <div class="adeal-t">Levi'S Hernandez S ZapatillasMujer</div>
-    <div class="adeal-p"><span class="adeal-new">24,47€</span><span class="adeal-old">45,00€</span></div>
-  </a><a class="adeal" href="../../d/1bsdoa8.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81rkzEkiNML._SL500_.jpg" alt="Tommy Hilfiger Baúl 5p Um0um03907 para Hombre (Paquete de 1)"><span class="adeal-disc">-54%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Baúl 5p Um0um03907 para Hombre (Paquete de 1)</div>
-    <div class="adeal-p"><span class="adeal-new">29,86€</span><span class="adeal-old">64,90€</span></div>
+      <div class="article-deals"><a class="adeal" href="../../d/dpg7n3.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71cU9mi4nrL._SL500_.jpg" alt="Grupo Erik Agenda escolar 2026 2027 Semana Vista KPop | Agenda Semana Vista A5, "><span class="adeal-disc">-56%</span></div>
+    <div class="adeal-t">Grupo Erik Agenda escolar 2026 2027 Semana Vista KPop | Agenda S</div>
+    <div class="adeal-p"><span class="adeal-new">7,47€</span><span class="adeal-old">16,95€</span></div>
   </a><a class="adeal" href="../../d/149uy8l.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81FhRaPUU4L._SL500_.jpg" alt="ZWILLING Flow batería de cocina, 5 piezas con tapa de vidrio, apta para inducció"><span class="adeal-disc">-36%</span></div>
     <div class="adeal-t">ZWILLING Flow batería de cocina, 5 piezas con tapa de vidrio, ap</div>
     <div class="adeal-p"><span class="adeal-new">159,95€</span><span class="adeal-old">249,00€</span></div>
-  </a><a class="adeal" href="../../d/1c1gxs2.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71v6F5BIV3L._SL500_.jpg" alt="Canoly Espremedor de pressão a frio com orifício de enchimento extra largo de 6 "><span class="adeal-disc">-48%</span></div>
-    <div class="adeal-t">Canoly Espremedor de pressão a frio com orifício de enchimento e</div>
-    <div class="adeal-p"><span class="adeal-new">103,12€</span><span class="adeal-old">199,99€</span></div>
-  </a><a class="adeal" href="../../d/tbiiho.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51TuGL+XqpL._SL500_.jpg" alt="Freno Delantero Negro-BR-R7000 105"><span class="adeal-disc">-62%</span></div>
-    <div class="adeal-t">Freno Delantero Negro-BR-R7000 105</div>
-    <div class="adeal-p"><span class="adeal-new">15,36€</span><span class="adeal-old">39,95€</span></div>
-  </a><a class="adeal" href="../../d/1tmpaol.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/717ZRkjt-HL._SL500_.jpg" alt="adidas Men's Capa de chuva multi Essentials 2L"><span class="adeal-disc">-51%</span></div>
-    <div class="adeal-t">adidas Men's Capa de chuva multi Essentials 2L</div>
-    <div class="adeal-p"><span class="adeal-new">100,00€</span><span class="adeal-old">204,08€</span></div>
-  </a><a class="adeal" href="../../d/1xepu8x.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71Y1eE6+vhL._SL500_.jpg" alt="Comba de massagem em spray, 3 em 1, Anti-Static Detangling Comb, spray Air Cushi"><span class="adeal-disc">-68%</span></div>
-    <div class="adeal-t">Comba de massagem em spray, 3 em 1, Anti-Static Detangling Comb,</div>
-    <div class="adeal-p"><span class="adeal-new">21,55€</span><span class="adeal-old">67,34€</span></div>
-  </a><a class="adeal" href="../../d/1vjc2ez.html">
-    <div class="adeal-img"><img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/S3acb6d561b7c467e897716091b7a9efbq.jpg" alt="Multi Purpose Foldable Car Windshield, Sunshades Convenientes, Proteção Interior"><span class="adeal-disc">-62%</span></div>
-    <div class="adeal-t">Multi Purpose Foldable Car Windshield, Sunshades Convenientes, P</div>
-    <div class="adeal-p"><span class="adeal-new">10,61€</span></div>
-  </a><a class="adeal" href="../../d/1jkq27f.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61lZG+6zADL._SL500_.jpg" alt="UGREEN Revodok MAX 213 Thunderbolt 4 Docking Station 13 en 1 Doble Pantalla | 2 "><span class="adeal-disc">-37%</span></div>
-    <div class="adeal-t">UGREEN Revodok MAX 213 Thunderbolt 4 Docking Station 13 en 1 Dob</div>
-    <div class="adeal-p"><span class="adeal-new">221,10€</span><span class="adeal-old">349,99€</span></div>
-  </a><a class="adeal" href="../../d/b90eoo.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51-xNiZf91L._SL500_.jpg" alt="Under Armour Fly by 3In Pantalones Cortos Mujeres Jasper Blue/Serpentine : Under"><span class="adeal-disc">-68%</span></div>
-    <div class="adeal-t">Under Armour Fly by 3In Pantalones Cortos Mujeres Jasper Blue/Se</div>
-    <div class="adeal-p"><span class="adeal-new">12,44€</span><span class="adeal-old">38,88€</span></div>
-  </a><a class="adeal" href="../../d/o5g6qv.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71xLiYGVQ-L._SL500_.jpg" alt="KEEN Targhee 3 Mid Waterproof Sapatos de caminhadaMulher"><span class="adeal-disc">-51%</span></div>
-    <div class="adeal-t">KEEN Targhee 3 Mid Waterproof Sapatos de caminhadaMulher</div>
-    <div class="adeal-p"><span class="adeal-new">80,30€</span><span class="adeal-old">163,88€</span></div>
-  </a><a class="adeal" href="../../d/122rafd.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/716nwv6kfNL._SL500_.jpg" alt="Worx Landroid Vision Cloud WR306E 2WD Robot Cortacésped, Sin Cable Perimetral, h"><span class="adeal-disc">-29%</span></div>
-    <div class="adeal-t">Worx Landroid Vision Cloud WR306E 2WD Robot Cortacésped, Sin Cab</div>
-    <div class="adeal-p"><span class="adeal-new">644,58€</span><span class="adeal-old">907,86€</span></div>
-  </a><a class="adeal" href="../../d/j6mof3.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71qrDBL3m6L._SL500_.jpg" alt="DREAME A1 Pro Robot corta-relvas sem cabos perímetro, LiDAR 3D de 360° | Recomen"><span class="adeal-disc">-27%</span></div>
-    <div class="adeal-t">DREAME A1 Pro Robot corta-relvas sem cabos perímetro, LiDAR 3D d</div>
-    <div class="adeal-p"><span class="adeal-new">812,21€</span><span class="adeal-old">1112,62€</span></div>
-  </a><a class="adeal" href="../../d/1fkffz9.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41mlCOorwxL._SL500_.jpg" alt="Reebok World 70"><span class="adeal-disc">-65%</span></div>
-    <div class="adeal-t">Reebok World 70</div>
-    <div class="adeal-p"><span class="adeal-new">19,32€</span><span class="adeal-old">55,00€</span></div>
-  </a><a class="adeal" href="../../d/e3uek0.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61P0DyPmyoL._SL500_.jpg" alt="Swarovski Una Angelic Collection Collar"><span class="adeal-disc">-40%</span></div>
-    <div class="adeal-t">Swarovski Una Angelic Collection Collar</div>
-    <div class="adeal-p"><span class="adeal-new">169,00€</span><span class="adeal-old">280,00€</span></div>
-  </a><a class="adeal" href="../../d/kqpqdt.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71tP6IxUUvL._SL500_.jpg" alt="Swarovski Pulsera Tennis Angelic, Talla redonda, Pavé, Mediana, Blanca, Baño ton"><span class="adeal-disc">-46%</span></div>
-    <div class="adeal-t">Swarovski Pulsera Tennis Angelic, Talla redonda, Pavé, Mediana, </div>
-    <div class="adeal-p"><span class="adeal-new">118,34€</span><span class="adeal-old">220,00€</span></div>
-  </a><a class="adeal" href="../../d/1mn3n8f.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61AbKX+lQAL._SL500_.jpg" alt="ZWILLING Simplify batería de cocina, 4 piezas, con función de vertido, asas Stay"><span class="adeal-disc">-36%</span></div>
-    <div class="adeal-t">ZWILLING Simplify batería de cocina, 4 piezas, con función de ve</div>
-    <div class="adeal-p"><span class="adeal-new">204,00€</span><span class="adeal-old">319,00€</span></div>
-  </a><a class="adeal" href="../../d/1c7jqom.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61q4GGJyYYL._SL500_.jpg" alt="Le Creuset Cocotte redonda de hierro fundido, 26 cm, 5, 3 L, Todas Las Fuentes d"><span class="adeal-disc">-33%</span></div>
-    <div class="adeal-t">Le Creuset Cocotte redonda de hierro fundido, 26 cm, 5, 3 L, Tod</div>
-    <div class="adeal-p"><span class="adeal-new">274,00€</span><span class="adeal-old">409,00€</span></div>
-  </a><a class="adeal" href="../../d/9xhpjh.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71B-BuaoUiL._SL500_.jpg" alt="SINGER 4432 - Máquina de costura preta"><span class="adeal-disc">-46%</span></div>
-    <div class="adeal-t">SINGER 4432 - Máquina de costura preta</div>
-    <div class="adeal-p"><span class="adeal-new">288,68€</span><span class="adeal-old">539,00€</span></div>
-  </a><a class="adeal" href="../../d/1t2u323.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51xPne6TOmL._SL500_.jpg" alt="ZWILLING Passion batería de cocina acerk inoxidable, 5 piezas, apta para inducci"><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">ZWILLING Passion batería de cocina acerk inoxidable, 5 piezas, a</div>
-    <div class="adeal-p"><span class="adeal-new">180,04€</span><span class="adeal-old">309,00€</span></div>
-  </a><a class="adeal" href="../../d/437uez.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71QWtnC5ZbL._SL500_.jpg" alt="Calvin Klein Sutiã de meia taça Mulher Sem forro elástico"><span class="adeal-disc">-43%</span></div>
-    <div class="adeal-t">Calvin Klein Sutiã de meia taça Mulher Sem forro elástico</div>
-    <div class="adeal-p"><span class="adeal-new">6,13€</span><span class="adeal-old">10,75€</span></div>
-  </a><a class="adeal" href="../../d/1vhlllp.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/8151CrmcxcL._SL500_.jpg" alt="Skechers Mujer Uno Rugged Fall Air Trainers, Black Durabuck/ Faux Fur, 39 EU"><span class="adeal-disc">-37%</span></div>
-    <div class="adeal-t">Skechers Mujer Uno Rugged Fall Air Trainers, Black Durabuck/ Fau</div>
-    <div class="adeal-p"><span class="adeal-new">59,95€</span><span class="adeal-old">94,95€</span></div>
   </a><a class="adeal" href="../../d/12809rl.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/511ZlB8AzcL._SL500_.jpg" alt="Compra Zwilling Quadro Set batería de cocina 5 piezas, Acero Inoxidable, 1 cm, 5"><span class="adeal-disc">-30%</span></div>
     <div class="adeal-t">Compra Zwilling Quadro Set batería de cocina 5 piezas, Acero Ino</div>
     <div class="adeal-p"><span class="adeal-new">209,99€</span><span class="adeal-old">299,00€</span></div>
-  </a><a class="adeal" href="../../d/142b0hz.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51e26j890PL._SL500_.jpg" alt="Skechers Hombre Ultra Flex 3.0 Smooth Step Slip-In ENTRENADOR, Black Knit/Trim, "><span class="adeal-disc">-40%</span></div>
-    <div class="adeal-t">Skechers Hombre Ultra Flex 3.0 Smooth Step Slip-In ENTRENADOR, B</div>
-    <div class="adeal-p"><span class="adeal-new">59,95€</span><span class="adeal-old">99,95€</span></div>
-  </a><a class="adeal" href="../../d/1w3h19i.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71+ddQn5wOL._SL500_.jpg" alt="PUMA Calzoncillos Tipo bóxer para Hombre, Negro/Castlerock/Club Navy, S"><span class="adeal-disc">-48%</span></div>
-    <div class="adeal-t">PUMA Calzoncillos Tipo bóxer para Hombre, Negro/Castlerock/Club </div>
-    <div class="adeal-p"><span class="adeal-new">25,60€</span><span class="adeal-old">49,23€</span></div>
-  </a><a class="adeal" href="../../d/1t4x5eq.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51-XEaMNQlL._SL500_.jpg" alt="Rimmel London Scandaleyes Reloaded Máscara de Pestañas, 001 Black, 12 ml"><span class="adeal-disc">-34%</span></div>
-    <div class="adeal-t">Rimmel London Scandaleyes Reloaded Máscara de Pestañas, 001 Blac</div>
-    <div class="adeal-p"><span class="adeal-new">6,39€</span><span class="adeal-old">9,73€</span></div>
-  </a><a class="adeal" href="../../d/1pyf12o.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51L7CfDx1dL._SL500_.jpg" alt="Tommee Tippee calentador eléctrico de biberones y comida | blanco, calienta la c"><span class="adeal-disc">-50%</span></div>
-    <div class="adeal-t">Tommee Tippee calentador eléctrico de biberones y comida | blanc</div>
-    <div class="adeal-p"><span class="adeal-new">19,99€</span><span class="adeal-old">39,99€</span></div>
-  </a><a class="adeal" href="../../d/1l4t53r.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51IK9qfubcL._SL500_.jpg" alt="Flamingueo - Espejo de Pie Cuerpo Entero - Marco Tejido Rizo - Forma Irregular -"><span class="adeal-disc">-50%</span></div>
-    <div class="adeal-t">Flamingueo - Espejo de Pie Cuerpo Entero - Marco Tejido Rizo - F</div>
-    <div class="adeal-p"><span class="adeal-new">179,00€</span></div>
-  </a><a class="adeal" href="../../d/1dyq0pr.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61IytYVB3uL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg" alt="Durex Especiales, Azul, 12 Unidad (Paquete de 2)"><span class="adeal-disc">-51%</span></div>
-    <div class="adeal-t">Durex Especiales, Azul, 12 Unidad (Paquete de 2)</div>
-    <div class="adeal-p"><span class="adeal-new">12,34€</span><span class="adeal-old">25,20€</span></div>
-  </a><a class="adeal" href="../../d/e7l0m3.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81VyjAUR9jL._SL500_.jpg" alt="Crocs Classic Lined Clog 36-37 EU Black/Black : CROCS"><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">Crocs Classic Lined Clog 36-37 EU Black/Black : CROCS</div>
-    <div class="adeal-p"><span class="adeal-new">34,65€</span><span class="adeal-old">59,99€</span></div>
-  </a><a class="adeal" href="../../d/187j6u5.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/519lZTsb5eL._SL500_.jpg" alt="LEDVANCE Smarte LED Deckenleuchte, painel für Innen mit WiFi Technologie, Lichtf"><span class="adeal-disc">-48%</span></div>
-    <div class="adeal-t">LEDVANCE Smarte LED Deckenleuchte, painel für Innen mit WiFi Tec</div>
-    <div class="adeal-p"><span class="adeal-new">48,35€</span></div>
   </a></div>
       <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
     <div class="sectionh">🗂️ Outras categorias</div>
     <div class="guidegrid relguides">
-    <a class="guidecard" href="../bts/">
-      <span class="gemoji">🎒</span>
-      <h3>Regresso às Aulas</h3>
-    </a>
     <a class="guidecard" href="../phone/">
       <span class="gemoji">📱</span>
       <h3>Smartphones</h3>
