@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>VNMN Auriculares sem fios Bluetooth Deportivos con Gancho para Oreja | 120H, IPX por 31,34€ (-69%) | Descontos PT</title>
 <meta name="description" content="VNMN Auriculares sem fios Bluetooth Deportivos con Gancho para Oreja | 120H, IPX7 Impermeables, Pantalla LED,  em promoção por 31,34€ (antes 99,99€) — desconto de 69%, com histórico de preço."/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="noindex, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -506,160 +506,6 @@
   .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
   .news-card-more{color:var(--accent);font-weight:800;}
 
-  /* ═════════ NOVO ESTILO (set-2026): editorial, fundo claro, cabeçalho azul-escuro ═════════
-     Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
-  :root{
-    --bg:#ffffff; --card:#ffffff; --card-sub:#f1f4f8;
-    --accent:#c2410c; --accent2:#9a3412; --accent-light:rgba(194,65,12,.08);
-    --text:#0a1b33; --muted:#5b6b85; --line:#dde4ee; --imgbg:#ffffff;
-    --navy:#0a1b33; --navy2:#132a4a; --cta:#ff7a3d;
-    --shadow:0 1px 2px rgba(10,27,51,.05); --shadow-hover:0 6px 18px rgba(10,27,51,.10);
-  }
-  html.dark{
-    --bg:#0b1220; --card:#111c30; --card-sub:#16233b;
-    --accent:#ff7a3d; --accent2:#ff6a25; --accent-light:rgba(255,122,61,.14);
-    --text:#eef2f8; --muted:#9fb0c8; --line:#22324d; --imgbg:#ffffff;
-    --navy:#08111f; --navy2:#12203a; --cta:#ff7a3d;
-    --shadow:none; --shadow-hover:0 8px 22px rgba(0,0,0,.5);
-  }
-
-  /* Cabeçalho: faixa azul-escura fina (logótipo, menu, ações) */
-  header{
-    background:var(--navy);border:0;border-radius:6px;padding:0 24px;margin:0;box-shadow:none;text-align:left;
-    display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;column-gap:24px;min-height:64px;
-  }
-  html.dark header{background:var(--navy);}
-  header .header-topbar{display:contents;}
-  header .logo{grid-column:1;grid-row:1;font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-.5px;}
-  header .logo a{color:#ffffff;}
-  header .logo span{color:var(--cta);}
-  header .marca svg{color:var(--cta);}
-  header .tag{display:none;}
-  header .live-pill{display:none;}
-  header .header-collapsible{grid-column:2;grid-row:1;margin:0;padding:0;border:0;display:block;min-width:0;}
-  header .topnav{margin:0;justify-content:flex-start;flex-wrap:nowrap;gap:24px;overflow:hidden;}
-  header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:22px 0;font-size:14.5px;font-weight:500;color:#d5deea;white-space:nowrap;transform:none;}
-  header .topnav a:hover{background:transparent;color:#ffffff;box-shadow:none;transform:none;}
-  header .topnav a:nth-child(n+5){display:none;}
-  header .wa-channel-pill{grid-column:3;grid-row:1;background:transparent;border:1px solid #3a5075;box-shadow:none;color:#ffffff !important;font-size:12.5px;font-weight:600;padding:7px 14px;}
-  header .wa-channel-pill:hover{background:var(--navy2);box-shadow:none;transform:none;}
-  header .header-actions{grid-column:4;grid-row:1;}
-  header .darkbtn,header .menubtn{background:var(--navy2);border-color:var(--navy2);color:#ffffff;box-shadow:none;}
-  header .menubtn.active{background:var(--cta) !important;border-color:var(--cta) !important;color:#0a1b33 !important;}
-
-  @media(max-width:768px){
-    header{grid-template-columns:1fr auto;padding:10px 14px;column-gap:10px;row-gap:8px;min-height:0;}
-    header .logo{font-size:22px;grid-column:1;grid-row:1;}
-    header .header-actions{grid-column:2;grid-row:1;}
-    header .wa-channel-pill{grid-column:1 / -1;grid-row:2;justify-self:start;font-size:11.5px;padding:5px 12px;}
-    header .header-collapsible{grid-column:1 / -1;grid-row:3;}
-    header .topnav a{padding:10px 14px;color:#ffffff;background:var(--navy2);border-radius:6px;white-space:normal;}
-    header .topnav a:nth-child(n+5){display:block;}
-    .header-collapsible{border-top:1px solid #22385a !important;}
-  }
-
-  /* Faixa de confiança */
-  .trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;padding:10px 12px;background:var(--card-sub);border-radius:6px;margin:10px 0 0;font-size:13px;color:var(--muted);}
-  .trust-strip span{display:inline-flex;align-items:center;gap:7px;}
-  .trust-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;}
-
-  /* Pesquisa, ordenação e categorias */
-  .toolbar{background:var(--bg);margin:14px 0 6px;}
-  .search{border-radius:8px;box-shadow:none;}
-  .sort{border-radius:8px;}
-  .chip{background:var(--card);border:1px solid #c9d3e0;border-radius:999px;font-weight:600;font-size:14px;padding:8px 16px;box-shadow:none;}
-  html.dark .chip{border-color:#2b3d5c;}
-  .chip:hover{border-color:var(--text);transform:none;}
-  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg);box-shadow:none;}
-
-  /* Destaque (super oferta + publicação) */
-  .hero-dual-container{margin:24px 0 8px;}
-  .hero-card{border-radius:6px;box-shadow:none;background:var(--card-sub);border:0;padding:26px;}
-  .hero-card:hover{transform:none;box-shadow:none;}
-  .hero-deal-card{border:0;}
-  .hero-article-card,html.dark .hero-article-card{background:var(--card-sub);border:0;}
-  .hero-card-badge{border-radius:14px;font-size:11.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;padding:5px 14px;}
-  .badge-deal{background:var(--navy);color:#ffffff;box-shadow:none;}
-  html.dark .badge-deal{background:var(--cta);color:#0a1b33;}
-  .badge-article{background:#0b5cad;box-shadow:none;}
-  .hero-title{font-weight:700;font-size:21px;letter-spacing:-.2px;}
-  .hero-new-price{color:var(--text);font-size:40px;font-weight:800;letter-spacing:-1px;}
-  .hero-savings-pill{border-radius:4px;}
-  .hero-img-wrap,.hero-article-img{border-radius:4px;background:#ffffff;}
-  @media(min-width:540px){.hero-deal-inner{grid-template-columns:1fr 200px;} .hero-img-wrap{order:2;height:200px;}}
-  .hero-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .hero-btn{background:var(--cta);color:#0a1b33 !important;}
-  .hero-btn:hover,html.dark .hero-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .hero-btn-article,html.dark .hero-btn-article{background:#0b5cad;color:#ffffff !important;}
-  .hero-btn-article:hover{background:#0a4d94;}
-  .hero-share{border-radius:26px;}
-
-  /* Secções */
-  .sectionh{font-size:24px;font-weight:700;letter-spacing:-.3px;border-bottom:2px solid var(--text);padding-bottom:10px;margin:36px 0 18px;}
-  .count{margin:0 2px 14px;}
-
-  /* Acabou de chegar (ao vivo) */
-  .rec-head{justify-content:flex-start;}
-  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0;}
-  html.dark .live-badge{color:var(--green);}
-  .rec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;}
-  .rec-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
-  .rec-item:hover .rec-title{color:var(--accent);}
-  .rec-img{width:84px;height:84px;flex:0 0 84px;background:#ffffff;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:8px;}
-  .rec-img img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
-  .rec-body{display:flex;flex-direction:column;gap:5px;min-width:0;}
-  .rec-time{font-size:12.5px;font-weight:600;color:var(--green-dark);}
-  html.dark .rec-time{color:var(--green);}
-  .rec-title{font-weight:600;font-size:15.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .rec-price{display:flex;align-items:center;gap:8px;}
-  .rec-price b{font-size:18px;font-weight:800;}
-  .rec-disc{font-style:normal;background:#c2410c;color:#ffffff;border-radius:4px;font-size:12px;font-weight:700;padding:2px 7px;}
-  @media(max-width:960px){.rec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}}
-  @media(max-width:600px){.rec-grid{grid-template-columns:1fr;} .sectionh{font-size:21px;margin:28px 0 14px;}}
-
-  /* Cartões de oferta */
-  .card{border-radius:6px;box-shadow:none;border:1px solid var(--line);}
-  .card:hover,html.dark .card:hover{transform:none;box-shadow:var(--shadow-hover);border-color:var(--text);}
-  .card a.imglink,.imgwrap{border-radius:5px 5px 0 0;}
-  .imgwrap{background:#ffffff;}
-  .disc{border-radius:4px;font-weight:700;font-size:13px;box-shadow:none;}
-  .disc-hot,.disc-med{background:#c2410c;box-shadow:none;}
-  .disc-fair{background:#b45309;box-shadow:none;}
-  .disc-low{background:#0b5cad;box-shadow:none;}
-  .topbadge{border-radius:4px;background:#166534;box-shadow:none;}
-  .store{border-radius:4px;}
-  .title{font-weight:600;}
-  .new{color:var(--text);font-weight:800;}
-  .savings{border-radius:4px;}
-  .btn,.mais-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .btn,html.dark .mais-btn{background:var(--cta);color:#0a1b33 !important;}
-  .btn:hover,.mais-btn:hover,html.dark .btn:hover,html.dark .mais-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-
-  /* Parceiros (publicidade de afiliados) */
-  .partners{margin:44px 0 8px;}
-  .partners-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
-  .partners-row a{display:block;max-width:100%;border-radius:4px;overflow:hidden;}
-  .partners-row img{display:block;max-width:100%;height:auto;}
-  .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
-  .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--muted);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
-
-  /* Rodapé azul-escuro */
-  footer{background:var(--navy);border:0;border-radius:6px;box-shadow:none;color:#c4d0e0;}
-  footer .footer-col h4{color:#ffffff;}
-  footer .footer-col p,footer .footer-col li{color:#c4d0e0;}
-  footer .footer-col a{color:#c4d0e0;}
-  footer .footer-col a:hover{color:var(--cta);}
-  footer .footer-bottom{border-color:#1d3558;color:#9fb0c8;}
-
-  /* Blocos editoriais e banners de evento: mesma linguagem (planos, cantos discretos) */
-  .event-banner,html.dark .event-banner{border-radius:6px;background:var(--card-sub);border:0;box-shadow:none;}
-  .event-banner::before{display:none;}
-  .event-badge{border-radius:14px;background:var(--navy);letter-spacing:.6px;font-weight:600;}
-  html.dark .event-badge{background:var(--cta);color:#0a1b33;}
-  .event-btn{background:var(--navy);box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .event-btn{background:var(--cta);color:#0a1b33 !important;}
-  .event-btn:hover,html.dark .event-btn:hover{background:var(--accent);color:#ffffff !important;transform:none;box-shadow:none;}
-
   .bread{margin:14px 2px 10px;font-size:13.5px;font-weight:700;}
   .bread a{color:var(--accent);text-decoration:none;}
   .product{display:grid;grid-template-columns:1fr;gap:16px;margin-top:6px;}
@@ -792,7 +638,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · ⚽ Desporto</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 📱 Smartphones</div>
 
     <div class="product">
       <div class="pimg">
@@ -801,7 +647,7 @@
         <img src="https://m.media-amazon.com/images/I/71btXwK-w1L._SL500_.jpg" alt="VNMN Auriculares sem fios Bluetooth Deportivos con Gancho para Oreja | 120H, IPX7 Impermeables, Pant">
       </div>
       <div class="pinfo">
-        <span class="cat">⚽ Desporto</span>
+        <span class="cat">📱 Smartphones</span>
         <h1>VNMN Auriculares sem fios Bluetooth Deportivos con Gancho para Oreja | 120H, IPX7 Impermeables, Pantalla LED, Sonido HiFi 16.2mm, Llamadas Claras, USB-C, Running, Gimnasio y Ciclismo</h1>
         <div class="bigprices">
           <span class="bignew">31,34€</span>
@@ -821,10 +667,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Auriculares Bluetooth VNMN com gancho para orelha e resistência IPX7</h3>
-          <p class="article-lead-p">Os auriculares VNMN são sem fios, desenhados para quem pratica desporto e precisa de som de qualidade. Incluem gancho para fixar à orelha, bateria de longa duração e ecrã LED para controlar as funções.</p>
-          <p class="article-body-p">Ao usar estes auriculares sentirás um encaixe seguro graças ao gancho, permitindo correr ou pedalar sem os perderes. O som Hi‑Fi de 16,2 mm oferece graves profundos e vozes nítidas, e as chamadas são claras graças ao microfone integrado.</p>
-          <p class="article-body-p">Construídos em plástico resistente à água com certificação IPX7, suportam imersão até 1 m durante 30 min. A carga é feita por USB‑C e a bateria promete até 120 h de uso em modo standby. O painel LED indica nível de bateria e modo de emparelhamento.</p>
+          <h3 class="article-subtitle">📰 VNMN Auriculares sem fios Bluetooth Deportivos con Gancho para Oreja | 120H, IPX7 Impermeables, Pantalla LED, Sonido HiFi 16.2mm, Llamadas Claras, USB-C, Running, Gimnasio y Ciclismo</h3>
+          <p class="article-lead-p">A <strong>VNMN</strong> é a marca deste artigo, na categoria Smartphones. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
+          <p class="article-body-p"></p>
+          <p class="article-body-p"></p>
         </div>
         
         <div class="specs-box">
@@ -832,24 +678,16 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Conectividade</span>
-        <span class="spec-v">Bluetooth 5.0</span>
+        <span class="spec-k">Marca</span>
+        <span class="spec-v">VNMN</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Duração da bateria</span>
-        <span class="spec-v">Até 120 h standby</span>
+        <span class="spec-k">Categoria</span>
+        <span class="spec-v">Smartphones</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Resistência à água</span>
-        <span class="spec-v">IPX7</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Driver</span>
-        <span class="spec-v">16,2 mm Hi‑Fi</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Carregamento</span>
-        <span class="spec-v">USB‑C</span>
+        <span class="spec-k">Loja</span>
+        <span class="spec-v">Amazon</span>
       </div>
           </div>
         </div>
@@ -858,11 +696,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Ideal para corredores, praticantes de ginásio e ciclistas que precisam de auriculares seguros e à prova de suor.</p>
+            <p>Quem procura este tipo de produto — Smartphones — ao melhor preço.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem procura um som ultra‑premium de estúdio ou recursos avançados de cancelamento de ruído pode querer outra opção.</p>
+            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
           </div>
         </div>
 
@@ -871,16 +709,13 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Bateria de longa duração (até 120 h)</li>
-              <li>Resistência à água IPX7</li>
-              <li>Gancho ergonómico que mantém os auriculares no lugar</li>
+              <li>Desconto de 69% face ao preço de referência</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Não inclui cancelamento activo de ruído</li>
-              <li>O controlo por toque pode ser sensível durante atividades intensas</li>
+              <li>Ficha detalhada ainda não disponível para este produto</li>
             </ul>
           </div>
         </div>
@@ -914,96 +749,96 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Desporto</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./p7mt26.html"><div class="imgwrap">
-    <span class="disc disc-hot">-62%</span>
+    <div class="panel"><h2>🛍️ Mais em Smartphones</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./1wean5k.html"><div class="imgwrap">
+    <span class="disc disc-med">-55%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51L7zzoMSFL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/81r1YUvMy2L._SL500_.jpg" alt="BANLVS Reloj Inteligente Hombre con 1000mAh Batería y Linterna, Negro | 1.91&quo"></div></a>
     <div class="body">
-    <a class="titlelink" href="./p7mt26.html"><div class="title">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up to 10H Playtime, Hands-Free Calling, Music Playback, Voice Control, Blue Light Blocking Lens, Unisex for Daily &amp; Outdoor</div></a>
+    <a class="titlelink" href="./1wean5k.html"><div class="title">BANLVS Reloj Inteligente Hombre con 1000mAh Batería y Linterna, Negro | 1.91&quot; AMOLED Smartwatch Militar con 5ATM Impermeable, 113 Modos Deportivos, 24/7 Pulsómetro/Oxímetro/Sueño/Android iOS</div></a>
     <div class="prices">
-      <span class="new">29,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">78,99€</span></span>
+      <span class="new">49,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">109,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 49,00€ (-62%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0BZ3J167G?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./j35nno.html"><div class="imgwrap">
-    <span class="disc disc-hot">-62%</span>
+    <div class="savings">💸 Poupas 60,00€ (-55%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0H4QFNL65?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./4orl5f.html"><div class="imgwrap">
+    <span class="disc disc-fair">-22%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51MSWODuufL._SL500_.jpg" alt="SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71pGbe01SQL._SL500_.jpg" alt="Apple AirPods MAX Auriculares sem fios de diadema com cancelamento ativo de ruíd"></div></a>
     <div class="body">
-    <a class="titlelink" href="./j35nno.html"><div class="title">SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS</div></a>
+    <a class="titlelink" href="./4orl5f.html"><div class="title">Apple AirPods MAX Auriculares sem fios de diadema com cancelamento ativo de ruído de nível profissional, modo de som ambiental, áudio espacial personalizado, carregamento por USB C, meia-noite</div></a>
     <div class="prices">
-      <span class="new">57,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">152,61€</span></span>
+      <span class="new">449,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">579,00€</span></span>
     </div>
-    <div class="savings">💸 Poupas 94,62€ (-62%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B07Z512R8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./lpxl22.html"><div class="imgwrap">
-    <span class="disc disc-fair">-32%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71HA3AbB6FL._SL500_.jpg" alt="Polar Vantage V3 Reloj Multideporte GPS AMOLED | Mapas offline, Medición avanzad"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./lpxl22.html"><div class="title">Polar Vantage V3 Reloj Multideporte GPS AMOLED | Mapas offline, Medición avanzada de FC, GPS de doble frecuencia, Mayor autonomía</div></a>
-    <div class="prices">
-      <span class="new">409,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">599,90€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 189,91€ (-32%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CKBMTT2C?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./8njsmu.html"><div class="imgwrap">
-    <span class="disc disc-med">-54%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61tSOL2Rv0L._SL500_.jpg" alt="Columbia Chaqueta para Hombre, Powder Lite II"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./8njsmu.html"><div class="title">Columbia Chaqueta para Hombre, Powder Lite II</div></a>
-    <div class="prices">
-      <span class="new">54,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">120,00€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 65,01€ (-54%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CN3W9NZZ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1d6y9d7.html"><div class="imgwrap">
-    <span class="disc disc-med">-52%</span>
+    <div class="savings">💸 Poupas 130,00€ (-22%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0DGHXBDQQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ijk8hx.html"><div class="imgwrap">
+    <span class="disc disc-fair">-38%</span>
     <span class="store">AliExpress</span>
-    <img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/Sf01c3e0bd5394345af46e0572e1c295ey.jpg" alt="Bicicleta Elétrica PVY Z20 PRO EVO, Motor de Torque com Sensor de 500W, Bateria "></div></a>
+    <img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/S1ae71896301f4fd391019d7b8fb226d61.jpg" alt="Smartphone Robusto OUKITEL WP100 Plus, Chip eSIM 36GB (12+24) + 512GB, Tela de 6"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1d6y9d7.html"><div class="title">Bicicleta Elétrica PVY Z20 PRO EVO, Motor de Torque com Sensor de 500W, Bateria de 36V/14.5Ah, Autonomia de 120 Km, Pneu de 20 Polegadas, Ebike</div></a>
+    <a class="titlelink" href="./1ijk8hx.html"><div class="title">Smartphone Robusto OUKITEL WP100 Plus, Chip eSIM 36GB (12+24) + 512GB, Tela de 6.8&quot; 120Hz, Lanterna para Camping, Bateria de 33000mAh, Carregamento Rápido de 66W, Câmeras de 64MP+20MP+2MP, Android 16, NFC, Gemini AI</div></a>
     <div class="prices">
-      <span class="new">816,08€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">1700,16€</span></span>
+      <span class="new">363,34€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">586,04€</span></span>
     </div>
-    <div class="savings">💸 Poupas 884,08€ (-52%)</div>
-    <a class="btn" href="https://s.click.aliexpress.com/s/Ab3OrgM3v6R6NN0EoHucCSUeynqZAFtTZOEu7IPxrR4SLwZPLacc8DYNvZfALYHLsNM3TYez9oN3P1K9znMiq456CqQ4bMlqxnHyEiYYk22p7an8e0eu99eBBNhA077oXYZNNv7Ng1SIXynsFuB4b7vEuspqHsdvKgS5L2u7110GdQI3uzPvOsQuzYX3ez2yDAwBC8dbIGCiEOooUz3EIgs95ouUnCt8mlEdyj0IZdYBbsDD9zONrhJoAbSkj2tGTODT8f8FvvL06rMNCXXnhvooMxFttd1xtnydfkL1zvX572l20lZNcgJBGAxzFSozAWCbWyuT0X8tV0lxvJW6bDpYVEj18qDueuoe0CcpHsPEPkC1PUI6R3UFGmKndYw0sTYEgH6g9TxOvbIdfgtbZdnPrLFDfc4XikNFW6us40PFZavej55AFPFH5xH9CjwSOmV59UzgDzf2uTerF1pgqvOKpS2DX7I0UzpN1VZmoQ9D3nC59mbUqGGBuyqRWJ3ct6QjLJWEtS6F2D9cCCMTat384vcGNFGZufl1Pv0jMlfqRqP0WovwWE3YltB4pPq3zp4kt3I4AVYyZnOIZkXoHRkmj388Tyq97FFARfKJ5f6VP2YHF9a55cDvSI8Ne8z2CUg9kfh1VDlg871qeIRVUbnkGg4T63z1qZnq6Fqr4ZL2mXTJRDYHXgApDRZdBLK2tx6ynjvXxrqbtzn6jp0HLS695JH3BbcMmuuHocMxT2zBqtQot3o4Rqq7EuYonH9MBTONn1t9oP5hvHSgm0yyIl7Xe5eb3qBNG9bOXTfy11fui6La8HGLIq5ixfM9K6bnP1wDOqFCjUhjJ8FMkpNIpo3l9XLtVaC84qs0mCgE8U4kuUa2M0cnHKlLD9fwJLnVHfVV9ge4QoIjzIp1DbPXiy0pAc2sHnSwB09AYXTKcHOyrVie5JmPnCVEh75dgjnof6vOWYAyUgveRH9CoQN8FaorpAW5Z290S1herb0UopTOuLjEevjAGLfnn4ctwYXXGWYPmtwck8ZGEbCKXP7mUcBXs1PQBZaYNPLcDVLN" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./fkga6o.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 222,70€ (-38%)</div>
+    <a class="btn" href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CoxuAW8fvhW7DTaabqyZMIss5PUxgMChihvFRYRaTryh4NFhGfxnTiah61YaL8dx7joEYRT7Q46vyQ4usdZIdINsltUkka35kvMhnZIVAIX9fxFnOrzUpBVYpprl002wrr0NL0Kw2b1qYuaOhhFF2OQoxQL3QyolQFtbziRd0UimcL69BbMVZvTXMsuZMRsm7QrOcHAgBUMWIte3wlOyTrO63sZeNDGw2d65bqylm13y1yzV47DJp5wMY4gaz14D17nDo6OV7o9VVb1QQTGrqXV6kB1K3ORBfNoL2r43HJew65Nb2XZu5QEGSVIeKXJdh0naX5CsjhcBrDph4FaKjm7GNMPGFvCOqOBpfUNczulj3RtVRdI71oOguYfKro8mM3VADYxszFgt0T1uUvbHGApMcyQ7m5VaQEGBNxKqeqV84Tww4MelwZoWfuFNGzGqu7QcIdwAdtIlvJsEI5B0elkt4wl1pEpimj5hSnOUQoDcvg6qrbRPnK7gYO9M0Bxl7F4rf33ri4npE6O8GUVipe9dqaeYVQs9K6OgsukYGl77wNMfSSkDTTmnRcH4ZxmNUBoxxtqlMTzfLhFrMotzn9pEO5BJB913shkxJU8ns6sj9SLMrDZNeGJ0jNaU7Z7bJ1gEnsptfzv8fBsSxjzPTX5ArchuVBbmF7zPq5MYMfY0RWhZP4bc16tjZ4A2pXCHPMmtxDMv6nP2vE" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./15352i.html"><div class="imgwrap">
+    <span class="disc disc-fair">-20%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61+qzDWmrqL._SL500_.jpg" alt="REDMI 17, 4+128GB, Negro, 7500mAh, Carga Turbo 45 W | Corning® Gorilla® Glass 7i"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./15352i.html"><div class="title">REDMI 17, 4+128GB, Negro, 7500mAh, Carga Turbo 45 W | Corning® Gorilla® Glass 7i resistente, pantalla inmersiva de 6,9&quot;, potente MediaTek Helio G91-Ultra, cámara dual AI de 50 MP</div></a>
+    <div class="prices">
+      <span class="new">175,90€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">219,90€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 44,00€ (-20%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0H79Q2ZKJ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1gj93sp.html"><div class="imgwrap">
+    <span class="disc disc-med">-41%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51yc5lI0ACL._SL500_.jpg" alt="JBL Live 680NC, Auriculares Supraaurales Inalámbricos con Bluetooth, Blanco | Sp"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1gj93sp.html"><div class="title">JBL Live 680NC, Auriculares Supraaurales Inalámbricos con Bluetooth, Blanco | Spatial Sound, Hasta 80 Horas de Batería, Conexión Multipunto, Bluetooth 6.0, Personalizable con la Aplicación JBL Headphones</div></a>
+    <div class="prices">
+      <span class="new">87,91€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">149,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 62,08€ (-41%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GLPSVQJR?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1o4efrq.html"><div class="imgwrap">
     <span class="disc disc-fair">-25%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51dEMgYanqL._SL500_.jpg" alt="Under Armour UA Rival Fleece Logo HD Sudadera, Negro, M Hombre"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61ODg99CQ5L._SL500_.jpg" alt="Samsung Galaxy S26, 256GB, Teléfono Móvil con Galaxy AI, Cámara 50MP, 12GB RAM, "></div></a>
     <div class="body">
-    <a class="titlelink" href="./fkga6o.html"><div class="title">Under Armour UA Rival Fleece Logo HD Sudadera, Negro, M Hombre</div></a>
+    <a class="titlelink" href="./1o4efrq.html"><div class="title">Samsung Galaxy S26, 256GB, Teléfono Móvil con Galaxy AI, Cámara 50MP, 12GB RAM, Batería 4300mAh, Garantía del Fabricante 3 Años + 1 Año Extra, Color Negro (Versión Española)</div></a>
     <div class="prices">
-      <span class="new">45,05€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">60,00€</span></span>
+      <span class="new">746,10€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">999,00€</span></span>
     </div>
-    <div class="savings">💸 Poupas 14,95€ (-25%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0BGW87458?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./7kzoug.html"><div class="imgwrap">
-    <span class="disc disc-fair">-31%</span>
+    <div class="savings">💸 Poupas 252,90€ (-25%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0G4ZFP5NH?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./yanf3u.html"><div class="imgwrap">
+    <span class="disc disc-fair">-25%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/7179DtWCHFL._SL500_.jpg" alt="Polar Grit X2 Pro Reloj Outdoor GPS con Cristal de Zafiro | Mapas offline, Biose"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/413JlPp3QjL._SL500_.jpg" alt="Garmin Vívoactive 5, Smartwatch con GPS, Pantalla AMOLED, Funciones Esenciales d"></div></a>
     <div class="body">
-    <a class="titlelink" href="./7kzoug.html"><div class="title">Polar Grit X2 Pro Reloj Outdoor GPS con Cristal de Zafiro | Mapas offline, Biosensores Elixir, GPS de doble frecuencia, Diseño resistente</div></a>
+    <a class="titlelink" href="./yanf3u.html"><div class="title">Garmin Vívoactive 5, Smartwatch con GPS, Pantalla AMOLED, Funciones Esenciales de Salud y Forma física y hasta 11 días de autonomía</div></a>
     <div class="prices">
-      <span class="new">520,00€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">749,90€</span></span>
+      <span class="new">181,96€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">242,61€</span></span>
     </div>
-    <div class="savings">💸 Poupas 229,90€ (-31%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CXJ4QWR5?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./ig8rjs.html"><div class="imgwrap">
-    <span class="disc disc-med">-57%</span>
+    <div class="savings">💸 Poupas 60,65€ (-25%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CG6LMQHH?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./12dtn80.html"><div class="imgwrap">
+    <span class="disc disc-fair">-30%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51ZOfLYf6RL._SL500_.jpg" alt="Reebok Reebok Glide Sapatilhas desportivas unissexo para adulto"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61c07TAp52L._SL500_.jpg" alt="Bowers &amp; Wilkins Auriculares inalámbricos Px7 S2e, Ocean Azul"></div></a>
     <div class="body">
-    <a class="titlelink" href="./ig8rjs.html"><div class="title">Reebok Reebok Glide Sapatilhas desportivas unissexo para adulto</div></a>
+    <a class="titlelink" href="./12dtn80.html"><div class="title">Bowers &amp; Wilkins Auriculares inalámbricos Px7 S2e, Ocean Azul</div></a>
     <div class="prices">
-      <span class="new">25,95€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">60,00€</span></span>
+      <span class="new">229,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">329,00€</span></span>
     </div>
-    <div class="savings">💸 Poupas 34,05€ (-57%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0FC2VBS99?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    <div class="savings">💸 Poupas 100,00€ (-30%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CH1XRDTR?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>

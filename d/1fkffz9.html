@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Reebok World 70 por 19,32€ (-65%) | Descontos PT</title>
 <meta name="description" content="Reebok World 70 em promoção por 19,32€ (antes 55,00€) — desconto de 65%, com histórico de preço."/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="noindex, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -506,160 +506,6 @@
   .news-card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted);font-weight:600;}
   .news-card-more{color:var(--accent);font-weight:800;}
 
-  /* ═════════ NOVO ESTILO (set-2026): editorial, fundo claro, cabeçalho azul-escuro ═════════
-     Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
-  :root{
-    --bg:#ffffff; --card:#ffffff; --card-sub:#f1f4f8;
-    --accent:#c2410c; --accent2:#9a3412; --accent-light:rgba(194,65,12,.08);
-    --text:#0a1b33; --muted:#5b6b85; --line:#dde4ee; --imgbg:#ffffff;
-    --navy:#0a1b33; --navy2:#132a4a; --cta:#ff7a3d;
-    --shadow:0 1px 2px rgba(10,27,51,.05); --shadow-hover:0 6px 18px rgba(10,27,51,.10);
-  }
-  html.dark{
-    --bg:#0b1220; --card:#111c30; --card-sub:#16233b;
-    --accent:#ff7a3d; --accent2:#ff6a25; --accent-light:rgba(255,122,61,.14);
-    --text:#eef2f8; --muted:#9fb0c8; --line:#22324d; --imgbg:#ffffff;
-    --navy:#08111f; --navy2:#12203a; --cta:#ff7a3d;
-    --shadow:none; --shadow-hover:0 8px 22px rgba(0,0,0,.5);
-  }
-
-  /* Cabeçalho: faixa azul-escura fina (logótipo, menu, ações) */
-  header{
-    background:var(--navy);border:0;border-radius:6px;padding:0 24px;margin:0;box-shadow:none;text-align:left;
-    display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;column-gap:24px;min-height:64px;
-  }
-  html.dark header{background:var(--navy);}
-  header .header-topbar{display:contents;}
-  header .logo{grid-column:1;grid-row:1;font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-.5px;}
-  header .logo a{color:#ffffff;}
-  header .logo span{color:var(--cta);}
-  header .marca svg{color:var(--cta);}
-  header .tag{display:none;}
-  header .live-pill{display:none;}
-  header .header-collapsible{grid-column:2;grid-row:1;margin:0;padding:0;border:0;display:block;min-width:0;}
-  header .topnav{margin:0;justify-content:flex-start;flex-wrap:nowrap;gap:24px;overflow:hidden;}
-  header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:22px 0;font-size:14.5px;font-weight:500;color:#d5deea;white-space:nowrap;transform:none;}
-  header .topnav a:hover{background:transparent;color:#ffffff;box-shadow:none;transform:none;}
-  header .topnav a:nth-child(n+5){display:none;}
-  header .wa-channel-pill{grid-column:3;grid-row:1;background:transparent;border:1px solid #3a5075;box-shadow:none;color:#ffffff !important;font-size:12.5px;font-weight:600;padding:7px 14px;}
-  header .wa-channel-pill:hover{background:var(--navy2);box-shadow:none;transform:none;}
-  header .header-actions{grid-column:4;grid-row:1;}
-  header .darkbtn,header .menubtn{background:var(--navy2);border-color:var(--navy2);color:#ffffff;box-shadow:none;}
-  header .menubtn.active{background:var(--cta) !important;border-color:var(--cta) !important;color:#0a1b33 !important;}
-
-  @media(max-width:768px){
-    header{grid-template-columns:1fr auto;padding:10px 14px;column-gap:10px;row-gap:8px;min-height:0;}
-    header .logo{font-size:22px;grid-column:1;grid-row:1;}
-    header .header-actions{grid-column:2;grid-row:1;}
-    header .wa-channel-pill{grid-column:1 / -1;grid-row:2;justify-self:start;font-size:11.5px;padding:5px 12px;}
-    header .header-collapsible{grid-column:1 / -1;grid-row:3;}
-    header .topnav a{padding:10px 14px;color:#ffffff;background:var(--navy2);border-radius:6px;white-space:normal;}
-    header .topnav a:nth-child(n+5){display:block;}
-    .header-collapsible{border-top:1px solid #22385a !important;}
-  }
-
-  /* Faixa de confiança */
-  .trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;padding:10px 12px;background:var(--card-sub);border-radius:6px;margin:10px 0 0;font-size:13px;color:var(--muted);}
-  .trust-strip span{display:inline-flex;align-items:center;gap:7px;}
-  .trust-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;}
-
-  /* Pesquisa, ordenação e categorias */
-  .toolbar{background:var(--bg);margin:14px 0 6px;}
-  .search{border-radius:8px;box-shadow:none;}
-  .sort{border-radius:8px;}
-  .chip{background:var(--card);border:1px solid #c9d3e0;border-radius:999px;font-weight:600;font-size:14px;padding:8px 16px;box-shadow:none;}
-  html.dark .chip{border-color:#2b3d5c;}
-  .chip:hover{border-color:var(--text);transform:none;}
-  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg);box-shadow:none;}
-
-  /* Destaque (super oferta + publicação) */
-  .hero-dual-container{margin:24px 0 8px;}
-  .hero-card{border-radius:6px;box-shadow:none;background:var(--card-sub);border:0;padding:26px;}
-  .hero-card:hover{transform:none;box-shadow:none;}
-  .hero-deal-card{border:0;}
-  .hero-article-card,html.dark .hero-article-card{background:var(--card-sub);border:0;}
-  .hero-card-badge{border-radius:14px;font-size:11.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;padding:5px 14px;}
-  .badge-deal{background:var(--navy);color:#ffffff;box-shadow:none;}
-  html.dark .badge-deal{background:var(--cta);color:#0a1b33;}
-  .badge-article{background:#0b5cad;box-shadow:none;}
-  .hero-title{font-weight:700;font-size:21px;letter-spacing:-.2px;}
-  .hero-new-price{color:var(--text);font-size:40px;font-weight:800;letter-spacing:-1px;}
-  .hero-savings-pill{border-radius:4px;}
-  .hero-img-wrap,.hero-article-img{border-radius:4px;background:#ffffff;}
-  @media(min-width:540px){.hero-deal-inner{grid-template-columns:1fr 200px;} .hero-img-wrap{order:2;height:200px;}}
-  .hero-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .hero-btn{background:var(--cta);color:#0a1b33 !important;}
-  .hero-btn:hover,html.dark .hero-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-  .hero-btn-article,html.dark .hero-btn-article{background:#0b5cad;color:#ffffff !important;}
-  .hero-btn-article:hover{background:#0a4d94;}
-  .hero-share{border-radius:26px;}
-
-  /* Secções */
-  .sectionh{font-size:24px;font-weight:700;letter-spacing:-.3px;border-bottom:2px solid var(--text);padding-bottom:10px;margin:36px 0 18px;}
-  .count{margin:0 2px 14px;}
-
-  /* Acabou de chegar (ao vivo) */
-  .rec-head{justify-content:flex-start;}
-  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--green-dark);background:var(--green-light);padding:4px 12px;border-radius:999px;letter-spacing:0;}
-  html.dark .live-badge{color:var(--green);}
-  .rec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;}
-  .rec-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
-  .rec-item:hover .rec-title{color:var(--accent);}
-  .rec-img{width:84px;height:84px;flex:0 0 84px;background:#ffffff;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:8px;}
-  .rec-img img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
-  .rec-body{display:flex;flex-direction:column;gap:5px;min-width:0;}
-  .rec-time{font-size:12.5px;font-weight:600;color:var(--green-dark);}
-  html.dark .rec-time{color:var(--green);}
-  .rec-title{font-weight:600;font-size:15.5px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .rec-price{display:flex;align-items:center;gap:8px;}
-  .rec-price b{font-size:18px;font-weight:800;}
-  .rec-disc{font-style:normal;background:#c2410c;color:#ffffff;border-radius:4px;font-size:12px;font-weight:700;padding:2px 7px;}
-  @media(max-width:960px){.rec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}}
-  @media(max-width:600px){.rec-grid{grid-template-columns:1fr;} .sectionh{font-size:21px;margin:28px 0 14px;}}
-
-  /* Cartões de oferta */
-  .card{border-radius:6px;box-shadow:none;border:1px solid var(--line);}
-  .card:hover,html.dark .card:hover{transform:none;box-shadow:var(--shadow-hover);border-color:var(--text);}
-  .card a.imglink,.imgwrap{border-radius:5px 5px 0 0;}
-  .imgwrap{background:#ffffff;}
-  .disc{border-radius:4px;font-weight:700;font-size:13px;box-shadow:none;}
-  .disc-hot,.disc-med{background:#c2410c;box-shadow:none;}
-  .disc-fair{background:#b45309;box-shadow:none;}
-  .disc-low{background:#0b5cad;box-shadow:none;}
-  .topbadge{border-radius:4px;background:#166534;box-shadow:none;}
-  .store{border-radius:4px;}
-  .title{font-weight:600;}
-  .new{color:var(--text);font-weight:800;}
-  .savings{border-radius:4px;}
-  .btn,.mais-btn{background:var(--navy);color:#ffffff !important;box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .btn,html.dark .mais-btn{background:var(--cta);color:#0a1b33 !important;}
-  .btn:hover,.mais-btn:hover,html.dark .btn:hover,html.dark .mais-btn:hover{background:var(--accent);color:#ffffff !important;box-shadow:none;transform:none;}
-
-  /* Parceiros (publicidade de afiliados) */
-  .partners{margin:44px 0 8px;}
-  .partners-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
-  .partners-row a{display:block;max-width:100%;border-radius:4px;overflow:hidden;}
-  .partners-row img{display:block;max-width:100%;height:auto;}
-  .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
-  .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--muted);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
-
-  /* Rodapé azul-escuro */
-  footer{background:var(--navy);border:0;border-radius:6px;box-shadow:none;color:#c4d0e0;}
-  footer .footer-col h4{color:#ffffff;}
-  footer .footer-col p,footer .footer-col li{color:#c4d0e0;}
-  footer .footer-col a{color:#c4d0e0;}
-  footer .footer-col a:hover{color:var(--cta);}
-  footer .footer-bottom{border-color:#1d3558;color:#9fb0c8;}
-
-  /* Blocos editoriais e banners de evento: mesma linguagem (planos, cantos discretos) */
-  .event-banner,html.dark .event-banner{border-radius:6px;background:var(--card-sub);border:0;box-shadow:none;}
-  .event-banner::before{display:none;}
-  .event-badge{border-radius:14px;background:var(--navy);letter-spacing:.6px;font-weight:600;}
-  html.dark .event-badge{background:var(--cta);color:#0a1b33;}
-  .event-btn{background:var(--navy);box-shadow:none;border-radius:26px;font-weight:600;}
-  html.dark .event-btn{background:var(--cta);color:#0a1b33 !important;}
-  .event-btn:hover,html.dark .event-btn:hover{background:var(--accent);color:#ffffff !important;transform:none;box-shadow:none;}
-
   .bread{margin:14px 2px 10px;font-size:13.5px;font-weight:700;}
   .bread a{color:var(--accent);text-decoration:none;}
   .product{display:grid;grid-template-columns:1fr;gap:16px;margin-top:6px;}
@@ -792,7 +638,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · 👕 Moda</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 🛍️ Outras Ofertas</div>
 
     <div class="product">
       <div class="pimg">
@@ -801,7 +647,7 @@
         <img src="https://m.media-amazon.com/images/I/41mlCOorwxL._SL500_.jpg" alt="Reebok World 70">
       </div>
       <div class="pinfo">
-        <span class="cat">👕 Moda</span>
+        <span class="cat">🛍️ Outras Ofertas</span>
         <h1>Reebok World 70</h1>
         <div class="bigprices">
           <span class="bignew">19,32€</span>
@@ -821,10 +667,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Ténis Reebok World 70 – estilo retro e conforto diário</h3>
-          <p class="article-lead-p">Os Reebok World 70 trazem de volta o design clássico dos anos 70, com um visual vintage que combina bem com looks casuais. São feitos para quem procura um ténis versátil, com boa amortização e durabilidade.</p>
-          <p class="article-body-p">Ao calçar estes ténis sentes um apoio firme nos pés, graças à entressola de espuma que absorve impactos. O cabedal oferece um toque macio e respira bem, permitindo que os pés mantenham-se frescos ao longo do dia.</p>
-          <p class="article-body-p">O modelo apresenta parte superior em malha e couro sintético, com sobreposições em camurça que reforçam a estrutura. A sola de borracha apresenta um padrão de tração inspirado nos clássicos Reebok, oferecendo aderência em diferentes superfícies.</p>
+          <h3 class="article-subtitle">📰 Reebok World 70</h3>
+          <p class="article-lead-p">A <strong>Reebok</strong> é a marca deste artigo, na categoria Outras Ofertas. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
+          <p class="article-body-p"></p>
+          <p class="article-body-p"></p>
         </div>
         
         <div class="specs-box">
@@ -832,24 +678,16 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Cabedal</span>
-        <span class="spec-v">Malha + couro sintético + camurça</span>
+        <span class="spec-k">Marca</span>
+        <span class="spec-v">Reebok</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Entressola</span>
-        <span class="spec-v">Espuma EVA</span>
+        <span class="spec-k">Categoria</span>
+        <span class="spec-v">Outras Ofertas</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Sola exterior</span>
-        <span class="spec-v">Borracha com padrão de tração</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Fecho</span>
-        <span class="spec-v">Cadarço tradicional</span>
-      </div>
-      <div class="spec-item">
-        <span class="spec-k">Disponibilidade de tamanhos</span>
-        <span class="spec-v">36‑46 EU</span>
+        <span class="spec-k">Loja</span>
+        <span class="spec-v">Amazon</span>
       </div>
           </div>
         </div>
@@ -858,11 +696,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Ideal para quem quer um ténis de estilo retro que funcione tanto no quotidiano como em passeios descontraídos.</p>
+            <p>Quem procura este tipo de produto — Outras Ofertas — ao melhor preço.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Quem procura calçado de alta performance para desportos intensos pode querer considerar outra opção.</p>
+            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
           </div>
         </div>
 
@@ -871,16 +709,13 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Design vintage que combina com tudo</li>
-              <li>Conforto imediato graças à entressola de espuma</li>
-              <li>Sola de borracha durável com boa aderência</li>
+              <li>Desconto de 65% face ao preço de referência</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Não oferece suporte avançado para corridas</li>
-              <li>Disponível apenas em cores limitadas</li>
+              <li>Ficha detalhada ainda não disponível para este produto</li>
             </ul>
           </div>
         </div>
@@ -914,19 +749,19 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Moda</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./1er26hz.html"><div class="imgwrap">
-    <span class="disc disc-fair">-23%</span>
+    <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./p7mt26.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71gftBQ2IRL._SL500_.jpg" alt="Michael Kors Reloj Slim Runway para mujer, 33mm Movimiento de cuarzo a tres aguj"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51L7zzoMSFL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1er26hz.html"><div class="title">Michael Kors Reloj Slim Runway para mujer, 33mm Movimiento de cuarzo a tres agujas con correa de acero inoxidable, Tono plateado y tono oro rosa, 33 mm : Michael Kors</div></a>
+    <a class="titlelink" href="./p7mt26.html"><div class="title">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Audio Bluetooth Glasses | Up to 10H Playtime, Hands-Free Calling, Music Playback, Voice Control, Blue Light Blocking Lens, Unisex for Daily &amp; Outdoor</div></a>
     <div class="prices">
-      <span class="new">169,03€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">219,00€</span></span>
+      <span class="new">29,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">78,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 49,97€ (-23%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B01BESQMYE?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./q2fekm.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 49,00€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BZ3J167G?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./q2fekm.html"><div class="imgwrap">
     <span class="disc disc-med">-56%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/71Mb+-9+bkL._SL500_.jpg" alt="Replay Jeans para Mujer"></div></a>
@@ -937,29 +772,7 @@
       <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">119,00€</span></span>
     </div>
     <div class="savings">💸 Poupas 66,05€ (-56%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CNRQHNPL?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1pnwdr5.html"><div class="imgwrap">
-    <span class="disc disc-med">-51%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51QrzLbgOYL._SL500_.jpg" alt="Vans Sapatilhas unissexo para adulto Crosspath"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1pnwdr5.html"><div class="title">Vans Sapatilhas unissexo para adulto Crosspath</div></a>
-    <div class="prices">
-      <span class="new">67,95€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">140,00€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 72,05€ (-51%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CZ7NKTHX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./kagltz.html"><div class="imgwrap">
-    <span class="disc disc-fair">-33%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61QqV8YCvrL._SL500_.jpg" alt="Kipling Faster Mochila Infantil"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./kagltz.html"><div class="title">Kipling Faster Mochila Infantil</div></a>
-    <div class="prices">
-      <span class="new">46,98€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">69,90€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 22,92€ (-33%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B07V7X2PBG?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uw7jv7.html"><div class="imgwrap">
+    <a class="btn" href="https://www.amazon.es/dp/B0CNRQHNPL?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1uw7jv7.html"><div class="imgwrap">
     <span class="disc disc-med">-58%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61VK87e76DL._SL500_.jpg" alt="Swarovski Anillo de cóctel Constella, Talla redonda, Blanco, Baño de rodio"></div></a>
@@ -970,40 +783,62 @@
       
     </div>
     
-    <a class="btn" href="https://www.amazon.es/dp/B09ZBCMSD7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./rfbnuq.html"><div class="imgwrap">
-    <span class="disc disc-hot">-60%</span>
+    <a class="btn" href="https://www.amazon.es/dp/B09ZBCMSD7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./18s879s.html"><div class="imgwrap">
+    <span class="disc disc-fair">-36%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/41Ivc72N45L._SL500_.jpg" alt="PUMA ESS Small No. 1 Logo Relaxed Crew FL Camisola Meninas (Pack de 1)"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/81Dl7v7-5sL._SL500_.jpg" alt="Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo De"></div></a>
     <div class="body">
-    <a class="titlelink" href="./rfbnuq.html"><div class="title">PUMA ESS Small No. 1 Logo Relaxed Crew FL Camisola Meninas (Pack de 1)</div></a>
+    <a class="titlelink" href="./18s879s.html"><div class="title">Oral-B iO 3 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo Dental con 4 Cabezales, Estuche de Viaje Y Portarrecambios, 3 Modos de Cepillado, Sensor de Presión Y Temporizador</div></a>
     <div class="prices">
-      <span class="new">12,03€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">30,07€</span></span>
+      <span class="new">114,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">179,95€</span></span>
     </div>
-    <div class="savings">💸 Poupas 18,04€ (-60%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DJSTSP82?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./dmpvjx.html"><div class="imgwrap">
-    <span class="disc disc-med">-45%</span>
+    <div class="savings">💸 Poupas 65,00€ (-36%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GCMNN2ZQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./j35nno.html"><div class="imgwrap">
+    <span class="disc disc-hot">-62%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/712Ix0CCOTL._SL500_.jpg" alt="GANT Homem camisola com fecho de correr 1/4 com escudo regular, Bubblegum Pink"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/51MSWODuufL._SL500_.jpg" alt="SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS"></div></a>
     <div class="body">
-    <a class="titlelink" href="./dmpvjx.html"><div class="title">GANT Homem camisola com fecho de correr 1/4 com escudo regular, Bubblegum Pink</div></a>
+    <a class="titlelink" href="./j35nno.html"><div class="title">SHARK Capacete de mota STREET DRAK TRIBUTE RM KAW, preto/branco, XS</div></a>
     <div class="prices">
-      <span class="new">65,95€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">120,00€</span></span>
+      <span class="new">57,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">152,61€</span></span>
     </div>
-    <div class="savings">💸 Poupas 54,05€ (-45%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0CRL469ML?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1oqi1uw.html"><div class="imgwrap">
-    <span class="disc disc-hot">-67%</span>
+    <div class="savings">💸 Poupas 94,62€ (-62%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B07Z512R8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./cyxcat.html"><div class="imgwrap">
+    <span class="disc disc-fair">-25%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/615qtu37ShL._SL500_.jpg" alt="Reebok Club C Revenge Sapatilhas vintage unissexo para adulto"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61qYu09ww9L._SL500_.jpg" alt="RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transm"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1oqi1uw.html"><div class="title">Reebok Club C Revenge Sapatilhas vintage unissexo para adulto</div></a>
+    <a class="titlelink" href="./cyxcat.html"><div class="title">RØDE RØDECaster Pro II, solución de producción todo en uno para podcasts, transmisiones, producción musical y creación de contenido (Negro)</div></a>
     <div class="prices">
-      <span class="new">36,51€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">110,00€</span></span>
+      <span class="new">538,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">719,99€</span></span>
     </div>
-    <div class="savings">💸 Poupas 73,49€ (-67%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0FC2TCFZV?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    <div class="savings">💸 Poupas 181,99€ (-25%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0B17V8NGX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ht2kw0.html"><div class="imgwrap">
+    <span class="disc disc-hot">-78%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61CvD6tYNCL._SL500_.jpg" alt="McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1ht2kw0.html"><div class="title">McAfee Total Protection para 5 Dispositivos 2026, 15 meses, Exclusivos de Amazon | Antivirus, VPN, software de seguridad | Suscripción con renovación automática | Descargar</div></a>
+    <div class="prices">
+      <span class="new">21,49€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">99,95€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 78,46€ (-78%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0BGPLKTVF?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1tf48i2.html"><div class="imgwrap">
+    <span class="disc disc-fair">-37%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61D7cBLbK7L._SL500_.jpg" alt="Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca, Baño de rodio "></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1tf48i2.html"><div class="title">Swarovski Pulsera Tennis Angelic, Talla redonda, Pequeña, Blanca, Baño de rodio : Swarovski</div></a>
+    <div class="prices">
+      <span class="new">112,90€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">179,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 66,10€ (-37%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B00P9L2NVO?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>
