@@ -183,6 +183,12 @@
   .cats{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;-webkit-overflow-scrolling:touch;}
   .cats::-webkit-scrollbar{height:4px;}
   .cats::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+  /* Em mobile a barra de scroll fininha não ajuda (é ecrã tátil) — some, como já
+     acontece na navegação do cabeçalho, para parecer mesmo chips de app. */
+  @media(max-width:768px){
+    .cats{scrollbar-width:none;}
+    .cats::-webkit-scrollbar{display:none;}
+  }
   .chip{flex:0 0 auto;background:var(--card);border:1px solid var(--line);color:var(--text);font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:all .18s ease;box-shadow:var(--shadow);}
   .chip:hover{border-color:var(--accent);transform:translateY(-1px);}
   .chip.active{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);border-color:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(255,85,0,.38);}
@@ -638,7 +644,7 @@
 
   /* Banner de marca (23-set-2026) — apresentação de confiança logo no topo, antes da
      pesquisa: quem chega de uma partilha percebe em segundos quem somos. */
-  .brand-banner{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 36px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:32px;overflow:hidden;margin:20px 0 8px;}
+  .brand-banner{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 36px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:32px;overflow:hidden;margin:16px 0 24px;}
   .brand-banner::before{content:'';position:absolute;top:-50px;right:-50px;width:300px;height:300px;background:radial-gradient(circle,var(--accent-light) 0%,transparent 70%);pointer-events:none;}
   .brand-content{position:relative;z-index:2;}
   .brand-pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);border:1px solid var(--accent-light);color:var(--accent2);padding:5px 14px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.3px;margin-bottom:14px;}
@@ -849,7 +855,15 @@
 
       
     <div class="sectionh">🛒 Ofertas para pôres em prática</div>
-    <div class="article-deals"><a class="adeal" href="../../d/1bsv34r.html">
+    <div class="article-deals"><a class="adeal" href="../../d/4lgqqy.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61E2Jun9LXL._SL500_.jpg" alt="camel active Zapatillas Hombre 58CLA07-703850, Caqui, 43 EU"><span class="adeal-disc">-54%</span></div>
+    <div class="adeal-t">camel active Zapatillas Hombre 58CLA07-703850, Caqui, 43 EU</div>
+    <div class="adeal-p"><span class="adeal-new">77,34€</span><span class="adeal-old">168,13€</span></div>
+  </a><a class="adeal" href="../../d/e4skdn.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/717EX+Ndr+L._SL500_.jpg" alt="Ultenic Robot Limpiafondos Piscina, 90Min, 80m², Recogida sin Poste, Estacionami"><span class="adeal-disc">-42%</span></div>
+    <div class="adeal-t">Ultenic Robot Limpiafondos Piscina, 90Min, 80m², Recogida sin Po</div>
+    <div class="adeal-p"><span class="adeal-new">239,99€</span><span class="adeal-old">413,78€</span></div>
+  </a><a class="adeal" href="../../d/1bsv34r.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71Jhd5HtbFL._SL500_.jpg" alt="Meik Mangni Zapatillas de Estar por Casa Hombre Mujer Memory Foam Suave y Cómodo"><span class="adeal-disc">-55%</span></div>
     <div class="adeal-t">Meik Mangni Zapatillas de Estar por Casa Hombre Mujer Memory Foa</div>
     <div class="adeal-p"><span class="adeal-new">10,81€</span><span class="adeal-old">23,99€</span></div>
@@ -865,14 +879,6 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61itDWON3oL._SL500_.jpg" alt="Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ru"><span class="adeal-disc">-26%</span></div>
     <div class="adeal-t">Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, ca</div>
     <div class="adeal-p"><span class="adeal-new">184,83€</span><span class="adeal-old">249,00€</span></div>
-  </a><a class="adeal" href="../../d/1y5j614.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61+fWcVaHBL._SL500_.jpg" alt="BILLABONG Arch Po Pull-Over Homem (Pacote de 1)"><span class="adeal-disc">-60%</span></div>
-    <div class="adeal-t">BILLABONG Arch Po Pull-Over Homem (Pacote de 1)</div>
-    <div class="adeal-p"><span class="adeal-new">26,38€</span><span class="adeal-old">65,95€</span></div>
-  </a><a class="adeal" href="../../d/e94mg9.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41I1O5KD6-L._SL500_.jpg" alt="BÉABA, Gafas de sol para bebés de 9 a 24 meses"><span class="adeal-disc">-72%</span></div>
-    <div class="adeal-t">BÉABA, Gafas de sol para bebés de 9 a 24 meses</div>
-    <div class="adeal-p"><span class="adeal-new">9,75€</span><span class="adeal-old">35,00€</span></div>
   </a></div>
     <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
