@@ -400,6 +400,15 @@
   .article li{font-size:15.5px;line-height:1.65;margin-bottom:8px;}
   .article a{color:var(--accent);text-decoration:none;font-weight:700;}
   .article a:hover{text-decoration:underline;}
+  /* Tabelas de comparação (geradas por IA com atributos HTML crus border/cellpadding) —
+     sem isto caem no default do browser: fundo inconsistente, bordas 3D, e em dark
+     mode isso torna os links lá dentro quase invisíveis (confirmado 23-set-2026,
+     artigo "Kodak Charmera"). */
+  .article table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;background:var(--card);border:1px solid var(--line) !important;}
+  .article th,.article td{border:1px solid var(--line) !important;padding:10px 12px;text-align:left;vertical-align:top;color:var(--text);}
+  .article th{background:var(--card-sub);font-weight:800;font-size:13px;}
+  .article table a{color:var(--accent);font-weight:800;}
+  @media(max-width:640px){.article table{font-size:12px;}.article th,.article td{padding:7px 8px;}}
   .relguides{margin-top:10px;}
   /* Recomendados (produtos digitais & parcerias) */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:16px;}
@@ -826,15 +835,15 @@
     </div>
 
     
-    <a class="news-hero-card" href="./xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal/" data-category="📱 Gadgets &amp; Mobile">
+    <a class="news-hero-card" href="./spotify-mudou-as-regras-e-quem-nao-paga-vai-ter/" data-category="💻 Informática &amp; PC">
       <div class="news-hero-img-wrap">
-        <img src="/img/news/xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal.jpg" alt="Xiaomi POCO X8 Pro de 12GB+512GB a Menos de 380€ na Amazon: O Melhor Smartphone Qualidade-Preço em Portugal?">
+        <img src="/img/news/spotify-mudou-as-regras-e-quem-nao-paga-vai-ter.jpg" alt="Spotify impõe espera de três dias a novos lançamentos no plano gratuito">
       </div>
       <div class="news-hero-content">
-        <span class="news-badge">📱 Gadgets &amp; Mobile</span>
-        <h2 class="news-hero-title">Xiaomi POCO X8 Pro de 12GB+512GB a Menos de 380€ na Amazon: O Melhor Smartphone Qualidade-Preço em Portugal?</h2>
-        <p class="news-hero-desc">Análise completa ao Xiaomi POCO X8 Pro: 12GB de RAM, 512GB de armazenamento, ecrã AMOLED 1.5K 120Hz, câmara Sony com OIS e carregamento rápido a preço de saldo.</p>
-        <div class="news-meta">📅 24 de Agosto de 2026 · ⏱️ 6 min de leitura · ✍️ Redação Descontos PT</div>
+        <span class="news-badge">💻 Informática &amp; PC</span>
+        <h2 class="news-hero-title">Spotify impõe espera de três dias a novos lançamentos no plano gratuito</h2>
+        <p class="news-hero-desc">O serviço de streaming altera o acesso a músicas recentes para quem usa a versão com anúncios, o que pode mudar a tua escolha de subscrição em Portugal.</p>
+        <div class="news-meta">📅 23 de setembro de 2026 · ⏱️ 5 min de leitura · ✍️ Redação Descontos PT</div>
       </div>
     </a>
 
@@ -853,21 +862,6 @@
 
     <div class="news-grid" id="news-grid">
       
-    <a class="news-card" href="./spotify-mudou-as-regras-e-quem-nao-paga-vai-ter/" data-category="💻 Informática &amp; PC">
-      <div class="news-card-img">
-        <img src="/img/news/spotify-mudou-as-regras-e-quem-nao-paga-vai-ter.jpg" alt="Spotify impõe espera de três dias a novos lançamentos no plano gratuito">
-        <span class="news-card-badge">💻 Informática &amp; PC</span>
-      </div>
-      <div class="news-card-body">
-        <h3 class="news-card-title">Spotify impõe espera de três dias a novos lançamentos no plano gratuito</h3>
-        <p class="news-card-desc">O serviço de streaming altera o acesso a músicas recentes para quem usa a versão com anúncios, o que pode mudar a tua escolha de subscrição em Portugal.</p>
-        <div class="news-card-footer">
-          <span>📅 23 de setembro de 2026 · ⏱️ 5 min de leitura</span>
-          <span class="news-card-more">Ler notícia →</span>
-        </div>
-      </div>
-    </a>
-  
     <a class="news-card" href="./xiaomi-nova-maquina-de-loica-com-ia-guarda-tudo/" data-category="📱 Gadgets &amp; Mobile">
       <div class="news-card-img">
         <img src="/img/news/xiaomi-nova-maquina-de-loica-com-ia-guarda-tudo.jpg" alt="Xiaomi lança máquina de lavar loiça de bancada com IA que mantém a limpeza por 10 dias">
@@ -1448,6 +1442,21 @@
         <p class="news-card-desc">Previsão de subida significativa dos combustíveis a partir de segunda‑feira e dicas para poupar no transporte e nos gadgets.</p>
         <div class="news-card-footer">
           <span>📅 18 de setembro de 2026 · ⏱️ 5 min de leitura</span>
+          <span class="news-card-more">Ler notícia →</span>
+        </div>
+      </div>
+    </a>
+  
+    <a class="news-card" href="./xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal/" data-category="📱 Gadgets &amp; Mobile">
+      <div class="news-card-img">
+        <img src="/img/news/xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal.jpg" alt="Xiaomi POCO X8 Pro de 12GB+512GB a Menos de 380€ na Amazon: O Melhor Smartphone Qualidade-Preço em Portugal?">
+        <span class="news-card-badge">📱 Gadgets &amp; Mobile</span>
+      </div>
+      <div class="news-card-body">
+        <h3 class="news-card-title">Xiaomi POCO X8 Pro de 12GB+512GB a Menos de 380€ na Amazon: O Melhor Smartphone Qualidade-Preço em Portugal?</h3>
+        <p class="news-card-desc">Análise completa ao Xiaomi POCO X8 Pro: 12GB de RAM, 512GB de armazenamento, ecrã AMOLED 1.5K 120Hz, câmara Sony com OIS e carregamento rápido a preço de saldo.</p>
+        <div class="news-card-footer">
+          <span>📅 24 de Agosto de 2026 · ⏱️ 6 min de leitura</span>
           <span class="news-card-more">Ler notícia →</span>
         </div>
       </div>

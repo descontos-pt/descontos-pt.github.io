@@ -400,6 +400,15 @@
   .article li{font-size:15.5px;line-height:1.65;margin-bottom:8px;}
   .article a{color:var(--accent);text-decoration:none;font-weight:700;}
   .article a:hover{text-decoration:underline;}
+  /* Tabelas de comparação (geradas por IA com atributos HTML crus border/cellpadding) —
+     sem isto caem no default do browser: fundo inconsistente, bordas 3D, e em dark
+     mode isso torna os links lá dentro quase invisíveis (confirmado 23-set-2026,
+     artigo "Kodak Charmera"). */
+  .article table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;background:var(--card);border:1px solid var(--line) !important;}
+  .article th,.article td{border:1px solid var(--line) !important;padding:10px 12px;text-align:left;vertical-align:top;color:var(--text);}
+  .article th{background:var(--card-sub);font-weight:800;font-size:13px;}
+  .article table a{color:var(--accent);font-weight:800;}
+  @media(max-width:640px){.article table{font-size:12px;}.article th,.article td{padding:7px 8px;}}
   .relguides{margin-top:10px;}
   /* Recomendados (produtos digitais & parcerias) */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:16px;}
@@ -855,7 +864,11 @@
 
       
     <div class="sectionh">🛒 Ofertas para pôres em prática</div>
-    <div class="article-deals"><a class="adeal" href="../../d/4lgqqy.html">
+    <div class="article-deals"><a class="adeal" href="../../d/6uo1us.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/514W1gQYqHL._SL500_.jpg" alt="TOCOBO Cica Calming Sun Serum SPF50+ PA++++ (50 ml)"><span class="adeal-disc">-42%</span></div>
+    <div class="adeal-t">TOCOBO Cica Calming Sun Serum SPF50+ PA++++ (50 ml)</div>
+    <div class="adeal-p"><span class="adeal-new">13,80€</span><span class="adeal-old">23,95€</span></div>
+  </a><a class="adeal" href="../../d/4lgqqy.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61E2Jun9LXL._SL500_.jpg" alt="camel active Zapatillas Hombre 58CLA07-703850, Caqui, 43 EU"><span class="adeal-disc">-54%</span></div>
     <div class="adeal-t">camel active Zapatillas Hombre 58CLA07-703850, Caqui, 43 EU</div>
     <div class="adeal-p"><span class="adeal-new">77,34€</span><span class="adeal-old">168,13€</span></div>
@@ -875,10 +888,6 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51gYKyqqERL._SL500_.jpg" alt="Tommy Hilfiger TH Basket Core LTH Fm0fm05629 Parte Superior baixaHomem"><span class="adeal-disc">-56%</span></div>
     <div class="adeal-t">Tommy Hilfiger TH Basket Core LTH Fm0fm05629 Parte Superior baix</div>
     <div class="adeal-p"><span class="adeal-new">43,51€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/1k6127z.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61itDWON3oL._SL500_.jpg" alt="Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ru"><span class="adeal-disc">-26%</span></div>
-    <div class="adeal-t">Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, ca</div>
-    <div class="adeal-p"><span class="adeal-new">184,83€</span><span class="adeal-old">249,00€</span></div>
   </a></div>
     <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
