@@ -666,15 +666,21 @@
   /* Corpo com sidebar: grelha principal de ofertas + coluna de widgets, como o Pplware */
   .main-with-sidebar{display:grid;grid-template-columns:1fr;gap:32px;align-items:start;}
   @media(min-width:1080px){.main-with-sidebar{grid-template-columns:2.3fr 1fr;}}
+  /* Em ecrã pequeno a sidebar cai por baixo da grelha toda (a ordem no HTML manda) —
+     isso enterrava o "Mais Populares" depois de ~200 produtos de scroll. A ordem CSS
+     põe a sidebar logo no topo desta secção em mobile, sem duplicar HTML nem mexer no JS. */
+  @media(max-width:1079px){.main-with-sidebar{grid-template-columns:1fr;}.side-widgets{order:-1;position:static;}}
   .side-widgets{display:flex;flex-direction:column;gap:22px;position:sticky;top:100px;}
-  .side-widget{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);}
+  .side-widget{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease;}
   .side-widget-title{font-size:14.5px;font-weight:800;color:var(--text);border-bottom:2px solid var(--line);padding-bottom:9px;margin-bottom:14px;display:flex;align-items:center;gap:7px;}
-  .side-wa{background:linear-gradient(135deg,#075e54 0%,#128c7e 100%);color:#fff;border-radius:14px;padding:18px;text-align:center;}
+  .side-wa{background:linear-gradient(135deg,#075e54 0%,#128c7e 100%);color:#fff;border-radius:14px;padding:18px;text-align:center;transition:transform .2s ease,box-shadow .2s ease;}
+  .side-wa:hover,.side-widget:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,23,42,.10);}
   .side-wa h4{font-size:15.5px;font-weight:800;margin-bottom:5px;}
   .side-wa p{font-size:12.5px;opacity:.9;margin-bottom:13px;line-height:1.4;}
   .side-wa a{display:flex;align-items:center;justify-content:center;gap:6px;background:#25d366;color:#04160f;font-weight:800;font-size:12.5px;padding:10px;border-radius:8px;text-decoration:none;}
   .rank-list{list-style:none;display:flex;flex-direction:column;gap:13px;}
-  .rank-item{display:flex;align-items:flex-start;gap:11px;text-decoration:none;color:inherit;}
+  .rank-item{display:flex;align-items:flex-start;gap:11px;text-decoration:none;color:inherit;border-radius:10px;padding:4px;margin:-4px;transition:transform .15s ease,background .15s ease;}
+  .rank-item:hover{transform:translateY(-2px);background:var(--card-sub);}
   .rank-num{font-size:20px;font-weight:800;color:var(--muted);line-height:1;width:24px;flex:0 0 24px;font-variant-numeric:tabular-nums;}
   .rank-item:nth-child(1) .rank-num{color:#eab308;}
   .rank-item:nth-child(2) .rank-num{color:#94a3b8;}
@@ -998,18 +1004,7 @@
     </div>
 
     <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./5hnev4.html"><div class="imgwrap">
-    <span class="disc disc-med">-56%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51gYKyqqERL._SL500_.jpg" alt="Tommy Hilfiger TH Basket Core LTH Fm0fm05629 Parte Superior baixaHomem"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./5hnev4.html"><div class="title">Tommy Hilfiger TH Basket Core LTH Fm0fm05629 Parte Superior baixaHomem</div></a>
-    <div class="prices">
-      <span class="new">43,51€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">99,90€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 56,39€ (-56%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DT4SRF8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./hy1qhr.html"><div class="imgwrap">
+    <div class="grid"><div class="card"><a class="imglink" href="./hy1qhr.html"><div class="imgwrap">
     <span class="disc disc-hot">-61%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/41AaWW0Ry7L._SL500_.jpg" alt="Oxford, Caderno A4+ Quadriculado 5x5, Capa Extra Dura, 80 Folhas. 1 Faixa de Cor"></div></a>
