@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ru por 184,83€ (-26%) | Descontos PT</title>
 <meta name="description" content="Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ruído adaptativo, chamadas super em promoção por 184,83€ (antes 249,00€) — desconto de 26%, com histórico de preço."/>
-<meta name="robots" content="noindex, follow"/>
+<meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -531,28 +531,40 @@
     background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0;margin:0 0 14px;
     box-shadow:var(--shadow);text-align:left;overflow:hidden;position:sticky;top:8px;z-index:95;
   }
-  header .header-topbar{background:var(--card-sub);border-bottom:1px solid var(--line);padding:7px 20px;margin:0;font-size:12.5px;}
-  header .live-pill{background:var(--green-light);color:var(--green-dark);}
+  header .header-topbar{background:var(--card-sub);border-bottom:1px solid var(--line);padding:7px 20px;margin:0;font-size:12.5px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+  header .live-pill{background:transparent;color:var(--green-dark);padding:0;}
   html.dark header .live-pill{color:var(--green);}
-  header .wa-channel-pill{background:transparent;border:1px solid #25D366;box-shadow:none;color:#25D366 !important;}
-  header .wa-channel-pill:hover{background:rgba(37,211,102,.1);transform:none;}
-  header .darkbtn,header .menubtn{background:var(--card);border:1px solid var(--line);color:var(--text);box-shadow:none;}
+  header .header-topbar-right{display:flex;align-items:center;gap:16px;}
+  header .topbar-link{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:12.5px;color:var(--muted);}
+  header .topbar-link.soc-wa:hover{color:#25D366;}
+  header .topbar-link.soc-tg:hover{color:#0088cc;}
+  header .darkbtn,header .menubtn{background:var(--card);border:1px solid var(--line);color:var(--text);box-shadow:none;width:30px;height:30px;padding:0;font-size:13px;}
+  header .menubtn{width:auto;padding:5px 12px;}
   header .menubtn.active{background:var(--accent) !important;border-color:var(--accent) !important;color:#fff !important;}
-  header .logo{padding:16px 20px 2px;font-size:24px;font-weight:800;letter-spacing:-.5px;}
+  /* Fila principal: marca+lema | pesquisa | CTA newsletter — tudo na mesma linha, como o Pplware */
+  header .header-main-row{display:flex;align-items:center;gap:24px;padding:16px 20px;}
+  header .logo{padding:0;font-size:22px;font-weight:800;letter-spacing:-.5px;flex:0 0 auto;}
   header .logo span{color:var(--accent);}
   header .marca svg{color:var(--accent);}
-  header .tag{padding:0 20px 14px;margin:0;font-size:12.5px;font-weight:500;color:var(--muted);}
+  header .tag{padding:0;margin:2px 0 0;font-size:11.5px;font-weight:500;color:var(--muted);}
+  header .header-search{flex:1;max-width:440px;margin:0;}
+  header .header-newsletter-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;background:var(--card-sub);border:1px solid var(--line);color:var(--text);font-weight:700;font-size:13px;padding:10px 18px;border-radius:10px;white-space:nowrap;}
+  header .header-newsletter-btn:hover{border-color:var(--accent);color:var(--accent);}
   header .header-collapsible{border-top:1px solid var(--line);margin:0;padding:0;}
   header .topnav{margin:0;padding:0 16px;justify-content:flex-start;flex-wrap:nowrap;gap:2px;overflow-x:auto;scrollbar-width:none;}
   header .topnav::-webkit-scrollbar{display:none;}
   header .topnav a{background:transparent;border:0;box-shadow:none;border-radius:0;padding:12px 12px;font-size:13.5px;font-weight:700;color:var(--muted);white-space:nowrap;transform:none;}
   header .topnav a:hover{background:transparent;color:var(--accent);box-shadow:none;transform:none;}
 
+  @media(max-width:992px){
+    header .header-search,header .header-newsletter-btn{display:none;}
+  }
   @media(max-width:768px){
     header{position:static;padding:0;}
-    header .logo{font-size:21px;padding:12px 14px 2px;}
-    header .tag{padding:0 14px 10px;}
+    header .header-main-row{padding:12px 14px;}
+    header .logo{font-size:19px;}
     header .header-topbar{padding:6px 14px;}
+    header .topbar-link span.label{display:none;}
     header .topnav{padding:0 8px;}
     header .topnav a{padding:10px 12px;}
     .header-collapsible.open .topnav{display:grid !important;grid-template-columns:1fr !important;gap:2px !important;padding:8px !important;}
@@ -585,23 +597,26 @@
   .hero-card{border-radius:14px;box-shadow:var(--shadow);background:var(--card);border:1px solid var(--line);padding:0;overflow:hidden;min-height:400px;position:relative;transition:transform .2s ease,box-shadow .2s ease;}
   .hero-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);}
 
-  /* Oferta do dia: painel de texto + painel de imagem, preço enorme */
-  .hero-deal-card{border-color:var(--line);padding:30px 32px;}
-  .hero-deal-inner{display:flex;flex-direction:column-reverse;gap:20px;}
-  @media(min-width:540px){.hero-deal-inner{display:grid;grid-template-columns:1fr 230px;align-items:stretch;gap:28px;}}
-  .hero-img-wrap{background:var(--card-sub);border:1px solid var(--line);border-radius:12px;height:230px;padding:18px;}
-  .hero-deal-card .hero-info{justify-content:flex-end;}
-  .hero-cat{color:var(--accent);font-weight:800;}
-  /* Títulos da Amazon vêm às vezes com 30+ palavras (o "SEO" deles, não o nosso) — sem
-     limite de linhas, um título assim empurrava o preço e o botão para fora do ecrã. */
-  .hero-title{font-weight:800;font-size:32px;letter-spacing:-.9px;line-height:1.15;margin-bottom:16px;
-    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-  .hero-new-price{color:var(--text);font-size:52px;font-weight:800;letter-spacing:-1.6px;font-variant-numeric:tabular-nums;}
-  .hero-old-price{font-size:18px;}
-  .hero-savings-pill{border-radius:8px;font-size:13px;}
-  .hero-meta{font-size:12.5px;margin:10px 0 18px;}
+  /* Oferta do dia: imagem a preencher o topo do cartão (como o mosaico do Pplware),
+     com as fitas (badge + desconto) sobrepostas — texto, preço e CTA por baixo. */
+  .hero-deal-card{border-color:var(--line);padding:0;}
+  .hero-media-wrap{position:relative;width:100%;height:280px;background:var(--card-sub);overflow:hidden;}
+  .hero-media-wrap img{width:100%;height:100%;object-fit:contain;padding:24px;transition:transform .4s ease;}
+  .hero-card:hover .hero-media-wrap img{transform:scale(1.03);}
+  .hero-media-wrap .hero-card-badge{position:absolute;top:16px;left:16px;margin:0;}
+  .hero-deal-pill{position:absolute;top:16px;right:16px;background:var(--urgency);color:#fff;padding:5px 12px;font-size:12.5px;font-weight:800;border-radius:999px;box-shadow:0 4px 10px rgba(239,68,68,.35);}
+  .hero-info-block{padding:22px 26px 26px;}
+  .hero-cat{display:block;color:var(--muted);font-weight:700;font-size:12px;margin-bottom:8px;}
+  /* Títulos da Amazon vêm às vezes com 30+ palavras (o "SEO" deles, não o nosso) — limite
+     de 2 linhas aqui para não empurrar o preço/CTA para fora do cartão. */
+  .hero-title{font-weight:800;font-size:23px;letter-spacing:-.6px;line-height:1.3;margin-bottom:14px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .hero-pricing-row{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding-top:16px;flex-wrap:wrap;}
+  .hero-price-group{display:flex;align-items:baseline;gap:9px;}
+  .hero-new-price{color:var(--text);font-size:28px;font-weight:800;letter-spacing:-.6px;font-variant-numeric:tabular-nums;}
+  .hero-old-price{font-size:15px;color:var(--muted);text-decoration:line-through;}
   .hero-actions{margin-top:0;flex-wrap:nowrap;}
-  .hero-btn{background:var(--accent);color:#fff !important;box-shadow:none;border-radius:10px;font-weight:700;font-size:14.5px;padding:15px 22px;}
+  .hero-btn{background:var(--accent);color:#fff !important;box-shadow:none;border-radius:10px;font-weight:700;font-size:13.5px;padding:12px 18px;white-space:nowrap;}
   .hero-btn:hover{background:var(--accent2);color:#fff !important;box-shadow:none;transform:none;}
   .hero-share{border-radius:10px;background:transparent;border-color:var(--line);flex:0 0 auto;width:44px;padding:0;font-size:16px;}
 
@@ -860,7 +875,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · 📱 Smartphones</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 💻 Tecnologia</div>
 
     <div class="product">
       <div class="pimg">
@@ -869,7 +884,7 @@
         <img src="https://m.media-amazon.com/images/I/61itDWON3oL._SL500_.jpg" alt="Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ruído adaptativo, cham">
       </div>
       <div class="pinfo">
-        <span class="cat">📱 Smartphones</span>
+        <span class="cat">💻 Tecnologia</span>
         <h1>Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ruído adaptativo, chamadas super claras, agente IA, garantia do fabricante 3 anos + 1 ano extra, preto (versão espanhola)</h1>
         <div class="bigprices">
           <span class="bignew">184,83€</span>
@@ -889,10 +904,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Samsung Galaxy Buds4 Pro, auriculares Bluetooth, áudio Hi-Fi, cancelamento de ruído adaptativo, chamadas super claras, agente IA, garantia do fabricante 3 anos + 1 ano extra, preto (versão espanhola)</h3>
-          <p class="article-lead-p">A <strong>Samsung</strong> é a marca deste artigo, na categoria Smartphones. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
-          <p class="article-body-p"></p>
-          <p class="article-body-p"></p>
+          <h3 class="article-subtitle">📰 Samsung Galaxy Buds4 Pro – auriculares Bluetooth Hi‑Fi com cancelamento adaptativo</h3>
+          <p class="article-lead-p">Os Galaxy Buds4 Pro trazem áudio Hi‑Fi e cancelamento de ruído adaptativo num design compacto e elegante em preto. Incluem ainda um agente de IA para otimizar a experiência sonora e chamadas com clareza.</p>
+          <p class="article-body-p">Ao colocar os Buds4 Pro, sentirás um encaixe seguro e confortável, com o som a envolver‑te sem distrações externas graças ao cancelamento inteligente. As chamadas são nítidas, mesmo em ambientes ruidosos.</p>
+          <p class="article-body-p">Construídos em plástico de alta qualidade com acabamento preto fosco, contam com sensores que ajustam o cancelamento ao ambiente. A ligação Bluetooth é estável e a bateria oferece várias horas de uso, com carregamento rápido.</p>
         </div>
         
         <div class="specs-box">
@@ -900,16 +915,24 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Marca</span>
-        <span class="spec-v">Samsung</span>
+        <span class="spec-k">Conectividade</span>
+        <span class="spec-v">Bluetooth 5.3</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Categoria</span>
-        <span class="spec-v">Smartphones</span>
+        <span class="spec-k">Cancelamento de ruído</span>
+        <span class="spec-v">Adaptativo</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Loja</span>
-        <span class="spec-v">Amazon</span>
+        <span class="spec-k">Duração da bateria</span>
+        <span class="spec-v">Até 6 h (uso) + 18 h (estojo)</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Assistente IA</span>
+        <span class="spec-v">Integrado</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Garantia</span>
+        <span class="spec-v">3 anos + 1 ano extra</span>
       </div>
           </div>
         </div>
@@ -918,11 +941,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Quem procura este tipo de produto — Smartphones — ao melhor preço.</p>
+            <p>Ideal para quem procura som premium e isolamento de ruído em deslocações diárias.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
+            <p>Quem prefere auriculares com fios ou necessita de uma autonomia de bateria muito superior pode querer outra opção.</p>
           </div>
         </div>
 
@@ -931,13 +954,17 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Desconto de 26% face ao preço de referência</li>
+              <li>Qualidade de áudio Hi‑Fi</li>
+              <li>Cancelamento de ruído adaptativo</li>
+              <li>Assistente IA integrado</li>
+              <li>Garantia total de 4 anos</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Ficha detalhada ainda não disponível para este produto</li>
+              <li>Preço elevado comparado a modelos básicos</li>
+              <li>Pode não ser totalmente à prova de água para desportos intensos</li>
             </ul>
           </div>
         </div>
@@ -971,41 +998,96 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Smartphones</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./1wean5k.html"><div class="imgwrap">
+    <div class="panel"><h2>🛍️ Mais em Tecnologia</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./5n1uqi.html"><div class="imgwrap">
+    <span class="disc disc-hot">-60%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61b8GEMkUwL._SL500_.jpg" alt="2026 Novo Bluetooth 5.4 (apenas Android) Wallet Smart Tracker Card 2 Pack de 2,5"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./5n1uqi.html"><div class="title">2026 Novo Bluetooth 5.4 (apenas Android) Wallet Smart Tracker Card 2 Pack de 2,5 mm, 6 anos de bateria, IP68 impermeável, Tracker localizador Bluetooth com Google Find Hub para carteira / mala</div></a>
+    <div class="prices">
+      <span class="new">99,99€</span>
+      
+    </div>
+    
+    <a class="btn" href="https://www.amazon.es/dp/B0GW95TXK7?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./16b5ojd.html"><div class="imgwrap">
+    <span class="disc disc-fair">-32%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61mqEbELwgL._SL500_.jpg" alt="SanDisk Creator Phone SSD de 2 TB, compatível com MagSafe e com velocidade de le"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./16b5ojd.html"><div class="title">SanDisk Creator Phone SSD de 2 TB, compatível com MagSafe e com velocidade de leitura de até 1000 MB/s, um mês da Adobe Creative Cloud</div></a>
+    <div class="prices">
+      <span class="new">289,97€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">424,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 135,02€ (-32%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0DTBVGJF2?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./2efmkj.html"><div class="imgwrap">
+    <span class="disc disc-fair">-28%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61T8cbYsIRL._SL500_.jpg" alt="Oferta especial: TP-Link Deco BE65 (1 pacote) - sistema WiFi de 7 meses, BE9300 "></div></a>
+    <div class="body">
+    <a class="titlelink" href="./2efmkj.html"><div class="title">Oferta especial: TP-Link Deco BE65 (1 pacote) - sistema WiFi de 7 meses, BE9300 tribanda | Cobertura para toda a casa. Rede unificada. Ligar 200 dispositivos. 4 portas 2,5 GE. Controlo dos pais. App Deco</div></a>
+    <div class="prices">
+      <span class="new">179,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">249,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 70,00€ (-28%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CJJ712ZX?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./19b3gio.html"><div class="imgwrap">
+    <span class="disc disc-fair">-30%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61z+cGd32GL._SL500_.jpg" alt="Bowers &amp; Wilkins PX7 S2e - Auriculares sem fios com cancelamento de ruído co"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./19b3gio.html"><div class="title">Bowers &amp; Wilkins PX7 S2e - Auriculares sem fios com cancelamento de ruído com Qualcomm aptX adaptativo e carregamento rápido, 30 horas de reprodução e seis microfones integrados, cor preta antracite</div></a>
+    <div class="prices">
+      <span class="new">229,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">329,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 100,00€ (-30%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CH1LT84X?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1b6x99o.html"><div class="imgwrap">
+    <span class="disc disc-med">-42%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/610gnng4MyL._SL500_.jpg" alt="Suporte de mesa para 2 ou 3 monitores, portátil, ecrã, monitor, altura, rotação "></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1b6x99o.html"><div class="title">Suporte de mesa para 2 ou 3 monitores, portátil, ecrã, monitor, altura, rotação e inclinação ajustável, com portas USB integradas, VESA 75 x 75, 100 x 100 (MC-813 duplo)</div></a>
+    <div class="prices">
+      <span class="new">62,96€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">108,76€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 45,80€ (-42%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B07P5MBB5J?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./id6lci.html"><div class="imgwrap">
+    <span class="disc disc-med">-52%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71ZmFrxEesL._SL500_.jpg" alt="Oferta especial: Dron GPS com câmara HD 4K para adultos - NAFYRE N11 PRO: 90 min"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./id6lci.html"><div class="title">Oferta especial: Dron GPS com câmara HD 4K para adultos - NAFYRE N11 PRO: 90 min de voo, rastreamento automático, retorno autónomo, motor sem escovas, transmissão N11-ES-260430-2</div></a>
+    <div class="prices">
+      <span class="new">129,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">272,00€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 142,01€ (-52%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GZ3VZMKV?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1vrgn5t.html"><div class="imgwrap">
     <span class="disc disc-med">-55%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/81r1YUvMy2L._SL500_.jpg" alt="BANLVS Reloj Inteligente Hombre con 1000mAh Batería y Linterna, Negro | 1.91&quo"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/715baHSFkaL._SL500_.jpg" alt="uni Leitor de cartões SD, adaptador micro SD para USB 3.0, companheiro de câmara"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1wean5k.html"><div class="title">BANLVS Reloj Inteligente Hombre con 1000mAh Batería y Linterna, Negro | 1.91&quot; AMOLED Smartwatch Militar con 5ATM Impermeable, 113 Modos Deportivos, 24/7 Pulsómetro/Oxímetro/Sueño/Android iOS</div></a>
+    <a class="titlelink" href="./1vrgn5t.html"><div class="title">uni Leitor de cartões SD, adaptador micro SD para USB 3.0, companheiro de câmara compacto, para cartões SD/TF/SDHC/UHS-I, compatível com Windows, Chromebook, Linux, MacOS</div></a>
     <div class="prices">
-      <span class="new">49,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">109,99€</span></span>
+      <span class="new">6,49€</span>
+      
     </div>
-    <div class="savings">💸 Poupas 60,00€ (-55%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0H4QFNL65?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ijk8hx.html"><div class="imgwrap">
-    <span class="disc disc-fair">-38%</span>
-    <span class="store">AliExpress</span>
-    <img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/S1ae71896301f4fd391019d7b8fb226d61.jpg" alt="Smartphone Robusto OUKITEL WP100 Plus, Chip eSIM 36GB (12+24) + 512GB, Tela de 6"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1ijk8hx.html"><div class="title">Smartphone Robusto OUKITEL WP100 Plus, Chip eSIM 36GB (12+24) + 512GB, Tela de 6.8&quot; 120Hz, Lanterna para Camping, Bateria de 33000mAh, Carregamento Rápido de 66W, Câmeras de 64MP+20MP+2MP, Android 16, NFC, Gemini AI</div></a>
-    <div class="prices">
-      <span class="new">363,34€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">586,04€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 222,70€ (-38%)</div>
-    <a class="btn" href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CoxuAW8fvhW7DTaabqyZMIss5PUxgMChihvFRYRaTryh4NFhGfxnTiah61YaL8dx7joEYRT7Q46vyQ4usdZIdINsltUkka35kvMhnZIVAIX9fxFnOrzUpBVYpprl002wrr0NL0Kw2b1qYuaOhhFF2OQoxQL3QyolQFtbziRd0UimcL69BbMVZvTXMsuZMRsm7QrOcHAgBUMWIte3wlOyTrO63sZeNDGw2d65bqylm13y1yzV47DJp5wMY4gaz14D17nDo6OV7o9VVb1QQTGrqXV6kB1K3ORBfNoL2r43HJew65Nb2XZu5QEGSVIeKXJdh0naX5CsjhcBrDph4FaKjm7GNMPGFvCOqOBpfUNczulj3RtVRdI71oOguYfKro8mM3VADYxszFgt0T1uUvbHGApMcyQ7m5VaQEGBNxKqeqV84Tww4MelwZoWfuFNGzGqu7QcIdwAdtIlvJsEI5B0elkt4wl1pEpimj5hSnOUQoDcvg6qrbRPnK7gYO9M0Bxl7F4rf33ri4npE6O8GUVipe9dqaeYVQs9K6OgsukYGl77wNMfSSkDTTmnRcH4ZxmNUBoxxtqlMTzfLhFrMotzn9pEO5BJB913shkxJU8ns6sj9SLMrDZNeGJ0jNaU7Z7bJ1gEnsptfzv8fBsSxjzPTX5ArchuVBbmF7zPq5MYMfY0RWhZP4bc16tjZ4A2pXCHPMmtxDMv6nP2vE" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./15352i.html"><div class="imgwrap">
-    <span class="disc disc-fair">-20%</span>
+    
+    <a class="btn" href="https://www.amazon.es/dp/B08P1T8R46?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1cp3dbq.html"><div class="imgwrap">
+    <span class="disc disc-med">-49%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61+qzDWmrqL._SL500_.jpg" alt="REDMI 17, 4+128GB, Negro, 7500mAh, Carga Turbo 45 W | Corning® Gorilla® Glass 7i"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/81Mr-7QbPPL._SL500_.jpg" alt="Oral-B iO 6 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo De"></div></a>
     <div class="body">
-    <a class="titlelink" href="./15352i.html"><div class="title">REDMI 17, 4+128GB, Negro, 7500mAh, Carga Turbo 45 W | Corning® Gorilla® Glass 7i resistente, pantalla inmersiva de 6,9&quot;, potente MediaTek Helio G91-Ultra, cámara dual AI de 50 MP</div></a>
+    <a class="titlelink" href="./1cp3dbq.html"><div class="title">Oral-B iO 6 Cepillos de Dientes Eléctricos, Negro y Rosa, Pack de 2 | Cepillo Dental con 3 Cabezales, Estuche de Viaje, 5 Modos de Cepillado, Sensor de Presión, Temporizador y Seguimiento con App</div></a>
     <div class="prices">
-      <span class="new">175,90€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">219,90€</span></span>
+      <span class="new">173,95€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">339,95€</span></span>
     </div>
-    <div class="savings">💸 Poupas 44,00€ (-20%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0H79Q2ZKJ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    <div class="savings">💸 Poupas 166,00€ (-49%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GQ28VS1Z?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>
