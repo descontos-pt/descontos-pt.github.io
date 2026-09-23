@@ -639,6 +639,44 @@
   .badge-deal{background:var(--accent);color:#ffffff;box-shadow:none;}
   .badge-article{background:rgba(255,255,255,.16);color:#ffffff;backdrop-filter:blur(2px);}
 
+  /* Banner de marca (23-set-2026) — apresentação de confiança logo no topo, antes da
+     pesquisa: quem chega de uma partilha percebe em segundos quem somos. */
+  .brand-banner{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 36px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:32px;overflow:hidden;margin:20px 0 8px;}
+  .brand-banner::before{content:'';position:absolute;top:-50px;right:-50px;width:300px;height:300px;background:radial-gradient(circle,var(--accent-light) 0%,transparent 70%);pointer-events:none;}
+  .brand-content{position:relative;z-index:2;}
+  .brand-pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);border:1px solid var(--accent-light);color:var(--accent2);padding:5px 14px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.3px;margin-bottom:14px;}
+  .brand-pill .pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:pulseGlow 2s infinite;}
+  @keyframes pulseGlow{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.85);}}
+  .brand-title{font-size:30px;font-weight:900;line-height:1.18;letter-spacing:-.6px;color:var(--text);margin-bottom:12px;}
+  .brand-highlight{color:var(--accent);}
+  .brand-desc{font-size:14.5px;line-height:1.6;color:var(--muted);max-width:560px;margin-bottom:20px;}
+  .brand-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;}
+  .btn-deals{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-size:13.5px;font-weight:800;padding:11px 20px;border-radius:10px;text-decoration:none;transition:all .2s ease;}
+  .btn-deals:hover{background:var(--accent2);transform:translateY(-1px);}
+  .btn-community{display:inline-flex;align-items:center;gap:8px;background:var(--card-sub);border:1px solid var(--line);color:var(--text);font-size:13.5px;font-weight:700;padding:11px 18px;border-radius:10px;text-decoration:none;transition:all .2s ease;}
+  .btn-community:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);}
+  .brand-facts-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+  .fact-card{background:var(--card-sub);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:5px;transition:all .2s ease;}
+  .fact-card:hover{border-color:var(--accent);background:var(--card);transform:translateY(-2px);}
+  .fact-header{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;color:var(--text);}
+  .fact-header .fact-icon{font-size:15px;}
+  .fact-desc{font-size:11.5px;line-height:1.4;color:var(--muted);}
+  .brand-stores-bar{grid-column:1 / -1;background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:11px 13px;display:flex;flex-direction:column;gap:6px;}
+  .stores-title{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);}
+  .stores-tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .store-badge{font-size:11px;font-weight:700;background:var(--card-sub);border:1px solid var(--line);color:var(--text);padding:3px 8px;border-radius:6px;}
+  @media(max-width:960px){
+    .brand-banner{grid-template-columns:1fr;padding:24px 20px;gap:22px;}
+    .brand-title{font-size:24px;}
+    .brand-facts-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:600px){
+    .brand-title{font-size:21px;}
+    .brand-facts-grid{grid-template-columns:1fr;}
+    .brand-actions{flex-direction:column;align-items:stretch;}
+    .btn-deals,.btn-community{justify-content:center;}
+  }
+
   /* Secções — título grande, traço fino (não a barra grossa de antes) */
   .sectionh{font-size:26px;font-weight:800;letter-spacing:-.6px;border-bottom:2px solid var(--line);padding-bottom:12px;margin:44px 0 20px;display:flex;align-items:center;gap:8px;}
   .sectionh::before{content:'';display:inline-block;width:4px;height:18px;background:var(--accent);border-radius:2px;}
@@ -1005,7 +1043,18 @@
     </div>
 
     <div class="panel"><h2>🛍️ Mais em Casa</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./wde099.html"><div class="imgwrap">
+    <div class="grid"><div class="card"><a class="imglink" href="./1bsv34r.html"><div class="imgwrap">
+    <span class="disc disc-med">-55%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71Jhd5HtbFL._SL500_.jpg" alt="Meik Mangni Zapatillas de Estar por Casa Hombre Mujer Memory Foam Suave y Cómodo"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1bsv34r.html"><div class="title">Meik Mangni Zapatillas de Estar por Casa Hombre Mujer Memory Foam Suave y Cómodo Pantuflas CáLido Antideslizantes Invierno Zapatilla Interior y Exterior Beige 39EU</div></a>
+    <div class="prices">
+      <span class="new">10,81€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">23,99€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 13,18€ (-55%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0FQJLKKJN?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./wde099.html"><div class="imgwrap">
     <span class="disc disc-med">-56%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/61jfPWGwfKL._SL500_.jpg" alt="Govee Candeeiros de mesa de cabeceira tátil, RGBICWW LED regulável, 500 lm | 70+"></div></a>
