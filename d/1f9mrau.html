@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, es por 242,95€ (-20%) | Descontos PT</title>
 <meta name="description" content="Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, escovas laterais para cantos e | em promoção por 242,95€ (antes 303,69€) — desconto de 20%, com histórico de preço."/>
-<meta name="robots" content="noindex, follow"/>
+<meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="-yT-AuIAjHED98mj0rGiJLF47AGgtcY5w-Jc3wNH540"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
@@ -792,6 +792,36 @@
   .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
   .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--line);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
 
+  /* Parceiros Awin (Grelha Dedicada) */
+  .partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:14px;}
+  .partner-banner-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:all .2s ease;}
+  .partner-banner-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-banner-card a.banner-link{display:block;width:100%;overflow:hidden;background:var(--card-sub);}
+  .partner-banner-card img{width:100%;height:auto;display:block;transition:transform .25s ease;}
+  .partner-banner-card:hover img{transform:scale(1.02);}
+  .partner-banner-info{padding:14px;background:var(--card);display:flex;flex-direction:column;gap:6px;flex:1;justify-content:space-between;border-top:1px solid var(--line);}
+  .partner-banner-cat{font-size:10.5px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
+  .partner-banner-title{font-size:14px;font-weight:800;color:var(--text);line-height:1.3;margin:2px 0 4px;}
+  .partner-banner-desc{font-size:12px;color:var(--muted);line-height:1.45;margin:0 0 10px;}
+  .partner-banner-btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-size:12px;font-weight:800;padding:8px 14px;border-radius:8px;transition:all .15s;}
+  .partner-banner-btn:hover{background:var(--accent2);transform:translateX(2px);}
+
+  /* Sidebar Partner Cards */
+  .sidebar-section-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:18px 0 10px;display:flex;align-items:center;gap:8px;}
+  .sidebar-section-title::after{content:'';flex:1;height:1px;background:var(--line);}
+  .partner-card-widget{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:all .18s ease;}
+  .partner-card-widget:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-card-badge{display:inline-block;background:var(--card-sub);color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-bottom:8px;}
+  .partner-card-badge.badge-bet{background:rgba(239,68,68,.12);color:#ef4444;}
+  .partner-card-badge.badge-fin{background:rgba(16,185,129,.12);color:#10b981;}
+  .partner-card-img{width:100%;height:auto;border-radius:10px;display:block;margin-bottom:10px;object-fit:cover;}
+  .partner-card-title{font-size:14px;font-weight:800;color:var(--text);margin-bottom:6px;line-height:1.3;}
+  .partner-card-desc{font-size:12px;color:var(--muted);line-height:1.45;margin-bottom:10px;}
+  .partner-card-code{display:inline-block;background:rgba(255,107,0,.14);color:var(--accent2);font-family:monospace;font-weight:800;padding:2px 6px;border-radius:4px;border:1px dashed var(--accent);}
+  .partner-card-btn{display:block;text-align:center;background:var(--accent);color:#fff!important;font-weight:800;font-size:12.5px;padding:9px;border-radius:8px;text-decoration:none!important;transition:all .15s ease;}
+  .partner-card-btn:hover{background:var(--accent2);transform:scale(1.01);}
+  .partner-card-legal{font-size:10px;color:var(--muted);line-height:1.35;margin-top:8px;}
+
   /* Rodapé claro institucional (como o Pplware — não uma barra escura) */
   footer{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:none;color:var(--muted);}
   footer .footer-col h4{color:var(--text);}
@@ -939,7 +969,7 @@
       </div>
     </header>
 
-    <div class="bread"><a href="../">← Todas as ofertas</a> · 🛍️ Outras Ofertas</div>
+    <div class="bread"><a href="../">← Todas as ofertas</a> · 🏠 Casa</div>
 
     <div class="product">
       <div class="pimg">
@@ -948,7 +978,7 @@
         <img src="https://m.media-amazon.com/images/I/51kMInMZFiL._SL500_.jpg" alt="Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, escovas laterais para ">
       </div>
       <div class="pinfo">
-        <span class="cat">🛍️ Outras Ofertas</span>
+        <span class="cat">🏠 Casa</span>
         <h1>Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, escovas laterais para cantos e | Escovas angulares e pulverização ultrassónica, ultrafina, para janelas estreitas, navegação inteligente</h1>
         <div class="bigprices">
           <span class="bignew">242,95€</span>
@@ -968,10 +998,10 @@
         
       <div class="review-body">
         <div class="article-lead-box">
-          <h3 class="article-subtitle">📰 Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, escovas laterais para cantos e | Escovas angulares e pulverização ultrassónica, ultrafina, para janelas estreitas, navegação inteligente</h3>
-          <p class="article-lead-p">A <strong>Oferta</strong> é a marca deste artigo, na categoria Outras Ofertas. Ainda não temos uma ficha própria gerada para este produto — o que sabemos com certeza está abaixo: o preço, o histórico que já registámos, e os teus direitos como consumidor.</p>
-          <p class="article-body-p"></p>
-          <p class="article-body-p"></p>
+          <h3 class="article-subtitle">📰 ECOVACS WINBOT Mini 2 – Robo‑limpa‑vidros com escovas laterais e pulverização ultrassónica</h3>
+          <p class="article-lead-p">O WINBOT Mini 2 da ECOVACS é um robot especializado em limpar janelas, vidros de casas e escritórios. Vem equipado com escovas laterais para alcançar cantos e escovas angulares que se adaptam a superfícies estreitas.</p>
+          <p class="article-body-p">Basta colocar o robot na superfície de vidro, selecionar o modo e deixar que ele navegue de forma inteligente, limpando‑te sem esforço. A pulverização ultrafina de água garante uma limpeza sem manchas, mesmo nas áreas mais difíceis.</p>
+          <p class="article-body-p">O aparelho tem um corpo compacto de plástico resistente, com sistema de sucção e escovas de silicone para não riscar o vidro. Inclui um reservatório de água de pequeno volume e sensores de proximidade que evitam quedas.</p>
         </div>
         
         <div class="specs-box">
@@ -979,16 +1009,24 @@
           <div class="specs-table">
             
       <div class="spec-item">
-        <span class="spec-k">Marca</span>
-        <span class="spec-v">Oferta</span>
+        <span class="spec-k">Modelo</span>
+        <span class="spec-v">WINBOT Mini 2</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Categoria</span>
-        <span class="spec-v">Outras Ofertas</span>
+        <span class="spec-k">Tipo</span>
+        <span class="spec-v">Robo‑limpa‑vidros</span>
       </div>
       <div class="spec-item">
-        <span class="spec-k">Loja</span>
-        <span class="spec-v">Amazon</span>
+        <span class="spec-k">Escovas</span>
+        <span class="spec-v">Laterais + angulares</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Pulverização</span>
+        <span class="spec-v">Ultrassónica, ultrafina</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-k">Navegação</span>
+        <span class="spec-v">Inteligente com sensores anti‑queda</span>
       </div>
           </div>
         </div>
@@ -997,11 +1035,11 @@
         <div class="profile-grid">
           <div class="target-box">
             <h4>🎯 Para Quem É Ideal</h4>
-            <p>Quem procura este tipo de produto — Outras Ofertas — ao melhor preço.</p>
+            <p>Ideal para quem quer manter janelas e portas de vidro limpas sem ter de subir a escada.</p>
           </div>
           <div class="avoid-box">
             <h4>⚠️ A Considerar / Menos Indicado</h4>
-            <p>Confirma sempre as fotos e a descrição na página da loja antes de comprar; nós não testámos este artigo.</p>
+            <p>Não recomendado para quem tem vidros muito grandes ou muito sujos, que exigem limpeza manual mais intensiva.</p>
           </div>
         </div>
 
@@ -1010,13 +1048,16 @@
           <div class="pros-box">
             <h4>✅ Vantagens &amp; Destaques</h4>
             <ul>
-              <li>Desconto de 20% face ao preço de referência</li>
+              <li>Limpeza automática de cantos difíceis</li>
+              <li>Pulverização ultrassónica de água para resultados sem manchas</li>
+              <li>Navegação inteligente que evita quedas</li>
             </ul>
           </div>
           <div class="cons-box">
             <h4>⚠️ Aspetos a Notar</h4>
             <ul>
-              <li>Ficha detalhada ainda não disponível para este produto</li>
+              <li>Reservatório de água pequeno requer recargas frequentes</li>
+              <li>Não adequado a superfícies muito sujas ou com resíduos grossos</li>
             </ul>
           </div>
         </div>
@@ -1050,19 +1091,74 @@
       <p class="disclaimer">Histórico próprio: registamos o preço cada vez que o nosso robô encontra este produto. Não é o histórico completo da loja.</p>
     </div>
 
-    <div class="panel"><h2>🛍️ Mais em Outras Ofertas</h2>
-    <div class="grid"><div class="card"><a class="imglink" href="./1yca092.html"><div class="imgwrap">
-    <span class="disc disc-med">-40%</span>
+    <div class="panel"><h2>🛍️ Mais em Casa</h2>
+    <div class="grid"><div class="card"><a class="imglink" href="./f88kv6.html"><div class="imgwrap">
+    <span class="disc disc-hot">-60%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71N5rJtF2cL._SL500_.jpg" alt="Oferta especial: Ring Videotimbre cableado Pro (Wired Video Doorbell Pro, última"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61T2m0BJwkL._SL500_.jpg" alt="Kit de Ring Alarm S + Cámara interior (Indoor Camera 2ª gen) con Suscripción a R"></div></a>
     <div class="body">
-    <a class="titlelink" href="./1yca092.html"><div class="title">Oferta especial: Ring Videotimbre cableado Pro (Wired Video Doorbell Pro, última generación), Instalación con cable, Retinal 4K, 10x Zoom, Amplio campo de visión, Prueba gratuita de 30 días de suscripción Ring</div></a>
+    <a class="titlelink" href="./f88kv6.html"><div class="title">Kit de Ring Alarm S + Cámara interior (Indoor Camera 2ª gen) con Suscripción a Ring Home (a la venta por separado)</div></a>
     <div class="prices">
-      <span class="new">149,99€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">249,99€</span></span>
+      <span class="new">119,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">300,97€</span></span>
     </div>
-    <div class="savings">💸 Poupas 100,00€ (-40%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0F7T7W959?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1h2ykoy.html"><div class="imgwrap">
+    <div class="savings">💸 Poupas 180,98€ (-60%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CZPK9XHQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1sstfmv.html"><div class="imgwrap">
+    <span class="disc disc-hot">-66%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/71-cPHQsp4L._SL500_.jpg" alt="Ring Cámara exterior con batería (Stick Up Cam) | Cámara de vigilancia wifi HD p"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1sstfmv.html"><div class="title">Ring Cámara exterior con batería (Stick Up Cam) | Cámara de vigilancia wifi HD para tu domicilio con comunicación bidireccional, instalación fácil | 30 días gratis de Ring Home | 4 Cámaras</div></a>
+    <div class="prices">
+      <span class="new">109,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">320,95€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 210,96€ (-66%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0CFZQQJGQ?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./9lvon1.html"><div class="imgwrap">
+    <span class="disc disc-hot">-68%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61ADcEqEFTL._SL500_.jpg" alt="Oferta especial: Ring Cámara interior (Indoor Camera 2ª gen) | Cámara de vigilan"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./9lvon1.html"><div class="title">Oferta especial: Ring Cámara interior (Indoor Camera 2ª gen) | Cámara de vigilancia wifi con enchufe para mascotas, vídeo HD, comunicación bidireccional, cubierta de privacidad | 30 días gratis de Ring Home, 4 Cámaras</div></a>
+    <div class="prices">
+      <span class="new">64,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">200,95€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 135,96€ (-68%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0C22B6Q58?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1kokqu8.html"><div class="imgwrap">
+    <span class="disc disc-med">-51%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/511EAz93tsL._SL500_.jpg" alt="roborock Qrevo S5V Robot Aspirador 12.000Pa de Succión, Blanco | Doble Cepillo A"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1kokqu8.html"><div class="title">roborock Qrevo S5V Robot Aspirador 12.000Pa de Succión, Blanco | Doble Cepillo Anti Enredos, Evitación Inteligente de Obstáculos, Doble Mopa Giratoria Elevable, Auto Vaciado y Rellenado</div></a>
+    <div class="prices">
+      <span class="new">385,26€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">786,24€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 400,98€ (-51%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0DSMQRZFY?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./dyg1i8.html"><div class="imgwrap">
+    <span class="disc disc-fair">-37%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61Sk4jG6C4L._SL500_.jpg" alt="roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./dyg1i8.html"><div class="title">roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18500 Pa, Base Todo en Uno, 2,7L Bolsa para Polvo, Sistema antienredos, Evitación de Obstáculos, Negro</div></a>
+    <div class="prices">
+      <span class="new">589,99€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">936,49€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 346,50€ (-37%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GHN9DR1C?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1mzruq7.html"><div class="imgwrap">
+    <span class="disc disc-fair">-33%</span>
+    <span class="store">Amazon</span>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61BCh6WHSaL._SL500_.jpg" alt="dreame H15 Pro Heat Aspirador Seco y Húmedo, Limpia con Agua a 85 °C | Brazo Rob"></div></a>
+    <div class="body">
+    <a class="titlelink" href="./1mzruq7.html"><div class="title">dreame H15 Pro Heat Aspirador Seco y Húmedo, Limpia con Agua a 85 °C | Brazo Robot GapFree IA, Detecta por RGB, Succión de 22.000 Pa, 0 Enredos, Lava el Cepillo a 100 °C, Seca a 90°C en 5min</div></a>
+    <div class="prices">
+      <span class="new">405,60€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">605,37€</span></span>
+    </div>
+    <div class="savings">💸 Poupas 199,77€ (-33%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0F1DKQXJV?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1h2ykoy.html"><div class="imgwrap">
     <span class="disc disc-fair">-21%</span>
     <span class="store">Amazon</span>
     <img loading="lazy" src="https://m.media-amazon.com/images/I/51TgRBO9xCL._SL500_.jpg" alt="ECOVACS WINBOT W3 OMNI Robot Limpiacristales con Estación Multifunción, Autolava"></div></a>
@@ -1073,73 +1169,18 @@
       <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">706,42€</span></span>
     </div>
     <div class="savings">💸 Poupas 148,35€ (-21%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0GCFH4M8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./k0leht.html"><div class="imgwrap">
-    <span class="disc disc-hot">-73%</span>
+    <a class="btn" href="https://www.amazon.es/dp/B0GCFH4M8Q?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./l4mrrd.html"><div class="imgwrap">
+    <span class="disc disc-fair">-33%</span>
     <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51lQr3grvBL._SL500_.jpg" alt="CALVIN KLEIN JEANS Women's Sunglasses CKJ25600S - Grey To Dark Grey with Solid G"></div></a>
+    <img loading="lazy" src="https://m.media-amazon.com/images/I/61gmkIkkkUL._SL500_.jpg" alt="Oferta especial para membros Prime: roborock F25 Steam Set aspirador e esfregona"></div></a>
     <div class="body">
-    <a class="titlelink" href="./k0leht.html"><div class="title">CALVIN KLEIN JEANS Women's Sunglasses CKJ25600S - Grey To Dark Grey with Solid Green Lens</div></a>
+    <a class="titlelink" href="./l4mrrd.html"><div class="title">Oferta especial para membros Prime: roborock F25 Steam Set aspirador e esfregona a vapor de 180 °C | esfregona a vapor sem fio, sucção de 25 000 Pa, limpeza automática a alta temperatura, design plano de 180°</div></a>
     <div class="prices">
-      <span class="new">31,80€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">116,00€</span></span>
+      <span class="new">399,00€</span>
+      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">599,00€</span></span>
     </div>
-    <div class="savings">💸 Poupas 84,20€ (-73%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DR2ZWYLC?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./14adr92.html"><div class="imgwrap">
-    <span class="disc disc-med">-43%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71+ecNBJmvL._SL500_.jpg" alt="iRobot Roomba 115 Combo com base AutoEmpty, Robot 2em 1, potência de sucção 1500"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./14adr92.html"><div class="title">iRobot Roomba 115 Combo com base AutoEmpty, Robot 2em 1, potência de sucção 15000 pascais, escova lateral flexível, roupa de limpeza estendida, 90 dias autonomia, navegação Clearview LiDAR, preto</div></a>
-    <div class="prices">
-      <span class="new">349,00€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">612,28€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 263,28€ (-43%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0GQVYJFF9?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./la1jlc.html"><div class="imgwrap">
-    <span class="disc disc-med">-58%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/51wT5pZrzWL._SL500_.jpg" alt="adidas Hombre Terrex Trailmaker 2 Gore-Tex Hiking Shoes, Bronze Strata/Blanch Ca"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./la1jlc.html"><div class="title">adidas Hombre Terrex Trailmaker 2 Gore-Tex Hiking Shoes, Bronze Strata/Blanch Cargo/Carbon, 38 2/3 EU</div></a>
-    <div class="prices">
-      <span class="new">50,38€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">120,00€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 69,62€ (-58%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DHVV7DK2?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1v103t3.html"><div class="imgwrap">
-    <span class="disc disc-med">-43%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/517aVxXKYtL._SL500_.jpg" alt="PIKOLIN Home - Edredón Nórdico de Fibra Aloe Vera Otoño-Invierno 300gr, Dermopro"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1v103t3.html"><div class="title">PIKOLIN Home - Edredón Nórdico de Fibra Aloe Vera Otoño-Invierno 300gr, Dermoprotector y Transpirable, para Piel Sensible, Relleno para Cama 90 (150x220 cm)</div></a>
-    <div class="prices">
-      <span class="new">55,90€</span>
-      
-    </div>
-    
-    <a class="btn" href="https://www.amazon.es/dp/B009VWFBHA?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./197s0p9.html"><div class="imgwrap">
-    <span class="disc disc-fair">-30%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/71byHTJ9asL._SL500_.jpg" alt="Amazon Basics Sacca Sportiva Zaino Sportivo, Rosa | Resistente"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./197s0p9.html"><div class="title">Amazon Basics Sacca Sportiva Zaino Sportivo, Rosa | Resistente</div></a>
-    <div class="prices">
-      <span class="new">12,59€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">17,99€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 5,40€ (-30%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0DRTYXF57?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div><div class="card"><a class="imglink" href="./1ff3fd5.html"><div class="imgwrap">
-    <span class="disc disc-med">-44%</span>
-    <span class="store">Amazon</span>
-    <img loading="lazy" src="https://m.media-amazon.com/images/I/61zSTOLa-IL._SL500_.jpg" alt="Marc OPolo mochila feminina leve impermeável, 141"></div></a>
-    <div class="body">
-    <a class="titlelink" href="./1ff3fd5.html"><div class="title">Marc OPolo mochila feminina leve impermeável, 141</div></a>
-    <div class="prices">
-      <span class="new">23,18€</span>
-      <span class="old"><span class="old-lbl">Antes:</span> <span class="old-val">41,39€</span></span>
-    </div>
-    <div class="savings">💸 Poupas 18,21€ (-44%)</div>
-    <a class="btn" href="https://www.amazon.es/dp/B0FG88GKH2?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
+    <div class="savings">💸 Poupas 200,00€ (-33%)</div>
+    <a class="btn" href="https://www.amazon.es/dp/B0GSZVPW5C?tag=descontoseopo-21" target="_blank" rel="noopener sponsored">Ver oferta →</a></div></div></div></div>
 
     
     <footer>
