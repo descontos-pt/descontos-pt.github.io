@@ -789,6 +789,36 @@
   .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
   .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--line);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
 
+  /* Parceiros Awin (Grelha Dedicada) */
+  .partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:14px;}
+  .partner-banner-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:all .2s ease;}
+  .partner-banner-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-banner-card a.banner-link{display:block;width:100%;overflow:hidden;background:var(--card-sub);}
+  .partner-banner-card img{width:100%;height:auto;display:block;transition:transform .25s ease;}
+  .partner-banner-card:hover img{transform:scale(1.02);}
+  .partner-banner-info{padding:14px;background:var(--card);display:flex;flex-direction:column;gap:6px;flex:1;justify-content:space-between;border-top:1px solid var(--line);}
+  .partner-banner-cat{font-size:10.5px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
+  .partner-banner-title{font-size:14px;font-weight:800;color:var(--text);line-height:1.3;margin:2px 0 4px;}
+  .partner-banner-desc{font-size:12px;color:var(--muted);line-height:1.45;margin:0 0 10px;}
+  .partner-banner-btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-size:12px;font-weight:800;padding:8px 14px;border-radius:8px;transition:all .15s;}
+  .partner-banner-btn:hover{background:var(--accent2);transform:translateX(2px);}
+
+  /* Sidebar Partner Cards */
+  .sidebar-section-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:18px 0 10px;display:flex;align-items:center;gap:8px;}
+  .sidebar-section-title::after{content:'';flex:1;height:1px;background:var(--line);}
+  .partner-card-widget{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:all .18s ease;}
+  .partner-card-widget:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-card-badge{display:inline-block;background:var(--card-sub);color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-bottom:8px;}
+  .partner-card-badge.badge-bet{background:rgba(239,68,68,.12);color:#ef4444;}
+  .partner-card-badge.badge-fin{background:rgba(16,185,129,.12);color:#10b981;}
+  .partner-card-img{width:100%;height:auto;border-radius:10px;display:block;margin-bottom:10px;object-fit:cover;}
+  .partner-card-title{font-size:14px;font-weight:800;color:var(--text);margin-bottom:6px;line-height:1.3;}
+  .partner-card-desc{font-size:12px;color:var(--muted);line-height:1.45;margin-bottom:10px;}
+  .partner-card-code{display:inline-block;background:rgba(255,107,0,.14);color:var(--accent2);font-family:monospace;font-weight:800;padding:2px 6px;border-radius:4px;border:1px dashed var(--accent);}
+  .partner-card-btn{display:block;text-align:center;background:var(--accent);color:#fff!important;font-weight:800;font-size:12.5px;padding:9px;border-radius:8px;text-decoration:none!important;transition:all .15s ease;}
+  .partner-card-btn:hover{background:var(--accent2);transform:scale(1.01);}
+  .partner-card-legal{font-size:10px;color:var(--muted);line-height:1.35;margin-top:8px;}
+
   /* Rodapé claro institucional (como o Pplware — não uma barra escura) */
   footer{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:none;color:var(--muted);}
   footer .footer-col h4{color:var(--text);}
@@ -877,30 +907,30 @@
 
       
     <div class="sectionh">🛒 Ofertas em destaque de hoje</div>
-    <div class="article-deals"><a class="adeal" href="../../d/17e48gu.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71hhOSJPjfL._SL500_.jpg" alt="Amazon Kindle Scribe Colorsoft (última gen.): fino, ligero y rápido, con pantall"><span class="adeal-disc">-30%</span></div>
-    <div class="adeal-t">Amazon Kindle Scribe Colorsoft (última gen.): fino, ligero y ráp</div>
-    <div class="adeal-p"><span class="adeal-new">489,00€</span></div>
-  </a><a class="adeal" href="../../d/12r8o68.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/713MExqlUQL._SL500_.jpg" alt="Ufesa Purificador PF4500 de Aire Silencioso de 35W"><span class="adeal-disc">-55%</span></div>
-    <div class="adeal-t">Ufesa Purificador PF4500 de Aire Silencioso de 35W</div>
-    <div class="adeal-p"><span class="adeal-new">149,99€</span></div>
-  </a><a class="adeal" href="../../d/17mbo47.html">
-    <div class="adeal-img"><img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/S50807421939341219bd85690807943457.jpg" alt="SucceBuy Máquina de sorvete automática com compressor embutido 2 quartos sem pré"><span class="adeal-disc">-50%</span></div>
-    <div class="adeal-t">SucceBuy Máquina de sorvete automática com compressor embutido 2</div>
-    <div class="adeal-p"><span class="adeal-new">178,82€</span><span class="adeal-old">357,64€</span></div>
-  </a><a class="adeal" href="../../d/n57x8g.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81IGHhmR+oL._SL500_.jpg" alt="New Era NFL Houston Texans Camiseta Hombre y Mujer Azul Oscuro M | Producto con "><span class="adeal-disc">-60%</span></div>
-    <div class="adeal-t">New Era NFL Houston Texans Camiseta Hombre y Mujer Azul Oscuro M</div>
-    <div class="adeal-p"><span class="adeal-new">12,00€</span><span class="adeal-old">30,00€</span></div>
-  </a><a class="adeal" href="../../d/1m7uxco.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71c1dhTtSiL._SL500_.jpg" alt="Horno multifunción Electrolux, Aquaclean, Inox, Serie 500, EOH3H00BX | 7 funcion"><span class="adeal-disc">-36%</span></div>
-    <div class="adeal-t">Horno multifunción Electrolux, Aquaclean, Inox, Serie 500, EOH3H</div>
-    <div class="adeal-p"><span class="adeal-new">140,59€</span><span class="adeal-old">219,67€</span></div>
-  </a><a class="adeal" href="../../d/1ifu0st.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81r2bIQn2BL._SL500_.jpg" alt="Toputure Bicicleta Estática Electromagnética con APP, 32 Niveles Precisos | Cont"><span class="adeal-disc">-44%</span></div>
-    <div class="adeal-t">Toputure Bicicleta Estática Electromagnética con APP, 32 Niveles</div>
-    <div class="adeal-p"><span class="adeal-new">194,27€</span><span class="adeal-old">346,91€</span></div>
+    <div class="article-deals"><a class="adeal" href="../../d/16hf310.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/518yDDtV2zL._SL500_.jpg" alt="ISDIN Fotoprotección Fusion Water Urban SPF 30, Protector Solar Facial en Crema "><span class="adeal-disc">-42%</span></div>
+    <div class="adeal-t">ISDIN Fotoprotección Fusion Water Urban SPF 30, Protector Solar </div>
+    <div class="adeal-p"><span class="adeal-new">15,55€</span><span class="adeal-old">26,95€</span></div>
+  </a><a class="adeal" href="../../d/12ckupq.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/715eJfUtQYL._SL500_.jpg" alt="Tommy Hilfiger Botas de caña baja Hombre de piel, Marrón (Winter Cognac), 44"><span class="adeal-disc">-49%</span></div>
+    <div class="adeal-t">Tommy Hilfiger Botas de caña baja Hombre de piel, Marrón (Winter</div>
+    <div class="adeal-p"><span class="adeal-new">95,90€</span><span class="adeal-old">188,04€</span></div>
+  </a><a class="adeal" href="../../d/48dw13.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61iOvscB0aL._SL500_.jpg" alt="Perfecta Smile 10 Férulas Bruxismo Moldeables Protector Dental con Estuche."><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Perfecta Smile 10 Férulas Bruxismo Moldeables Protector Dental c</div>
+    <div class="adeal-p"><span class="adeal-new">15,10€</span><span class="adeal-old">29,99€</span></div>
+  </a><a class="adeal" href="../../d/bzgj9c.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/714I1XxPmPL._SL500_.jpg" alt="Barbie Muñeca Pop Reveal con accesorios, Serie Treat | Tema Sweet Swirl con masc"><span class="adeal-disc">-44%</span></div>
+    <div class="adeal-t">Barbie Muñeca Pop Reveal con accesorios, Serie Treat | Tema Swee</div>
+    <div class="adeal-p"><span class="adeal-new">15,00€</span><span class="adeal-old">26,99€</span></div>
+  </a><a class="adeal" href="../../d/1csq2ze.html">
+    <div class="adeal-img"><img loading="lazy" src="https://ae-pic-a1.aliexpress-media.com/kf/S6ec51a32d1c1488cb23b1523eaee7da7s.jpg" alt="TV Coocaa 55&quot; 4K Mini LED – Google TV, Brilho de 300 cd/m², 60Hz, HDR10+, MEMC, "><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">TV Coocaa 55&quot; 4K Mini LED – Google TV, Brilho de 300 cd/m², 60Hz</div>
+    <div class="adeal-p"><span class="adeal-new">477,91€</span><span class="adeal-old">955,82€</span></div>
+  </a><a class="adeal" href="../../d/b2mnc6.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/31nY9cWgNxL._SL500_.jpg" alt="Tommy Hilfiger Sneaker con Suela Vulcanizada Essential Nautical Calzado, Blanco "><span class="adeal-disc">-45%</span></div>
+    <div class="adeal-t">Tommy Hilfiger Sneaker con Suela Vulcanizada Essential Nautical </div>
+    <div class="adeal-p"><span class="adeal-new">40,95€</span><span class="adeal-old">74,90€</span></div>
   </a></div>
     <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>

@@ -789,6 +789,36 @@
   .partners-note{font-size:12.5px;color:var(--muted);margin-top:10px;}
   .partners-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border:1px solid var(--line);border-radius:13px;font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0;}
 
+  /* Parceiros Awin (Grelha Dedicada) */
+  .partners-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:14px;}
+  .partner-banner-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:all .2s ease;}
+  .partner-banner-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-banner-card a.banner-link{display:block;width:100%;overflow:hidden;background:var(--card-sub);}
+  .partner-banner-card img{width:100%;height:auto;display:block;transition:transform .25s ease;}
+  .partner-banner-card:hover img{transform:scale(1.02);}
+  .partner-banner-info{padding:14px;background:var(--card);display:flex;flex-direction:column;gap:6px;flex:1;justify-content:space-between;border-top:1px solid var(--line);}
+  .partner-banner-cat{font-size:10.5px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
+  .partner-banner-title{font-size:14px;font-weight:800;color:var(--text);line-height:1.3;margin:2px 0 4px;}
+  .partner-banner-desc{font-size:12px;color:var(--muted);line-height:1.45;margin:0 0 10px;}
+  .partner-banner-btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-size:12px;font-weight:800;padding:8px 14px;border-radius:8px;transition:all .15s;}
+  .partner-banner-btn:hover{background:var(--accent2);transform:translateX(2px);}
+
+  /* Sidebar Partner Cards */
+  .sidebar-section-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:18px 0 10px;display:flex;align-items:center;gap:8px;}
+  .sidebar-section-title::after{content:'';flex:1;height:1px;background:var(--line);}
+  .partner-card-widget{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:all .18s ease;}
+  .partner-card-widget:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow-hover);}
+  .partner-card-badge{display:inline-block;background:var(--card-sub);color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-bottom:8px;}
+  .partner-card-badge.badge-bet{background:rgba(239,68,68,.12);color:#ef4444;}
+  .partner-card-badge.badge-fin{background:rgba(16,185,129,.12);color:#10b981;}
+  .partner-card-img{width:100%;height:auto;border-radius:10px;display:block;margin-bottom:10px;object-fit:cover;}
+  .partner-card-title{font-size:14px;font-weight:800;color:var(--text);margin-bottom:6px;line-height:1.3;}
+  .partner-card-desc{font-size:12px;color:var(--muted);line-height:1.45;margin-bottom:10px;}
+  .partner-card-code{display:inline-block;background:rgba(255,107,0,.14);color:var(--accent2);font-family:monospace;font-weight:800;padding:2px 6px;border-radius:4px;border:1px dashed var(--accent);}
+  .partner-card-btn{display:block;text-align:center;background:var(--accent);color:#fff!important;font-weight:800;font-size:12.5px;padding:9px;border-radius:8px;text-decoration:none!important;transition:all .15s ease;}
+  .partner-card-btn:hover{background:var(--accent2);transform:scale(1.01);}
+  .partner-card-legal{font-size:10px;color:var(--muted);line-height:1.35;margin-top:8px;}
+
   /* Rodapé claro institucional (como o Pplware — não uma barra escura) */
   footer{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:none;color:var(--muted);}
   footer .footer-col h4{color:var(--text);}
@@ -836,12 +866,28 @@
     <div class="bread"><a href="../">← Todas as categorias</a></div>
     <article class="article">
       <h1>🏠 Ofertas de Casa</h1>
-      <p class="updated">34 ofertas ativas · atualizado hoje</p>
+      <p class="updated">43 ofertas ativas · atualizado hoje</p>
       <p>As melhores promoções de casa, conforto, aspiração e arrumação em Portugal, verificadas e com histórico de preço para não caíres em descontos fictícios. Os links levam à loja (Amazon, AliExpress e parceiros) e ajudam a manter o projeto, sem custo extra para ti.</p>
       <div class="article-deals"><a class="adeal" href="../../d/n0ikh1.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/616Uy73nK6L._SL500_.jpg" alt="roborock H60 aspiradora sin Cable, succión 115 AW, 60 min autonomía | Tubo Flexi"><span class="adeal-disc">-60%</span></div>
     <div class="adeal-t">roborock H60 aspiradora sin Cable, succión 115 AW, 60 min autono</div>
     <div class="adeal-p"><span class="adeal-new">99,00€</span><span class="adeal-old">249,00€</span></div>
+  </a><a class="adeal" href="../../d/f88kv6.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61T2m0BJwkL._SL500_.jpg" alt="Kit de Ring Alarm S + Cámara interior (Indoor Camera 2ª gen) con Suscripción a R"><span class="adeal-disc">-60%</span></div>
+    <div class="adeal-t">Kit de Ring Alarm S + Cámara interior (Indoor Camera 2ª gen) con</div>
+    <div class="adeal-p"><span class="adeal-new">119,99€</span><span class="adeal-old">300,97€</span></div>
+  </a><a class="adeal" href="../../d/1sstfmv.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71-cPHQsp4L._SL500_.jpg" alt="Ring Cámara exterior con batería (Stick Up Cam) | Cámara de vigilancia wifi HD p"><span class="adeal-disc">-66%</span></div>
+    <div class="adeal-t">Ring Cámara exterior con batería (Stick Up Cam) | Cámara de vigi</div>
+    <div class="adeal-p"><span class="adeal-new">109,99€</span><span class="adeal-old">320,95€</span></div>
+  </a><a class="adeal" href="../../d/9lvon1.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61ADcEqEFTL._SL500_.jpg" alt="Oferta especial: Ring Cámara interior (Indoor Camera 2ª gen) | Cámara de vigilan"><span class="adeal-disc">-68%</span></div>
+    <div class="adeal-t">Oferta especial: Ring Cámara interior (Indoor Camera 2ª gen) | C</div>
+    <div class="adeal-p"><span class="adeal-new">64,99€</span><span class="adeal-old">200,95€</span></div>
+  </a><a class="adeal" href="../../d/1f9mrau.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51kMInMZFiL._SL500_.jpg" alt="Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot limpa-vidros, es"><span class="adeal-disc">-20%</span></div>
+    <div class="adeal-t">Oferta especial para membros Prime: ECOVACS WINBOT Mini 2 Robot </div>
+    <div class="adeal-p"><span class="adeal-new">242,95€</span><span class="adeal-old">303,69€</span></div>
   </a><a class="adeal" href="../../d/1kokqu8.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/511EAz93tsL._SL500_.jpg" alt="roborock Qrevo S5V Robot Aspirador 12.000Pa de Succión, Blanco | Doble Cepillo A"><span class="adeal-disc">-51%</span></div>
     <div class="adeal-t">roborock Qrevo S5V Robot Aspirador 12.000Pa de Succión, Blanco |</div>
@@ -854,14 +900,18 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61BCh6WHSaL._SL500_.jpg" alt="dreame H15 Pro Heat Aspirador Seco y Húmedo, Limpia con Agua a 85 °C | Brazo Rob"><span class="adeal-disc">-33%</span></div>
     <div class="adeal-t">dreame H15 Pro Heat Aspirador Seco y Húmedo, Limpia con Agua a 8</div>
     <div class="adeal-p"><span class="adeal-new">405,60€</span><span class="adeal-old">605,37€</span></div>
+  </a><a class="adeal" href="../../d/1h2ykoy.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51TgRBO9xCL._SL500_.jpg" alt="ECOVACS WINBOT W3 OMNI Robot Limpiacristales con Estación Multifunción, Autolava"><span class="adeal-disc">-21%</span></div>
+    <div class="adeal-t">ECOVACS WINBOT W3 OMNI Robot Limpiacristales con Estación Multif</div>
+    <div class="adeal-p"><span class="adeal-new">558,07€</span><span class="adeal-old">706,42€</span></div>
+  </a><a class="adeal" href="../../d/l4mrrd.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61gmkIkkkUL._SL500_.jpg" alt="Oferta especial para membros Prime: roborock F25 Steam Set aspirador e esfregona"><span class="adeal-disc">-33%</span></div>
+    <div class="adeal-t">Oferta especial para membros Prime: roborock F25 Steam Set aspir</div>
+    <div class="adeal-p"><span class="adeal-new">399,00€</span><span class="adeal-old">599,00€</span></div>
   </a><a class="adeal" href="../../d/aejg9r.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/618PaKO+25L._SL500_.jpg" alt="Oferta especial para membros Prime: roborock Qrevo Edge 2 Robot aspirador de suc"><span class="adeal-disc">-38%</span></div>
     <div class="adeal-t">Oferta especial para membros Prime: roborock Qrevo Edge 2 Robot </div>
     <div class="adeal-p"><span class="adeal-new">889,99€</span><span class="adeal-old">1435,47€</span></div>
-  </a><a class="adeal" href="../../d/1r6z2z1.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51vUBaa4LoL._SL500_.jpg" alt="Kinderkraft NEA 2 Silla de paseo desde el nacimiento hasta los 22 kg, Plegable c"><span class="adeal-disc">-23%</span></div>
-    <div class="adeal-t">Kinderkraft NEA 2 Silla de paseo desde el nacimiento hasta los 2</div>
-    <div class="adeal-p"><span class="adeal-new">399,00€</span><span class="adeal-old">519,90€</span></div>
   </a><a class="adeal" href="../../d/19sboex.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41SndA5UO4L._SL500_.jpg" alt="XIAOMI Aspiradora inalámbrica G20 MAX, succión 25kPa / 180AW, hasta 60 Minutos d"><span class="adeal-disc">-26%</span></div>
     <div class="adeal-t">XIAOMI Aspiradora inalámbrica G20 MAX, succión 25kPa / 180AW, ha</div>
@@ -922,10 +972,26 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61HkEejlbdL._SL500_.jpg" alt="roborock Qrevo 2 Pro Set Robot Aspirador Succión Extrema de 25000 Pa,Blanco | Mo"><span class="adeal-disc">-36%</span></div>
     <div class="adeal-t">roborock Qrevo 2 Pro Set Robot Aspirador Succión Extrema de 2500</div>
     <div class="adeal-p"><span class="adeal-new">699,00€</span><span class="adeal-old">1092,19€</span></div>
+  </a><a class="adeal" href="../../d/14adr92.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71+ecNBJmvL._SL500_.jpg" alt="iRobot Roomba 115 Combo com base AutoEmpty, Robot 2em 1, potência de sucção 1500"><span class="adeal-disc">-43%</span></div>
+    <div class="adeal-t">iRobot Roomba 115 Combo com base AutoEmpty, Robot 2em 1, potênci</div>
+    <div class="adeal-p"><span class="adeal-new">349,00€</span><span class="adeal-old">612,28€</span></div>
+  </a><a class="adeal" href="../../d/1v103t3.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/517aVxXKYtL._SL500_.jpg" alt="PIKOLIN Home - Edredón Nórdico de Fibra Aloe Vera Otoño-Invierno 300gr, Dermopro"><span class="adeal-disc">-43%</span></div>
+    <div class="adeal-t">PIKOLIN Home - Edredón Nórdico de Fibra Aloe Vera Otoño-Invierno</div>
+    <div class="adeal-p"><span class="adeal-new">55,90€</span></div>
+  </a><a class="adeal" href="../../d/9fmoyi.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71wNOIlqYlL._SL500_.jpg" alt="Bandeira KliKil Alemanha com águia 90x150cm - Tecido para exteriores 150x90cm re"><span class="adeal-disc">-46%</span></div>
+    <div class="adeal-t">Bandeira KliKil Alemanha com águia 90x150cm - Tecido para exteri</div>
+    <div class="adeal-p"><span class="adeal-new">6,99€</span><span class="adeal-old">12,99€</span></div>
   </a><a class="adeal" href="../../d/4m00v6.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61b6edPH-bL._SL500_.jpg" alt="roborock F25 Bx Aspiradora-Fregona Sin Cable, 20.000Pa en Seco y Húmedo, Autolim"><span class="adeal-disc">-53%</span></div>
     <div class="adeal-t">roborock F25 Bx Aspiradora-Fregona Sin Cable, 20.000Pa en Seco y</div>
     <div class="adeal-p"><span class="adeal-new">189,00€</span><span class="adeal-old">399,00€</span></div>
+  </a><a class="adeal" href="../../d/hvqh9o.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61YzffraYqL._SL500_.jpg" alt="TOPINCN Relógio de prateleira de mesa com tampa de estilo retro, relógio com tam"><span class="adeal-disc">-70%</span></div>
+    <div class="adeal-t">TOPINCN Relógio de prateleira de mesa com tampa de estilo retro,</div>
+    <div class="adeal-p"><span class="adeal-new">51,77€</span><span class="adeal-old">172,57€</span></div>
   </a><a class="adeal" href="../../d/gjwrmk.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61ckYY1TfUL._SL500_.jpg" alt="Hoover Aspiradora Escoba Sin Cable Potente con Corner Genie™ para Limpiar Todos "><span class="adeal-disc">-71%</span></div>
     <div class="adeal-t">Hoover Aspiradora Escoba Sin Cable Potente con Corner Genie™ par</div>
