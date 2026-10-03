@@ -1,5 +1,5 @@
 const CACHE = 'descontospt-shell-v1';
-const SHELL = ['/', '/favicon.svg', '/manifest.json'];
+const SHELL = ['/', '/favicon-96.png', '/manifest.json'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).catch(() => {}));
   self.skipWaiting();
