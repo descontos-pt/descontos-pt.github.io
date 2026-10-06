@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos Portugal</title>
+    <title>Descontos PT</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Tue, 06 Oct 2026 17:48:30 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 17:49:04 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WYBOT C1 Robot Piscina 160min Batería, 160m² Suelo Paredes Línea de Agua | 4-en-1 Robot Limpiafondos Piscina s — 385,25€</title>
+      <link>https://descontospt.pt/d/4yyte4.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/4yyte4.html</guid>
+      <pubDate>Tue, 06 Oct 2026 17:48:50 GMT</pubDate>
+      <description>WYBOT C1 Robot Piscina 160min Batería, 160m² Suelo Paredes Línea de Agua | 4-en-1 Robot Limpiafondos Piscina sin Cable, 5 Modos, Navegación &amp; App,(Nuevo Modelo)Verde Gris por 385,25€ (antes 601,95€, -36%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/715wZhXCKyL._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>G-Star Rovic Zip 3D Regular Tapered Calças para homem — 28,00€</title>
       <link>https://descontospt.pt/d/19kf5hv.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Tue, 06 Oct 2026 11:47:01 GMT</pubDate>
       <description>Apple AirTag (2.ª generación): Permite localizar Llaves, Carteras y más; función de localización con Sonido; hasta 1,5 Veces más Alcance en Búsqueda de Precisión por 26,21€ (antes 70,00€, -63%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/61lBuevDnnL._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Microsoft Surface Pro, 13" | Snapdragon X2 Elite | 16GB RAM, 1TB SSD | 13" OLED Touchscreen | Copilot+ PC | Pl — 1159,06€</title>
-      <link>https://descontospt.pt/d/1t2afb6.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/1t2afb6.html</guid>
-      <pubDate>Tue, 06 Oct 2026 11:46:41 GMT</pubDate>
-      <description>Microsoft Surface Pro, 13" | Snapdragon X2 Elite | 16GB RAM, 1TB SSD | 13" OLED Touchscreen | Copilot+ PC | Platino | Windows 11 Home | Último Modelo (12a edición) por 1159,06€ (antes 1949,00€, -41%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://m.media-amazon.com/images/I/61tlz-V75aL._SL500_.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
