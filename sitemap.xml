@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://descontospt.pt/</loc><priority>1.0</priority></url>
   <url><loc>https://descontospt.pt/noticias/</loc><lastmod>2026-10-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://descontospt.pt/noticias/quer-um-email-descartavel-o-temp-mail-cria-um/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/foi-um-dos-filmes-mais-esperados-do-seculo-e/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/maquinas-volta-estao-inativas-10-do-tempo-saiba/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/apple-prepara-grande-ofensiva-na-casa/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
@@ -42,7 +43,6 @@
   <url><loc>https://descontospt.pt/noticias/steam-13-otimos-jogos-da-promocao-de-outono-por/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/e-porque-hoje-e/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/aviao-mais-rapido-do-mundo-vai-voltar-nasa/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://descontospt.pt/noticias/este-detalhe-e-importantissimo-num-telemovel-e/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/colunas-bluetooth-marshall-analise-portugal/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
@@ -276,5 +276,4 @@
   <url><loc>https://descontospt.pt/d/1piftw1.html</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/32h019.html</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/b5oxgx.html</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
-  <url><loc>https://descontospt.pt/d/1hx1nw6.html</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
 </urlset>
