@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://descontospt.pt/</loc><priority>1.0</priority></url>
   <url><loc>https://descontospt.pt/noticias/</loc><lastmod>2026-10-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://descontospt.pt/noticias/ibm-tiene-unas-cifras-que-desafian-a-los/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://descontospt.pt/noticias/apple-traz-de-volta-o-ipod-original-num-easter/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/digi-ameaca-sair-de-portugal-anacom-tem-nas/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/hoy-en-lidl-y-rebajada-esta-batidora-de-vaso-en/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/este-e-o-melhor-smartwatch-da-xiaomi-que-podes/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
@@ -40,8 +42,6 @@
   <url><loc>https://descontospt.pt/noticias/se-te-falta-este-pequeno-gadget-a-tua-casa/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/openai-confirma-criacao-de-robo-humanoide-e-ja/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/una-de-las-lineas-del-metro-mas-antiguo-del/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://descontospt.pt/noticias/telemoveis-novos-todos-os-anos-e-mesmo/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://descontospt.pt/noticias/a-lua-esta-a-encolher-e-os-cientistas-ja-sabem/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/pc-gaming-o-que-deve-ter-em-conta-antes-de-comprar/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/xiaomi-poco-x8-pro-12gb-512gb-promocao-amazon-portugal/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://descontospt.pt/noticias/portatil-lento-faz-isto-antes-do-regresso-as-aulas-e-recupera-des/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
@@ -81,6 +81,7 @@
   <url><loc>https://descontospt.pt/categoria/fashion/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/categoria/sports/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/categoria/baby/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/categoria/pets/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/categoria/tools/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/categoria/other/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/artigos/</loc><lastmod>2026-10-23</lastmod><priority>0.9</priority></url>
@@ -105,15 +106,125 @@
   <url><loc>https://descontospt.pt/privacy-policy/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://descontospt.pt/terms-of-service/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://descontospt.pt/d/uafk6l.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/sxtgap.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1sxpzt4.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1s7vldo.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/2259rl.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1g4c12q.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1jkkppz.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1r1pnx3.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/8623z0.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/t4xfch.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/d3zc5h.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1rtn3xz.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1sks4ws.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/gtxum2.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ilxts9.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/mprppi.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/z2pcfd.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/p8mtap.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/heaejc.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/prft6b.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/tzf1d0.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1bhws6f.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1e38p6s.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1jw5fbt.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1gyf19y.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1i5b5nb.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1n8vyfz.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/11k267w.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1aixbiq.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/aegydt.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/dwmagn.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/7nrtri.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/137y2ga.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1i957zx.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/6l1v4j.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1fu8y8w.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1ajk5bo.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/dwl5ci.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/5m5p2h.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/18kkuhn.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/kqzo22.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/znivs4.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1x1h60a.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ceyt3c.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/3urr5e.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/dbhqiv.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1u64yzy.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/n2h1z9.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/109rqdz.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/bu1uim.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1jy6v2.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1sf2nlp.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1ry0u24.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/oz1g81.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/yxsjv7.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/162lp5n.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/y76soh.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ohjdky.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/nngft4.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1hzku4k.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/170s8qo.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/691f06.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ge4j5x.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/i5xa8y.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1hpaquu.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/8kyroq.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/5ev2s4.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1ik5upb.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1abx9vs.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ifxax9.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1dsalop.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/g9tsq8.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1xajpy1.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/eeuh1b.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/pwvfib.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/9rnzyv.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/n6n0ya.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1itd8ad.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1evptc2.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1726ghg.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1yb1wn8.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/8sotak.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1lxt7ss.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/5rvkjt.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/3a24a1.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/y1n3ke.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1jkit56.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1jj0tgx.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1qay91w.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/iokz03.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/5j895x.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/10rkpsi.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/83xaac.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1gn4wte.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1oj8n4g.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1gts2su.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/r1x4qw.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/lsa3xj.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1876s4i.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/vt9l9h.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/16qfbvw.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1da3f6h.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1whvv5x.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/150ym97.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/a7qfaq.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/z2vcvz.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/cmfkrf.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/auwlvo.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/f0bvhn.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1c4w1up.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/166dtda.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1w24y24.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1ad15v4.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/ocwoox.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/5t7tta.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/5phh2c.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/bhu567.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/drw39w.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/4w1tye.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://descontospt.pt/d/1844152.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1emjmm2.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/1l4a53n.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
   <url><loc>https://descontospt.pt/d/77c5r0.html</loc><lastmod>2026-10-22</lastmod><priority>0.7</priority></url>
