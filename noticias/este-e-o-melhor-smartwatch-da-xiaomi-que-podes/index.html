@@ -32,6 +32,58 @@
   .ad-unit ins{display:block;}
   .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
 
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc;
     --card:#ffffff;
@@ -534,6 +586,58 @@
   /* ═════════ NOVO ESTILO (23-set-2026): portal tipo Pplware/4gnews, tons de azul,
      Plus Jakarta Sans, cabeçalho claro fixo, grelha bento no topo, sidebar de widgets.
      Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc; --card:#ffffff; --card-sub:#f1f5f9;
     --accent:#0284c7; --accent2:#0369a1; --accent-light:rgba(2,132,199,.08);
@@ -878,6 +982,7 @@
         <a href="../../guias/">📚 Guias de Poupança</a>
         <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
         <a href="../../recomendados/">🎁 Recomendados</a>
+        <a href="../../subscreve/">📩 Newsletter</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
       </nav>
@@ -1110,27 +1215,48 @@
         } catch(e) {}
       })();
       (function(){
-        var form = document.getElementById('newsletter-form');
-        if (!form) return;
-        var msg = document.getElementById('newsletter-msg');
-        form.addEventListener('submit', function(e){
-          e.preventDefault();
-          var email = document.getElementById('newsletter-email').value.trim();
-          if (!email) return;
-          msg.style.color = 'var(--muted)';
-          msg.textContent = 'A subscrever...';
-          fetch('https://go.descontospt.pt/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'site-footer' }),
-          }).then(function(r){
-            if (!r.ok) throw new Error('falhou');
-            msg.style.color = '#4caf50';
-            msg.textContent = '✅ Subscrito! Já estás na lista.';
-            form.reset();
-          }).catch(function(){
-            msg.style.color = '#e53935';
-            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+        document.querySelectorAll('.newsletter-ajax-form, #newsletter-form').forEach(function(form){
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var statusEl = form.querySelector('.nl-status') || form.querySelector('#newsletter-msg') || document.getElementById('newsletter-msg');
+            var emailInput = form.querySelector('input[type="email"]') || document.getElementById('newsletter-email');
+            var nameInput = form.querySelector('input[name="nome"]');
+            var hpInput = form.querySelector('input[name="hp"]');
+
+            var email = emailInput ? emailInput.value.trim() : '';
+            var nome = nameInput ? nameInput.value.trim() : '';
+            var hp = hpInput ? hpInput.value.trim() : '';
+
+            if (!email) return;
+
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              statusEl.style.color = 'var(--muted)';
+              statusEl.textContent = '⏳ A registar subscrição...';
+            }
+
+            fetch('https://go.descontospt.pt/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, nome: nome, hp: hp, source: 'descontospt-site' })
+            }).then(function(r){
+              return r.json().catch(function(){ return { ok: r.ok }; });
+            }).then(function(data){
+              if (data && data.ok) {
+                if (statusEl) {
+                  statusEl.style.color = '#10b981';
+                  statusEl.textContent = '✅ Subscrição confirmada com sucesso! A próxima edição chega à sexta-feira.';
+                }
+                form.reset();
+              } else {
+                throw new Error((data && data.error) || 'Falha ao subscrever');
+              }
+            }).catch(function(err){
+              if (statusEl) {
+                statusEl.style.color = '#ef4444';
+                statusEl.textContent = '❌ ' + (err.message || 'Erro ao processar. Tenta novamente.');
+              }
+            });
           });
         });
       })();

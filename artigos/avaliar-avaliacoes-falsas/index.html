@@ -32,6 +32,58 @@
   .ad-unit ins{display:block;}
   .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
 
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc;
     --card:#ffffff;
@@ -534,6 +586,58 @@
   /* ═════════ NOVO ESTILO (23-set-2026): portal tipo Pplware/4gnews, tons de azul,
      Plus Jakarta Sans, cabeçalho claro fixo, grelha bento no topo, sidebar de widgets.
      Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc; --card:#ffffff; --card-sub:#f1f5f9;
     --accent:#0284c7; --accent2:#0369a1; --accent-light:rgba(2,132,199,.08);
@@ -878,6 +982,7 @@
         <a href="../../guias/">📚 Guias de Poupança</a>
         <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
         <a href="../../recomendados/">🎁 Recomendados</a>
+        <a href="../../subscreve/">📩 Newsletter</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
       </nav>
@@ -952,30 +1057,30 @@
 <p>Para evitar ser enganado por avaliações falsas, combina a leitura crítica com o uso de ferramentas de verificação. Procura por avaliações detalhadas, distribuídas ao longo do tempo, e confia mais nos utilizadores que têm histórico variado. Ao aplicar estes critérios, aumentas as hipóteses de fazer compras online seguras e de qualidade.</p>
       
     <div class="sectionh">🛒 Ofertas em destaque de hoje</div>
-    <div class="article-deals"><a class="adeal" href="../../d/1fu8y8w.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/610VUAxpTjL._SL500_.jpg" alt="Taurus Sliding Pro 3000 Non Stop Centro de Planchado 3000W, Golpe 400 g/min | Va"><span class="adeal-disc">-37%</span></div>
-    <div class="adeal-t">Taurus Sliding Pro 3000 Non Stop Centro de Planchado 3000W, Golp</div>
-    <div class="adeal-p"><span class="adeal-new">76,00€</span><span class="adeal-old">119,99€</span></div>
-  </a><a class="adeal" href="../../d/1ajk5bo.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51ULuCkE2gL._SL500_.jpg" alt="THE NORTH FACE NF0A8BGN0UO M MA Wind Pant Pants Hombre Pistachio Tamaño S"><span class="adeal-disc">-62%</span></div>
-    <div class="adeal-t">THE NORTH FACE NF0A8BGN0UO M MA Wind Pant Pants Hombre Pistachio</div>
-    <div class="adeal-p"><span class="adeal-new">29,12€</span><span class="adeal-old">76,63€</span></div>
-  </a><a class="adeal" href="../../d/dwl5ci.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71YeknW8FcL._SL500_.jpg" alt="Ultenic Aspiradora sin Cable con Cepillo Antienredos y Luz Verde | Aspira y frie"><span class="adeal-disc">-20%</span></div>
-    <div class="adeal-t">Ultenic Aspiradora sin Cable con Cepillo Antienredos y Luz Verde</div>
-    <div class="adeal-p"><span class="adeal-new">159,98€</span><span class="adeal-old">199,99€</span></div>
-  </a><a class="adeal" href="../../d/5m5p2h.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/612aGQj6-AL._SL500_.jpg" alt="Tommy Hilfiger Sneaker con Suela Cupsole Hombre Icon Court Stripes de Piel, Azul"><span class="adeal-disc">-33%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Sneaker con Suela Cupsole Hombre Icon Court Strip</div>
-    <div class="adeal-p"><span class="adeal-new">67,10€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/18kkuhn.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/91MzkR-f0bL._SL500_.jpg" alt="ONLY Onlemily HW Long Dnm Cro741 Noos - Pantalones Cortos - Pantalones Cortos Va"><span class="adeal-disc">-61%</span></div>
-    <div class="adeal-t">ONLY Onlemily HW Long Dnm Cro741 Noos - Pantalones Cortos - Pant</div>
-    <div class="adeal-p"><span class="adeal-new">14,53€</span><span class="adeal-old">36,99€</span></div>
-  </a><a class="adeal" href="../../d/kqzo22.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71BpCIgMH4L._SL500_.jpg" alt="Calvin Klein Bolso bandolera Mujer Bold Ck Small con correa, Negro (Black), Tall"><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">Calvin Klein Bolso bandolera Mujer Bold Ck Small con correa, Neg</div>
-    <div class="adeal-p"><span class="adeal-new">58,28€</span><span class="adeal-old">99,90€</span></div>
+    <div class="article-deals"><a class="adeal" href="../../d/1y1m6vg.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51zNJXGpTOL._SL500_.jpg" alt="OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Bluetooth Sunglasses | Up to"><span class="adeal-disc">-56%</span></div>
+    <div class="adeal-t">OhO Open Ear Smart Glasses, UV400 Z87.1 Lightweight Bluetooth Su</div>
+    <div class="adeal-p"><span class="adeal-new">18,99€</span><span class="adeal-old">42,99€</span></div>
+  </a><a class="adeal" href="../../d/8ohdk0.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61MT4vclXzL._SL500_.jpg" alt="Levi's Pantalones Vaqueros 537 Western Bootcut para Hombre, Rocky Rinse, 36W / 3"><span class="adeal-disc">-62%</span></div>
+    <div class="adeal-t">Levi's Pantalones Vaqueros 537 Western Bootcut para Hombre, Rock</div>
+    <div class="adeal-p"><span class="adeal-new">41,80€</span><span class="adeal-old">110,00€</span></div>
+  </a><a class="adeal" href="../../d/12u6coi.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51ldlDQ5vFL._SL500_.jpg" alt="Crocs Brooklyn Woven Heel Chancla, Sepia, Mujer, EU 37-38 | Chancla recovery lig"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Crocs Brooklyn Woven Heel Chancla, Sepia, Mujer, EU 37-38 | Chan</div>
+    <div class="adeal-p"><span class="adeal-new">85,50€</span></div>
+  </a><a class="adeal" href="../../d/1xhf9jd.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71zHn+CSNBL._SL500_.jpg" alt="Emporio Armani Hombre Sea Animals Mid Boxer Azul XL, Ballena con Estampado Azul,"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Emporio Armani Hombre Sea Animals Mid Boxer Azul XL, Ballena con</div>
+    <div class="adeal-p"><span class="adeal-new">23,50€</span><span class="adeal-old">47,00€</span></div>
+  </a><a class="adeal" href="../../d/c44uui.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71z4aNfswzL._SL500_.jpg" alt="Thermaltake G6 Direct Drive Racing Wheel | Bundle"><span class="adeal-disc">-33%</span></div>
+    <div class="adeal-t">Thermaltake G6 Direct Drive Racing Wheel | Bundle</div>
+    <div class="adeal-p"><span class="adeal-new">335,99€</span><span class="adeal-old">501,48€</span></div>
+  </a><a class="adeal" href="../../d/rjva2u.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41BH99eQJWL._SL500_.jpg" alt="Belkin cargador de pared USB doble de 24 W Boost Charge + cable USB-A a USB-C (a"><span class="adeal-disc">-52%</span></div>
+    <div class="adeal-t">Belkin cargador de pared USB doble de 24 W Boost Charge + cable </div>
+    <div class="adeal-p"><span class="adeal-new">11,99€</span><span class="adeal-old">24,99€</span></div>
   </a></div>
     <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
@@ -1084,27 +1189,48 @@
         } catch(e) {}
       })();
       (function(){
-        var form = document.getElementById('newsletter-form');
-        if (!form) return;
-        var msg = document.getElementById('newsletter-msg');
-        form.addEventListener('submit', function(e){
-          e.preventDefault();
-          var email = document.getElementById('newsletter-email').value.trim();
-          if (!email) return;
-          msg.style.color = 'var(--muted)';
-          msg.textContent = 'A subscrever...';
-          fetch('https://go.descontospt.pt/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'site-footer' }),
-          }).then(function(r){
-            if (!r.ok) throw new Error('falhou');
-            msg.style.color = '#4caf50';
-            msg.textContent = '✅ Subscrito! Já estás na lista.';
-            form.reset();
-          }).catch(function(){
-            msg.style.color = '#e53935';
-            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+        document.querySelectorAll('.newsletter-ajax-form, #newsletter-form').forEach(function(form){
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var statusEl = form.querySelector('.nl-status') || form.querySelector('#newsletter-msg') || document.getElementById('newsletter-msg');
+            var emailInput = form.querySelector('input[type="email"]') || document.getElementById('newsletter-email');
+            var nameInput = form.querySelector('input[name="nome"]');
+            var hpInput = form.querySelector('input[name="hp"]');
+
+            var email = emailInput ? emailInput.value.trim() : '';
+            var nome = nameInput ? nameInput.value.trim() : '';
+            var hp = hpInput ? hpInput.value.trim() : '';
+
+            if (!email) return;
+
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              statusEl.style.color = 'var(--muted)';
+              statusEl.textContent = '⏳ A registar subscrição...';
+            }
+
+            fetch('https://go.descontospt.pt/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, nome: nome, hp: hp, source: 'descontospt-site' })
+            }).then(function(r){
+              return r.json().catch(function(){ return { ok: r.ok }; });
+            }).then(function(data){
+              if (data && data.ok) {
+                if (statusEl) {
+                  statusEl.style.color = '#10b981';
+                  statusEl.textContent = '✅ Subscrição confirmada com sucesso! A próxima edição chega à sexta-feira.';
+                }
+                form.reset();
+              } else {
+                throw new Error((data && data.error) || 'Falha ao subscrever');
+              }
+            }).catch(function(err){
+              if (statusEl) {
+                statusEl.style.color = '#ef4444';
+                statusEl.textContent = '❌ ' + (err.message || 'Erro ao processar. Tenta novamente.');
+              }
+            });
           });
         });
       })();

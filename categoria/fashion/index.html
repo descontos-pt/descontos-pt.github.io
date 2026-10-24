@@ -32,6 +32,58 @@
   .ad-unit ins{display:block;}
   .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
 
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc;
     --card:#ffffff;
@@ -534,6 +586,58 @@
   /* ═════════ NOVO ESTILO (23-set-2026): portal tipo Pplware/4gnews, tons de azul,
      Plus Jakarta Sans, cabeçalho claro fixo, grelha bento no topo, sidebar de widgets.
      Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc; --card:#ffffff; --card-sub:#f1f5f9;
     --accent:#0284c7; --accent2:#0369a1; --accent-light:rgba(2,132,199,.08);
@@ -878,6 +982,7 @@
         <a href="../../guias/">📚 Guias de Poupança</a>
         <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
         <a href="../../recomendados/">🎁 Recomendados</a>
+        <a href="../../subscreve/">📩 Newsletter</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
       </nav>
@@ -888,7 +993,7 @@
     <div class="bread"><a href="../">← Todas as categorias</a></div>
     <article class="article">
       <h1>👕 Ofertas de Moda</h1>
-      <p class="updated">61 ofertas ativas · atualizado hoje</p>
+      <p class="updated">84 ofertas ativas · atualizado hoje</p>
       <p>As melhores promoções de roupa, calçado, relógios e acessórios em Portugal, verificadas e com histórico de preço para não caíres em descontos fictícios. Os links levam à loja (Amazon, AliExpress e parceiros) e ajudam a manter o projeto, sem custo extra para ti.</p>
       <div class="article-deals"><a class="adeal" href="../../d/1d51sh9.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61Y1ZWjSI2L._SL500_.jpg" alt="Tommy Hilfiger Cinturón Hombre New Denton Belt 4.0 Cinturón de piel, Azul (Midni"><span class="adeal-disc">-20%</span></div>
@@ -902,6 +1007,10 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71ipkhBsf+L._SL500_.jpg" alt="Levi's Vintage Graphic tee T-Shirt, Logo BW Light Heathe, S Hombres, Logo BW Lig"><span class="adeal-disc">-60%</span></div>
     <div class="adeal-t">Levi's Vintage Graphic tee T-Shirt, Logo BW Light Heathe, S Homb</div>
     <div class="adeal-p"><span class="adeal-new">13,85€</span><span class="adeal-old">35,00€</span></div>
+  </a><a class="adeal" href="../../d/1nyb4wa.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41UgnU7rwEL._SL500_.jpg" alt="CALVIN KLEIN JEANS SUN CKJ23658S WHITE 56/16/140 MUJER"><span class="adeal-disc">-63%</span></div>
+    <div class="adeal-t">CALVIN KLEIN JEANS SUN CKJ23658S WHITE 56/16/140 MUJER</div>
+    <div class="adeal-p"><span class="adeal-new">19,42€</span><span class="adeal-old">52,49€</span></div>
   </a><a class="adeal" href="../../d/suwbul.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71Z410WYKRL._SL500_.jpg" alt="camel active Calças para homem"><span class="adeal-disc">-57%</span></div>
     <div class="adeal-t">camel active Calças para homem</div>
@@ -910,18 +1019,26 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/616THWObP9L._SL500_.jpg" alt="Schott NYC Tshopperb Camiseta, Negro, 10 años para Hombre"><span class="adeal-disc">-62%</span></div>
     <div class="adeal-t">Schott NYC Tshopperb Camiseta, Negro, 10 años para Hombre</div>
     <div class="adeal-p"><span class="adeal-new">6,42€</span><span class="adeal-old">16,89€</span></div>
-  </a><a class="adeal" href="../../d/uet6qh.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71gLSfUWWCL._SL500_.jpg" alt="PUMA teamLIGA26 - Chaqueta de entrenamiento"><span class="adeal-disc">-63%</span></div>
-    <div class="adeal-t">PUMA teamLIGA26 - Chaqueta de entrenamiento</div>
-    <div class="adeal-p"><span class="adeal-new">13,26€</span><span class="adeal-old">35,84€</span></div>
-  </a><a class="adeal" href="../../d/5uat7c.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81b49ly+1HL._SL500_.jpg" alt="Salomon EXTEGRA Gore-Tex sapatilhas de caminhada impermeáveis para homem"><span class="adeal-disc">-33%</span></div>
-    <div class="adeal-t">Salomon EXTEGRA Gore-Tex sapatilhas de caminhada impermeáveis pa</div>
-    <div class="adeal-p"><span class="adeal-new">80,95€</span><span class="adeal-old">120,00€</span></div>
+  </a><a class="adeal" href="../../d/dl67g2.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81IFeq5-tNL._SL500_.jpg" alt="Bresdk Pijama Corto Mujer Algodón con Cuello de Pico y Manga Corta Verano | Punt"><span class="adeal-disc">-48%</span></div>
+    <div class="adeal-t">Bresdk Pijama Corto Mujer Algodón con Cuello de Pico y Manga Cor</div>
+    <div class="adeal-p"><span class="adeal-new">11,72€</span><span class="adeal-old">22,72€</span></div>
+  </a><a class="adeal" href="../../d/17ldcqq.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61bqLJufg8L._SL500_.jpg" alt="ONLY Carmakoma Carapril Life - Abrigo corto para mujer OTW Noos, Oxford Tan, M"><span class="adeal-disc">-49%</span></div>
+    <div class="adeal-t">ONLY Carmakoma Carapril Life - Abrigo corto para mujer OTW Noos,</div>
+    <div class="adeal-p"><span class="adeal-new">28,90€</span><span class="adeal-old">56,99€</span></div>
   </a><a class="adeal" href="../../d/1p6sf6c.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61O9bPCswEL._SL500_.jpg" alt="Pepe Jeans Staple Carteira Horizontal com Porta-Moedas Verde 11x8x1 cms Pele by "><span class="adeal-disc">-42%</span></div>
     <div class="adeal-t">Pepe Jeans Staple Carteira Horizontal com Porta-Moedas Verde 11x</div>
     <div class="adeal-p"><span class="adeal-new">15,87€</span><span class="adeal-old">27,36€</span></div>
+  </a><a class="adeal" href="../../d/15w3kv0.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81Efp9hNYEL._SL500_.jpg" alt="Skechers Calcetines para hombre, Pastel de crema irlandesa/chocolate, 43-47"><span class="adeal-disc">-52%</span></div>
+    <div class="adeal-t">Skechers Calcetines para hombre, Pastel de crema irlandesa/choco</div>
+    <div class="adeal-p"><span class="adeal-new">18,91€</span><span class="adeal-old">39,40€</span></div>
+  </a><a class="adeal" href="../../d/15cqgd7.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61jr9T8CnbL._SL500_.jpg" alt="DKNY Avril Small Zip Alrededor Billfold para Mujer, Logotipo Negro y Negro, Smal"><span class="adeal-disc">-74%</span></div>
+    <div class="adeal-t">DKNY Avril Small Zip Alrededor Billfold para Mujer, Logotipo Neg</div>
+    <div class="adeal-p"><span class="adeal-new">26,09€</span><span class="adeal-old">99,00€</span></div>
   </a><a class="adeal" href="../../d/dpcl0i.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61xDbUiQa9L._SL500_.jpg" alt="Tommy Hilfiger Cinto mulher logótipo 2,5 cm de pele"><span class="adeal-disc">-55%</span></div>
     <div class="adeal-t">Tommy Hilfiger Cinto mulher logótipo 2,5 cm de pele</div>
@@ -930,6 +1047,10 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/711DjZO2avL._SL500_.jpg" alt="Levi's 725 High Rise Bootcut Vaqueros, Exploración Triangular, 29W / 32L Mujer"><span class="adeal-disc">-43%</span></div>
     <div class="adeal-t">Levi's 725 High Rise Bootcut Vaqueros, Exploración Triangular, 2</div>
     <div class="adeal-p"><span class="adeal-new">62,79€</span><span class="adeal-old">110,00€</span></div>
+  </a><a class="adeal" href="../../d/jtsyp7.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71QPLr8UOAL._SL500_.jpg" alt="Tommy Jeans Cazadora de entretiempo Mujer Zip Cotton con cremallera, Azul (Dark "><span class="adeal-disc">-51%</span></div>
+    <div class="adeal-t">Tommy Jeans Cazadora de entretiempo Mujer Zip Cotton con cremall</div>
+    <div class="adeal-p"><span class="adeal-new">69,00€</span><span class="adeal-old">139,90€</span></div>
   </a><a class="adeal" href="../../d/64uyby.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/711oLcPjK3L._SL500_.jpg" alt="Eastpak Springer Riñonera"><span class="adeal-disc">-50%</span></div>
     <div class="adeal-t">Eastpak Springer Riñonera</div>
@@ -950,10 +1071,62 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41eRDt7yLnL._SL500_.jpg" alt="Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Marino, cómodas, Cordones "><span class="adeal-disc">-20%</span></div>
     <div class="adeal-t">Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Marino, có</div>
     <div class="adeal-p"><span class="adeal-new">27,96€</span><span class="adeal-old">34,95€</span></div>
+  </a><a class="adeal" href="../../d/1istvjs.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41SLDzEmkgL._SL500_.jpg" alt="The North Face W Packable Regular Straight Jogger - Pants mulher"><span class="adeal-disc">-63%</span></div>
+    <div class="adeal-t">The North Face W Packable Regular Straight Jogger - Pants mulher</div>
+    <div class="adeal-p"><span class="adeal-new">28,58€</span><span class="adeal-old">77,24€</span></div>
+  </a><a class="adeal" href="../../d/1blffj6.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51usCpe794L._SL500_.jpg" alt="Skechers Treinadores de Ar Dourada para Mulher"><span class="adeal-disc">-44%</span></div>
+    <div class="adeal-t">Skechers Treinadores de Ar Dourada para Mulher</div>
+    <div class="adeal-p"><span class="adeal-new">45,00€</span><span class="adeal-old">79,95€</span></div>
+  </a><a class="adeal" href="../../d/1x4v43z.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71zR5jDIytL._SL500_.jpg" alt="JACK &amp; JONES Cárdigan De Punto Boys"><span class="adeal-disc">-67%</span></div>
+    <div class="adeal-t">JACK &amp; JONES Cárdigan De Punto Boys</div>
+    <div class="adeal-p"><span class="adeal-new">7,85€</span><span class="adeal-old">23,79€</span></div>
+  </a><a class="adeal" href="../../d/1vh6xig.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51F5RVdvY7L._SL500_.jpg" alt="Gloria Vanderbilt Jeans clásicos Amanda de Talle Alto para Mujer, Rinse Noir, 36"><span class="adeal-disc">-60%</span></div>
+    <div class="adeal-t">Gloria Vanderbilt Jeans clásicos Amanda de Talle Alto para Mujer</div>
+    <div class="adeal-p"><span class="adeal-new">9,03€</span><span class="adeal-old">22,57€</span></div>
+  </a><a class="adeal" href="../../d/d8w49j.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81trE4djKRL._SL500_.jpg" alt="Levi's Vintage Fit Graphic tee Grunge Wash Talla S"><span class="adeal-disc">-49%</span></div>
+    <div class="adeal-t">Levi's Vintage Fit Graphic tee Grunge Wash Talla S</div>
+    <div class="adeal-p"><span class="adeal-new">17,50€</span></div>
+  </a><a class="adeal" href="../../d/8ohdk0.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61MT4vclXzL._SL500_.jpg" alt="Levi's Pantalones Vaqueros 537 Western Bootcut para Hombre, Rocky Rinse, 36W / 3"><span class="adeal-disc">-62%</span></div>
+    <div class="adeal-t">Levi's Pantalones Vaqueros 537 Western Bootcut para Hombre, Rock</div>
+    <div class="adeal-p"><span class="adeal-new">41,80€</span><span class="adeal-old">110,00€</span></div>
+  </a><a class="adeal" href="../../d/12u6coi.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51ldlDQ5vFL._SL500_.jpg" alt="Crocs Brooklyn Woven Heel Chancla, Sepia, Mujer, EU 37-38 | Chancla recovery lig"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Crocs Brooklyn Woven Heel Chancla, Sepia, Mujer, EU 37-38 | Chan</div>
+    <div class="adeal-p"><span class="adeal-new">85,50€</span></div>
+  </a><a class="adeal" href="../../d/1xhf9jd.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71zHn+CSNBL._SL500_.jpg" alt="Emporio Armani Hombre Sea Animals Mid Boxer Azul XL, Ballena con Estampado Azul,"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Emporio Armani Hombre Sea Animals Mid Boxer Azul XL, Ballena con</div>
+    <div class="adeal-p"><span class="adeal-new">23,50€</span><span class="adeal-old">47,00€</span></div>
+  </a><a class="adeal" href="../../d/1ofupc.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71f+ekxqgsL._SL500_.jpg" alt="Tommy Hilfiger Vaqueros Hombre Denton Straight Fit, Marfil (Muslin), 30W/30L"><span class="adeal-disc">-71%</span></div>
+    <div class="adeal-t">Tommy Hilfiger Vaqueros Hombre Denton Straight Fit, Marfil (Musl</div>
+    <div class="adeal-p"><span class="adeal-new">35,04€</span><span class="adeal-old">119,90€</span></div>
+  </a><a class="adeal" href="../../d/v059br.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81hlV0m-6DL._SL500_.jpg" alt="Levi's Corduroy 2 Pkt Depot Jacket Hombre, Navy, M"><span class="adeal-disc">-42%</span></div>
+    <div class="adeal-t">Levi's Corduroy 2 Pkt Depot Jacket Hombre, Navy, M</div>
+    <div class="adeal-p"><span class="adeal-new">85,17€</span><span class="adeal-old">146,84€</span></div>
+  </a><a class="adeal" href="../../d/acrwoj.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71Fe4LVMCBL._SL500_.jpg" alt="Desigual Vest_Lena, 2000 Negro, S"><span class="adeal-disc">-52%</span></div>
+    <div class="adeal-t">Desigual Vest_Lena, 2000 Negro, S</div>
+    <div class="adeal-p"><span class="adeal-new">20,07€</span><span class="adeal-old">41,81€</span></div>
+  </a><a class="adeal" href="../../d/qvdplp.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61CBCwe76nL._SL500_.jpg" alt="Tommy Jeans TJM Knitted Runner Em0em01764, parte superior baixa para homem"><span class="adeal-disc">-51%</span></div>
+    <div class="adeal-t">Tommy Jeans TJM Knitted Runner Em0em01764, parte superior baixa </div>
+    <div class="adeal-p"><span class="adeal-new">59,95€</span><span class="adeal-old">122,35€</span></div>
   </a><a class="adeal" href="../../d/g3f3ts.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/4114fvDwmDL._SL500_.jpg" alt="Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Blanco, cómodas, Cordones "><span class="adeal-disc">-26%</span></div>
     <div class="adeal-t">Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Blanco, có</div>
     <div class="adeal-p"><span class="adeal-new">51,95€</span><span class="adeal-old">69,90€</span></div>
+  </a><a class="adeal" href="../../d/1i9106c.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51SgDyt24oL._SL500_.jpg" alt="THE NORTH FACE NF0A8AEDKZ21 W HEDGEHOG MID FUTURELIGHT (EUR) Mujer TNF BLACK/ZIN"><span class="adeal-disc">-54%</span></div>
+    <div class="adeal-t">THE NORTH FACE NF0A8AEDKZ21 W HEDGEHOG MID FUTURELIGHT (EUR) Muj</div>
+    <div class="adeal-p"><span class="adeal-new">58,96€</span><span class="adeal-old">128,17€</span></div>
   </a><a class="adeal" href="../../d/vgqp8q.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61A-I7hl6NL._SL500_.jpg" alt="Pepe Jeans Daniel camisa infantil (embalagem de 1)"><span class="adeal-disc">-56%</span></div>
     <div class="adeal-t">Pepe Jeans Daniel camisa infantil (embalagem de 1)</div>
@@ -966,14 +1139,14 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61pmV6aQooL._SL500_.jpg" alt="Tommy Hilfiger T-shirt S para homem"><span class="adeal-disc">-52%</span></div>
     <div class="adeal-t">Tommy Hilfiger T-shirt S para homem</div>
     <div class="adeal-p"><span class="adeal-new">19,00€</span><span class="adeal-old">39,90€</span></div>
+  </a><a class="adeal" href="../../d/6x7xa8.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61nVg8-5m3L._SL500_.jpg" alt="PEPE JEANS Flare LW Pimlico Pantalones, Denim, 29W / 30L Unisex Adulto"><span class="adeal-disc">-69%</span></div>
+    <div class="adeal-t">PEPE JEANS Flare LW Pimlico Pantalones, Denim, 29W / 30L Unisex </div>
+    <div class="adeal-p"><span class="adeal-new">15,05€</span><span class="adeal-old">48,55€</span></div>
   </a><a class="adeal" href="../../d/1to5475.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81o6jWrqjUL._SL500_.jpg" alt="Tommy Hilfiger Camisa L/S para homem"><span class="adeal-disc">-67%</span></div>
     <div class="adeal-t">Tommy Hilfiger Camisa L/S para homem</div>
     <div class="adeal-p"><span class="adeal-new">38,98€</span><span class="adeal-old">119,90€</span></div>
-  </a><a class="adeal" href="../../d/1hu6kkz.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JOTFU1lqL._SL500_.jpg" alt="Altra Experience Wild 2 - Tenis de Correr para Hombre, Oliva polvorienta, 43 EU"><span class="adeal-disc">-30%</span></div>
-    <div class="adeal-t">Altra Experience Wild 2 - Tenis de Correr para Hombre, Oliva pol</div>
-    <div class="adeal-p"><span class="adeal-new">97,50€</span><span class="adeal-old">140,00€</span></div>
   </a><a class="adeal" href="../../d/nutwlb.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71O+gnxwOHL._SL500_.jpg" alt="Levi's Athena, Cinturón Mujer, Negro (Regular Black), 105"><span class="adeal-disc">-50%</span></div>
     <div class="adeal-t">Levi's Athena, Cinturón Mujer, Negro (Regular Black), 105</div>
@@ -982,10 +1155,10 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71XaU1NwSCL._SL500_.jpg" alt="Tommy Hilfiger Sudadera Hombre Brand Love Small con Bolsillo Canguro, Azul (Dese"><span class="adeal-disc">-52%</span></div>
     <div class="adeal-t">Tommy Hilfiger Sudadera Hombre Brand Love Small con Bolsillo Can</div>
     <div class="adeal-p"><span class="adeal-new">48,13€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/va82jl.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81B+d-QQtPL._SL500_.jpg" alt="Asics Gel-Quantum 360 VIII Utility Sneaker"><span class="adeal-disc">-61%</span></div>
-    <div class="adeal-t">Asics Gel-Quantum 360 VIII Utility Sneaker</div>
-    <div class="adeal-p"><span class="adeal-new">74,60€</span><span class="adeal-old">190,00€</span></div>
+  </a><a class="adeal" href="../../d/15nrr2b.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/615uLFGbgxL._SL500_.jpg" alt="GUESS Noelle II - Bolso Bandolera Mujer Negro Compacto | 100% Poliuretano, Forma"><span class="adeal-disc">-30%</span></div>
+    <div class="adeal-t">GUESS Noelle II - Bolso Bandolera Mujer Negro Compacto | 100% Po</div>
+    <div class="adeal-p"><span class="adeal-new">87,95€</span><span class="adeal-old">125,00€</span></div>
   </a><a class="adeal" href="../../d/8nyw2u.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/610JnSBxPFL._SL500_.jpg" alt="Samsonite Intuo Maleta Trolley de Cabina, 55 cm | Negro, maleta blanda ampliable"><span class="adeal-disc">-33%</span></div>
     <div class="adeal-t">Samsonite Intuo Maleta Trolley de Cabina, 55 cm | Negro, maleta </div>
@@ -1006,10 +1179,6 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71JMilMCeqL._SL500_.jpg" alt="adidas Men's camisola com capuz Essentials Feelcozy French Terry"><span class="adeal-disc">-34%</span></div>
     <div class="adeal-t">adidas Men's camisola com capuz Essentials Feelcozy French Terry</div>
     <div class="adeal-p"><span class="adeal-new">32,99€</span><span class="adeal-old">50,00€</span></div>
-  </a><a class="adeal" href="../../d/149fdo5.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71XEJFHjwSL._SL500_.jpg" alt="Reebok Sujetador Deportivo Lux Strappy"><span class="adeal-disc">-40%</span></div>
-    <div class="adeal-t">Reebok Sujetador Deportivo Lux Strappy</div>
-    <div class="adeal-p"><span class="adeal-new">11,77€</span><span class="adeal-old">19,62€</span></div>
   </a><a class="adeal" href="../../d/umkq37.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51qxON3HD8L._SL500_.jpg" alt="Valentino Samba Re - Bolso Mujer"><span class="adeal-disc">-41%</span></div>
     <div class="adeal-t">Valentino Samba Re - Bolso Mujer</div>
@@ -1018,6 +1187,22 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61tHnc530iL._SL500_.jpg" alt="Nike Court Vision Mid Next Nature Sneaker"><span class="adeal-disc">-45%</span></div>
     <div class="adeal-t">Nike Court Vision Mid Next Nature Sneaker</div>
     <div class="adeal-p"><span class="adeal-new">84,99€</span><span class="adeal-old">154,53€</span></div>
+  </a><a class="adeal" href="../../d/1rjwljw.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61bF6+8qglL._SL500_.jpg" alt="adidas Hombre Camo Linear Graphic tee, Black/Grey, S"><span class="adeal-disc">-55%</span></div>
+    <div class="adeal-t">adidas Hombre Camo Linear Graphic tee, Black/Grey, S</div>
+    <div class="adeal-p"><span class="adeal-new">12,65€</span><span class="adeal-old">28,00€</span></div>
+  </a><a class="adeal" href="../../d/2amsxc.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61l2IGbKRlL._SL500_.jpg" alt="Gant Classic Cotton Half Zip Suéter Hombre (Paquete de 1), Dk. Sand Melange, L"><span class="adeal-disc">-63%</span></div>
+    <div class="adeal-t">Gant Classic Cotton Half Zip Suéter Hombre (Paquete de 1), Dk. S</div>
+    <div class="adeal-p"><span class="adeal-new">60,00€</span><span class="adeal-old">162,16€</span></div>
+  </a><a class="adeal" href="../../d/z76224.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/712MobSVdHL._SL500_.jpg" alt="Tommy Hilfiger Reto para homem"><span class="adeal-disc">-69%</span></div>
+    <div class="adeal-t">Tommy Hilfiger Reto para homem</div>
+    <div class="adeal-p"><span class="adeal-new">15,84€</span><span class="adeal-old">51,10€</span></div>
+  </a><a class="adeal" href="../../d/14kot8f.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81qhB6x1eZL._SL500_.jpg" alt="Calvin Klein - Alpargata para Mujer, Logotipo de Espresso, 5.5"><span class="adeal-disc">-64%</span></div>
+    <div class="adeal-t">Calvin Klein - Alpargata para Mujer, Logotipo de Espresso, 5.5</div>
+    <div class="adeal-p"><span class="adeal-new">17,32€</span><span class="adeal-old">48,11€</span></div>
   </a><a class="adeal" href="../../d/gh9d9y.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/619fIL72NbL._SL500_.jpg" alt="Comma 60.2.61.20.200.2127841 Vestido, 9999, 38 para Mujer"><span class="adeal-disc">-67%</span></div>
     <div class="adeal-t">Comma 60.2.61.20.200.2127841 Vestido, 9999, 38 para Mujer</div>
@@ -1034,102 +1219,22 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51NB2KBtJzL._SL500_.jpg" alt="Tommy Jeans Camisetas de Manga Corta Pack de 2 Hombre Xslim Jersey de algodón, B"><span class="adeal-disc">-60%</span></div>
     <div class="adeal-t">Tommy Jeans Camisetas de Manga Corta Pack de 2 Hombre Xslim Jers</div>
     <div class="adeal-p"><span class="adeal-new">21,76€</span><span class="adeal-old">54,90€</span></div>
+  </a><a class="adeal" href="../../d/g10y5b.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JeLgitjuL._SL500_.jpg" alt="Tommy Hilfiger Women Belts ESSENTIAL EFFORTLESS 1.5 GOAW0AW17246 BLACK (Black), "><span class="adeal-disc">-63%</span></div>
+    <div class="adeal-t">Tommy Hilfiger Women Belts ESSENTIAL EFFORTLESS 1.5 GOAW0AW17246</div>
+    <div class="adeal-p"><span class="adeal-new">14,62€</span><span class="adeal-old">39,90€</span></div>
+  </a><a class="adeal" href="../../d/1wqt3p7.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71hEObgSrsL._SL500_.jpg" alt="Champion Visera Nuestro Padre, Rojo Medio, Talla única"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Champion Visera Nuestro Padre, Rojo Medio, Talla única</div>
+    <div class="adeal-p"><span class="adeal-new">9,01€</span><span class="adeal-old">18,02€</span></div>
+  </a><a class="adeal" href="../../d/1nvvst0.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51po2KmRZ0L._SL500_.jpg" alt="Levi's Iconic Western Today'S News, Today'S News, M"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">Levi's Iconic Western Today'S News, Today'S News, M</div>
+    <div class="adeal-p"><span class="adeal-new">42,50€</span><span class="adeal-old">85,00€</span></div>
   </a><a class="adeal" href="../../d/1c0r6x0.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/4114fvDwmDL._SL500_.jpg" alt="Pepe Jeans KENTON COURT M"><span class="adeal-disc">-59%</span></div>
     <div class="adeal-t">Pepe Jeans KENTON COURT M</div>
     <div class="adeal-p"><span class="adeal-new">27,96€</span><span class="adeal-old">68,00€</span></div>
-  </a><a class="adeal" href="../../d/ti4866.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41LizmjmE8L._SL500_.jpg" alt="Tommy Jeans Camisetas de Tirantes Pack de 2 Mujer Essential Strap Top Tejido elá"><span class="adeal-disc">-64%</span></div>
-    <div class="adeal-t">Tommy Jeans Camisetas de Tirantes Pack de 2 Mujer Essential Stra</div>
-    <div class="adeal-p"><span class="adeal-new">16,17€</span><span class="adeal-old">44,90€</span></div>
-  </a><a class="adeal" href="../../d/1r1pnx3.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71BsgzbcPeL._SL500_.jpg" alt="Nike HJ5864-700 W Dunk Low NN SE Mujer Team Gold/Soft Yellow-Pale Ivory EU 36.5"><span class="adeal-disc">-47%</span></div>
-    <div class="adeal-t">Nike HJ5864-700 W Dunk Low NN SE Mujer Team Gold/Soft Yellow-Pal</div>
-    <div class="adeal-p"><span class="adeal-new">69,08€</span><span class="adeal-old">129,99€</span></div>
-  </a><a class="adeal" href="../../d/t4xfch.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/611NQKb4UKL._SL500_.jpg" alt="Desigual CHAQ_TINA, 5053 DENIM MEDIUM WASH, L"><span class="adeal-disc">-61%</span></div>
-    <div class="adeal-t">Desigual CHAQ_TINA, 5053 DENIM MEDIUM WASH, L</div>
-    <div class="adeal-p"><span class="adeal-new">35,20€</span><span class="adeal-old">90,26€</span></div>
-  </a><a class="adeal" href="../../d/gtxum2.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/41ttgcJC9FL._SL500_.jpg" alt="Calvin Klein Jeans Unisex Adult Sunglasses CKJ26605S - Taupe with Solid Warm Smo"><span class="adeal-disc">-56%</span></div>
-    <div class="adeal-t">Calvin Klein Jeans Unisex Adult Sunglasses CKJ26605S - Taupe wit</div>
-    <div class="adeal-p"><span class="adeal-new">39,40€</span><span class="adeal-old">89,55€</span></div>
-  </a><a class="adeal" href="../../d/z2pcfd.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81If4ZdzWdL._SL500_.jpg" alt="JACK &amp; JONES Camiseta Jorluke Crinkle AOP SS para Hombre, Cloud Dancer, L"><span class="adeal-disc">-78%</span></div>
-    <div class="adeal-t">JACK &amp; JONES Camiseta Jorluke Crinkle AOP SS para Hombre, Cloud </div>
-    <div class="adeal-p"><span class="adeal-new">29,80€</span><span class="adeal-old">135,45€</span></div>
-  </a><a class="adeal" href="../../d/prft6b.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51WtqWqBFOL._SL500_.jpg" alt="KARL LAGERFELD Sunglasses para mulher"><span class="adeal-disc">-66%</span></div>
-    <div class="adeal-t">KARL LAGERFELD Sunglasses para mulher</div>
-    <div class="adeal-p"><span class="adeal-new">37,15€</span><span class="adeal-old">109,26€</span></div>
-  </a><a class="adeal" href="../../d/1e38p6s.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51e4yYb24dL._SL500_.jpg" alt="MUNICH Open 01, Zapatillas Hombre, Negro, 41 EU"><span class="adeal-disc">-50%</span></div>
-    <div class="adeal-t">MUNICH Open 01, Zapatillas Hombre, Negro, 41 EU</div>
-    <div class="adeal-p"><span class="adeal-new">30,00€</span><span class="adeal-old">60,00€</span></div>
-  </a><a class="adeal" href="../../d/1i5b5nb.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/4114fvDwmDL._SL500_.jpg" alt="Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Blanco, cómodas, Cordones "><span class="adeal-disc">-59%</span></div>
-    <div class="adeal-t">Pepe Jeans PMS30839 Zapatillas para Hombres, en Color Blanco, có</div>
-    <div class="adeal-p"><span class="adeal-new">27,96€</span><span class="adeal-old">68,00€</span></div>
-  </a><a class="adeal" href="../../d/1n8vyfz.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71HoysqoRWL._SL500_.jpg" alt="Tommy Hilfiger Camisa Hombre Open Structure Windowpane de Manga Corta, Verde (St"><span class="adeal-disc">-50%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Camisa Hombre Open Structure Windowpane de Manga </div>
-    <div class="adeal-p"><span class="adeal-new">26,95€</span><span class="adeal-old">53,90€</span></div>
-  </a><a class="adeal" href="../../d/1aixbiq.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61kyQoxzItL._SL500_.jpg" alt="Tommy Hilfiger Vaqueros Hombre Bootcut White Regular Mercer Talle Medio, Azul (D"><span class="adeal-disc">-77%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Vaqueros Hombre Bootcut White Regular Mercer Tall</div>
-    <div class="adeal-p"><span class="adeal-new">27,00€</span><span class="adeal-old">119,90€</span></div>
-  </a><a class="adeal" href="../../d/aegydt.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61LBQR1JG0L._SL500_.jpg" alt="Tommy Jeans TJM Slim 2pack ESS Flag tee Extdm0dm22143 T-shirts homem (pack de 2)"><span class="adeal-disc">-51%</span></div>
-    <div class="adeal-t">Tommy Jeans TJM Slim 2pack ESS Flag tee Extdm0dm22143 T-shirts h</div>
-    <div class="adeal-p"><span class="adeal-new">27,00€</span><span class="adeal-old">54,90€</span></div>
-  </a><a class="adeal" href="../../d/7nrtri.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71M6Msxy5dL._SL500_.jpg" alt="Tommy Hilfiger Linen Blend Solid SS RF Sht Mw0mw44266 Camisa S/S para homem, emb"><span class="adeal-disc">-60%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Linen Blend Solid SS RF Sht Mw0mw44266 Camisa S/S</div>
-    <div class="adeal-p"><span class="adeal-new">25,85€</span><span class="adeal-old">64,63€</span></div>
-  </a><a class="adeal" href="../../d/5m5p2h.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/612aGQj6-AL._SL500_.jpg" alt="Tommy Hilfiger Sneaker con Suela Cupsole Hombre Icon Court Stripes de Piel, Azul"><span class="adeal-disc">-33%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Sneaker con Suela Cupsole Hombre Icon Court Strip</div>
-    <div class="adeal-p"><span class="adeal-new">67,10€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/18kkuhn.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/91MzkR-f0bL._SL500_.jpg" alt="ONLY Onlemily HW Long Dnm Cro741 Noos - Pantalones Cortos - Pantalones Cortos Va"><span class="adeal-disc">-61%</span></div>
-    <div class="adeal-t">ONLY Onlemily HW Long Dnm Cro741 Noos - Pantalones Cortos - Pant</div>
-    <div class="adeal-p"><span class="adeal-new">14,53€</span><span class="adeal-old">36,99€</span></div>
-  </a><a class="adeal" href="../../d/kqzo22.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71BpCIgMH4L._SL500_.jpg" alt="Calvin Klein Bolso bandolera Mujer Bold Ck Small con correa, Negro (Black), Tall"><span class="adeal-disc">-42%</span></div>
-    <div class="adeal-t">Calvin Klein Bolso bandolera Mujer Bold Ck Small con correa, Neg</div>
-    <div class="adeal-p"><span class="adeal-new">58,28€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/1x1h60a.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JHzxVFOWL._SL500_.jpg" alt="FALKE homem No. 9 meias longas respiráveis algodão fil d'Écosse longas brilho se"><span class="adeal-disc">-73%</span></div>
-    <div class="adeal-t">FALKE homem No. 9 meias longas respiráveis algodão fil d'Écosse </div>
-    <div class="adeal-p"><span class="adeal-new">12,03€</span><span class="adeal-old">45,00€</span></div>
-  </a><a class="adeal" href="../../d/ceyt3c.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JIPf+FXYL._SL500_.jpg" alt="G-Star Men's Mosa Straight Jeans, cor azul, tamanho: Cintura 31, Inseam 34"><span class="adeal-disc">-73%</span></div>
-    <div class="adeal-t">G-Star Men's Mosa Straight Jeans, cor azul, tamanho: Cintura 31,</div>
-    <div class="adeal-p"><span class="adeal-new">19,98€</span><span class="adeal-old">74,00€</span></div>
-  </a><a class="adeal" href="../../d/1u64yzy.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51IN+n9SdzL._SL500_.jpg" alt="Falcotto NEW RIVER-Sandálias abertas com fecho duplo, Branco"><span class="adeal-disc">-75%</span></div>
-    <div class="adeal-t">Falcotto NEW RIVER-Sandálias abertas com fecho duplo, Branco</div>
-    <div class="adeal-p"><span class="adeal-new">16,76€</span><span class="adeal-old">66,00€</span></div>
-  </a><a class="adeal" href="../../d/n2h1z9.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71THstPvDmL._SL500_.jpg" alt="Tommy Hilfiger Pantalón Chino Hombre Core Harlem Essential Twill Relaxed Fit, Az"><span class="adeal-disc">-78%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Pantalón Chino Hombre Core Harlem Essential Twill</div>
-    <div class="adeal-p"><span class="adeal-new">21,80€</span><span class="adeal-old">99,90€</span></div>
-  </a><a class="adeal" href="../../d/1sf2nlp.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71EfzYzGHmL._SL500_.jpg" alt="adidas Unisex - Bambini e ragazzi DISNEY MICKEY MOUSE T-SHIRT SET, pure ruby/off"><span class="adeal-disc">-72%</span></div>
-    <div class="adeal-t">adidas Unisex - Bambini e ragazzi DISNEY MICKEY MOUSE T-SHIRT SE</div>
-    <div class="adeal-p"><span class="adeal-new">15,57€</span><span class="adeal-old">55,00€</span></div>
-  </a><a class="adeal" href="../../d/y76soh.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51acrJ-TZjL._SL500_.jpg" alt="Quiksilver Modern Wave Denim Pant - Calças de ganga para homem"><span class="adeal-disc">-64%</span></div>
-    <div class="adeal-t">Quiksilver Modern Wave Denim Pant - Calças de ganga para homem</div>
-    <div class="adeal-p"><span class="adeal-new">30,80€</span><span class="adeal-old">85,00€</span></div>
-  </a><a class="adeal" href="../../d/8kyroq.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71FrOS6ZzTL._SL500_.jpg" alt="Tommy Hilfiger Dover Po Linen Floral AOP 2/2 Mw0mw42546 - Calções masculinos"><span class="adeal-disc">-65%</span></div>
-    <div class="adeal-t">Tommy Hilfiger Dover Po Linen Floral AOP 2/2 Mw0mw42546 - Calçõe</div>
-    <div class="adeal-p"><span class="adeal-new">17,64€</span><span class="adeal-old">50,40€</span></div>
-  </a><a class="adeal" href="../../d/1abx9vs.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61X4YJu5sQL._SL500_.jpg" alt="TOM Tailor 1051467 Calças de ganga para homem"><span class="adeal-disc">-57%</span></div>
-    <div class="adeal-t">TOM Tailor 1051467 Calças de ganga para homem</div>
-    <div class="adeal-p"><span class="adeal-new">30,29€</span><span class="adeal-old">69,99€</span></div>
   </a></div>
       <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
@@ -1174,6 +1279,14 @@
     <a class="guidecard" href="../pets/">
       <span class="gemoji">🐾</span>
       <h3>Animais</h3>
+    </a>
+    <a class="guidecard" href="../food/">
+      <span class="gemoji">🍫</span>
+      <h3>Alimentação</h3>
+    </a>
+    <a class="guidecard" href="../tools/">
+      <span class="gemoji">🔧</span>
+      <h3>Bricolage</h3>
     </a>
     <a class="guidecard" href="../other/">
       <span class="gemoji">🛍️</span>
@@ -1267,27 +1380,48 @@
         } catch(e) {}
       })();
       (function(){
-        var form = document.getElementById('newsletter-form');
-        if (!form) return;
-        var msg = document.getElementById('newsletter-msg');
-        form.addEventListener('submit', function(e){
-          e.preventDefault();
-          var email = document.getElementById('newsletter-email').value.trim();
-          if (!email) return;
-          msg.style.color = 'var(--muted)';
-          msg.textContent = 'A subscrever...';
-          fetch('https://go.descontospt.pt/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'site-footer' }),
-          }).then(function(r){
-            if (!r.ok) throw new Error('falhou');
-            msg.style.color = '#4caf50';
-            msg.textContent = '✅ Subscrito! Já estás na lista.';
-            form.reset();
-          }).catch(function(){
-            msg.style.color = '#e53935';
-            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+        document.querySelectorAll('.newsletter-ajax-form, #newsletter-form').forEach(function(form){
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var statusEl = form.querySelector('.nl-status') || form.querySelector('#newsletter-msg') || document.getElementById('newsletter-msg');
+            var emailInput = form.querySelector('input[type="email"]') || document.getElementById('newsletter-email');
+            var nameInput = form.querySelector('input[name="nome"]');
+            var hpInput = form.querySelector('input[name="hp"]');
+
+            var email = emailInput ? emailInput.value.trim() : '';
+            var nome = nameInput ? nameInput.value.trim() : '';
+            var hp = hpInput ? hpInput.value.trim() : '';
+
+            if (!email) return;
+
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              statusEl.style.color = 'var(--muted)';
+              statusEl.textContent = '⏳ A registar subscrição...';
+            }
+
+            fetch('https://go.descontospt.pt/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, nome: nome, hp: hp, source: 'descontospt-site' })
+            }).then(function(r){
+              return r.json().catch(function(){ return { ok: r.ok }; });
+            }).then(function(data){
+              if (data && data.ok) {
+                if (statusEl) {
+                  statusEl.style.color = '#10b981';
+                  statusEl.textContent = '✅ Subscrição confirmada com sucesso! A próxima edição chega à sexta-feira.';
+                }
+                form.reset();
+              } else {
+                throw new Error((data && data.error) || 'Falha ao subscrever');
+              }
+            }).catch(function(err){
+              if (statusEl) {
+                statusEl.style.color = '#ef4444';
+                statusEl.textContent = '❌ ' + (err.message || 'Erro ao processar. Tenta novamente.');
+              }
+            });
           });
         });
       })();

@@ -32,6 +32,58 @@
   .ad-unit ins{display:block;}
   .ad-unit ins[data-ad-status="unfilled"]{display:none !important;}
 
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc;
     --card:#ffffff;
@@ -534,6 +586,58 @@
   /* ═════════ NOVO ESTILO (23-set-2026): portal tipo Pplware/4gnews, tons de azul,
      Plus Jakarta Sans, cabeçalho claro fixo, grelha bento no topo, sidebar de widgets.
      Só camada visual: não mexe em estrutura, IDs, scripts nem nos blocos de anúncios. */
+  
+  /* ── Estilos da Newsletter & Subscreve ── */
+  .subscreve-container{max-width:900px;margin:30px auto;padding:0 16px;}
+  .subscreve-hero{text-align:center;margin-bottom:32px;}
+  .subscreve-eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,85,0,.1);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.05em;margin-bottom:14px;}
+  .subscreve-title{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--text);line-height:1.2;margin:0 0 14px;}
+  .subscreve-lead{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto;line-height:1.6;}
+  .subscreve-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow-hover);margin-bottom:40px;position:relative;text-align:center;}
+  .subscreve-card-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0e7c66;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;box-shadow:0 2px 8px rgba(14,124,102,.3);}
+  .subscreve-form{margin:24px 0 16px;}
+  .form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;text-align:left;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .subscreve-input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card-sub);color:var(--text);font-size:15px;box-sizing:border-box;transition:border-color .2s ease;}
+  .subscreve-input:focus{outline:none;border-color:var(--accent);}
+  .subscreve-submit-btn{width:100%;padding:14px 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer;transition:transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(255,85,0,.3);}
+  .subscreve-submit-btn:hover{transform:translateY(-1px);background:var(--accent2);}
+  .subscreve-trust-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px;}
+  .subscreve-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:44px;}
+  .pillar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;}
+  .pillar-icon{font-size:32px;margin-bottom:10px;}
+  .pillar-card h3{font-size:16px;font-weight:800;margin:0 0 8px;color:var(--text);}
+  .pillar-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+  .subscreve-channels-box{background:var(--card-sub);border:1px solid var(--line);border-radius:18px;padding:28px 20px;text-align:center;margin-bottom:40px;}
+  .subscreve-channels-box h2{font-size:22px;font-weight:800;margin:0 0 10px;color:var(--text);}
+  .channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left;}
+  .channel-card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s ease;}
+  .channel-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);}
+  .ch-icon{font-size:24px;flex-shrink:0;}
+  .ch-info{flex:1;display:flex;flex-direction:column;gap:2px;}
+  .ch-info strong{font-size:14px;color:var(--text);}
+  .ch-info span{font-size:12px;color:var(--muted);line-height:1.3;}
+  .ch-action{font-size:13px;font-weight:800;color:var(--accent);}
+  .subscreve-faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:30px;}
+  .faq-item{padding:12px 0;border-bottom:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:none;padding-bottom:0;}
+  .faq-item strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px;}
+  .faq-item p{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+
+  /* Bloco na Homepage */
+  .newsletter-banner-block{background:linear-gradient(135deg,rgba(14,124,102,.08) 0%,rgba(255,85,0,.08) 100%);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin:28px 0;text-align:center;box-shadow:var(--shadow);}
+  .nl-badge-pill{display:inline-block;padding:4px 12px;border-radius:999px;background:#0e7c66;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em;margin-bottom:10px;}
+  .nl-banner-title{font-size:22px;font-weight:800;color:var(--text);margin:0 0 10px;}
+  .nl-banner-desc{font-size:14px;color:var(--muted);max-width:700px;margin:0 auto 18px;line-height:1.55;}
+  .nl-inline-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:650px;margin:0 auto;}
+  .nl-input{padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;outline:none;}
+  .nl-input-name{width:160px;}
+  .nl-input-email{flex:1;min-width:200px;}
+  .nl-btn-submit{padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:transform .15s ease;white-space:nowrap;}
+  .nl-btn-submit:hover{transform:translateY(-1px);background:var(--accent2);}
+  .nl-micro-guarantee{font-size:12px;color:var(--muted);margin-top:10px;}
+
   :root{
     --bg:#f8fafc; --card:#ffffff; --card-sub:#f1f5f9;
     --accent:#0284c7; --accent2:#0369a1; --accent-light:rgba(2,132,199,.08);
@@ -878,6 +982,7 @@
         <a href="../../guias/">📚 Guias de Poupança</a>
         <a href="../../artigos/">🛡️ Segurança &amp; Golpes</a>
         <a href="../../recomendados/">🎁 Recomendados</a>
+        <a href="../../subscreve/">📩 Newsletter</a>
         <a href="../../sobre/">ℹ️ Sobre Nós</a>
         <a href="../../como-funciona/">📈 Como Funciona</a>
       </nav>
@@ -888,16 +993,84 @@
     <div class="bread"><a href="../">← Todas as categorias</a></div>
     <article class="article">
       <h1>⚽ Ofertas de Desporto</h1>
-      <p class="updated">12 ofertas ativas · atualizado hoje</p>
+      <p class="updated">28 ofertas ativas · atualizado hoje</p>
       <p>As melhores promoções de desporto, fitness, bicicletas e ar livre em Portugal, verificadas e com histórico de preço para não caíres em descontos fictícios. Os links levam à loja (Amazon, AliExpress e parceiros) e ajudam a manter o projeto, sem custo extra para ti.</p>
       <div class="article-deals"><a class="adeal" href="../../d/kozk5t.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51MFy1RiaBL._SL500_.jpg" alt="Speedo Gafas Natación Hydropulse Mirror Gris/Plata"><span class="adeal-disc">-35%</span></div>
     <div class="adeal-t">Speedo Gafas Natación Hydropulse Mirror Gris/Plata</div>
     <div class="adeal-p"><span class="adeal-new">16,25€</span><span class="adeal-old">25,00€</span></div>
+  </a><a class="adeal" href="../../d/1pn2afa.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JCe3TguFL._SL500_.jpg" alt="adidas Hombre Sportswear Basic 3 Stripes Tricot Track Suit, Dark Blue, M"><span class="adeal-disc">-47%</span></div>
+    <div class="adeal-t">adidas Hombre Sportswear Basic 3 Stripes Tricot Track Suit, Dark</div>
+    <div class="adeal-p"><span class="adeal-new">39,95€</span><span class="adeal-old">75,00€</span></div>
+  </a><a class="adeal" href="../../d/uet6qh.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71gLSfUWWCL._SL500_.jpg" alt="PUMA teamLIGA26 - Chaqueta de entrenamiento"><span class="adeal-disc">-63%</span></div>
+    <div class="adeal-t">PUMA teamLIGA26 - Chaqueta de entrenamiento</div>
+    <div class="adeal-p"><span class="adeal-new">13,26€</span><span class="adeal-old">35,84€</span></div>
+  </a><a class="adeal" href="../../d/5uat7c.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81b49ly+1HL._SL500_.jpg" alt="Salomon EXTEGRA Gore-Tex sapatilhas de caminhada impermeáveis para homem"><span class="adeal-disc">-33%</span></div>
+    <div class="adeal-t">Salomon EXTEGRA Gore-Tex sapatilhas de caminhada impermeáveis pa</div>
+    <div class="adeal-p"><span class="adeal-new">80,95€</span><span class="adeal-old">120,00€</span></div>
+  </a><a class="adeal" href="../../d/17m9pag.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81Lxl4peJfL._SL500_.jpg" alt="THE NORTH FACE Etip Recycled Glove"><span class="adeal-disc">-50%</span></div>
+    <div class="adeal-t">THE NORTH FACE Etip Recycled Glove</div>
+    <div class="adeal-p"><span class="adeal-new">23,32€</span><span class="adeal-old">47,00€</span></div>
+  </a><a class="adeal" href="../../d/jb0ash.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/7147gL1t1BL._SL500_.jpg" alt="Speedo Solid Lookout 12&quot; Short de natación para Mujer, Verde, XXS"><span class="adeal-disc">-75%</span></div>
+    <div class="adeal-t">Speedo Solid Lookout 12&quot; Short de natación para Mujer, Verde, XX</div>
+    <div class="adeal-p"><span class="adeal-new">5,48€</span><span class="adeal-old">21,92€</span></div>
+  </a><a class="adeal" href="../../d/18hn3eo.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/717wAa5wCKL._SL500_.jpg" alt="Merrell Kahuna Iii Women's,Classic Taupe 38 EU"><span class="adeal-disc">-65%</span></div>
+    <div class="adeal-t">Merrell Kahuna Iii Women's,Classic Taupe 38 EU</div>
+    <div class="adeal-p"><span class="adeal-new">41,96€</span><span class="adeal-old">120,00€</span></div>
+  </a><a class="adeal" href="../../d/1o7uiov.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71I5BUJcR1L._SL500_.jpg" alt="Speedo Print Lookout Brdshrt 18&quot; Short de natación para Hombre, Azul, 38"><span class="adeal-disc">-58%</span></div>
+    <div class="adeal-t">Speedo Print Lookout Brdshrt 18&quot; Short de natación para Hombre, </div>
+    <div class="adeal-p"><span class="adeal-new">11,63€</span><span class="adeal-old">27,69€</span></div>
+  </a><a class="adeal" href="../../d/v798rm.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71eK4FI9VEL._SL500_.jpg" alt="Auriculares Inalámbricos Deportivos, 60H, 28 Modos EQ por App, HiFi Estéreo | Ca"><span class="adeal-disc">-67%</span></div>
+    <div class="adeal-t">Auriculares Inalámbricos Deportivos, 60H, 28 Modos EQ por App, H</div>
+    <div class="adeal-p"><span class="adeal-new">19,99€</span><span class="adeal-old">59,99€</span></div>
   </a><a class="adeal" href="../../d/rmi8sc.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81nfn0-aohL._SL500_.jpg" alt="Toputure Bicicleta Estática 5 en 1 con App, Bici Estática Plegable para Casa y E"><span class="adeal-disc">-53%</span></div>
     <div class="adeal-t">Toputure Bicicleta Estática 5 en 1 con App, Bici Estática Plegab</div>
     <div class="adeal-p"><span class="adeal-new">219,99€</span><span class="adeal-old">468,06€</span></div>
+  </a><a class="adeal" href="../../d/15mysgu.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71ohXkjMpxL._SL500_.jpg" alt="PINSPARK Pantalones Cortos Deportivos 2 en 1 para Hombre diseño Transpirable con"><span class="adeal-disc">-55%</span></div>
+    <div class="adeal-t">PINSPARK Pantalones Cortos Deportivos 2 en 1 para Hombre diseño </div>
+    <div class="adeal-p"><span class="adeal-new">9,99€</span><span class="adeal-old">21,99€</span></div>
+  </a><a class="adeal" href="../../d/1b1g91t.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81GTa5yzfyL._SL500_.jpg" alt="Skechers Hombre Summits High Range Slip-In Entrenador"><span class="adeal-disc">-44%</span></div>
+    <div class="adeal-t">Skechers Hombre Summits High Range Slip-In Entrenador</div>
+    <div class="adeal-p"><span class="adeal-new">47,49€</span><span class="adeal-old">84,95€</span></div>
+  </a><a class="adeal" href="../../d/1cbgkaj.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61lRX2DvvwL._SL500_.jpg" alt="Nike FQ1833-003 Air MAX Alpha Trainer 6 Hombre Black/Anthracite-Black EU 43"><span class="adeal-disc">-40%</span></div>
+    <div class="adeal-t">Nike FQ1833-003 Air MAX Alpha Trainer 6 Hombre Black/Anthracite-</div>
+    <div class="adeal-p"><span class="adeal-new">54,31€</span><span class="adeal-old">89,99€</span></div>
+  </a><a class="adeal" href="../../d/6qhyl1.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81hGDEK8aFL._SL500_.jpg" alt="adidas Bambini e Ragazzi Swim Shorts Kids, Black/White, 7-8 Years"><span class="adeal-disc">-60%</span></div>
+    <div class="adeal-t">adidas Bambini e Ragazzi Swim Shorts Kids, Black/White, 7-8 Year</div>
+    <div class="adeal-p"><span class="adeal-new">11,94€</span><span class="adeal-old">30,00€</span></div>
+  </a><a class="adeal" href="../../d/1hu6kkz.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61JOTFU1lqL._SL500_.jpg" alt="Altra Experience Wild 2 - Tenis de Correr para Hombre, Oliva polvorienta, 43 EU"><span class="adeal-disc">-30%</span></div>
+    <div class="adeal-t">Altra Experience Wild 2 - Tenis de Correr para Hombre, Oliva pol</div>
+    <div class="adeal-p"><span class="adeal-new">97,50€</span><span class="adeal-old">140,00€</span></div>
+  </a><a class="adeal" href="../../d/va82jl.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/81B+d-QQtPL._SL500_.jpg" alt="Asics Gel-Quantum 360 VIII Utility Sneaker"><span class="adeal-disc">-61%</span></div>
+    <div class="adeal-t">Asics Gel-Quantum 360 VIII Utility Sneaker</div>
+    <div class="adeal-p"><span class="adeal-new">74,60€</span><span class="adeal-old">190,00€</span></div>
+  </a><a class="adeal" href="../../d/149fdo5.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/71XEJFHjwSL._SL500_.jpg" alt="Reebok Sujetador Deportivo Lux Strappy"><span class="adeal-disc">-40%</span></div>
+    <div class="adeal-t">Reebok Sujetador Deportivo Lux Strappy</div>
+    <div class="adeal-p"><span class="adeal-new">11,77€</span><span class="adeal-old">19,62€</span></div>
+  </a><a class="adeal" href="../../d/14jlewa.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/718Qu3sF+zL._SL500_.jpg" alt="adidas Hombre Terrex Multi Climacool Half Zip Long Sleeve Shirt, Black, XL"><span class="adeal-disc">-47%</span></div>
+    <div class="adeal-t">adidas Hombre Terrex Multi Climacool Half Zip Long Sleeve Shirt,</div>
+    <div class="adeal-p"><span class="adeal-new">32,00€</span><span class="adeal-old">60,00€</span></div>
+  </a><a class="adeal" href="../../d/v626lf.html">
+    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/61pjRlD0kJL._SL500_.jpg" alt="Under Armour UA Performance Wristband pack de 2 muñequeras para hombre, accesori"><span class="adeal-disc">-48%</span></div>
+    <div class="adeal-t">Under Armour UA Performance Wristband pack de 2 muñequeras para </div>
+    <div class="adeal-p"><span class="adeal-new">5,25€</span><span class="adeal-old">10,00€</span></div>
   </a><a class="adeal" href="../../d/2259rl.html">
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51KC5bI22mL._SL500_.jpg" alt="Garmin Forerunner 165 Music, Reloj Inteligente para Correr con GPS, Azul | Panta"><span class="adeal-disc">-21%</span></div>
     <div class="adeal-t">Garmin Forerunner 165 Music, Reloj Inteligente para Correr con G</div>
@@ -934,10 +1107,6 @@
     <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/711UIkkFSlL._SL500_.jpg" alt="PUMA Ultra 6 Match FG/AG JR - Tenis de fútbol, Color Negro y Verde Claro, Talla "><span class="adeal-disc">-73%</span></div>
     <div class="adeal-t">PUMA Ultra 6 Match FG/AG JR - Tenis de fútbol, Color Negro y Ver</div>
     <div class="adeal-p"><span class="adeal-new">17,69€</span><span class="adeal-old">64,95€</span></div>
-  </a><a class="adeal" href="../../d/g9tsq8.html">
-    <div class="adeal-img"><img loading="lazy" src="https://m.media-amazon.com/images/I/51fJGitsMiL._SL500_.jpg" alt="Le Coq Sportif ESS Cap N°3 ESS Cap N°3 – Gorra Mixta de protección Solar con Vis"><span class="adeal-disc">-61%</span></div>
-    <div class="adeal-t">Le Coq Sportif ESS Cap N°3 ESS Cap N°3 – Gorra Mixta de protecci</div>
-    <div class="adeal-p"><span class="adeal-new">9,19€</span><span class="adeal-old">23,56€</span></div>
   </a></div>
       <p class="article-cta"><a href="../../">Ver todas as ofertas de hoje →</a></p>
     </article>
@@ -982,6 +1151,14 @@
     <a class="guidecard" href="../pets/">
       <span class="gemoji">🐾</span>
       <h3>Animais</h3>
+    </a>
+    <a class="guidecard" href="../food/">
+      <span class="gemoji">🍫</span>
+      <h3>Alimentação</h3>
+    </a>
+    <a class="guidecard" href="../tools/">
+      <span class="gemoji">🔧</span>
+      <h3>Bricolage</h3>
     </a>
     <a class="guidecard" href="../other/">
       <span class="gemoji">🛍️</span>
@@ -1075,27 +1252,48 @@
         } catch(e) {}
       })();
       (function(){
-        var form = document.getElementById('newsletter-form');
-        if (!form) return;
-        var msg = document.getElementById('newsletter-msg');
-        form.addEventListener('submit', function(e){
-          e.preventDefault();
-          var email = document.getElementById('newsletter-email').value.trim();
-          if (!email) return;
-          msg.style.color = 'var(--muted)';
-          msg.textContent = 'A subscrever...';
-          fetch('https://go.descontospt.pt/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'site-footer' }),
-          }).then(function(r){
-            if (!r.ok) throw new Error('falhou');
-            msg.style.color = '#4caf50';
-            msg.textContent = '✅ Subscrito! Já estás na lista.';
-            form.reset();
-          }).catch(function(){
-            msg.style.color = '#e53935';
-            msg.textContent = '❌ Não foi possível subscrever agora — tenta de novo.';
+        document.querySelectorAll('.newsletter-ajax-form, #newsletter-form').forEach(function(form){
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var statusEl = form.querySelector('.nl-status') || form.querySelector('#newsletter-msg') || document.getElementById('newsletter-msg');
+            var emailInput = form.querySelector('input[type="email"]') || document.getElementById('newsletter-email');
+            var nameInput = form.querySelector('input[name="nome"]');
+            var hpInput = form.querySelector('input[name="hp"]');
+
+            var email = emailInput ? emailInput.value.trim() : '';
+            var nome = nameInput ? nameInput.value.trim() : '';
+            var hp = hpInput ? hpInput.value.trim() : '';
+
+            if (!email) return;
+
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              statusEl.style.color = 'var(--muted)';
+              statusEl.textContent = '⏳ A registar subscrição...';
+            }
+
+            fetch('https://go.descontospt.pt/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, nome: nome, hp: hp, source: 'descontospt-site' })
+            }).then(function(r){
+              return r.json().catch(function(){ return { ok: r.ok }; });
+            }).then(function(data){
+              if (data && data.ok) {
+                if (statusEl) {
+                  statusEl.style.color = '#10b981';
+                  statusEl.textContent = '✅ Subscrição confirmada com sucesso! A próxima edição chega à sexta-feira.';
+                }
+                form.reset();
+              } else {
+                throw new Error((data && data.error) || 'Falha ao subscrever');
+              }
+            }).catch(function(err){
+              if (statusEl) {
+                statusEl.style.color = '#ef4444';
+                statusEl.textContent = '❌ ' + (err.message || 'Erro ao processar. Tenta novamente.');
+              }
+            });
           });
         });
       })();
