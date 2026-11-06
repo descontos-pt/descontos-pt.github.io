@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descontos PT</title>
+    <title>Descontos Portugal</title>
     <link>https://descontospt.pt/</link>
     <description>As melhores ofertas e descontos em Portugal — Amazon, AliExpress e mais.</description>
     <language>pt-PT</language>
-    <lastBuildDate>Fri, 06 Nov 2026 22:54:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 22:57:45 GMT</lastBuildDate>
     <atom:link href="https://descontospt.pt/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Huggies Pañales para recién nacido, tamaño 1, 100 pañales (2 x 50) — 18,56€</title>
+      <link>https://descontospt.pt/d/ffymz1.html</link>
+      <guid isPermaLink="true">https://descontospt.pt/d/ffymz1.html</guid>
+      <pubDate>Fri, 06 Nov 2026 22:56:42 GMT</pubDate>
+      <description>Huggies Pañales para recién nacido, tamaño 1, 100 pañales (2 x 50) por 18,56€ (antes 34,06€, -46%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
+      <enclosure url="https://m.media-amazon.com/images/I/81woy4JMW+L._SL500_.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>VTech - ¡Las Pistas de Blue y tú! Reloj de Aprendizaje, Juguete Educativo para niños +3 años, Voces Originales — 24,99€</title>
       <link>https://descontospt.pt/d/v83xt3.html</link>
@@ -398,14 +406,6 @@
       <pubDate>Fri, 06 Nov 2026 14:06:32 GMT</pubDate>
       <description>REVLON Limitless Matte, Labial Mate de larga duración Tono 001 BEAUTY SLEEP | Mate de larga duración y máximo confort, Fórmula Vegana, sin sensación tirante. Apto para labios sensibles. 24H de Duración. por 5,80€ (antes 12,50€, -54%). Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
       <enclosure url="https://m.media-amazon.com/images/I/61td-1nH26L._SL500_.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>[Envio PL] Tablet PC Blackview Mega 5, 24Gb (8+16) RAM, 256Gb ROM, 12,2" 2,4K Ultra‑Clear Ips 120Hz, Tüv Süd L — 268,88€</title>
-      <link>https://descontospt.pt/d/17detaj.html</link>
-      <guid isPermaLink="true">https://descontospt.pt/d/17detaj.html</guid>
-      <pubDate>Fri, 06 Nov 2026 13:56:53 GMT</pubDate>
-      <description>[Envio PL] Tablet PC Blackview Mega 5, 24Gb (8+16) RAM, 256Gb ROM, 12,2" 2,4K Ultra‑Clear Ips 120Hz, Tüv Süd Low Blue Light, Doke Os_P 5.0 Android 16, 10000Mah 55W, Wi‑Fi 6, Alto-falantes Duplos de 2W, 1080P Widevine L1 para Netflix Disney+ Prime Video por 268,88€. Link de afiliado — ganhamos comissão, sem custo extra para ti.</description>
-      <enclosure url="https://ae-pic-a1.aliexpress-media.com/kf/Sba6516e51754479ea220d1c2cdbe4c44f.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
