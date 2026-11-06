@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-11-06T23:29:13.347Z",
+  "updated_at_pt": "06/11/2026, 23:29:13",
+  "discord": {
+    "name": "DescontosPT.pt",
+    "guild_id": "1566025491297730603",
+    "members": 6,
+    "online": 4,
+    "status": "online"
+  },
+  "shopify": {
+    "store": "nexora-direct.myshopify.com",
+    "products_count": 149,
+    "active_discount": "BLACKFRIDAY20 (-20%)",
+    "status": "online",
+    "hero_products_count": 8
+  },
+  "brevo": {
+    "subscribers": 0,
+    "lists": 2,
+    "status": "active"
+  },
+  "traffic": {
+    "deals_count": 200,
+    "categories_count": 13,
+    "adsense": "Pronto (Aprovado)",
+    "descontospt_ga4": "G-0RQ6J310VG",
+    "ciberscan_ga4": "G-8YZSCF7XZD",
+    "gtm_id": "GTM-5GN8283Q"
+  },
+  "vps": {
+    "services": {
+      "dealflow": "online",
+      "wa-daemon": "online",
+      "smc-pro": "online",
+      "nexora-bot": "online",
+      "crypto-bot": "online",
+      "stocks-bot": "online",
+      "discord-bot": "online"
+    },
+    "disk_free": "15G",
+    "mem_free": "12Gi",
+    "network": "OK"
+  }
+}
