@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T00:29:14.982Z",
-  "updated_at_pt": "07/11/2026, 00:29:14",
+  "updated_at": "2026-11-07T00:34:15.302Z",
+  "updated_at_pt": "07/11/2026, 00:34:15",
   "discord": {
     "name": "DescontosPT.pt",
     "guild_id": "1566025491297730603",
@@ -10,7 +10,7 @@
   },
   "shopify": {
     "store": "nexora-direct.myshopify.com",
-    "products_count": 50,
+    "products_count": 149,
     "active_discount": "BLACKFRIDAY20 (-20%)",
     "status": "online",
     "hero_products_count": 8
