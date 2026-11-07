@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T15:40:35.333Z",
-  "updated_at_pt": "07/11/2026, 15:40:35",
+  "updated_at": "2026-11-07T19:04:46.954Z",
+  "updated_at_pt": "07/11/2026, 19:04:46",
   "discord": {
     "name": "DescontosPT.pt",
     "guild_id": "1566025491297730603",
@@ -10,7 +10,7 @@
   },
   "shopify": {
     "store": "nexora-direct.myshopify.com",
-    "products_count": 50,
+    "products_count": 151,
     "active_discount": "BLACKFRIDAY20 (-20%)",
     "status": "online",
     "hero_products_count": 8
@@ -38,8 +38,8 @@
       "stocks-bot": "online",
       "discord-bot": "online"
     },
-    "disk_free": "15G",
-    "mem_free": "19Gi",
+    "disk_free": "16G",
+    "mem_free": "21Gi",
     "network": "OK"
   }
 }
