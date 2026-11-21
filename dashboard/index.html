@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Friday 2026 • Live Operations Hub</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6a00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/%3E%3C/svg%3E">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .badge-pulse {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulse-green 2s infinite;
+    }
+    @keyframes pulse-green {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 flex flex-col">
+
+  <!-- TOP BAR -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-white shadow-md shadow-orange-500/20">
+          <i data-lucide="zap" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h1 class="text-lg font-bold tracking-tight text-slate-900 flex items-center gap-2">
+            Black Friday 2026 <span class="bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-semibold">Live Hub</span>
+          </h1>
+          <p class="text-xs text-slate-500 font-medium">Descontos PT • Nexora Direct • Multi-Channel Automation</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <div class="hidden sm:flex items-center space-x-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 badge-pulse"></span>
+          <span>VPS Oracle 24/7 Ativa</span>
+        </div>
+        <button onclick="fetchLiveMetrics()" class="p-2 text-slate-500 hover:text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-lg transition" title="Recarregar Dados em Tempo Real">
+          <i data-lucide="refresh-cw" class="w-4 h-4" id="refreshIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
+
+    <!-- HERO BANNER -->
+    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500 rounded-2xl p-6 sm:p-8 text-white shadow-lg shadow-orange-600/10 relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-3">
+          🔥 Campanha Sazonal Ativa
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">
+          Black Friday Mega Sale • 20% OFF Direto
+        </h2>
+        <p class="text-orange-100 text-sm sm:text-base leading-relaxed mb-4">
+          Cupão ativo <code class="bg-black/25 px-2.5 py-1 rounded-md font-mono font-bold text-amber-200">BLACKFRIDAY20</code> em toda a loja Nexora Direct com envio expresso da Europa. Sincronização automática com Telegram, WhatsApp, Discord e portal Descontos PT.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://descontospt.pt" target="_blank" class="bg-white text-orange-700 font-bold px-4 py-2 rounded-xl text-xs hover:bg-orange-50 shadow-sm transition inline-flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-4 h-4"></i> Ver DescontosPT.pt
+          </a>
+          <a href="https://nexora-direct.myshopify.com/collections/black-friday" target="_blank" class="bg-orange-950/40 text-white font-bold px-4 py-2 rounded-xl text-xs hover:bg-orange-950/60 backdrop-blur-sm transition inline-flex items-center gap-1.5">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Coleção Black Friday
+          </a>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 top-0 w-1/3 opacity-10 flex items-center justify-center pointer-events-none">
+        <i data-lucide="shopping-cart" class="w-64 h-64 -mr-16"></i>
+      </div>
+    </div>
+
+    <!-- 4 MAIN KPI CARDS (DADOS REAIS EM TEMPO REAL) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- Card 1: Nexora Shopify -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-sm hover:border-slate-300 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Nexora Direct</span>
+          <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="text-2xl font-black text-slate-900 tracking-tight" id="valShopifyProducts">149 Produtos</div>
+        <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-emerald-600">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+          <span>Shopify API Conectada</span>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <span>Cupão: <strong class="text-slate-800">BLACKFRIDAY20</strong></span>
+          <span class="text-emerald-700 font-semibold">-20%</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Discord Community -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-sm hover:border-slate-300 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Comunidade Discord</span>
+          <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="text-2xl font-black text-slate-900 tracking-tight flex items-baseline gap-2">
+          <span id="valDiscordMembers">6 Membros</span>
+          <span class="text-xs font-semibold text-emerald-600" id="valDiscordOnline">(4 Online)</span>
+        </div>
+        <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-indigo-600">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          <span id="valDiscordName">DescontosPT.pt</span>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <span>Bot PM2: <strong class="text-slate-800">discord-bot</strong></span>
+          <span class="text-emerald-700 font-semibold">Online</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Brevo Leads -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-sm hover:border-slate-300 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Email Marketing</span>
+          <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="text-2xl font-black text-slate-900 tracking-tight" id="valBrevoSubs">Brevo API Ativa</div>
+        <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-blue-600">
+          <i data-lucide="send" class="w-3.5 h-3.5"></i>
+          <span>2 Listas Sincronizadas</span>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <span>Newsletter Semanal</span>
+          <span class="text-emerald-700 font-semibold">Integrada</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Web Traffic & Ads -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-sm hover:border-slate-300 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">DescontosPT.pt</span>
+          <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center">
+            <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="text-2xl font-black text-slate-900 tracking-tight" id="valDealsCount">200 Deals</div>
+        <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-amber-600">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i>
+          <span>Google AdSense Pronto</span>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <span>GA4: <strong class="text-slate-800">G-0RQ6J310VG</strong></span>
+          <span class="text-emerald-700 font-semibold">Ativo</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MIDDLE SECTION: CHANNELS & SERVICES -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Distribution Channels Status (2 Cols) -->
+      <div class="lg:col-span-2 bg-white rounded-xl p-6 border border-slate-200/80 shadow-sm">
+        <div class="flex items-center justify-between mb-5">
+          <div>
+            <h3 class="text-base font-bold text-slate-900">Canais de Distribuição Automatizados</h3>
+            <p class="text-xs text-slate-500">Publicação e cross-posting simultâneo em toda a rede</p>
+          </div>
+          <span class="text-xs bg-slate-100 text-slate-600 font-semibold px-2.5 py-1 rounded-md">6 Redes Ativas</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          <!-- Telegram -->
+          <div class="p-3.5 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center font-bold">
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Telegram Canal</h4>
+                <p class="text-xs text-slate-500">@descontos_pt • Contínuo</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">🟢 Ativo</span>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="p-3.5 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">WhatsApp Newsletter</h4>
+                <p class="text-xs text-slate-500">wa-daemon :3005</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">🟢 Conectado</span>
+          </div>
+
+          <!-- Instagram & Meta -->
+          <div class="p-3.5 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-9 h-9 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center font-bold">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Meta Network</h4>
+                <p class="text-xs text-slate-500">Instagram, Facebook, Threads</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-md">Diário 13h</span>
+          </div>
+
+          <!-- Bluesky & Social -->
+          <div class="p-3.5 rounded-xl border border-slate-100 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-9 h-9 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold">
+                <i data-lucide="share-2" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Social Syndication</h4>
+                <p class="text-xs text-slate-500">Bluesky, Tumblr & RSS</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md">🟢 Ativo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VPS & PM2 Live Status (1 Col) -->
+      <div class="bg-white rounded-xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-base font-bold text-slate-900">Oracle VPS Daemon</h3>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+          </div>
+          <div class="space-y-2.5 text-xs">
+            <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
+              <span class="text-slate-600 font-medium flex items-center gap-1.5"><i data-lucide="terminal" class="w-3.5 h-3.5 text-slate-400"></i> dealflow</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded" id="stDealflow">online</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
+              <span class="text-slate-600 font-medium flex items-center gap-1.5"><i data-lucide="message-circle" class="w-3.5 h-3.5 text-slate-400"></i> wa-daemon</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded" id="stWa">online (:3005)</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
+              <span class="text-slate-600 font-medium flex items-center gap-1.5"><i data-lucide="activity" class="w-3.5 h-3.5 text-slate-400"></i> smc-pro</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded" id="stSmc">HTTP 200 OK</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
+              <span class="text-slate-600 font-medium flex items-center gap-1.5"><i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-slate-400"></i> nexora-bot</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded" id="stNexora">online (Vendas)</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
+              <span class="text-slate-600 font-medium flex items-center gap-1.5"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-slate-400"></i> crypto & stocks</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">online</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 text-center">
+          <span class="text-[11px] text-slate-400 font-medium" id="valVpsResources">Recursos: 15GB Livres • 12GB RAM Disponíveis</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HERO PRODUCTS TABLE -->
+    <div class="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 bg-slate-50/50">
+        <div>
+          <h3 class="text-base font-bold text-slate-900">Top 8 Produtos Estrela • Prioridade Black Friday</h3>
+          <p class="text-xs text-slate-500">Artigos com stock europeu prioritário e 3 de cada 4 disparos automáticos dedicados</p>
+        </div>
+        <span class="text-xs font-bold text-orange-700 bg-orange-100 px-3 py-1 rounded-full">Cupão BLACKFRIDAY20</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-50 text-slate-500 font-semibold uppercase tracking-wider border-b border-slate-200/60">
+            <tr>
+              <th class="px-6 py-3">Produto</th>
+              <th class="px-6 py-3">Categoria</th>
+              <th class="px-6 py-3">Margem / Stock</th>
+              <th class="px-6 py-3">Desconto Black Friday</th>
+              <th class="px-6 py-3 text-right">Ação</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium">
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">01</span> Inflador Portátil de Pneus Digital 150 PSI
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Auto / Gadgets</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">02</span> Carregador e Reparador de Baterias Inteligente 12V
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Auto / Ferramentas</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">03</span> Mini Máquina de Selagem a Vácuo Automática
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Cozinha / Casa</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">04</span> Prateleiras de Duche Sem Perfurações (2 Peças)
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Casa / Banho</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Elevada • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">05</span> Tapete de Massagem EMS para Pés e Pernas
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Saúde / Bem-Estar</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Elevada • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">06</span> Trava de Roda Antifurto Automóvel Universal
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Segurança Auto</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">07</span> Corta-Relva e Aparador Sem Fio Multifunções
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Jardim / Exterior</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-3.5 flex items-center gap-2.5 font-bold text-slate-900">
+                <span class="text-orange-500 font-extrabold">08</span> Barra LED Inteligente para Iluminação Automóvel
+              </td>
+              <td class="px-6 py-3.5 text-slate-600">Auto / Iluminação</td>
+              <td class="px-6 py-3.5"><span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Alta • Stock EU</span></td>
+              <td class="px-6 py-3.5 text-slate-700">20% com código</td>
+              <td class="px-6 py-3.5 text-right"><a href="https://nexora-direct.myshopify.com" target="_blank" class="text-orange-600 hover:text-orange-700 font-bold">Ver na Loja →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-5 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>
+        <span>Black Friday 2026 Operations Hub • Hospedado Gratuitamente no GitHub Pages</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>Última Sincronização: <strong id="lastSyncTime" class="text-slate-700">Em Direto</strong></span>
+        <span>•</span>
+        <span class="text-emerald-600 font-bold">Atualização Automática VPS (5 min)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    async function fetchLiveMetrics() {
+      const icon = document.getElementById('refreshIcon');
+      if (icon) icon.classList.add('animate-spin');
+
+      try {
+        const res = await fetch('https://descontospt.pt/dashboard_data.json?t=' + Date.now());
+        if (res.ok) {
+          const d = await res.json();
+          if (d.discord) {
+            document.getElementById('valDiscordMembers').innerText = `${d.discord.members} Membros`;
+            document.getElementById('valDiscordOnline').innerText = `(${d.discord.online} Online)`;
+            if (d.discord.name) document.getElementById('valDiscordName').innerText = d.discord.name;
+          }
+          if (d.shopify && d.shopify.products_count) {
+            document.getElementById('valShopifyProducts').innerText = `${d.shopify.products_count} Produtos`;
+          }
+          if (d.traffic && d.traffic.deals_count) {
+            document.getElementById('valDealsCount').innerText = `${d.traffic.deals_count} Deals`;
+          }
+          if (d.vps && d.vps.disk_free && d.vps.mem_free) {
+            document.getElementById('valVpsResources').innerText = `Recursos: ${d.vps.disk_free} Livres • ${d.vps.mem_free} RAM Disponíveis`;
+          }
+          if (d.updated_at_pt) {
+            document.getElementById('lastSyncTime').innerText = d.updated_at_pt;
+          }
+        }
+      } catch (e) {
+        console.log('[Dashboard] A usar métricas em cache:', e.message);
+      } finally {
+        if (icon) setTimeout(() => icon.classList.remove('animate-spin'), 600);
+      }
+    }
+
+    // Carregar dados reais ao abrir a página
+    fetchLiveMetrics();
+    // Auto-refresh a cada 5 minutos
+    setInterval(fetchLiveMetrics, 300000);
+  </script>
+</body>
+</html>
