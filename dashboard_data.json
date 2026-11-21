@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T12:22:14.511Z",
-  "updated_at_pt": "21/11/2026, 12:22:14",
+  "updated_at": "2026-11-21T12:42:15.065Z",
+  "updated_at_pt": "21/11/2026, 12:42:15",
   "discord": {
     "name": "DescontosPT.pt",
     "guild_id": "1566025491297730603",
@@ -38,7 +38,7 @@
       "stocks-bot": "online",
       "discord-bot": "online"
     },
-    "disk_free": "12G",
+    "disk_free": "13G",
     "mem_free": "19Gi",
     "network": "OK"
   }
